@@ -42,7 +42,7 @@ namespace Proyecto_Integrador
             OleDbConnection Conexion = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='|DataDirectory|\BaseDeDatos.accdb'");
             
             OleDbCommand Instruccion= new OleDbCommand("Insert INTO Usuario (Id_Usuario,UserNombre,UserApPa,UserApMa,UserFechaNac,UserSexo,UserTipo,UserDireccionCalle,UserDireccionNumero,UserDireccionColonia,UserDireccionMunicipio,UserCelular,UserTelefono,UserTipoSangre,UserAlergias) VALUES (@Id_Usuario,@userNombre,@UserApPa,@UserApMa,@UserFechaNac,@UserSexo,@UserTipo,@UserDireccionCalle,@UserDireccionNumero,@UserDireccionColonia,@UserDireccionMunicipio,@UserCelular,@UserTelefono,@UserTipoSangre,@UserAlergia)", Conexion);
-            OleDbCommand Instruccion2= new OleDbCommand("Insert INTO UsuarioAccidente (Id_UserAccidente,UserAccidenteNombre,UserAccidenteCelular,UserAccidenteTelefono Values()",Conexion);
+            //OleDbCommand Instruccion2= new OleDbCommand("Insert INTO UsuarioAccidente (Id_UserAccidente,UserAccidenteNombre,UserAccidenteCelular,UserAccidenteTelefono Values()",Conexion);
 
             
             Instruccion.Parameters.AddWithValue("@Id_Usuario", Int32.Parse(txtID.Text));
