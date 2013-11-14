@@ -32,7 +32,12 @@
         <RadioButton x:Name="rdbMasculino" Content="Masculino" HorizontalAlignment="Left" Margin="330,56,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="rdbFemenino" Content="Femenino" HorizontalAlignment="Left" Margin="430,56,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblUsuario" Content="Tipo de Usuario:" HorizontalAlignment="Left" Margin="530,51,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmbUsuarios" HorizontalAlignment="Left" Margin="631,50,0,0" VerticalAlignment="Top" Width="119"/>
+        <ComboBox x:Name="cmbUsuarios" HorizontalAlignment="Left" Margin="631,50,0,0" VerticalAlignment="Top" Width="119" Text="No esta abierto">
+            <ComboBoxItem Name="General">General</ComboBoxItem>
+            <ComboBoxItem Name="Estudiante">Estudiante</ComboBoxItem>
+            <ComboBoxItem Name="TerceraEdad">3ra Edad</ComboBoxItem>
+            <ComboBoxItem Name="CapacidadesDiferentes">Capacidades Diferentes</ComboBoxItem>
+        </ComboBox>
         <Label x:Name="lblDireccion" Content="Direccion:" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCalle" HorizontalAlignment="Left" Height="23" Margin="88,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" Controls:TextboxHelper.Watermark="Calle"/>
         <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Height="23" Margin="352,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Controls:TextboxHelper.Watermark="#"/>
@@ -42,7 +47,12 @@
         <TextBox x:Name="txtCelular" HorizontalAlignment="Left" Height="23" Margin="88,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Controls:TextboxHelper.Watermark="Celular"/>
         <TextBox x:Name="txtCasa" HorizontalAlignment="Left" Height="23" Margin="239,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Controls:TextboxHelper.Watermark="Casa"/>
         <Label x:Name="lblSangre" Content="Tipo de Sangre:" HorizontalAlignment="Left" Margin="388,130,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmbSangre" HorizontalAlignment="Left" Margin="506,130,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbSangre" HorizontalAlignment="Left" Margin="506,130,0,0" VerticalAlignment="Top" Width="120" Text="No esta abierto">
+            <ComboBoxItem Name="Oplus">O+</ComboBoxItem>
+            <ComboBoxItem Name="Ominus">O-</ComboBoxItem>
+            <ComboBoxItem Name="ABplus">AB+</ComboBoxItem>
+            <ComboBoxItem Name="ABminus">AB-</ComboBoxItem>
+        </ComboBox>
         <Label x:Name="lblAlergias" Content="Alergias o Condiciones Medicas:" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtAlergias" HorizontalAlignment="Left" Height="23" Margin="198,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="552" Controls:TextboxHelper.Watermark="Alergias"/>
         <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="88,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Controls:TextboxHelper.Watermark="ID"/>
