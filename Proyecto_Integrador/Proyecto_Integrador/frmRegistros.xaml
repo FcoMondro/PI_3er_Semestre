@@ -1,0 +1,59 @@
+﻿<Controls:MetroWindow x:Name="frmRegistros1" x:Class="Proyecto_Integrador.frmRegistros"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Registros" Height="405" Width="770" ResizeMode="NoResize">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <TextBox Visibility="Hidden"></TextBox>
+        <Label Visibility="Hidden"></Label>
+        <ComboBox Visibility="Hidden"></ComboBox>
+        <DatePicker Visibility="Hidden"></DatePicker>
+        <Button Visibility="Hidden"></Button>
+        <CheckBox Visibility="Hidden"></CheckBox>
+        
+        <TextBox x:Name="txtNombres" HorizontalAlignment="Left" Height="23" Margin="88,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Controls:TextboxHelper.Watermark="Nombre(s)"/>
+        <TextBox x:Name="txtApellidoP" HorizontalAlignment="Left" Height="23" Margin="316,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Controls:TextboxHelper.Watermark="Apellido Paterno"/>
+        <TextBox x:Name="txtApellidoM" HorizontalAlignment="Left" Height="23" Margin="550,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Controls:TextboxHelper.Watermark="Apellido Materno"/>
+        <DatePicker x:Name="dtpFecha" HorizontalAlignment="Left" Margin="151,51,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label x:Name="lblNombre" Content="Nombre:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblFechaNaci" Content="Fecha de Nacimiento:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSexo" Content="Sexo:" HorizontalAlignment="Left" Margin="280,51,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbMasculino" Content="Masculino" HorizontalAlignment="Left" Margin="330,56,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbFemenino" Content="Femenino" HorizontalAlignment="Left" Margin="430,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblUsuario" Content="Tipo de Usuario:" HorizontalAlignment="Left" Margin="530,51,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbUsuarios" HorizontalAlignment="Left" Margin="631,50,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label x:Name="lblDireccion" Content="Direccion:" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCalle" HorizontalAlignment="Left" Height="23" Margin="88,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" Controls:TextboxHelper.Watermark="Calle"/>
+        <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Height="23" Margin="352,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Controls:TextboxHelper.Watermark="#"/>
+        <TextBox x:Name="txtColonia" HorizontalAlignment="Left" Height="23" Margin="421,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Controls:TextboxHelper.Watermark="Colonia"/>
+        <TextBox x:Name="txtMunicipio" HorizontalAlignment="Left" Height="23" Margin="593,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Controls:TextboxHelper.Watermark="Municipio"/>
+        <Label x:Name="lblTelefono" Content="Telefono:" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCelular" HorizontalAlignment="Left" Height="23" Margin="88,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Controls:TextboxHelper.Watermark="Celular"/>
+        <TextBox x:Name="txtCasa" HorizontalAlignment="Left" Height="23" Margin="239,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Controls:TextboxHelper.Watermark="Casa"/>
+        <Label x:Name="lblSangre" Content="Tipo de Sangre:" HorizontalAlignment="Left" Margin="388,130,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbSangre" HorizontalAlignment="Left" Margin="506,130,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblAlergias" Content="Alergias o Condiciones Medicas:" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAlergias" HorizontalAlignment="Left" Height="23" Margin="198,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="552" Controls:TextboxHelper.Watermark="Alergias"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="88,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Controls:TextboxHelper.Watermark="ID"/>
+        <Label x:Name="lblID" Content="ID Tarjeta:" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAccidente" Content="Contacto en caso de Accidente" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" FontWeight="ExtraBold"/>
+        <Label x:Name="lblNombreAccidente" Content="Nombre:" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombreAccidente" HorizontalAlignment="Left" Height="23" Margin="88,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="441" Controls:TextboxHelper.Watermark="Nombre completo"/>
+        <TextBox x:Name="txtMovilAccidente" HorizontalAlignment="Left" Height="23" Margin="88,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Controls:TextboxHelper.Watermark="Celular"/>
+        <TextBox x:Name="txtCasaAccidente" HorizontalAlignment="Left" Height="23" Margin="225,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Controls:TextboxHelper.Watermark="Casa"/>
+        <Label x:Name="lblTelefonoAccidente" Content="Telefono:" HorizontalAlignment="Left" Margin="10,330,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="600,242,0,0" VerticalAlignment="Top" Width="150" Height="125" Click="btnAgregar_Click"/>
+
+    </Grid>
+</Controls:MetroWindow>
