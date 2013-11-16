@@ -25,8 +25,10 @@ namespace Proyecto_Integrador
         public frmRegistros()
         {
             InitializeComponent();
+            count_Registro();
         }
 
+        OleDbConnection Conexion = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='C:\Users\Mondro\Documents\GitHub\PI_3er_Semestre\Proyecto_Integrador\Proyecto_Integrador\BaseDeDatos.accdb'");
         private string Check_Sexo()
         {
             if (rdbMasculino.IsChecked == true)
@@ -36,16 +38,43 @@ namespace Proyecto_Integrador
             else
                 return "";
         }
-
+        private void Servicio_de_Limpieza()
+        {
+            txtNombres.Clear();
+            txtApellidoP.Clear();
+            txtApellidoM.Clear();
+            dtpFecha.SelectedDate = null;
+            cmbUsuarios.SelectedIndex = -1;
+            txtCalle.Clear();
+            txtNumero.Clear();
+            txtColonia.Clear();
+            txtMunicipio.Clear();
+            txtCelular.Clear();
+            txtCasa.Clear();
+            cmbSangre.SelectedIndex = -1;
+            txtAlergias.Clear();
+            txtNombreAccidente.Clear();
+            txtMovilAccidente.Clear();
+            txtCasaAccidente.Clear();
+            txtNombres.Focus();
+            count_Registro();
+        }
+        private void count_Registro()
+        {
+            OleDbCommand count = new OleDbCommand("Select Count (*) from Usuario", Conexion);
+            Conexion.Open();
+            int prueba = (int)count.ExecuteScalar();
+            txtID.Text = prueba.ToString();
+            Conexion.Close();
+        }
         private void btnAgregar_Click(object sender, RoutedEventArgs e)
         {
-            OleDbConnection Conexion = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='|DataDirectory|\BaseDeDatos.accdb'");
+            //OleDbConnection Conexion = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='|DataDirectory|\BaseDeDatos.accdb'");
             
-            OleDbCommand Instruccion= new OleDbCommand("Insert INTO Usuario (Id_Usuario,UserNombre,UserApPa,UserApMa,UserFechaNac,UserSexo,UserTipo,UserDireccionCalle,UserDireccionNumero,UserDireccionColonia,UserDireccionMunicipio,UserCelular,UserTelefono,UserTipoSangre,UserAlergias) VALUES (@Id_Usuario,@userNombre,@UserApPa,@UserApMa,@UserFechaNac,@UserSexo,@UserTipo,@UserDireccionCalle,@UserDireccionNumero,@UserDireccionColonia,@UserDireccionMunicipio,@UserCelular,@UserTelefono,@UserTipoSangre,@UserAlergia)", Conexion);
-            //OleDbCommand Instruccion2= new OleDbCommand("Insert INTO UsuarioAccidente (Id_UserAccidente,UserAccidenteNombre,UserAccidenteCelular,UserAccidenteTelefono Values()",Conexion);
+            MessageBox.Show("Conexion abierta");
+            OleDbCommand Instruccion = new OleDbCommand("Insert INTO Usuario (UserNombre,UserApPa,UserApMa,UserFechaNac,UserSexo,UserTipo,UserDireccionCalle,UserDireccionNumero,UserDireccionColonia,UserDireccionMunicipio,UserCelular,UserTelefono,UserTipoSangre,UserAlergias,UserAccidenteNombre,UserAccidenteCelular,UserAccidenteTelefono) VALUES (@userNombre,@UserApPa,@UserApMa,@UserFechaNac,@UserSexo,@UserTipo,@UserDireccionCalle,@UserDireccionNumero,@UserDireccionColonia,@UserDireccionMunicipio,@UserCelular,@UserTelefono,@UserTipoSangre,@UserAlergia,@UserAccidenteNombre,@UserAccidenteCelular,@UserAccidenteTelefono)", Conexion);
+            MessageBox.Show("Se crearon las instrucciones");
 
-            
-            Instruccion.Parameters.AddWithValue("@Id_Usuario", Int32.Parse(txtID.Text));
             Instruccion.Parameters.AddWithValue("@UserNombre", txtNombres.Text);
             Instruccion.Parameters.AddWithValue("@UserApPa", txtApellidoP.Text);
             Instruccion.Parameters.AddWithValue("@UserApMa", txtApellidoM.Text);
@@ -60,19 +89,20 @@ namespace Proyecto_Integrador
             Instruccion.Parameters.AddWithValue("@UserTelefono", Int32.Parse(txtCasa.Text));
             Instruccion.Parameters.AddWithValue("@UserTipoSangre", cmbSangre.Text);
             Instruccion.Parameters.AddWithValue("@UserAlergia", txtAlergias.Text);
-
-            //Instruccion2.Parameters.AddWithValue("@Id_Usuario", txtID.Text);
-            //Instruccion2.Parameters.AddWithValue("@UserAccidenteNombre", txtNombreAccidente.Text);
-            //Instruccion2.Parameters.AddWithValue("@UserAccidenteCelular", txtMovilAccidente.Text);
-            //Instruccion2.Parameters.AddWithValue("@UserAccidenteCasa", txtCasaAccidente.Text);
+            Instruccion.Parameters.AddWithValue("@UserAccidenteNombre", txtNombreAccidente.Text);
+            Instruccion.Parameters.AddWithValue("@UserAccidenteCelular", Int32.Parse(txtMovilAccidente.Text));
+            Instruccion.Parameters.AddWithValue("@UserAccidenteCasa", Int32.Parse(txtCasaAccidente.Text));
 
             //Instruccion.Parameters.AddWithValue("@Id_Usuario", 1);
-            //OleDbDataReader Lector;
+            
             
             Conexion.Open();
+
+            MessageBox.Show("Se abre la conexion");
             Instruccion.ExecuteNonQuery();
+            //MessageBox.Show(prueba.ToString());
             //OleDbDataReader AgregarAccidente;
-            //AgregarUsuario.Read();
+            //AgreingarUsuario.Read();
 
             //AgregarUsuario = Instruccion.ExecuteNonQuery();
             //AgregarAccidente = Instruccion2.ExecuteNonQuery();
@@ -87,7 +117,8 @@ namespace Proyecto_Integrador
             //txtApellidoM.Text = Lector["UserApMa"].ToString();
 
             Conexion.Close();
-            
+            MessageBox.Show("Se cerro la conexion");
+            Servicio_de_Limpieza();
         }
     }
 }

@@ -55,7 +55,7 @@
         </ComboBox>
         <Label x:Name="lblAlergias" Content="Alergias o Condiciones Medicas:" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtAlergias" HorizontalAlignment="Left" Height="23" Margin="198,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="552" Controls:TextboxHelper.Watermark="Alergias"/>
-        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="88,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Controls:TextboxHelper.Watermark="ID"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="88,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Controls:TextboxHelper.Watermark="ID" IsEnabled="False"/>
         <Label x:Name="lblID" Content="ID Tarjeta:" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblAccidente" Content="Contacto en caso de Accidente" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" FontWeight="ExtraBold"/>
         <Label x:Name="lblNombreAccidente" Content="Nombre:" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>

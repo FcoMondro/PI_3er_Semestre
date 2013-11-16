@@ -16,11 +16,11 @@
     </Window.Resources>
     <Grid>
         <Label Content="Nombre:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="65"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="80,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Controls:TextboxHelper.Watermark="Nombre(s)"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="80,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Controls:TextboxHelper.Watermark="Nombre(s)" KeyUp="TextBox_KeyUp_1"/>
         <Label Content="ID de Tarjeta:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.375,-1.308"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="100,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Controls:TextboxHelper.Watermark="1234567890"/>
-        <DataGrid HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Height="203" Width="584"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="360,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Controls:TextboxHelper.Watermark="$0.00"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="23" Margin="100,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Controls:TextboxHelper.Watermark="1234567890"/>
+        <DataGrid x:Name="dtgBusqueda" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Height="203" Width="584"/>
+        <TextBox x:Name="txtCantidad" HorizontalAlignment="Left" Height="23" Margin="360,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Controls:TextboxHelper.Watermark="$0.00"/>
         <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="290,50,0,0" VerticalAlignment="Top"/>
         <Button Content="Recargar" HorizontalAlignment="Left" Margin="485,10,0,0" VerticalAlignment="Top" Width="109" Height="80"/>
 
