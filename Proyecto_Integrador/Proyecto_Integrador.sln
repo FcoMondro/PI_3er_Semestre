@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto_Integrador", "Proyecto_Integrador\Proyecto_Integrador.csproj", "{2588D6F0-37D6-41D1-8240-80780A007009}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimBUS", "SimBUS\SimBUS.csproj", "{17B3C81C-6A31-4809-8F34-928835037879}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{2588D6F0-37D6-41D1-8240-80780A007009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2588D6F0-37D6-41D1-8240-80780A007009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2588D6F0-37D6-41D1-8240-80780A007009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17B3C81C-6A31-4809-8F34-928835037879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17B3C81C-6A31-4809-8F34-928835037879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17B3C81C-6A31-4809-8F34-928835037879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17B3C81C-6A31-4809-8F34-928835037879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

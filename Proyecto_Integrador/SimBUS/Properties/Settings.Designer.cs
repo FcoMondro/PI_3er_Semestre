@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Proyecto_Integrador.Properties {
+namespace SimBUS.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -27,7 +27,8 @@ namespace Proyecto_Integrador.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Mondro\\Documents\\GitHub\\PI" +
-            "_3er_Semestre\\Proyecto_Integrador\\BaseDeDatos.accdb")]
+            "_3er_Semestre\\Proyecto_Integrador\\Proyecto_Integrador\\BaseDeDatos.accdb;Persist " +
+            "Security Info=True")]
         public string BaseDeDatosConnectionString {
             get {
                 return ((string)(this["BaseDeDatosConnectionString"]));

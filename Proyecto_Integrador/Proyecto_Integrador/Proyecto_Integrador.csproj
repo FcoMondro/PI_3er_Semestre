@@ -101,6 +101,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BaseDeDatosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseDeDatosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmRecargas.xaml.cs">
       <DependentUpon>frmRecargas.xaml</DependentUpon>
     </Compile>
@@ -137,6 +142,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="BaseDeDatosDataSet.xsc">
+      <DependentUpon>BaseDeDatosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BaseDeDatosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseDeDatosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BaseDeDatosDataSet.xss">
+      <DependentUpon>BaseDeDatosDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

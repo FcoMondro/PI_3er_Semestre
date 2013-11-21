@@ -28,24 +28,18 @@
         <TabControl x:Name="tabcPestañas">
             <TabItem Header="Cobros">
                 <TabControl x:Name="tabcCobros">
-                    <TabItem Header="Unidad de transporte por tipo de usuario">
-
-                        <Button Content="Unidad de transporte" Height="100" Margin="367,121,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="171" />
-                    </TabItem>
-                    <TabItem Header="Recabado por unidad de transporte">
-                        <Button Content="Recabado por unidad" Height="100" Margin="346,108,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                    </TabItem>
+                    <DataGrid></DataGrid>
                 </TabControl>
             </TabItem>
-            <TabItem Header="Frecuencias">
+            <TabItem Header="Frecuencia de uso">
                 <TabControl x:Name="tabcFrecuencias">
-                    <TabItem Header="Uso por tipo usuario">
+                    <TabItem Header="Usuario">
                         <Button Content="Uso por tipo de usuario" Height="100" Margin="336,106,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                     </TabItem>
-                    <TabItem Header="Uso por unidad">
+                    <TabItem Header="Unidad">
                         <Button Content="Uso por unidad" Height="100" Margin="355,152,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="215"/>
                     </TabItem>
-                    <TabItem Header="Uso por usuario especifico">
+                    <TabItem Header="Tipo de usuario">
                         <Button Content="Uso por usuario especifico" Height="100" Margin="457,77,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                     </TabItem>
                 </TabControl>
