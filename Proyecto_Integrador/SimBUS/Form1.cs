@@ -32,15 +32,11 @@ namespace SimBUS
             string tipeUser = tabla.Rows[0].ItemArray[1].ToString();
 
             OleDbCommand servicio = new OleDbCommand("INSERT INTO Servicios(NumUnidad, TipoUsuario, Usuario, Fecha) VALUES (@NumUnidad,@TipoUsuario,@Usuario,@Fecha)", Conexion);
-            //servicio.Parameters.AddWithValue("@NumUnidad", cmbUnidad.SelectedItem.ToString());
-            //servicio.Parameters.AddWithValue("@TipoUsuario", tipeUser);
-            //servicio.Parameters.AddWithValue("@Usuario",txtTarjeta.Text);
-            //servicio.Parameters.AddWithValue("@Fecha",DateTime.Now);
-            servicio.Parameters.AddWithValue("@NumUnidad", "5");
-            servicio.Parameters.AddWithValue("@TipoUsuario", "Estudiante");
-            servicio.Parameters.AddWithValue("@Usuario", "1916634949");
-            servicio.Parameters.AddWithValue("@Fecha", DateTime.Now);
-
+            servicio.Parameters.AddWithValue("@NumUnidad", cmbUnidad.SelectedItem.ToString());
+            servicio.Parameters.AddWithValue("@TipoUsuario", tipeUser);
+            servicio.Parameters.AddWithValue("@Usuario", txtTarjeta.Text);
+            servicio.Parameters.AddWithValue("@Fecha", DateTime.Now.ToString());
+ 
             Conexion.Open();
             servicio.ExecuteNonQuery();
             Conexion.Close();
@@ -53,7 +49,6 @@ namespace SimBUS
         {
             OleDbCommand cmdCamion = new OleDbCommand("SELECT NumCamion FROM Camion", Conexion);
             OleDbDataAdapter da = new OleDbDataAdapter(cmdCamion);
-
             Conexion.Open();
             DataTable dt = new DataTable();
             da.Fill(dt);
