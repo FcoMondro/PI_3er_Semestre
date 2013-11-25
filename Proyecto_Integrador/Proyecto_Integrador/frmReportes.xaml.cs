@@ -47,6 +47,7 @@ namespace Proyecto_Integrador
             {
                 return unidad;
             }
+
             public decimal Total
             {
                 get
