@@ -2,7 +2,7 @@
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Registros" Height="500" Width="1000" Loaded="MetroWindow_Loaded_1">
+        Title="Reportes" Height="500" Width="1000" Loaded="MetroWindow_Loaded_1">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -39,10 +39,32 @@
             <TabItem Header="Frecuencia de uso">
                 <TabControl x:Name="tabcFrecuencias">
                     <TabItem Header="Usuario">
-                        <Button Content="Uso por tipo de usuario" Height="100" Margin="336,106,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Grid>
+                            <TextBox HorizontalAlignment="Left" Height="23" Margin="128,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Controls:TextboxHelper.Watermark="1234567890"/>
+                            <Label Content="Num. Tarjeta:" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top"/>
+                            <Button Content="Cargar" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" Width="143"/>
+                            <DataGrid HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Height="237" Width="430"/>
+                            <Label Content="Nombre:" HorizontalAlignment="Left" Margin="482,61,0,0" VerticalAlignment="Top"/>
+                            <TextBox HorizontalAlignment="Left" Height="23" Margin="579,61,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="198"/>
+                            <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110" Margin="10,46,0,0"/>
+                            <Label Content="a" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="128,49,0,0"/>
+                            <DatePicker HorizontalAlignment="Left" Margin="149,46,0,0" VerticalAlignment="Top" Height="35" Width="110" RenderTransformOrigin="0.376,0.448"/>
+                            <CheckBox Content="Actual" HorizontalAlignment="Left" Margin="276,53,0,0" VerticalAlignment="Top"/>
+                            <TextBox HorizontalAlignment="Left" Height="23" Margin="579,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                            <Label Content="Gastado:" HorizontalAlignment="Left" Margin="482,125,0,0" VerticalAlignment="Top"/>
+                        </Grid>
                     </TabItem>
                     <TabItem Header="Unidad">
-                        <Button Content="Uso por unidad" Height="100" Margin="355,152,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="215"/>
+                        <Grid>
+                            <Button Content="Cargar" Height="17" Margin="223,11,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.462,0.407"/>
+                            <TextBox HorizontalAlignment="Left" Height="23" Margin="66,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                            <Label Content="Unidad:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                            <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110" Margin="10,50,0,0"/>
+                            <Label Content="a" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,49,0,0"/>
+                            <DatePicker HorizontalAlignment="Left" Margin="146,50,0,0" VerticalAlignment="Top" Height="35" Width="110" RenderTransformOrigin="0.376,0.448"/>
+                            <CheckBox Content="Actual" HorizontalAlignment="Left" Margin="272,58,0,0" VerticalAlignment="Top"/>
+                            <DataGrid HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Height="226" Width="905"/>
+                        </Grid>
                     </TabItem>
                     <TabItem Header="Tipo de usuario">
                         <Button Content="Uso por usuario especifico" Height="100" Margin="457,77,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
