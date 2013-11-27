@@ -30,33 +30,29 @@
                 <Grid>
                     <Button x:Name="cmdCargar" Content="Cargar" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="216" Click="cmdCargar_Click" Margin="470,0,0,0"/>
                     <DataGrid x:Name="dtgCobros" Margin="0,55,0,0"/>
-                    <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110"/>
+                    <DatePicker x:Name="dtpInicial" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110"/>
                     <Label Content="a" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,0,0,0"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="136,1,0,0" VerticalAlignment="Top" Height="35" Width="110" RenderTransformOrigin="0.376,0.448"/>
-                    <CheckBox Content="Actual" HorizontalAlignment="Left" Margin="269,10,0,0" VerticalAlignment="Top"/>
+                    <DatePicker x:Name="dtpFinal" HorizontalAlignment="Left" Margin="136,1,0,0" VerticalAlignment="Top" Height="35" Width="110" RenderTransformOrigin="0.376,0.448"/>
+                    <CheckBox x:Name="chkActual" Content="Actual" HorizontalAlignment="Left" Margin="269,10,0,0" VerticalAlignment="Top" Checked="chkActual_Checked"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Frecuencia de uso">
                 <TabControl x:Name="tabcFrecuencias">
                     <TabItem Header="Usuario">
                         <Grid>
-                            <TextBox HorizontalAlignment="Left" Height="23" Margin="128,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Controls:TextboxHelper.Watermark="1234567890"/>
-                            <Label Content="Num. Tarjeta:" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top"/>
-                            <Button Content="Cargar" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" Width="143"/>
-                            <DataGrid HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Height="237" Width="430"/>
-                            <Label Content="Nombre:" HorizontalAlignment="Left" Margin="482,61,0,0" VerticalAlignment="Top"/>
-                            <TextBox HorizontalAlignment="Left" Height="23" Margin="579,61,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="198"/>
-                            <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110" Margin="10,46,0,0"/>
+                            <TextBox x:Name="txtNumTarjeta" HorizontalAlignment="Left" Height="23" Margin="114,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Controls:TextboxHelper.Watermark="1234567890"/>
+                            <Label Content="Num Tarjeta" HorizontalAlignment="Left" Margin="29,9,0,0" VerticalAlignment="Top"/>
+                            <Button x:Name="cmdCargarFu" Content="Cargar" HorizontalAlignment="Left" Margin="297,10,0,0" VerticalAlignment="Top" Width="143" Click="Button_Click_1"/>
+                            <DataGrid x:Name="dtgUsosUsuario" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Height="237" Width="430"/>
+                            <DatePicker x:Name="dtpInicialFUs" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110" Margin="10,46,0,0"/>
                             <Label Content="a" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="128,49,0,0"/>
-                            <DatePicker HorizontalAlignment="Left" Margin="149,46,0,0" VerticalAlignment="Top" Height="35" Width="110" RenderTransformOrigin="0.376,0.448"/>
-                            <CheckBox Content="Actual" HorizontalAlignment="Left" Margin="276,53,0,0" VerticalAlignment="Top"/>
-                            <TextBox HorizontalAlignment="Left" Height="23" Margin="579,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                            <Label Content="Gastado:" HorizontalAlignment="Left" Margin="482,125,0,0" VerticalAlignment="Top"/>
+                            <DatePicker x:Name="dtpFinalUs" HorizontalAlignment="Left" Margin="149,46,0,0" VerticalAlignment="Top" Height="35" Width="110" RenderTransformOrigin="0.376,0.448"/>
+                            <CheckBox x:Name="chkActualFu" Content="Actual" HorizontalAlignment="Left" Margin="276,53,0,0" VerticalAlignment="Top"/>
                         </Grid>
                     </TabItem>
                     <TabItem Header="Unidad">
                         <Grid>
-                            <Button Content="Cargar" Height="17" Margin="223,11,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.462,0.407"/>
+                            <Button Content="Cargar" Height="17" Margin="223,11,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.462,0.407" Click="Button_Click_2"/>
                             <TextBox HorizontalAlignment="Left" Height="23" Margin="66,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                             <Label Content="Unidad:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                             <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110" Margin="10,50,0,0"/>
