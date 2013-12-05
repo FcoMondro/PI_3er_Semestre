@@ -202,6 +202,8 @@ namespace Proyecto_Integrador
             numeroCamiones = (from DataRow var in dt.Rows select var.ItemArray[0].ToString()).ToList();
             Conexion.Close();
 
+            cmbUnidades.ItemsSource = numeroCamiones;
+
 
         }
 
@@ -264,11 +266,57 @@ namespace Proyecto_Integrador
             }            
         }
 
-        //Frecuencia de uso por Unidad
+        //Frecuencia de uso por Unidad ==============================================================================
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            UnidadFre.Clear();
+            botonFrecUnidad();
+            dtgUsosUnidad.ItemsSource = UnidadFre;
         }
+
+        public struct FreUnidad
+        {
+            public DataRow tabla;
+            public string Usuario
+            {
+                get { return tabla.ItemArray[3].ToString(); }
+            }
+            public DateTime Fecha
+            {
+                get { return (DateTime)tabla.ItemArray[4]; }
+            }
+        }
+
+        BindingList<FreUnidad> UnidadFre = new BindingList<FreUnidad>();
+
+        public void botonFrecUnidad()
+        {
+            DateTime fechaInicial = DateTime.Now.Date;
+            DateTime fechaFinal = DateTime.Now.Date;
+            if (dtpInicialFUn.SelectedDate.HasValue)
+                fechaInicial = dtpInicialFUn.SelectedDate.Value;
+
+            if (dtpFinalFUn.SelectedDate.HasValue)
+                fechaFinal = dtpFinalFUn.SelectedDate.Value;
+
+            OleDbCommand cmdFUs = new OleDbCommand("Select * FROM Servicios WHERE NumUnidad = @NumUnidad AND Fecha BETWEEN @FechaI AND @FechaF ", Conexion);
+            cmdFUs.Parameters.AddWithValue("@NumUnidad", cmbUnidades.SelectedValue.ToString());
+            cmdFUs.Parameters.AddWithValue("@FechaI", fechaInicial);
+            cmdFUs.Parameters.AddWithValue("@FechaF", fechaFinal);
+            OleDbDataAdapter FrecenciaUnidad = new OleDbDataAdapter(cmdFUs);
+            DataTable FrecUnidad = new DataTable();
+            FrecenciaUnidad.Fill(FrecUnidad);
+            FreUnidad tmp;
+            int i = 0;
+            foreach (DataRow r in FrecUnidad.Rows)
+            {
+                MessageBox.Show(Convert.ToString(i++));
+                tmp = new FreUnidad();
+                tmp.tabla = r;
+                UnidadFre.Add(tmp);
+            }
+        }
+
     }
 }

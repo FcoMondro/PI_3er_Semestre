@@ -52,22 +52,23 @@
                     </TabItem>
                     <TabItem Header="Unidad">
                         <Grid>
-                            <Button Content="Cargar" Height="17" Margin="223,11,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.462,0.407" Click="Button_Click_2"/>
-                            <TextBox HorizontalAlignment="Left" Height="23" Margin="66,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                            <Button x:Name="cmdCargarFun" Content="Cargar" Height="17" Margin="223,11,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.462,0.407" Click="Button_Click_2"/>
                             <Label Content="Unidad:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                            <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110" Margin="10,50,0,0"/>
+                            <DatePicker x:Name="dtpInicialFUn" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110" Margin="10,50,0,0"/>
                             <Label Content="a" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,49,0,0"/>
-                            <DatePicker HorizontalAlignment="Left" Margin="146,50,0,0" VerticalAlignment="Top" Height="35" Width="110" RenderTransformOrigin="0.376,0.448"/>
-                            <CheckBox Content="Actual" HorizontalAlignment="Left" Margin="272,58,0,0" VerticalAlignment="Top"/>
-                            <DataGrid HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Height="226" Width="905"/>
+                            <DatePicker x:Name="dtpFinalFUn" HorizontalAlignment="Left" Margin="146,50,0,0" VerticalAlignment="Top" Height="35" Width="110" RenderTransformOrigin="0.376,0.448"/>
+                            <CheckBox x:Name="chkActualFUn" Content="Actual" HorizontalAlignment="Left" Margin="272,58,0,0" VerticalAlignment="Top"/>
+                            <DataGrid x:Name="dtgUsosUnidad" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Height="226" Width="549"/>
+                            <ComboBox x:Name="cmbUnidades" HorizontalAlignment="Left" Margin="66,10,0,0" VerticalAlignment="Top" Width="120"/>
                         </Grid>
                     </TabItem>
                     <TabItem Header="Tipo de usuario">
-                        <Button Content="Uso por usuario especifico" Height="100" Margin="457,77,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Grid>
+                        
+                        </Grid>
                     </TabItem>
                 </TabControl>
             </TabItem>
         </TabControl>
-
     </Grid>
 </Controls:MetroWindow>
