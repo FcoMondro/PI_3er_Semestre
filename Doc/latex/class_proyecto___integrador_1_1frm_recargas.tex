@@ -1,0 +1,494 @@
+\section{Referencia de la Clase Proyecto\-\_\-\-Integrador.\-frm\-Recargas}
+\label{class_proyecto___integrador_1_1frm_recargas}\index{Proyecto\-\_\-\-Integrador.\-frm\-Recargas@{Proyecto\-\_\-\-Integrador.\-frm\-Recargas}}
+
+
+Lógica de interacción para frm\-Recargas.\-xaml  
+
+
+Diagrama de herencias de Proyecto\-\_\-\-Integrador.\-frm\-Recargas\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.056604cm]{class_proyecto___integrador_1_1frm_recargas}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf frm\-Recargas} ()
+\item 
+void {\bf Initialize\-Component} ()
+\begin{DoxyCompactList}\small\item\em Initialize\-Component \end{DoxyCompactList}\item 
+void {\bf Initialize\-Component} ()
+\begin{DoxyCompactList}\small\item\em Initialize\-Component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos del 'package'}
+\begin{DoxyCompactItemize}
+\item 
+System.\-Windows.\-Controls.\-Text\-Box {\bf txt\-Nombre}
+\item 
+System.\-Windows.\-Controls.\-Text\-Box {\bf txt\-I\-D}
+\item 
+System.\-Windows.\-Controls.\-Data\-Grid {\bf dtg\-Busqueda}
+\item 
+System.\-Windows.\-Controls.\-Text\-Box {\bf txt\-Cantidad}
+\item 
+System.\-Windows.\-Controls.\-Button {\bf btn\-Recarga}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Text\-Box\-\_\-\-Key\-Up\-\_\-1} (object sender, Key\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Busca en la base de datos cuando es por nombre y se le da enter \end{DoxyCompactList}\item 
+void {\bf txt\-I\-D\-\_\-\-Key\-Up} (object sender, Key\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Busca en la base de datos cuando es por I\-D y se le da enter \end{DoxyCompactList}\item 
+void {\bf Button\-\_\-\-Click\-\_\-1} (object sender, Routed\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Se hace la actualizacion del registro en la base de datos \end{DoxyCompactList}\item 
+void {\bf dtg\-Busqueda\-\_\-\-Mouse\-Double\-Click} (object sender, Mouse\-Button\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Se agregan los campos necesarios para generar la recarga \end{DoxyCompactList}\item 
+void \\*
+System.\-Windows.\-Markup.\-I\-Component\-Connector. {\bf Connect} (int connection\-Id, object target)
+\item 
+void \\*
+System.\-Windows.\-Markup.\-I\-Component\-Connector. {\bf Connect} (int connection\-Id, object target)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Ole\-Db\-Connection {\bf Conexion} Provider=Microsoft.\-A\-C\-E.\-O\-L\-E\-D\-B.\-12.\-0;Data Source='C\-:\textbackslash{}\-Users\textbackslash{}\-Mondro\textbackslash{}\-Documents\textbackslash{}\-Git\-Hub\textbackslash{}\-P\-I\-\_\-3er\-\_\-\-Semestre\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Base\-De\-Datos.\-accdb'\char`\"{}
+\item 
+Ole\-Db\-Command {\bf cmd}
+\item 
+Ole\-Db\-Data\-Adapter {\bf da}
+\item 
+decimal {\bf saldo} = 0
+\item 
+bool {\bf \-\_\-content\-Loaded}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Lógica de interacción para frm\-Recargas.\-xaml 
+
+\doxyref{frm\-Recargas}{p.}{class_proyecto___integrador_1_1frm_recargas} 
+
+Definición en la línea 23 del archivo frm\-Recargas.\-xaml.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!frm\-Recargas@{frm\-Recargas}}
+\index{frm\-Recargas@{frm\-Recargas}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{frm\-Recargas}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-frm\-Recargas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_recargas_afe6857dc2e2c77b84bdb0594d2281e3c}
+
+
+
+
+
+
+Definición en la línea 28 del archivo frm\-Recargas.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+29         \{
+30             InitializeComponent();
+31             Conexion = \textcolor{keyword}{new} OleDbConnection(\textcolor{stringliteral}{@"Provider=Microsoft.ACE.OLEDB.12.0;Data
+       Source='C:\(\backslash\)Users\(\backslash\)Mondro\(\backslash\)Documents\(\backslash\)GitHub\(\backslash\)PI\_3er\_Semestre\(\backslash\)Proyecto\_Integrador\(\backslash\)Proyecto\_Integrador\(\backslash\)BaseDeDatos.accdb'"});
+32             cmd = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"Select Id\_Tarjeta, UserNombre, UserApPa, UserApMa, UserFechaNac,
+       UserSaldo FROM Usuario UserNombre"}, Conexion); \textcolor{comment}{//Se crea el comando}
+33             da = \textcolor{keyword}{new} OleDbDataAdapter(cmd);
+34         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!Button\-\_\-\-Click\-\_\-1@{Button\-\_\-\-Click\-\_\-1}}
+\index{Button\-\_\-\-Click\-\_\-1@{Button\-\_\-\-Click\-\_\-1}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{Button\-\_\-\-Click\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-Button\-\_\-\-Click\-\_\-1 (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_a2fe0afdd26598f998084df3a1a3c7d81}
+
+
+Se hace la actualizacion del registro en la base de datos 
+
+
+
+Definición en la línea 96 del archivo frm\-Recargas.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+97         \{
+98             saldo += decimal.Parse(txtCantidad.Text);
+99             OleDbCommand actualizar = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"UPDATE Usuario SET UserSaldo = @UserSaldo WHERE
+       Id\_Tarjeta = @Id\_Tarjeta "}, Conexion);
+100             actualizar.Parameters.AddWithValue(\textcolor{stringliteral}{"@UserSaldo"}, saldo);
+101             actualizar.Parameters.AddWithValue(\textcolor{stringliteral}{"@Id\_Tarjeta"}, txtID.Text);
+102             Conexion.Open();
+103             actualizar.ExecuteNonQuery();
+104             Conexion.Close();
+105         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!Connect@{Connect}}
+\index{Connect@{Connect}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void System.\-Windows.\-Markup.\-I\-Component\-Connector. Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-Connect (
+\begin{DoxyParamCaption}
+\item[{int}]{connection\-Id, }
+\item[{object}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_af0bb357f9386bc2dc856efc5973a4551}
+
+
+Definición en la línea 110 del archivo frm\-Recargas.\-g.\-i.\-cs.
+
+
+\begin{DoxyCode}
+110                                                                                                 \{
+111             \textcolor{keywordflow}{switch} (connectionId)
+112             \{
+113             \textcolor{keywordflow}{case} 1:
+114             this.txtNombre = ((System.Windows.Controls.TextBox)(target));
+115             
+116 \textcolor{preprocessor}{            #line 19 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+117 \textcolor{preprocessor}{}            this.txtNombre.KeyUp += \textcolor{keyword}{new} System.Windows.Input.KeyEventHandler(this.TextBox\_KeyUp\_1);
+118             
+119 \textcolor{preprocessor}{            #line default}
+120 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+121 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+122             \textcolor{keywordflow}{case} 2:
+123             this.txtID = ((System.Windows.Controls.TextBox)(target));
+124             
+125 \textcolor{preprocessor}{            #line 21 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+126 \textcolor{preprocessor}{}            this.txtID.KeyUp += \textcolor{keyword}{new} System.Windows.Input.KeyEventHandler(this.txtID\_KeyUp);
+127             
+128 \textcolor{preprocessor}{            #line default}
+129 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+130 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+131             \textcolor{keywordflow}{case} 3:
+132             this.dtgBusqueda = ((System.Windows.Controls.DataGrid)(target));
+133             
+134 \textcolor{preprocessor}{            #line 22 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+135 \textcolor{preprocessor}{}            this.dtgBusqueda.MouseDoubleClick += \textcolor{keyword}{new} System.Windows.Input.MouseButtonEventHandler(
+      this.dtgBusqueda\_MouseDoubleClick);
+136             
+137 \textcolor{preprocessor}{            #line default}
+138 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+139 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+140             \textcolor{keywordflow}{case} 4:
+141             this.txtCantidad = ((System.Windows.Controls.TextBox)(target));
+142             \textcolor{keywordflow}{return};
+143             \textcolor{keywordflow}{case} 5:
+144             this.btnRecarga = ((System.Windows.Controls.Button)(target));
+145             
+146 \textcolor{preprocessor}{            #line 25 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+147 \textcolor{preprocessor}{}            this.btnRecarga.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.Button\_Click\_1);
+148             
+149 \textcolor{preprocessor}{            #line default}
+150 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+151 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+152             \}
+153             this.\_contentLoaded = \textcolor{keyword}{true};
+154         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!Connect@{Connect}}
+\index{Connect@{Connect}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void System.\-Windows.\-Markup.\-I\-Component\-Connector. Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-Connect (
+\begin{DoxyParamCaption}
+\item[{int}]{connection\-Id, }
+\item[{object}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_af0bb357f9386bc2dc856efc5973a4551}
+
+
+Definición en la línea 110 del archivo frm\-Recargas.\-g.\-cs.
+
+
+\begin{DoxyCode}
+110                                                                                                 \{
+111             \textcolor{keywordflow}{switch} (connectionId)
+112             \{
+113             \textcolor{keywordflow}{case} 1:
+114             this.txtNombre = ((System.Windows.Controls.TextBox)(target));
+115             
+116 \textcolor{preprocessor}{            #line 19 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+117 \textcolor{preprocessor}{}            this.txtNombre.KeyUp += \textcolor{keyword}{new} System.Windows.Input.KeyEventHandler(this.TextBox\_KeyUp\_1);
+118             
+119 \textcolor{preprocessor}{            #line default}
+120 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+121 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+122             \textcolor{keywordflow}{case} 2:
+123             this.txtID = ((System.Windows.Controls.TextBox)(target));
+124             
+125 \textcolor{preprocessor}{            #line 21 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+126 \textcolor{preprocessor}{}            this.txtID.KeyUp += \textcolor{keyword}{new} System.Windows.Input.KeyEventHandler(this.txtID\_KeyUp);
+127             
+128 \textcolor{preprocessor}{            #line default}
+129 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+130 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+131             \textcolor{keywordflow}{case} 3:
+132             this.dtgBusqueda = ((System.Windows.Controls.DataGrid)(target));
+133             
+134 \textcolor{preprocessor}{            #line 22 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+135 \textcolor{preprocessor}{}            this.dtgBusqueda.MouseDoubleClick += \textcolor{keyword}{new} System.Windows.Input.MouseButtonEventHandler(
+      this.dtgBusqueda\_MouseDoubleClick);
+136             
+137 \textcolor{preprocessor}{            #line default}
+138 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+139 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+140             \textcolor{keywordflow}{case} 4:
+141             this.txtCantidad = ((System.Windows.Controls.TextBox)(target));
+142             \textcolor{keywordflow}{return};
+143             \textcolor{keywordflow}{case} 5:
+144             this.btnRecarga = ((System.Windows.Controls.Button)(target));
+145             
+146 \textcolor{preprocessor}{            #line 25 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+147 \textcolor{preprocessor}{}            this.btnRecarga.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.Button\_Click\_1);
+148             
+149 \textcolor{preprocessor}{            #line default}
+150 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+151 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+152             \}
+153             this.\_contentLoaded = \textcolor{keyword}{true};
+154         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!dtg\-Busqueda\-\_\-\-Mouse\-Double\-Click@{dtg\-Busqueda\-\_\-\-Mouse\-Double\-Click}}
+\index{dtg\-Busqueda\-\_\-\-Mouse\-Double\-Click@{dtg\-Busqueda\-\_\-\-Mouse\-Double\-Click}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{dtg\-Busqueda\-\_\-\-Mouse\-Double\-Click}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-dtg\-Busqueda\-\_\-\-Mouse\-Double\-Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Mouse\-Button\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_ad6f78399b91108c987760179209e0400}
+
+
+Se agregan los campos necesarios para generar la recarga 
+
+
+
+Definición en la línea 110 del archivo frm\-Recargas.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+111         \{
+112             DataRowView DR = dtgBusqueda.SelectedItem as DataRowView;
+113             txtNombre.Text = DR[1].ToString();
+114             txtID.Text = DR[0].ToString();
+115             saldo = (decimal)DR[5];
+116         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!Initialize\-Component@{Initialize\-Component}}
+\index{Initialize\-Component@{Initialize\-Component}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{Initialize\-Component}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-Initialize\-Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_recargas_a9773a311fee99df70925ae72c8be535f}
+
+
+Initialize\-Component 
+
+
+
+Definición en la línea 90 del archivo frm\-Recargas.\-g.\-cs.
+
+
+\begin{DoxyCode}
+90                                           \{
+91             \textcolor{keywordflow}{if} (_contentLoaded) \{
+92                 \textcolor{keywordflow}{return};
+93             \}
+94             _contentLoaded = \textcolor{keyword}{true};
+95             System.Uri resourceLocater = \textcolor{keyword}{new} System.Uri(\textcolor{stringliteral}{"/Proyecto\_Integrador;component/frmrecargas.xaml"}, 
+      System.UriKind.Relative);
+96             
+97 \textcolor{preprocessor}{            #line 1 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+98 \textcolor{preprocessor}{}            System.Windows.Application.LoadComponent(\textcolor{keyword}{this}, resourceLocater);
+99             
+100 \textcolor{preprocessor}{            #line default}
+101 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+102 \textcolor{preprocessor}{}        \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!Initialize\-Component@{Initialize\-Component}}
+\index{Initialize\-Component@{Initialize\-Component}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{Initialize\-Component}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-Initialize\-Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_recargas_a9773a311fee99df70925ae72c8be535f}
+
+
+Initialize\-Component 
+
+
+
+Definición en la línea 90 del archivo frm\-Recargas.\-g.\-i.\-cs.
+
+
+\begin{DoxyCode}
+90                                           \{
+91             \textcolor{keywordflow}{if} (_contentLoaded) \{
+92                 \textcolor{keywordflow}{return};
+93             \}
+94             _contentLoaded = \textcolor{keyword}{true};
+95             System.Uri resourceLocater = \textcolor{keyword}{new} System.Uri(\textcolor{stringliteral}{"/Proyecto\_Integrador;component/frmrecargas.xaml"}, 
+      System.UriKind.Relative);
+96             
+97 \textcolor{preprocessor}{            #line 1 "..\(\backslash\)..\(\backslash\)frmRecargas.xaml"}
+98 \textcolor{preprocessor}{}            System.Windows.Application.LoadComponent(\textcolor{keyword}{this}, resourceLocater);
+99             
+100 \textcolor{preprocessor}{            #line default}
+101 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+102 \textcolor{preprocessor}{}        \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!Text\-Box\-\_\-\-Key\-Up\-\_\-1@{Text\-Box\-\_\-\-Key\-Up\-\_\-1}}
+\index{Text\-Box\-\_\-\-Key\-Up\-\_\-1@{Text\-Box\-\_\-\-Key\-Up\-\_\-1}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{Text\-Box\-\_\-\-Key\-Up\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-Text\-Box\-\_\-\-Key\-Up\-\_\-1 (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Key\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_a7c6038ba9f210651ae908e8364bd20b5}
+
+
+Busca en la base de datos cuando es por nombre y se le da enter 
+
+
+
+Definición en la línea 58 del archivo frm\-Recargas.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+59         \{
+60             \textcolor{keywordflow}{if} (e.Key == Key.Enter)
+61             \{
+62                 \textcolor{keywordtype}{string} Nombre = txtNombre.Text;
+63                 Conexion.Open(); 
+64                 DataTable tabla = \textcolor{keyword}{new} DataTable(); \textcolor{comment}{// Creamos el objeto Tabla}
+65                 da.Fill(tabla); \textcolor{comment}{//Crea la tabla}
+66 
+67                 DataView DV = \textcolor{keyword}{new} DataView(tabla);
+68                 DV.RowFilter = string.Format(\textcolor{stringliteral}{"UserNombre LIKE '%\{0\}%'"}, Nombre); \textcolor{comment}{//Filtro para lo que se va
+       a mostrar}
+69                 dtgBusqueda.ItemsSource = DV;
+70                 Conexion.Close();
+71             \}
+72         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!txt\-I\-D\-\_\-\-Key\-Up@{txt\-I\-D\-\_\-\-Key\-Up}}
+\index{txt\-I\-D\-\_\-\-Key\-Up@{txt\-I\-D\-\_\-\-Key\-Up}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{txt\-I\-D\-\_\-\-Key\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-txt\-I\-D\-\_\-\-Key\-Up (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Key\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_a99a386c6669384dc09e23ed03c4a090a}
+
+
+Busca en la base de datos cuando es por I\-D y se le da enter 
+
+
+
+Definición en la línea 77 del archivo frm\-Recargas.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+78         \{
+79             \textcolor{keywordflow}{if} (e.Key == Key.Enter)
+80             \{
+81                 \textcolor{keywordtype}{string} Num\_Tarjeta = txtNombre.Text;
+82                 Conexion.Open();
+83                 DataTable tabla = \textcolor{keyword}{new} DataTable(); \textcolor{comment}{// Creamos el objeto Tabla}
+84                 da.Fill(tabla); \textcolor{comment}{//Crea la tabla}
+85 
+86                 DataView DV = \textcolor{keyword}{new} DataView(tabla);
+87                 DV.RowFilter = string.Format(\textcolor{stringliteral}{"Id\_Tarjeta LIKE '%\{0\}%'"}, Num\_Tarjeta); \textcolor{comment}{//Filtro para lo que
+       se va a mostrar}
+88                 dtgBusqueda.ItemsSource = DV;
+89                 Conexion.Close();
+90             \}
+91         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!\-\_\-content\-Loaded@{\-\_\-content\-Loaded}}
+\index{\-\_\-content\-Loaded@{\-\_\-content\-Loaded}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{\-\_\-content\-Loaded}]{\setlength{\rightskip}{0pt plus 5cm}bool Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-\_\-content\-Loaded\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_a3b6af5a1fbf5a7a905d5434091aece4f}
+
+
+Definición en la línea 83 del archivo frm\-Recargas.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!btn\-Recarga@{btn\-Recarga}}
+\index{btn\-Recarga@{btn\-Recarga}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{btn\-Recarga}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Button Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-btn\-Recarga\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_recargas_ab3a84c1feed382f1a88afbdf59dc7195}
+
+
+Definición en la línea 78 del archivo frm\-Recargas.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!cmd@{cmd}}
+\index{cmd@{cmd}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{cmd}]{\setlength{\rightskip}{0pt plus 5cm}Ole\-Db\-Command Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-cmd\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_a26128cc7c81518619389db015e2799c9}
+
+
+Definición en la línea 36 del archivo frm\-Recargas.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!Conexion@{Conexion}}
+\index{Conexion@{Conexion}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{Conexion}]{\setlength{\rightskip}{0pt plus 5cm}Ole\-Db\-Connection Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-Conexion Provider=Microsoft.\-A\-C\-E.\-O\-L\-E\-D\-B.\-12.\-0;Data Source='C\-:\textbackslash{}\-Users\textbackslash{}\-Mondro\textbackslash{}\-Documents\textbackslash{}\-Git\-Hub\textbackslash{}\-P\-I\-\_\-3er\-\_\-\-Semestre\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Base\-De\-Datos.\-accdb'\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_a89bb726917dc66a3510a88600830fb1b}
+
+
+Definición en la línea 35 del archivo frm\-Recargas.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!da@{da}}
+\index{da@{da}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{da}]{\setlength{\rightskip}{0pt plus 5cm}Ole\-Db\-Data\-Adapter Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-da\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_a3397a0fdb408b8b1459a96582b2fdaab}
+
+
+Definición en la línea 37 del archivo frm\-Recargas.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!dtg\-Busqueda@{dtg\-Busqueda}}
+\index{dtg\-Busqueda@{dtg\-Busqueda}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{dtg\-Busqueda}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Data\-Grid Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-dtg\-Busqueda\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_recargas_a9d4e2b1cab22d98913a2c5b4decb71c1}
+
+
+Definición en la línea 62 del archivo frm\-Recargas.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!saldo@{saldo}}
+\index{saldo@{saldo}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{saldo}]{\setlength{\rightskip}{0pt plus 5cm}decimal Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-saldo = 0\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_recargas_a51ba72604f5fa6878420950df5e67261}
+
+
+Definición en la línea 38 del archivo frm\-Recargas.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!txt\-Cantidad@{txt\-Cantidad}}
+\index{txt\-Cantidad@{txt\-Cantidad}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{txt\-Cantidad}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Text\-Box Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-txt\-Cantidad\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_recargas_a6c636a5b2f425bc813a06fb1886a2620}
+
+
+Definición en la línea 70 del archivo frm\-Recargas.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!txt\-I\-D@{txt\-I\-D}}
+\index{txt\-I\-D@{txt\-I\-D}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{txt\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Text\-Box Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-txt\-I\-D\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_recargas_a32c1f894cb5b15726906f2e6619ad479}
+
+
+Definición en la línea 54 del archivo frm\-Recargas.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Recargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}!txt\-Nombre@{txt\-Nombre}}
+\index{txt\-Nombre@{txt\-Nombre}!Proyecto_Integrador::frmRecargas@{Proyecto\-\_\-\-Integrador\-::frm\-Recargas}}
+\subsubsection[{txt\-Nombre}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Text\-Box Proyecto\-\_\-\-Integrador.\-frm\-Recargas.\-txt\-Nombre\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_recargas_aa3b61fea30320d310e8cec8d1d92b3c8}
+
+
+Definición en la línea 46 del archivo frm\-Recargas.\-g.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/{\bf frm\-Recargas.\-xaml.\-cs}\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/obj/\-Debug/{\bf frm\-Recargas.\-g.\-cs}\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/obj/\-Debug/{\bf frm\-Recargas.\-g.\-i.\-cs}\end{DoxyCompactItemize}

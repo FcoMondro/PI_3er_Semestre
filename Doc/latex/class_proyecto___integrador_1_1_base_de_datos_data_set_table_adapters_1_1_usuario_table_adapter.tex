@@ -1,0 +1,1532 @@
+\section{Referencia de la Clase Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter}
+\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter}\index{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter}}
+
+
+Represents the connection and commands used to retrieve and save data. /summary$>$  
+
+
+Diagrama de herencias de Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Usuario\-Table\-Adapter} ()
+\item 
+virtual int {\bf Fill} ({\bf Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table} data\-Table)
+\item 
+virtual \\*
+{\bf Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table} {\bf Get\-Data} ()
+\item 
+virtual int {\bf Update} ({\bf Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table} data\-Table)
+\item 
+virtual int {\bf Update} ({\bf Base\-De\-Datos\-Data\-Set} data\-Set)
+\item 
+virtual int {\bf Update} (global\-::\-System.\-Data.\-Data\-Row data\-Row)
+\item 
+virtual int {\bf Update} (global\-::\-System.\-Data.\-Data\-Row[$\,$] data\-Rows)
+\item 
+virtual int {\bf Delete} (int Original\-\_\-\-Id\-\_\-\-Usuario, string Original\-\_\-\-Id\-\_\-\-Tarjeta, string Original\-\_\-\-User\-Nombre, string Original\-\_\-\-User\-Ap\-Pa, string Original\-\_\-\-User\-Ap\-Ma, global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$ Original\-\_\-\-User\-Fecha\-Nac, string Original\-\_\-\-User\-Sexo, string Original\-\_\-\-User\-Tipo, string Original\-\_\-\-User\-Direccion\-Calle, string Original\-\_\-\-User\-Direccion\-Numero, string Original\-\_\-\-User\-Direccion\-Colonia, string Original\-\_\-\-User\-Direccion\-Municipio, string Original\-\_\-\-User\-Celular, string Original\-\_\-\-User\-Telefono, string Original\-\_\-\-User\-Tipo\-Sangre, string Original\-\_\-\-User\-Alergias, string Original\-\_\-\-User\-Accidente\-Nombre, string Original\-\_\-\-User\-Accidente\-Celular, string Original\-\_\-\-User\-Accidente\-Telefono, global\-::\-System.\-Nullable$<$ decimal $>$ Original\-\_\-\-User\-Saldo)
+\item 
+virtual int {\bf Insert} (string Id\-\_\-\-Tarjeta, string User\-Nombre, string User\-Ap\-Pa, string User\-Ap\-Ma, global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$ User\-Fecha\-Nac, string User\-Sexo, string User\-Tipo, string User\-Direccion\-Calle, string User\-Direccion\-Numero, string User\-Direccion\-Colonia, string User\-Direccion\-Municipio, string User\-Celular, string User\-Telefono, string User\-Tipo\-Sangre, string User\-Alergias, string User\-Accidente\-Nombre, string User\-Accidente\-Celular, string User\-Accidente\-Telefono, global\-::\-System.\-Nullable$<$ decimal $>$ User\-Saldo)
+\item 
+virtual int {\bf Update} (string Id\-\_\-\-Tarjeta, string User\-Nombre, string User\-Ap\-Pa, string User\-Ap\-Ma, global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$ User\-Fecha\-Nac, string User\-Sexo, string User\-Tipo, string User\-Direccion\-Calle, string User\-Direccion\-Numero, string User\-Direccion\-Colonia, string User\-Direccion\-Municipio, string User\-Celular, string User\-Telefono, string User\-Tipo\-Sangre, string User\-Alergias, string User\-Accidente\-Nombre, string User\-Accidente\-Celular, string User\-Accidente\-Telefono, global\-::\-System.\-Nullable$<$ decimal $>$ User\-Saldo, int Original\-\_\-\-Id\-\_\-\-Usuario, string Original\-\_\-\-Id\-\_\-\-Tarjeta, string Original\-\_\-\-User\-Nombre, string Original\-\_\-\-User\-Ap\-Pa, string Original\-\_\-\-User\-Ap\-Ma, global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$ Original\-\_\-\-User\-Fecha\-Nac, string Original\-\_\-\-User\-Sexo, string Original\-\_\-\-User\-Tipo, string Original\-\_\-\-User\-Direccion\-Calle, string Original\-\_\-\-User\-Direccion\-Numero, string Original\-\_\-\-User\-Direccion\-Colonia, string Original\-\_\-\-User\-Direccion\-Municipio, string Original\-\_\-\-User\-Celular, string Original\-\_\-\-User\-Telefono, string Original\-\_\-\-User\-Tipo\-Sangre, string Original\-\_\-\-User\-Alergias, string Original\-\_\-\-User\-Accidente\-Nombre, string Original\-\_\-\-User\-Accidente\-Celular, string Original\-\_\-\-User\-Accidente\-Telefono, global\-::\-System.\-Nullable$<$ decimal $>$ Original\-\_\-\-User\-Saldo)
+\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter {\bf Adapter}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection {\bf Connection}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction {\bf Transaction}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command[$\,$] {\bf Command\-Collection}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+bool {\bf Clear\-Before\-Fill}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Init\-Adapter} ()
+\item 
+void {\bf Init\-Connection} ()
+\item 
+void {\bf Init\-Command\-Collection} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter {\bf \-\_\-adapter}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection {\bf \-\_\-connection}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction {\bf \-\_\-transaction}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command[$\,$] {\bf \-\_\-command\-Collection}
+\item 
+bool {\bf \-\_\-clear\-Before\-Fill}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Represents the connection and commands used to retrieve and save data. /summary$>$ 
+
+Definición en la línea 3161 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Usuario\-Table\-Adapter@{Usuario\-Table\-Adapter}}
+\index{Usuario\-Table\-Adapter@{Usuario\-Table\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Usuario\-Table\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Usuario\-Table\-Adapter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_aea9be3d5cd2a8e5e63eaef2b6aa7ef84}
+
+
+Definición en la línea 3175 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3175                                      \{
+3176             this.ClearBeforeFill = \textcolor{keyword}{true};
+3177         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Delete@{Delete}}
+\index{Delete@{Delete}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Delete (
+\begin{DoxyParamCaption}
+\item[{int}]{Original\-\_\-\-Id\-\_\-\-Usuario, }
+\item[{string}]{Original\-\_\-\-Id\-\_\-\-Tarjeta, }
+\item[{string}]{Original\-\_\-\-User\-Nombre, }
+\item[{string}]{Original\-\_\-\-User\-Ap\-Pa, }
+\item[{string}]{Original\-\_\-\-User\-Ap\-Ma, }
+\item[{global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$}]{Original\-\_\-\-User\-Fecha\-Nac, }
+\item[{string}]{Original\-\_\-\-User\-Sexo, }
+\item[{string}]{Original\-\_\-\-User\-Tipo, }
+\item[{string}]{Original\-\_\-\-User\-Direccion\-Calle, }
+\item[{string}]{Original\-\_\-\-User\-Direccion\-Numero, }
+\item[{string}]{Original\-\_\-\-User\-Direccion\-Colonia, }
+\item[{string}]{Original\-\_\-\-User\-Direccion\-Municipio, }
+\item[{string}]{Original\-\_\-\-User\-Celular, }
+\item[{string}]{Original\-\_\-\-User\-Telefono, }
+\item[{string}]{Original\-\_\-\-User\-Tipo\-Sangre, }
+\item[{string}]{Original\-\_\-\-User\-Alergias, }
+\item[{string}]{Original\-\_\-\-User\-Accidente\-Nombre, }
+\item[{string}]{Original\-\_\-\-User\-Accidente\-Celular, }
+\item[{string}]{Original\-\_\-\-User\-Accidente\-Telefono, }
+\item[{global\-::\-System.\-Nullable$<$ decimal $>$}]{Original\-\_\-\-User\-Saldo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a646e51c7a38d643e0d4424a83b23ca7d}
+
+
+Definición en la línea 3519 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3539                                                                        \{
+3540             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original\_Id\_Usuario));
+3541             \textcolor{keywordflow}{if} ((Original\_Id\_Tarjeta == null)) \{
+3542                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+3543                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+3544             \}
+3545             \textcolor{keywordflow}{else} \{
+3546                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+3547                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original\_Id\_Tarjeta));
+3548             \}
+3549             \textcolor{keywordflow}{if} ((Original\_UserNombre == null)) \{
+3550                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+3551                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+3552             \}
+3553             \textcolor{keywordflow}{else} \{
+3554                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+3555                 this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original\_UserNombre));
+3556             \}
+3557             \textcolor{keywordflow}{if} ((Original\_UserApPa == null)) \{
+3558                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+3559                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+3560             \}
+3561             \textcolor{keywordflow}{else} \{
+3562                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+3563                 this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original\_UserApPa));
+3564             \}
+3565             \textcolor{keywordflow}{if} ((Original\_UserApMa == null)) \{
+3566                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+3567                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+3568             \}
+3569             \textcolor{keywordflow}{else} \{
+3570                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+3571                 this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original\_UserApMa));
+3572             \}
+3573             \textcolor{keywordflow}{if} ((Original\_UserFechaNac.HasValue == \textcolor{keyword}{true})) \{
+3574                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+3575                 this.Adapter.DeleteCommand.Parameters[10].Value = ((System.DateTime)(Original\_UserFechaNac.
+      Value));
+3576             \}
+3577             \textcolor{keywordflow}{else} \{
+3578                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+3579                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+3580             \}
+3581             \textcolor{keywordflow}{if} ((Original\_UserSexo == null)) \{
+3582                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+3583                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+3584             \}
+3585             \textcolor{keywordflow}{else} \{
+3586                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+3587                 this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original\_UserSexo));
+3588             \}
+3589             \textcolor{keywordflow}{if} ((Original\_UserTipo == null)) \{
+3590                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+3591                 this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+3592             \}
+3593             \textcolor{keywordflow}{else} \{
+3594                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+3595                 this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original\_UserTipo));
+3596             \}
+3597             \textcolor{keywordflow}{if} ((Original\_UserDireccionCalle == null)) \{
+3598                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
+3599                 this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
+3600             \}
+3601             \textcolor{keywordflow}{else} \{
+3602                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+3603                 this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original\_UserDireccionCalle));
+3604             \}
+3605             \textcolor{keywordflow}{if} ((Original\_UserDireccionNumero == null)) \{
+3606                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
+3607                 this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
+3608             \}
+3609             \textcolor{keywordflow}{else} \{
+3610                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
+3611                 this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original\_UserDireccionNumero));
+3612             \}
+3613             \textcolor{keywordflow}{if} ((Original\_UserDireccionColonia == null)) \{
+3614                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
+3615                 this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
+3616             \}
+3617             \textcolor{keywordflow}{else} \{
+3618                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
+3619                 this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original\_UserDireccionColonia))
+      ;
+3620             \}
+3621             \textcolor{keywordflow}{if} ((Original\_UserDireccionMunicipio == null)) \{
+3622                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
+3623                 this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
+3624             \}
+3625             \textcolor{keywordflow}{else} \{
+3626                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
+3627                 this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original\_UserDireccionMunicipio
+      ));
+3628             \}
+3629             \textcolor{keywordflow}{if} ((Original\_UserCelular == null)) \{
+3630                 this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(1));
+3631                 this.Adapter.DeleteCommand.Parameters[24].Value = global::System.DBNull.Value;
+3632             \}
+3633             \textcolor{keywordflow}{else} \{
+3634                 this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
+3635                 this.Adapter.DeleteCommand.Parameters[24].Value = ((string)(Original\_UserCelular));
+3636             \}
+3637             \textcolor{keywordflow}{if} ((Original\_UserTelefono == null)) \{
+3638                 this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(1));
+3639                 this.Adapter.DeleteCommand.Parameters[26].Value = global::System.DBNull.Value;
+3640             \}
+3641             \textcolor{keywordflow}{else} \{
+3642                 this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
+3643                 this.Adapter.DeleteCommand.Parameters[26].Value = ((string)(Original\_UserTelefono));
+3644             \}
+3645             \textcolor{keywordflow}{if} ((Original\_UserTipoSangre == null)) \{
+3646                 this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(1));
+3647                 this.Adapter.DeleteCommand.Parameters[28].Value = global::System.DBNull.Value;
+3648             \}
+3649             \textcolor{keywordflow}{else} \{
+3650                 this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
+3651                 this.Adapter.DeleteCommand.Parameters[28].Value = ((string)(Original\_UserTipoSangre));
+3652             \}
+3653             \textcolor{keywordflow}{if} ((Original\_UserAlergias == null)) \{
+3654                 this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(1));
+3655                 this.Adapter.DeleteCommand.Parameters[30].Value = global::System.DBNull.Value;
+3656             \}
+3657             \textcolor{keywordflow}{else} \{
+3658                 this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(0));
+3659                 this.Adapter.DeleteCommand.Parameters[30].Value = ((string)(Original\_UserAlergias));
+3660             \}
+3661             \textcolor{keywordflow}{if} ((Original\_UserAccidenteNombre == null)) \{
+3662                 this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(1));
+3663                 this.Adapter.DeleteCommand.Parameters[32].Value = global::System.DBNull.Value;
+3664             \}
+3665             \textcolor{keywordflow}{else} \{
+3666                 this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(0));
+3667                 this.Adapter.DeleteCommand.Parameters[32].Value = ((string)(Original\_UserAccidenteNombre));
+3668             \}
+3669             \textcolor{keywordflow}{if} ((Original\_UserAccidenteCelular == null)) \{
+3670                 this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(1));
+3671                 this.Adapter.DeleteCommand.Parameters[34].Value = global::System.DBNull.Value;
+3672             \}
+3673             \textcolor{keywordflow}{else} \{
+3674                 this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(0));
+3675                 this.Adapter.DeleteCommand.Parameters[34].Value = ((string)(Original\_UserAccidenteCelular))
+      ;
+3676             \}
+3677             \textcolor{keywordflow}{if} ((Original\_UserAccidenteTelefono == null)) \{
+3678                 this.Adapter.DeleteCommand.Parameters[35].Value = ((object)(1));
+3679                 this.Adapter.DeleteCommand.Parameters[36].Value = global::System.DBNull.Value;
+3680             \}
+3681             \textcolor{keywordflow}{else} \{
+3682                 this.Adapter.DeleteCommand.Parameters[35].Value = ((object)(0));
+3683                 this.Adapter.DeleteCommand.Parameters[36].Value = ((string)(Original\_UserAccidenteTelefono)
+      );
+3684             \}
+3685             \textcolor{keywordflow}{if} ((Original\_UserSaldo.HasValue == \textcolor{keyword}{true})) \{
+3686                 this.Adapter.DeleteCommand.Parameters[37].Value = ((object)(0));
+3687                 this.Adapter.DeleteCommand.Parameters[38].Value = ((decimal)(Original\_UserSaldo.Value));
+3688             \}
+3689             \textcolor{keywordflow}{else} \{
+3690                 this.Adapter.DeleteCommand.Parameters[37].Value = ((object)(1));
+3691                 this.Adapter.DeleteCommand.Parameters[38].Value = global::System.DBNull.Value;
+3692             \}
+3693             global::System.Data.ConnectionState previousConnectionState = 
+      this.Adapter.DeleteCommand.Connection.State;
+3694             \textcolor{keywordflow}{if} (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+3695                         != global::System.Data.ConnectionState.Open)) \{
+3696                 this.Adapter.DeleteCommand.Connection.Open();
+3697             \}
+3698             \textcolor{keywordflow}{try} \{
+3699                 \textcolor{keywordtype}{int} returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+3700                 \textcolor{keywordflow}{return} returnValue;
+3701             \}
+3702             \textcolor{keywordflow}{finally} \{
+3703                 \textcolor{keywordflow}{if} ((previousConnectionState == global::System.Data.ConnectionState.Closed)) \{
+3704                     this.Adapter.DeleteCommand.Connection.Close();
+3705                 \}
+3706             \}
+3707         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Fill@{Fill}}
+\index{Fill@{Fill}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Fill}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Fill (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table}}]{data\-Table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_aa5c2962ef4449ca8eb0389c48dc1a34e}
+
+
+Definición en la línea 3466 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3466                                                                                \{
+3467             this.Adapter.SelectCommand = this.CommandCollection[0];
+3468             \textcolor{keywordflow}{if} ((this.ClearBeforeFill == \textcolor{keyword}{true})) \{
+3469                 dataTable.Clear();
+3470             \}
+3471             \textcolor{keywordtype}{int} returnValue = this.Adapter.Fill(dataTable);
+3472             \textcolor{keywordflow}{return} returnValue;
+3473         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Get\-Data@{Get\-Data}}
+\index{Get\-Data@{Get\-Data}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a97eb3279e0cdb1740bf9e406fdb58065}
+
+
+Definición en la línea 3479 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3479                                                                      \{
+3480             this.Adapter.SelectCommand = this.CommandCollection[0];
+3481             BaseDeDatosDataSet.UsuarioDataTable dataTable = \textcolor{keyword}{new} BaseDeDatosDataSet.UsuarioDataTable();
+3482             this.Adapter.Fill(dataTable);
+3483             \textcolor{keywordflow}{return} dataTable;
+3484         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Init\-Adapter@{Init\-Adapter}}
+\index{Init\-Adapter@{Init\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Init\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Init\-Adapter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_aea3453e132e0ac2a1d844159e57d3d0b}
+
+
+Definición en la línea 3268 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3268                                    \{
+3269             this.\_adapter = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbDataAdapter();
+3270             global::System.Data.Common.DataTableMapping tableMapping = \textcolor{keyword}{new} global::System
+      .Data.Common.DataTableMapping();
+3271             tableMapping.SourceTable = \textcolor{stringliteral}{"Table"};
+3272             tableMapping.DataSetTable = \textcolor{stringliteral}{"Usuario"};
+3273             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"Id\_Usuario"}, \textcolor{stringliteral}{"Id\_Usuario"});
+3274             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"Id\_Tarjeta"}, \textcolor{stringliteral}{"Id\_Tarjeta"});
+3275             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserNombre"}, \textcolor{stringliteral}{"UserNombre"});
+3276             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserApPa"}, \textcolor{stringliteral}{"UserApPa"});
+3277             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserApMa"}, \textcolor{stringliteral}{"UserApMa"});
+3278             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserFechaNac"}, \textcolor{stringliteral}{"UserFechaNac"});
+3279             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserSexo"}, \textcolor{stringliteral}{"UserSexo"});
+3280             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserTipo"}, \textcolor{stringliteral}{"UserTipo"});
+3281             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserDireccionCalle"}, \textcolor{stringliteral}{"UserDireccionCalle"});
+3282             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserDireccionNumero"}, \textcolor{stringliteral}{"UserDireccionNumero"});
+3283             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserDireccionColonia"}, \textcolor{stringliteral}{"UserDireccionColonia"});
+3284             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserDireccionMunicipio"}, \textcolor{stringliteral}{"UserDireccionMunicipio"});
+3285             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserCelular"}, \textcolor{stringliteral}{"UserCelular"});
+3286             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserTelefono"}, \textcolor{stringliteral}{"UserTelefono"});
+3287             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserTipoSangre"}, \textcolor{stringliteral}{"UserTipoSangre"});
+3288             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserAlergias"}, \textcolor{stringliteral}{"UserAlergias"});
+3289             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserAccidenteNombre"}, \textcolor{stringliteral}{"UserAccidenteNombre"});
+3290             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserAccidenteCelular"}, \textcolor{stringliteral}{"UserAccidenteCelular"});
+3291             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserAccidenteTelefono"}, \textcolor{stringliteral}{"UserAccidenteTelefono"});
+3292             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"UserSaldo"}, \textcolor{stringliteral}{"UserSaldo"});
+3293             this.\_adapter.TableMappings.Add(tableMapping);
+3294             this.\_adapter.DeleteCommand = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+3295             this.\_adapter.DeleteCommand.Connection = this.Connection;
+3296             this.\_adapter.DeleteCommand.CommandText = \textcolor{stringliteral}{@"DELETE FROM `Usuario` WHERE ((`Id\_Usuario` = ?) AND
+       ((? = 1 AND `Id\_Tarjeta` IS NULL) OR (`Id\_Tarjeta` = ?)) AND ((? = 1 AND `UserNombre` IS NULL) OR
+       (`UserNombre` = ?)) AND ((? = 1 AND `UserApPa` IS NULL) OR (`UserApPa` = ?)) AND ((? = 1 AND `UserApMa` IS NULL) OR
+       (`UserApMa` = ?)) AND ((? = 1 AND `UserFechaNac` IS NULL) OR (`UserFechaNac` = ?)) AND ((? = 1 AND `UserSexo`
+       IS NULL) OR (`UserSexo` = ?)) AND ((? = 1 AND `UserTipo` IS NULL) OR (`UserTipo` = ?)) AND ((? = 1 AND
+       `UserDireccionCalle` IS NULL) OR (`UserDireccionCalle` = ?)) AND ((? = 1 AND `UserDireccionNumero` IS NULL) OR
+       (`UserDireccionNumero` = ?)) AND ((? = 1 AND `UserDireccionColonia` IS NULL) OR (`UserDireccionColonia` = ?))
+       AND ((? = 1 AND `UserDireccionMunicipio` IS NULL) OR (`UserDireccionMunicipio` = ?)) AND ((? = 1 AND
+       `UserCelular` IS NULL) OR (`UserCelular` = ?)) AND ((? = 1 AND `UserTelefono` IS NULL) OR (`UserTelefono` = ?))
+       AND ((? = 1 AND `UserTipoSangre` IS NULL) OR (`UserTipoSangre` = ?)) AND ((? = 1 AND `UserAlergias` IS NULL)
+       OR (`UserAlergias` = ?)) AND ((? = 1 AND `UserAccidenteNombre` IS NULL) OR (`UserAccidenteNombre` = ?)) AND
+       ((? = 1 AND `UserAccidenteCelular` IS NULL) OR (`UserAccidenteCelular` = ?)) AND ((? = 1 AND
+       `UserAccidenteTelefono` IS NULL) OR (`UserAccidenteTelefono` = ?)) AND ((? = 1 AND `UserSaldo` IS NULL) OR (`UserSaldo` =
+       ?)))"};
+3297             this.\_adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+3298             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Id\_Usuario"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Id\_Usuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3299             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_Id\_Tarjeta"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, 
+      ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Id\_Tarjeta"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3300             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Id\_Tarjeta"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Id\_Tarjeta"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3301             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserNombre"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, 
+      ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserNombre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3302             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserNombre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserNombre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3303             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserApPa"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserApPa"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3304             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserApPa"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserApPa"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3305             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserApMa"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserApMa"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3306             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserApMa"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserApMa"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3307             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserFechaNac"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserFechaNac"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3308             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserFechaNac"}, global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserFechaNac"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3309             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserSexo"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserSexo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3310             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserSexo"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserSexo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3311             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserTipo"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3312             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserTipo"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3313             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserDireccionCalle"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionCalle"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, 
+      null));
+3314             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserDireccionCalle"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionCalle"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3315             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserDireccionNumero"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionNumero"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true},
+       null));
+3316             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserDireccionNumero"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionNumero"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3317             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserDireccionColonia"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionColonia"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      true}, null));
+3318             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserDireccionColonia"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionColonia"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3319             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserDireccionMunicipio"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionMunicipio"}, global::System.Data.DataRowVersion.Original,
+       \textcolor{keyword}{true}, null));
+3320             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserDireccionMunicipio"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionMunicipio"}, global::System
+      .Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3321             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserCelular"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserCelular"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3322             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserCelular"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserCelular"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3323             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserTelefono"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTelefono"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3324             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserTelefono"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTelefono"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3325             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserTipoSangre"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipoSangre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3326             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserTipoSangre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipoSangre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null)
+      );
+3327             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserAlergias"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAlergias"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3328             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserAlergias"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAlergias"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3329             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserAccidenteNombre"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteNombre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true},
+       null));
+3330             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserAccidenteNombre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteNombre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3331             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserAccidenteCelular"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteCelular"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      true}, null));
+3332             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserAccidenteCelular"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteCelular"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3333             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserAccidenteTelefono"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteTelefono"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      true}, null));
+3334             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserAccidenteTelefono"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteTelefono"}, global::System.Data.DataRowVersion.Original
+      , \textcolor{keyword}{false}, null));
+3335             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserSaldo"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, (
+      (byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserSaldo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3336             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserSaldo"}, global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserSaldo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3337             this.\_adapter.InsertCommand = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+3338             this.\_adapter.InsertCommand.Connection = this.Connection;
+3339             this.\_adapter.InsertCommand.CommandText = \textcolor{stringliteral}{@"INSERT INTO `Usuario` (`Id\_Tarjeta`, `UserNombre`,
+       `UserApPa`, `UserApMa`, `UserFechaNac`, `UserSexo`, `UserTipo`, `UserDireccionCalle`, `UserDireccionNumero`,
+       `UserDireccionColonia`, `UserDireccionMunicipio`, `UserCelular`, `UserTelefono`, `UserTipoSangre`,
+       `UserAlergias`, `UserAccidenteNombre`, `UserAccidenteCelular`, `UserAccidenteTelefono`, `UserSaldo`) VALUES (?, ?,
+       ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"};
+3340             this.\_adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+3341             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Id\_Tarjeta"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"Id\_Tarjeta"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3342             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserNombre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"UserNombre"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3343             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserApPa"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserApPa"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3344             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserApMa"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserApMa"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3345             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserFechaNac"}, global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserFechaNac"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3346             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserSexo"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserSexo"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3347             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserTipo"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipo"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3348             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserDireccionCalle"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionCalle"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3349             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserDireccionNumero"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionNumero"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null)
+      );
+3350             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserDireccionColonia"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionColonia"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, 
+      null));
+3351             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserDireccionMunicipio"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionMunicipio"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false},
+       null));
+3352             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserCelular"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserCelular"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3353             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserTelefono"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTelefono"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3354             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserTipoSangre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipoSangre"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3355             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserAlergias"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAlergias"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3356             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserAccidenteNombre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteNombre"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null)
+      );
+3357             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserAccidenteCelular"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteCelular"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, 
+      null));
+3358             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserAccidenteTelefono"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteTelefono"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, 
+      null));
+3359             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserSaldo"}, global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)
+      (0)), ((byte)(0)), \textcolor{stringliteral}{"UserSaldo"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3360             this.\_adapter.UpdateCommand = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+3361             this.\_adapter.UpdateCommand.Connection = this.Connection;
+3362             this.\_adapter.UpdateCommand.CommandText = \textcolor{stringliteral}{"UPDATE `Usuario` SET `Id\_Tarjeta` = ?, `UserNombre`
+       = ?, `UserApPa` = ?, `UserApM"} +
+3363                 \textcolor{stringliteral}{"a` = ?, `UserFechaNac` = ?, `UserSexo` = ?, `UserTipo` = ?, `UserDireccionCalle`"} +
+3364                 \textcolor{stringliteral}{" = ?, `UserDireccionNumero` = ?, `UserDireccionColonia` = ?, `UserDireccionMunic"} +
+3365                 \textcolor{stringliteral}{"ipio` = ?, `UserCelular` = ?, `UserTelefono` = ?, `UserTipoSangre` = ?, `UserAle"} +
+3366                 \textcolor{stringliteral}{"rgias` = ?, `UserAccidenteNombre` = ?, `UserAccidenteCelular` = ?, `UserAccident"} +
+3367                 \textcolor{stringliteral}{"eTelefono` = ?, `UserSaldo` = ? WHERE ((`Id\_Usuario` = ?) AND ((? = 1 AND `Id\_Ta"} +
+3368                 \textcolor{stringliteral}{"rjeta` IS NULL) OR (`Id\_Tarjeta` = ?)) AND ((? = 1 AND `UserNombre` IS NULL) OR "} +
+3369                 \textcolor{stringliteral}{"(`UserNombre` = ?)) AND ((? = 1 AND `UserApPa` IS NULL) OR (`UserApPa` = ?)) AND"} +
+3370                 \textcolor{stringliteral}{" ((? = 1 AND `UserApMa` IS NULL) OR (`UserApMa` = ?)) AND ((? = 1 AND `UserFecha"} +
+3371                 \textcolor{stringliteral}{"Nac` IS NULL) OR (`UserFechaNac` = ?)) AND ((? = 1 AND `UserSexo` IS NULL) OR (`"} +
+3372                 \textcolor{stringliteral}{"UserSexo` = ?)) AND ((? = 1 AND `UserTipo` IS NULL) OR (`UserTipo` = ?)) AND ((?"} +
+3373                 \textcolor{stringliteral}{" = 1 AND `UserDireccionCalle` IS NULL) OR (`UserDireccionCalle` = ?)) AND ((? = "} +
+3374                 \textcolor{stringliteral}{"1 AND `UserDireccionNumero` IS NULL) OR (`UserDireccionNumero` = ?)) AND ((? = 1"} +
+3375                 \textcolor{stringliteral}{" AND `UserDireccionColonia` IS NULL) OR (`UserDireccionColonia` = ?)) AND ((? = "} +
+3376                 \textcolor{stringliteral}{"1 AND `UserDireccionMunicipio` IS NULL) OR (`UserDireccionMunicipio` = ?)) AND ("} +
+3377                 \textcolor{stringliteral}{"(? = 1 AND `UserCelular` IS NULL) OR (`UserCelular` = ?)) AND ((? = 1 AND `UserT"} +
+3378                 \textcolor{stringliteral}{"elefono` IS NULL) OR (`UserTelefono` = ?)) AND ((? = 1 AND `UserTipoSangre` IS N"} +
+3379                 \textcolor{stringliteral}{"ULL) OR (`UserTipoSangre` = ?)) AND ((? = 1 AND `UserAlergias` IS NULL) OR (`Use"} +
+3380                 \textcolor{stringliteral}{"rAlergias` = ?)) AND ((? = 1 AND `UserAccidenteNombre` IS NULL) OR (`UserAcciden"} +
+3381                 \textcolor{stringliteral}{"teNombre` = ?)) AND ((? = 1 AND `UserAccidenteCelular` IS NULL) OR (`UserAcciden"} +
+3382                 \textcolor{stringliteral}{"teCelular` = ?)) AND ((? = 1 AND `UserAccidenteTelefono` IS NULL) OR (`UserAccid"} +
+3383                 \textcolor{stringliteral}{"enteTelefono` = ?)) AND ((? = 1 AND `UserSaldo` IS NULL) OR (`UserSaldo` = ?)))"};
+3384             this.\_adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+3385             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Id\_Tarjeta"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"Id\_Tarjeta"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3386             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserNombre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"UserNombre"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3387             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserApPa"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserApPa"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3388             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserApMa"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserApMa"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3389             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserFechaNac"}, global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserFechaNac"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3390             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserSexo"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserSexo"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3391             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserTipo"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(
+      0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipo"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3392             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserDireccionCalle"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionCalle"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3393             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserDireccionNumero"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionNumero"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null)
+      );
+3394             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserDireccionColonia"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionColonia"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, 
+      null));
+3395             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserDireccionMunicipio"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionMunicipio"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false},
+       null));
+3396             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserCelular"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserCelular"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3397             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserTelefono"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTelefono"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3398             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserTipoSangre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipoSangre"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3399             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserAlergias"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAlergias"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3400             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserAccidenteNombre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteNombre"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null)
+      );
+3401             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserAccidenteCelular"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteCelular"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, 
+      null));
+3402             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserAccidenteTelefono"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteTelefono"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, 
+      null));
+3403             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      UserSaldo"}, global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)
+      (0)), ((byte)(0)), \textcolor{stringliteral}{"UserSaldo"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+3404             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Id\_Usuario"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Id\_Usuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3405             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_Id\_Tarjeta"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, 
+      ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Id\_Tarjeta"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3406             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Id\_Tarjeta"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Id\_Tarjeta"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3407             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserNombre"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, 
+      ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserNombre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3408             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserNombre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserNombre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3409             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserApPa"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserApPa"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3410             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserApPa"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserApPa"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3411             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserApMa"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserApMa"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3412             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserApMa"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserApMa"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3413             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserFechaNac"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserFechaNac"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3414             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserFechaNac"}, global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserFechaNac"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3415             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserSexo"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserSexo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3416             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserSexo"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserSexo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3417             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserTipo"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3418             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserTipo"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3419             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserDireccionCalle"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionCalle"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, 
+      null));
+3420             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserDireccionCalle"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionCalle"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3421             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserDireccionNumero"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionNumero"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true},
+       null));
+3422             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserDireccionNumero"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionNumero"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3423             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserDireccionColonia"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionColonia"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      true}, null));
+3424             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserDireccionColonia"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionColonia"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3425             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserDireccionMunicipio"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionMunicipio"}, global::System.Data.DataRowVersion.Original,
+       \textcolor{keyword}{true}, null));
+3426             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserDireccionMunicipio"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserDireccionMunicipio"}, global::System
+      .Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3427             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserCelular"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserCelular"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3428             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserCelular"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserCelular"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3429             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserTelefono"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTelefono"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3430             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserTelefono"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTelefono"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3431             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserTipoSangre"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipoSangre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3432             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserTipoSangre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserTipoSangre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null)
+      );
+3433             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserAlergias"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAlergias"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3434             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserAlergias"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAlergias"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3435             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserAccidenteNombre"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteNombre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true},
+       null));
+3436             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserAccidenteNombre"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteNombre"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3437             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserAccidenteCelular"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteCelular"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      true}, null));
+3438             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserAccidenteCelular"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteCelular"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      false}, null));
+3439             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserAccidenteTelefono"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteTelefono"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{
+      true}, null));
+3440             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserAccidenteTelefono"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserAccidenteTelefono"}, global::System.Data.DataRowVersion.Original
+      , \textcolor{keyword}{false}, null));
+3441             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_UserSaldo"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, (
+      (byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserSaldo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+3442             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_UserSaldo"}, global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"UserSaldo"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+3443         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Init\-Command\-Collection@{Init\-Command\-Collection}}
+\index{Init\-Command\-Collection@{Init\-Command\-Collection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Init\-Command\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Init\-Command\-Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a515f0687a63b2187b5af83e7904881de}
+
+
+Definición en la línea 3454 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3454                                              \{
+3455             this.\_commandCollection = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand[1];
+3456             this.\_commandCollection[0] = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+3457             this.\_commandCollection[0].Connection = this.Connection;
+3458             this.\_commandCollection[0].CommandText = \textcolor{stringliteral}{@"SELECT Id\_Usuario, Id\_Tarjeta, UserNombre, UserApPa,
+       UserApMa, UserFechaNac, UserSexo, UserTipo, UserDireccionCalle, UserDireccionNumero, UserDireccionColonia,
+       UserDireccionMunicipio, UserCelular, UserTelefono, UserTipoSangre, UserAlergias, UserAccidenteNombre,
+       UserAccidenteCelular, UserAccidenteTelefono, UserSaldo FROM Usuario"};
+3459             this.\_commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+3460         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Init\-Connection@{Init\-Connection}}
+\index{Init\-Connection@{Init\-Connection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Init\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Init\-Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a084192b6d302c4430dee74d5c6860a55}
+
+
+Definición en la línea 3447 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3447                                       \{
+3448             this.\_connection = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbConnection();
+3449             this.\_connection.ConnectionString = global::Proyecto\_Integrador
+      .Properties.Settings.Default.BaseDeDatosConnectionString;
+3450         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Insert@{Insert}}
+\index{Insert@{Insert}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Insert (
+\begin{DoxyParamCaption}
+\item[{string}]{Id\-\_\-\-Tarjeta, }
+\item[{string}]{User\-Nombre, }
+\item[{string}]{User\-Ap\-Pa, }
+\item[{string}]{User\-Ap\-Ma, }
+\item[{global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$}]{User\-Fecha\-Nac, }
+\item[{string}]{User\-Sexo, }
+\item[{string}]{User\-Tipo, }
+\item[{string}]{User\-Direccion\-Calle, }
+\item[{string}]{User\-Direccion\-Numero, }
+\item[{string}]{User\-Direccion\-Colonia, }
+\item[{string}]{User\-Direccion\-Municipio, }
+\item[{string}]{User\-Celular, }
+\item[{string}]{User\-Telefono, }
+\item[{string}]{User\-Tipo\-Sangre, }
+\item[{string}]{User\-Alergias, }
+\item[{string}]{User\-Accidente\-Nombre, }
+\item[{string}]{User\-Accidente\-Celular, }
+\item[{string}]{User\-Accidente\-Telefono, }
+\item[{global\-::\-System.\-Nullable$<$ decimal $>$}]{User\-Saldo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a34946ca62dc55d3d1e835c2e1be0ce4b}
+
+
+Definición en la línea 3713 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3732                                                               \{
+3733             \textcolor{keywordflow}{if} ((Id\_Tarjeta == null)) \{
+3734                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+3735             \}
+3736             \textcolor{keywordflow}{else} \{
+3737                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Id\_Tarjeta));
+3738             \}
+3739             \textcolor{keywordflow}{if} ((UserNombre == null)) \{
+3740                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+3741             \}
+3742             \textcolor{keywordflow}{else} \{
+3743                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(UserNombre));
+3744             \}
+3745             \textcolor{keywordflow}{if} ((UserApPa == null)) \{
+3746                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+3747             \}
+3748             \textcolor{keywordflow}{else} \{
+3749                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(UserApPa));
+3750             \}
+3751             \textcolor{keywordflow}{if} ((UserApMa == null)) \{
+3752                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+3753             \}
+3754             \textcolor{keywordflow}{else} \{
+3755                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(UserApMa));
+3756             \}
+3757             \textcolor{keywordflow}{if} ((UserFechaNac.HasValue == \textcolor{keyword}{true})) \{
+3758                 this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(UserFechaNac.Value));
+3759             \}
+3760             \textcolor{keywordflow}{else} \{
+3761                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+3762             \}
+3763             \textcolor{keywordflow}{if} ((UserSexo == null)) \{
+3764                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+3765             \}
+3766             \textcolor{keywordflow}{else} \{
+3767                 this.Adapter.InsertCommand.Parameters[5].Value = ((string)(UserSexo));
+3768             \}
+3769             \textcolor{keywordflow}{if} ((UserTipo == null)) \{
+3770                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+3771             \}
+3772             \textcolor{keywordflow}{else} \{
+3773                 this.Adapter.InsertCommand.Parameters[6].Value = ((string)(UserTipo));
+3774             \}
+3775             \textcolor{keywordflow}{if} ((UserDireccionCalle == null)) \{
+3776                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+3777             \}
+3778             \textcolor{keywordflow}{else} \{
+3779                 this.Adapter.InsertCommand.Parameters[7].Value = ((string)(UserDireccionCalle));
+3780             \}
+3781             \textcolor{keywordflow}{if} ((UserDireccionNumero == null)) \{
+3782                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+3783             \}
+3784             \textcolor{keywordflow}{else} \{
+3785                 this.Adapter.InsertCommand.Parameters[8].Value = ((string)(UserDireccionNumero));
+3786             \}
+3787             \textcolor{keywordflow}{if} ((UserDireccionColonia == null)) \{
+3788                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+3789             \}
+3790             \textcolor{keywordflow}{else} \{
+3791                 this.Adapter.InsertCommand.Parameters[9].Value = ((string)(UserDireccionColonia));
+3792             \}
+3793             \textcolor{keywordflow}{if} ((UserDireccionMunicipio == null)) \{
+3794                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+3795             \}
+3796             \textcolor{keywordflow}{else} \{
+3797                 this.Adapter.InsertCommand.Parameters[10].Value = ((string)(UserDireccionMunicipio));
+3798             \}
+3799             \textcolor{keywordflow}{if} ((UserCelular == null)) \{
+3800                 this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+3801             \}
+3802             \textcolor{keywordflow}{else} \{
+3803                 this.Adapter.InsertCommand.Parameters[11].Value = ((string)(UserCelular));
+3804             \}
+3805             \textcolor{keywordflow}{if} ((UserTelefono == null)) \{
+3806                 this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
+3807             \}
+3808             \textcolor{keywordflow}{else} \{
+3809                 this.Adapter.InsertCommand.Parameters[12].Value = ((string)(UserTelefono));
+3810             \}
+3811             \textcolor{keywordflow}{if} ((UserTipoSangre == null)) \{
+3812                 this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+3813             \}
+3814             \textcolor{keywordflow}{else} \{
+3815                 this.Adapter.InsertCommand.Parameters[13].Value = ((string)(UserTipoSangre));
+3816             \}
+3817             \textcolor{keywordflow}{if} ((UserAlergias == null)) \{
+3818                 this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+3819             \}
+3820             \textcolor{keywordflow}{else} \{
+3821                 this.Adapter.InsertCommand.Parameters[14].Value = ((string)(UserAlergias));
+3822             \}
+3823             \textcolor{keywordflow}{if} ((UserAccidenteNombre == null)) \{
+3824                 this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+3825             \}
+3826             \textcolor{keywordflow}{else} \{
+3827                 this.Adapter.InsertCommand.Parameters[15].Value = ((string)(UserAccidenteNombre));
+3828             \}
+3829             \textcolor{keywordflow}{if} ((UserAccidenteCelular == null)) \{
+3830                 this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
+3831             \}
+3832             \textcolor{keywordflow}{else} \{
+3833                 this.Adapter.InsertCommand.Parameters[16].Value = ((string)(UserAccidenteCelular));
+3834             \}
+3835             \textcolor{keywordflow}{if} ((UserAccidenteTelefono == null)) \{
+3836                 this.Adapter.InsertCommand.Parameters[17].Value = global::System.DBNull.Value;
+3837             \}
+3838             \textcolor{keywordflow}{else} \{
+3839                 this.Adapter.InsertCommand.Parameters[17].Value = ((string)(UserAccidenteTelefono));
+3840             \}
+3841             \textcolor{keywordflow}{if} ((UserSaldo.HasValue == \textcolor{keyword}{true})) \{
+3842                 this.Adapter.InsertCommand.Parameters[18].Value = ((decimal)(UserSaldo.Value));
+3843             \}
+3844             \textcolor{keywordflow}{else} \{
+3845                 this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
+3846             \}
+3847             global::System.Data.ConnectionState previousConnectionState = 
+      this.Adapter.InsertCommand.Connection.State;
+3848             \textcolor{keywordflow}{if} (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+3849                         != global::System.Data.ConnectionState.Open)) \{
+3850                 this.Adapter.InsertCommand.Connection.Open();
+3851             \}
+3852             \textcolor{keywordflow}{try} \{
+3853                 \textcolor{keywordtype}{int} returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+3854                 \textcolor{keywordflow}{return} returnValue;
+3855             \}
+3856             \textcolor{keywordflow}{finally} \{
+3857                 \textcolor{keywordflow}{if} ((previousConnectionState == global::System.Data.ConnectionState.Closed)) \{
+3858                     this.Adapter.InsertCommand.Connection.Close();
+3859                 \}
+3860             \}
+3861         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table}}]{data\-Table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a0d5a0d4ea575cbe2cdfeea918705823a}
+
+
+Definición en la línea 3489 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3489                                                                                  \{
+3490             \textcolor{keywordflow}{return} this.Adapter.Update(dataTable);
+3491         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set}}]{data\-Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_aa6355bcac81a6ab6fd07705beffbf427}
+
+
+Definición en la línea 3496 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3496                                                               \{
+3497             \textcolor{keywordflow}{return} this.Adapter.Update(dataSet, \textcolor{stringliteral}{"Usuario"});
+3498         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row}]{data\-Row}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a7d1b5e6b5e46da986dbeb13a9cade065}
+
+
+Definición en la línea 3503 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3503                                                                      \{
+3504             \textcolor{keywordflow}{return} this.Adapter.Update(\textcolor{keyword}{new} global::System.Data.DataRow[] \{
+3505                         dataRow\});
+3506         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row[$\,$]}]{data\-Rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_aa044e712e06fb39cc8e10e5a1a649370}
+
+
+Definición en la línea 3511 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3511                                                                         \{
+3512             \textcolor{keywordflow}{return} this.Adapter.Update(dataRows);
+3513         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{string}]{Id\-\_\-\-Tarjeta, }
+\item[{string}]{User\-Nombre, }
+\item[{string}]{User\-Ap\-Pa, }
+\item[{string}]{User\-Ap\-Ma, }
+\item[{global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$}]{User\-Fecha\-Nac, }
+\item[{string}]{User\-Sexo, }
+\item[{string}]{User\-Tipo, }
+\item[{string}]{User\-Direccion\-Calle, }
+\item[{string}]{User\-Direccion\-Numero, }
+\item[{string}]{User\-Direccion\-Colonia, }
+\item[{string}]{User\-Direccion\-Municipio, }
+\item[{string}]{User\-Celular, }
+\item[{string}]{User\-Telefono, }
+\item[{string}]{User\-Tipo\-Sangre, }
+\item[{string}]{User\-Alergias, }
+\item[{string}]{User\-Accidente\-Nombre, }
+\item[{string}]{User\-Accidente\-Celular, }
+\item[{string}]{User\-Accidente\-Telefono, }
+\item[{global\-::\-System.\-Nullable$<$ decimal $>$}]{User\-Saldo, }
+\item[{int}]{Original\-\_\-\-Id\-\_\-\-Usuario, }
+\item[{string}]{Original\-\_\-\-Id\-\_\-\-Tarjeta, }
+\item[{string}]{Original\-\_\-\-User\-Nombre, }
+\item[{string}]{Original\-\_\-\-User\-Ap\-Pa, }
+\item[{string}]{Original\-\_\-\-User\-Ap\-Ma, }
+\item[{global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$}]{Original\-\_\-\-User\-Fecha\-Nac, }
+\item[{string}]{Original\-\_\-\-User\-Sexo, }
+\item[{string}]{Original\-\_\-\-User\-Tipo, }
+\item[{string}]{Original\-\_\-\-User\-Direccion\-Calle, }
+\item[{string}]{Original\-\_\-\-User\-Direccion\-Numero, }
+\item[{string}]{Original\-\_\-\-User\-Direccion\-Colonia, }
+\item[{string}]{Original\-\_\-\-User\-Direccion\-Municipio, }
+\item[{string}]{Original\-\_\-\-User\-Celular, }
+\item[{string}]{Original\-\_\-\-User\-Telefono, }
+\item[{string}]{Original\-\_\-\-User\-Tipo\-Sangre, }
+\item[{string}]{Original\-\_\-\-User\-Alergias, }
+\item[{string}]{Original\-\_\-\-User\-Accidente\-Nombre, }
+\item[{string}]{Original\-\_\-\-User\-Accidente\-Celular, }
+\item[{string}]{Original\-\_\-\-User\-Accidente\-Telefono, }
+\item[{global\-::\-System.\-Nullable$<$ decimal $>$}]{Original\-\_\-\-User\-Saldo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a574f3c61ef71c61a11f4688d06191f47}
+
+
+Definición en la línea 3867 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3906                                                                        \{
+3907             \textcolor{keywordflow}{if} ((Id\_Tarjeta == null)) \{
+3908                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+3909             \}
+3910             \textcolor{keywordflow}{else} \{
+3911                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Id\_Tarjeta));
+3912             \}
+3913             \textcolor{keywordflow}{if} ((UserNombre == null)) \{
+3914                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+3915             \}
+3916             \textcolor{keywordflow}{else} \{
+3917                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(UserNombre));
+3918             \}
+3919             \textcolor{keywordflow}{if} ((UserApPa == null)) \{
+3920                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+3921             \}
+3922             \textcolor{keywordflow}{else} \{
+3923                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(UserApPa));
+3924             \}
+3925             \textcolor{keywordflow}{if} ((UserApMa == null)) \{
+3926                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+3927             \}
+3928             \textcolor{keywordflow}{else} \{
+3929                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(UserApMa));
+3930             \}
+3931             \textcolor{keywordflow}{if} ((UserFechaNac.HasValue == \textcolor{keyword}{true})) \{
+3932                 this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(UserFechaNac.Value));
+3933             \}
+3934             \textcolor{keywordflow}{else} \{
+3935                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+3936             \}
+3937             \textcolor{keywordflow}{if} ((UserSexo == null)) \{
+3938                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+3939             \}
+3940             \textcolor{keywordflow}{else} \{
+3941                 this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(UserSexo));
+3942             \}
+3943             \textcolor{keywordflow}{if} ((UserTipo == null)) \{
+3944                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+3945             \}
+3946             \textcolor{keywordflow}{else} \{
+3947                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(UserTipo));
+3948             \}
+3949             \textcolor{keywordflow}{if} ((UserDireccionCalle == null)) \{
+3950                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+3951             \}
+3952             \textcolor{keywordflow}{else} \{
+3953                 this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(UserDireccionCalle));
+3954             \}
+3955             \textcolor{keywordflow}{if} ((UserDireccionNumero == null)) \{
+3956                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+3957             \}
+3958             \textcolor{keywordflow}{else} \{
+3959                 this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(UserDireccionNumero));
+3960             \}
+3961             \textcolor{keywordflow}{if} ((UserDireccionColonia == null)) \{
+3962                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+3963             \}
+3964             \textcolor{keywordflow}{else} \{
+3965                 this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(UserDireccionColonia));
+3966             \}
+3967             \textcolor{keywordflow}{if} ((UserDireccionMunicipio == null)) \{
+3968                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+3969             \}
+3970             \textcolor{keywordflow}{else} \{
+3971                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(UserDireccionMunicipio));
+3972             \}
+3973             \textcolor{keywordflow}{if} ((UserCelular == null)) \{
+3974                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+3975             \}
+3976             \textcolor{keywordflow}{else} \{
+3977                 this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(UserCelular));
+3978             \}
+3979             \textcolor{keywordflow}{if} ((UserTelefono == null)) \{
+3980                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+3981             \}
+3982             \textcolor{keywordflow}{else} \{
+3983                 this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(UserTelefono));
+3984             \}
+3985             \textcolor{keywordflow}{if} ((UserTipoSangre == null)) \{
+3986                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+3987             \}
+3988             \textcolor{keywordflow}{else} \{
+3989                 this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(UserTipoSangre));
+3990             \}
+3991             \textcolor{keywordflow}{if} ((UserAlergias == null)) \{
+3992                 this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+3993             \}
+3994             \textcolor{keywordflow}{else} \{
+3995                 this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(UserAlergias));
+3996             \}
+3997             \textcolor{keywordflow}{if} ((UserAccidenteNombre == null)) \{
+3998                 this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+3999             \}
+4000             \textcolor{keywordflow}{else} \{
+4001                 this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(UserAccidenteNombre));
+4002             \}
+4003             \textcolor{keywordflow}{if} ((UserAccidenteCelular == null)) \{
+4004                 this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+4005             \}
+4006             \textcolor{keywordflow}{else} \{
+4007                 this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(UserAccidenteCelular));
+4008             \}
+4009             \textcolor{keywordflow}{if} ((UserAccidenteTelefono == null)) \{
+4010                 this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+4011             \}
+4012             \textcolor{keywordflow}{else} \{
+4013                 this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(UserAccidenteTelefono));
+4014             \}
+4015             \textcolor{keywordflow}{if} ((UserSaldo.HasValue == \textcolor{keyword}{true})) \{
+4016                 this.Adapter.UpdateCommand.Parameters[18].Value = ((decimal)(UserSaldo.Value));
+4017             \}
+4018             \textcolor{keywordflow}{else} \{
+4019                 this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+4020             \}
+4021             this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(Original\_Id\_Usuario));
+4022             \textcolor{keywordflow}{if} ((Original\_Id\_Tarjeta == null)) \{
+4023                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+4024                 this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+4025             \}
+4026             \textcolor{keywordflow}{else} \{
+4027                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+4028                 this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original\_Id\_Tarjeta));
+4029             \}
+4030             \textcolor{keywordflow}{if} ((Original\_UserNombre == null)) \{
+4031                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
+4032                 this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+4033             \}
+4034             \textcolor{keywordflow}{else} \{
+4035                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
+4036                 this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original\_UserNombre));
+4037             \}
+4038             \textcolor{keywordflow}{if} ((Original\_UserApPa == null)) \{
+4039                 this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
+4040                 this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+4041             \}
+4042             \textcolor{keywordflow}{else} \{
+4043                 this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+4044                 this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original\_UserApPa));
+4045             \}
+4046             \textcolor{keywordflow}{if} ((Original\_UserApMa == null)) \{
+4047                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
+4048                 this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+4049             \}
+4050             \textcolor{keywordflow}{else} \{
+4051                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
+4052                 this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original\_UserApMa));
+4053             \}
+4054             \textcolor{keywordflow}{if} ((Original\_UserFechaNac.HasValue == \textcolor{keyword}{true})) \{
+4055                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
+4056                 this.Adapter.UpdateCommand.Parameters[29].Value = ((System.DateTime)(Original\_UserFechaNac.
+      Value));
+4057             \}
+4058             \textcolor{keywordflow}{else} \{
+4059                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
+4060                 this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
+4061             \}
+4062             \textcolor{keywordflow}{if} ((Original\_UserSexo == null)) \{
+4063                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
+4064                 this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
+4065             \}
+4066             \textcolor{keywordflow}{else} \{
+4067                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
+4068                 this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original\_UserSexo));
+4069             \}
+4070             \textcolor{keywordflow}{if} ((Original\_UserTipo == null)) \{
+4071                 this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
+4072                 this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
+4073             \}
+4074             \textcolor{keywordflow}{else} \{
+4075                 this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
+4076                 this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original\_UserTipo));
+4077             \}
+4078             \textcolor{keywordflow}{if} ((Original\_UserDireccionCalle == null)) \{
+4079                 this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
+4080                 this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
+4081             \}
+4082             \textcolor{keywordflow}{else} \{
+4083                 this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
+4084                 this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original\_UserDireccionCalle));
+4085             \}
+4086             \textcolor{keywordflow}{if} ((Original\_UserDireccionNumero == null)) \{
+4087                 this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
+4088                 this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
+4089             \}
+4090             \textcolor{keywordflow}{else} \{
+4091                 this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
+4092                 this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original\_UserDireccionNumero));
+4093             \}
+4094             \textcolor{keywordflow}{if} ((Original\_UserDireccionColonia == null)) \{
+4095                 this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(1));
+4096                 this.Adapter.UpdateCommand.Parameters[39].Value = global::System.DBNull.Value;
+4097             \}
+4098             \textcolor{keywordflow}{else} \{
+4099                 this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
+4100                 this.Adapter.UpdateCommand.Parameters[39].Value = ((string)(Original\_UserDireccionColonia))
+      ;
+4101             \}
+4102             \textcolor{keywordflow}{if} ((Original\_UserDireccionMunicipio == null)) \{
+4103                 this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(1));
+4104                 this.Adapter.UpdateCommand.Parameters[41].Value = global::System.DBNull.Value;
+4105             \}
+4106             \textcolor{keywordflow}{else} \{
+4107                 this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(0));
+4108                 this.Adapter.UpdateCommand.Parameters[41].Value = ((string)(Original\_UserDireccionMunicipio
+      ));
+4109             \}
+4110             \textcolor{keywordflow}{if} ((Original\_UserCelular == null)) \{
+4111                 this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(1));
+4112                 this.Adapter.UpdateCommand.Parameters[43].Value = global::System.DBNull.Value;
+4113             \}
+4114             \textcolor{keywordflow}{else} \{
+4115                 this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(0));
+4116                 this.Adapter.UpdateCommand.Parameters[43].Value = ((string)(Original\_UserCelular));
+4117             \}
+4118             \textcolor{keywordflow}{if} ((Original\_UserTelefono == null)) \{
+4119                 this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(1));
+4120                 this.Adapter.UpdateCommand.Parameters[45].Value = global::System.DBNull.Value;
+4121             \}
+4122             \textcolor{keywordflow}{else} \{
+4123                 this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
+4124                 this.Adapter.UpdateCommand.Parameters[45].Value = ((string)(Original\_UserTelefono));
+4125             \}
+4126             \textcolor{keywordflow}{if} ((Original\_UserTipoSangre == null)) \{
+4127                 this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(1));
+4128                 this.Adapter.UpdateCommand.Parameters[47].Value = global::System.DBNull.Value;
+4129             \}
+4130             \textcolor{keywordflow}{else} \{
+4131                 this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(0));
+4132                 this.Adapter.UpdateCommand.Parameters[47].Value = ((string)(Original\_UserTipoSangre));
+4133             \}
+4134             \textcolor{keywordflow}{if} ((Original\_UserAlergias == null)) \{
+4135                 this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(1));
+4136                 this.Adapter.UpdateCommand.Parameters[49].Value = global::System.DBNull.Value;
+4137             \}
+4138             \textcolor{keywordflow}{else} \{
+4139                 this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(0));
+4140                 this.Adapter.UpdateCommand.Parameters[49].Value = ((string)(Original\_UserAlergias));
+4141             \}
+4142             \textcolor{keywordflow}{if} ((Original\_UserAccidenteNombre == null)) \{
+4143                 this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(1));
+4144                 this.Adapter.UpdateCommand.Parameters[51].Value = global::System.DBNull.Value;
+4145             \}
+4146             \textcolor{keywordflow}{else} \{
+4147                 this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(0));
+4148                 this.Adapter.UpdateCommand.Parameters[51].Value = ((string)(Original\_UserAccidenteNombre));
+4149             \}
+4150             \textcolor{keywordflow}{if} ((Original\_UserAccidenteCelular == null)) \{
+4151                 this.Adapter.UpdateCommand.Parameters[52].Value = ((object)(1));
+4152                 this.Adapter.UpdateCommand.Parameters[53].Value = global::System.DBNull.Value;
+4153             \}
+4154             \textcolor{keywordflow}{else} \{
+4155                 this.Adapter.UpdateCommand.Parameters[52].Value = ((object)(0));
+4156                 this.Adapter.UpdateCommand.Parameters[53].Value = ((string)(Original\_UserAccidenteCelular))
+      ;
+4157             \}
+4158             \textcolor{keywordflow}{if} ((Original\_UserAccidenteTelefono == null)) \{
+4159                 this.Adapter.UpdateCommand.Parameters[54].Value = ((object)(1));
+4160                 this.Adapter.UpdateCommand.Parameters[55].Value = global::System.DBNull.Value;
+4161             \}
+4162             \textcolor{keywordflow}{else} \{
+4163                 this.Adapter.UpdateCommand.Parameters[54].Value = ((object)(0));
+4164                 this.Adapter.UpdateCommand.Parameters[55].Value = ((string)(Original\_UserAccidenteTelefono)
+      );
+4165             \}
+4166             \textcolor{keywordflow}{if} ((Original\_UserSaldo.HasValue == \textcolor{keyword}{true})) \{
+4167                 this.Adapter.UpdateCommand.Parameters[56].Value = ((object)(0));
+4168                 this.Adapter.UpdateCommand.Parameters[57].Value = ((decimal)(Original\_UserSaldo.Value));
+4169             \}
+4170             \textcolor{keywordflow}{else} \{
+4171                 this.Adapter.UpdateCommand.Parameters[56].Value = ((object)(1));
+4172                 this.Adapter.UpdateCommand.Parameters[57].Value = global::System.DBNull.Value;
+4173             \}
+4174             global::System.Data.ConnectionState previousConnectionState = 
+      this.Adapter.UpdateCommand.Connection.State;
+4175             \textcolor{keywordflow}{if} (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+4176                         != global::System.Data.ConnectionState.Open)) \{
+4177                 this.Adapter.UpdateCommand.Connection.Open();
+4178             \}
+4179             \textcolor{keywordflow}{try} \{
+4180                 \textcolor{keywordtype}{int} returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+4181                 \textcolor{keywordflow}{return} returnValue;
+4182             \}
+4183             \textcolor{keywordflow}{finally} \{
+4184                 \textcolor{keywordflow}{if} ((previousConnectionState == global::System.Data.ConnectionState.Closed)) \{
+4185                     this.Adapter.UpdateCommand.Connection.Close();
+4186                 \}
+4187             \}
+4188         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!\-\_\-adapter@{\-\_\-adapter}}
+\index{\-\_\-adapter@{\-\_\-adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{\-\_\-adapter}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-\_\-adapter\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a0ee6448de6b366c53fa7ad54f4974978}
+
+
+Definición en la línea 3163 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!\-\_\-clear\-Before\-Fill@{\-\_\-clear\-Before\-Fill}}
+\index{\-\_\-clear\-Before\-Fill@{\-\_\-clear\-Before\-Fill}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{\-\_\-clear\-Before\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}bool Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-\_\-clear\-Before\-Fill\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a968696d383e2c457c220614aebc277c9}
+
+
+Definición en la línea 3171 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!\-\_\-command\-Collection@{\-\_\-command\-Collection}}
+\index{\-\_\-command\-Collection@{\-\_\-command\-Collection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{\-\_\-command\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command [$\,$] Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-\_\-command\-Collection\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a2bcdd2df069c4f5fae4f54522a7acc28}
+
+
+Definición en la línea 3169 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!\-\_\-connection@{\-\_\-connection}}
+\index{\-\_\-connection@{\-\_\-connection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-\_\-connection\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_afdff02372179136f416beb5fca0e5285}
+
+
+Definición en la línea 3165 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!\-\_\-transaction@{\-\_\-transaction}}
+\index{\-\_\-transaction@{\-\_\-transaction}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{\-\_\-transaction}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-\_\-transaction\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a5ae0e8933d3077dc61e881d15547e401}
+
+
+Definición en la línea 3167 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de propiedades}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Adapter@{Adapter}}
+\index{Adapter@{Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Adapter}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Adapter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_af55fad867b05da6cacece3f1eae180b0}
+
+
+Definición en la línea 3181 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Clear\-Before\-Fill@{Clear\-Before\-Fill}}
+\index{Clear\-Before\-Fill@{Clear\-Before\-Fill}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Clear\-Before\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}bool Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Clear\-Before\-Fill\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a4b01b892e7d3c548d45507bc71c66731}
+
+
+Definición en la línea 3257 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Command\-Collection@{Command\-Collection}}
+\index{Command\-Collection@{Command\-Collection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Command\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command [$\,$] Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Command\-Collection\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_adb1f9739cc43a4c6d0d13b7e0a0dcc16}
+
+
+Definición en la línea 3246 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Connection@{Connection}}
+\index{Connection@{Connection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Connection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Connection\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_a1c5a46394421fc9c788babbf914a50a9}
+
+
+Definición en la línea 3192 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::UsuarioTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Usuario\-Table\-Adapter}}
+\subsubsection[{Transaction}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Usuario\-Table\-Adapter.\-Transaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter_aee305d94dfc85df4fe14e9a62dc633f1}
+
+
+Definición en la línea 3220 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

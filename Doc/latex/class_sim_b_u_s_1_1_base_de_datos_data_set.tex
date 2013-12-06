@@ -1,0 +1,699 @@
+\section{Referencia de la Clase Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set}
+\label{class_sim_b_u_s_1_1_base_de_datos_data_set}\index{Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set}}
+
+
+Represents a strongly typed in-\/memory cache of data. /summary$>$  
+
+
+Diagrama de herencias de Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sim_b_u_s_1_1_base_de_datos_data_set}
+\end{center}
+\end{figure}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Camion\-Data\-Table}
+\begin{DoxyCompactList}\small\item\em Represents the strongly named Data\-Table class. /summary$>$ \end{DoxyCompactList}\item 
+class {\bf Camion\-Row}
+\begin{DoxyCompactList}\small\item\em Represents strongly named Data\-Row class. /summary$>$ \end{DoxyCompactList}\item 
+class {\bf Camion\-Row\-Change\-Event}
+\begin{DoxyCompactList}\small\item\em Row event argument class /summary$>$ \end{DoxyCompactList}\item 
+class {\bf Servicios\-Data\-Table}
+\begin{DoxyCompactList}\small\item\em Represents the strongly named Data\-Table class. /summary$>$ \end{DoxyCompactList}\item 
+class {\bf Servicios\-Row}
+\begin{DoxyCompactList}\small\item\em Represents strongly named Data\-Row class. /summary$>$ \end{DoxyCompactList}\item 
+class {\bf Servicios\-Row\-Change\-Event}
+\begin{DoxyCompactList}\small\item\em Row event argument class /summary$>$ \end{DoxyCompactList}\item 
+class {\bf Usuario\-Data\-Table}
+\begin{DoxyCompactList}\small\item\em Represents the strongly named Data\-Table class. /summary$>$ \end{DoxyCompactList}\item 
+class {\bf Usuario\-Row}
+\begin{DoxyCompactList}\small\item\em Represents strongly named Data\-Row class. /summary$>$ \end{DoxyCompactList}\item 
+class {\bf Usuario\-Row\-Change\-Event}
+\begin{DoxyCompactList}\small\item\em Row event argument class /summary$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Base\-De\-Datos\-Data\-Set} ()
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Set {\bf Clone} ()
+\item 
+delegate void {\bf Camion\-Row\-Change\-Event\-Handler} (object sender, {\bf Camion\-Row\-Change\-Event} e)
+\item 
+delegate void {\bf Servicios\-Row\-Change\-Event\-Handler} (object sender, {\bf Servicios\-Row\-Change\-Event} e)
+\item 
+delegate void {\bf Usuario\-Row\-Change\-Event\-Handler} (object sender, {\bf Usuario\-Row\-Change\-Event} e)
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \\*
+global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type {\bf Get\-Typed\-Data\-Set\-Schema} (global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set xs)
+\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Base\-De\-Datos\-Data\-Set} (global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info info, global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context context)
+\item 
+override void {\bf Initialize\-Derived\-Data\-Set} ()
+\item 
+override bool {\bf Should\-Serialize\-Tables} ()
+\item 
+override bool {\bf Should\-Serialize\-Relations} ()
+\item 
+override void {\bf Read\-Xml\-Serializable} (global\-::\-System.\-Xml.\-Xml\-Reader reader)
+\item 
+override \\*
+global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema {\bf Get\-Schema\-Serializable} ()
+\end{DoxyCompactItemize}
+\subsection*{Funciones del 'package'}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Init\-Vars} ()
+\item 
+void {\bf Init\-Vars} (bool init\-Table)
+\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Data\-Table} {\bf Camion}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+{\bf Servicios\-Data\-Table} {\bf Servicios}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+{\bf Usuario\-Data\-Table} {\bf Usuario}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+override \\*
+global\-::\-System.\-Data.\-Schema\-Serialization\-Mode {\bf Schema\-Serialization\-Mode}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+new \\*
+global\-::\-System.\-Data.\-Data\-Table\-Collection {\bf Tables}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+new \\*
+global\-::\-System.\-Data.\-Data\-Relation\-Collection {\bf Relations}\hspace{0.3cm}{\ttfamily  [get]}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Init\-Class} ()
+\item 
+bool {\bf Should\-Serialize\-Camion} ()
+\item 
+bool {\bf Should\-Serialize\-Servicios} ()
+\item 
+bool {\bf Should\-Serialize\-Usuario} ()
+\item 
+void {\bf Schema\-Changed} (object sender, global\-::\-System.\-Component\-Model.\-Collection\-Change\-Event\-Args e)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Data\-Table} {\bf table\-Camion}
+\item 
+{\bf Servicios\-Data\-Table} {\bf table\-Servicios}
+\item 
+{\bf Usuario\-Data\-Table} {\bf table\-Usuario}
+\item 
+global\-::\-System.\-Data.\-Data\-Relation {\bf relation\-Camion\-Servicios}
+\item 
+global\-::\-System.\-Data.\-Data\-Relation {\bf relation\-Usuario\-Servicios}
+\item 
+global\-::\-System.\-Data.\-Schema\-Serialization\-Mode {\bf \-\_\-schema\-Serialization\-Mode} = global\-::\-System.\-Data.\-Schema\-Serialization\-Mode.\-Include\-Schema
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Represents a strongly typed in-\/memory cache of data. /summary$>$ 
+
+Definición en la línea 25 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Base\-De\-Datos\-Data\-Set@{Base\-De\-Datos\-Data\-Set}}
+\index{Base\-De\-Datos\-Data\-Set@{Base\-De\-Datos\-Data\-Set}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Base\-De\-Datos\-Data\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Base\-De\-Datos\-Data\-Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a7dc764926c6d8135a9e4d78d3051a5cd}
+
+
+Definición en la línea 41 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+41                                     \{
+42             this.BeginInit();
+43             this.InitClass();
+44             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = \textcolor{keyword}{new} 
+      global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+45             base.Tables.CollectionChanged += schemaChangedHandler;
+46             base.Relations.CollectionChanged += schemaChangedHandler;
+47             this.EndInit();
+48         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Base\-De\-Datos\-Data\-Set@{Base\-De\-Datos\-Data\-Set}}
+\index{Base\-De\-Datos\-Data\-Set@{Base\-De\-Datos\-Data\-Set}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Base\-De\-Datos\-Data\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Base\-De\-Datos\-Data\-Set (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info}]{info, }
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a77d69659a77763b51672a721debc6aca}
+
+
+Definición en la línea 52 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+52                                                                                                            
+                                                        : 
+53                 base(info, context, \textcolor{keyword}{false}) \{
+54             \textcolor{keywordflow}{if} ((this.IsBinarySerialized(info, context) == \textcolor{keyword}{true})) \{
+55                 this.InitVars(\textcolor{keyword}{false});
+56                 global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler1 = \textcolor{keyword}{new} 
+      global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+57                 this.Tables.CollectionChanged += schemaChangedHandler1;
+58                 this.Relations.CollectionChanged += schemaChangedHandler1;
+59                 \textcolor{keywordflow}{return};
+60             \}
+61             \textcolor{keywordtype}{string} strSchema = ((string)(info.GetValue(\textcolor{stringliteral}{"XmlSchema"}, typeof(\textcolor{keywordtype}{string}))));
+62             \textcolor{keywordflow}{if} ((this.DetermineSchemaSerializationMode(info, context) == global::System
+      .Data.SchemaSerializationMode.IncludeSchema)) \{
+63                 global::System.Data.DataSet ds = \textcolor{keyword}{new} global::System.Data.DataSet();
+64                 ds.ReadXmlSchema(\textcolor{keyword}{new} global::System.Xml.XmlTextReader(\textcolor{keyword}{new} global::System.IO.StringReader(
+      strSchema)));
+65                 \textcolor{keywordflow}{if} ((ds.Tables[\textcolor{stringliteral}{"Camion"}] != null)) \{
+66                     base.Tables.Add(\textcolor{keyword}{new} CamionDataTable(ds.Tables[\textcolor{stringliteral}{"Camion"}]));
+67                 \}
+68                 \textcolor{keywordflow}{if} ((ds.Tables[\textcolor{stringliteral}{"Servicios"}] != null)) \{
+69                     base.Tables.Add(\textcolor{keyword}{new} ServiciosDataTable(ds.Tables[\textcolor{stringliteral}{"Servicios"}]));
+70                 \}
+71                 \textcolor{keywordflow}{if} ((ds.Tables[\textcolor{stringliteral}{"Usuario"}] != null)) \{
+72                     base.Tables.Add(\textcolor{keyword}{new} UsuarioDataTable(ds.Tables[\textcolor{stringliteral}{"Usuario"}]));
+73                 \}
+74                 this.DataSetName = ds.DataSetName;
+75                 this.Prefix = ds.Prefix;
+76                 this.Namespace = ds.Namespace;
+77                 this.Locale = ds.Locale;
+78                 this.CaseSensitive = ds.CaseSensitive;
+79                 this.EnforceConstraints = ds.EnforceConstraints;
+80                 this.Merge(ds, \textcolor{keyword}{false}, global::System.Data.MissingSchemaAction.Add);
+81                 this.InitVars();
+82             \}
+83             \textcolor{keywordflow}{else} \{
+84                 this.ReadXmlSchema(\textcolor{keyword}{new} global::System.Xml.XmlTextReader(\textcolor{keyword}{new} global::System.IO.StringReader(
+      strSchema)));
+85             \}
+86             this.GetSerializationData(info, context);
+87             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = \textcolor{keyword}{new} 
+      global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+88             base.Tables.CollectionChanged += schemaChangedHandler;
+89             this.Relations.CollectionChanged += schemaChangedHandler;
+90         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Camion\-Row\-Change\-Event\-Handler@{Camion\-Row\-Change\-Event\-Handler}}
+\index{Camion\-Row\-Change\-Event\-Handler@{Camion\-Row\-Change\-Event\-Handler}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Camion\-Row\-Change\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Row\-Change\-Event\-Handler (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{{\bf Camion\-Row\-Change\-Event}}]{e}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_adeda22152be6d2a3a2774b49258cc59f}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Clone@{Clone}}
+\index{Clone@{Clone}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Set Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a92c4376461a647b327c40390d8cca142}
+
+
+Definición en la línea 163 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+163                                                           \{
+164             BaseDeDatosDataSet cln = ((BaseDeDatosDataSet)(base.Clone()));
+165             cln.InitVars();
+166             cln.SchemaSerializationMode = this.SchemaSerializationMode;
+167             \textcolor{keywordflow}{return} cln;
+168         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Get\-Schema\-Serializable@{Get\-Schema\-Serializable}}
+\index{Get\-Schema\-Serializable@{Get\-Schema\-Serializable}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Get\-Schema\-Serializable}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Xml.\-Schema.\-Xml\-Schema Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Get\-Schema\-Serializable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_ac5f1d2587aef8d3ee0c3fcd4c4ce141f}
+
+
+Definición en la línea 215 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+215                                                                                      \{
+216             global::System.IO.MemoryStream stream = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+217             this.WriteXmlSchema(\textcolor{keyword}{new} global::System.Xml.XmlTextWriter(stream, null));
+218             stream.Position = 0;
+219             \textcolor{keywordflow}{return} global::System.Xml.Schema.XmlSchema.Read(\textcolor{keyword}{new} global::System.Xml.XmlTextReader(stream), 
+      null);
+220         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Get\-Typed\-Data\-Set\-Schema@{Get\-Typed\-Data\-Set\-Schema}}
+\index{Get\-Typed\-Data\-Set\-Schema@{Get\-Typed\-Data\-Set\-Schema}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Get\-Typed\-Data\-Set\-Schema}]{\setlength{\rightskip}{0pt plus 5cm}static global.\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Get\-Typed\-Data\-Set\-Schema (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set}]{xs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_aa4c175b32e6dc6fd1aa8981e552a2217}
+
+
+Definición en la línea 305 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+305                                                                                                            
+                             \{
+306             BaseDeDatosDataSet ds = \textcolor{keyword}{new} BaseDeDatosDataSet();
+307             global::System.Xml.Schema.XmlSchemaComplexType type = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaComplexType();
+308             global::System.Xml.Schema.XmlSchemaSequence sequence = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaSequence();
+309             global::System.Xml.Schema.XmlSchemaAny any = \textcolor{keyword}{new} global::System.Xml.Schema.XmlSchemaAny();
+310             any.Namespace = ds.Namespace;
+311             sequence.Items.Add(any);
+312             type.Particle = sequence;
+313             global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+314             \textcolor{keywordflow}{if} (xs.Contains(dsSchema.TargetNamespace)) \{
+315                 global::System.IO.MemoryStream s1 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+316                 global::System.IO.MemoryStream s2 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+317                 \textcolor{keywordflow}{try} \{
+318                     global::System.Xml.Schema.XmlSchema schema = null;
+319                     dsSchema.Write(s1);
+320                     \textcolor{keywordflow}{for} (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.
+      TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) \{
+321                         schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+322                         s2.SetLength(0);
+323                         schema.Write(s2);
+324                         \textcolor{keywordflow}{if} ((s1.Length == s2.Length)) \{
+325                             s1.Position = 0;
+326                             s2.Position = 0;
+327                             \textcolor{keywordflow}{for} (; ((s1.Position != s1.Length) 
+328                                         && (s1.ReadByte() == s2.ReadByte())); ) \{
+329                                 ;
+330                             \}
+331                             \textcolor{keywordflow}{if} ((s1.Position == s1.Length)) \{
+332                                 \textcolor{keywordflow}{return} type;
+333                             \}
+334                         \}
+335                     \}
+336                 \}
+337                 \textcolor{keywordflow}{finally} \{
+338                     \textcolor{keywordflow}{if} ((s1 != null)) \{
+339                         s1.Close();
+340                     \}
+341                     \textcolor{keywordflow}{if} ((s2 != null)) \{
+342                         s2.Close();
+343                     \}
+344                 \}
+345             \}
+346             xs.Add(dsSchema);
+347             \textcolor{keywordflow}{return} type;
+348         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Init\-Class@{Init\-Class}}
+\index{Init\-Class@{Init\-Class}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Init\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Init\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_affbd83b83bb385bc88338d308faa9b33}
+
+
+Definición en la línea 255 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+255                                  \{
+256             this.DataSetName = \textcolor{stringliteral}{"BaseDeDatosDataSet"};
+257             this.Prefix = \textcolor{stringliteral}{""};
+258             this.Namespace = \textcolor{stringliteral}{"http://tempuri.org/BaseDeDatosDataSet.xsd"};
+259             this.EnforceConstraints = \textcolor{keyword}{true};
+260             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+261             this.tableCamion = \textcolor{keyword}{new} CamionDataTable();
+262             base.Tables.Add(this.tableCamion);
+263             this.tableServicios = \textcolor{keyword}{new} ServiciosDataTable();
+264             base.Tables.Add(this.tableServicios);
+265             this.tableUsuario = \textcolor{keyword}{new} UsuarioDataTable();
+266             base.Tables.Add(this.tableUsuario);
+267             this.relationCamionServicios = \textcolor{keyword}{new} global::System.Data.DataRelation(\textcolor{stringliteral}{"CamionServicios"}, \textcolor{keyword}{new} 
+      global::System.Data.DataColumn[] \{
+268                         this.tableCamion.NumCamionColumn\}, \textcolor{keyword}{new} global::System.Data.DataColumn[] \{
+269                         this.tableServicios.NumUnidadColumn\}, \textcolor{keyword}{false});
+270             this.Relations.Add(this.relationCamionServicios);
+271             this.relationUsuarioServicios = \textcolor{keyword}{new} global::System.Data.DataRelation(\textcolor{stringliteral}{"UsuarioServicios"}, \textcolor{keyword}{new} 
+      global::System.Data.DataColumn[] \{
+272                         this.tableUsuario.Id\_TarjetaColumn\}, \textcolor{keyword}{new} global::System.Data.DataColumn[] \{
+273                         this.tableServicios.UsuarioColumn\}, \textcolor{keyword}{false});
+274             this.Relations.Add(this.relationUsuarioServicios);
+275         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Initialize\-Derived\-Data\-Set@{Initialize\-Derived\-Data\-Set}}
+\index{Initialize\-Derived\-Data\-Set@{Initialize\-Derived\-Data\-Set}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Initialize\-Derived\-Data\-Set}]{\setlength{\rightskip}{0pt plus 5cm}override void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Initialize\-Derived\-Data\-Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a76ddfcdd33c1e2bdd869529ab0caecb1}
+
+
+Definición en la línea 155 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+155                                                            \{
+156             this.BeginInit();
+157             this.InitClass();
+158             this.EndInit();
+159         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Init\-Vars@{Init\-Vars}}
+\index{Init\-Vars@{Init\-Vars}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Init\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Init\-Vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_aebf81137dc77397505fef0463cd08047}
+
+
+Definición en la línea 224 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+224                                  \{
+225             this.InitVars(\textcolor{keyword}{true});
+226         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Init\-Vars@{Init\-Vars}}
+\index{Init\-Vars@{Init\-Vars}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Init\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Init\-Vars (
+\begin{DoxyParamCaption}
+\item[{bool}]{init\-Table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a21d1e2bc9f516d01dd04d3aa09c2aeb3}
+
+
+Definición en la línea 230 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+230                                                \{
+231             this.tableCamion = ((CamionDataTable)(base.Tables[\textcolor{stringliteral}{"Camion"}]));
+232             \textcolor{keywordflow}{if} ((initTable == \textcolor{keyword}{true})) \{
+233                 \textcolor{keywordflow}{if} ((this.tableCamion != null)) \{
+234                     this.tableCamion.InitVars();
+235                 \}
+236             \}
+237             this.tableServicios = ((ServiciosDataTable)(base.Tables[\textcolor{stringliteral}{"Servicios"}]));
+238             \textcolor{keywordflow}{if} ((initTable == \textcolor{keyword}{true})) \{
+239                 \textcolor{keywordflow}{if} ((this.tableServicios != null)) \{
+240                     this.tableServicios.InitVars();
+241                 \}
+242             \}
+243             this.tableUsuario = ((UsuarioDataTable)(base.Tables[\textcolor{stringliteral}{"Usuario"}]));
+244             \textcolor{keywordflow}{if} ((initTable == \textcolor{keyword}{true})) \{
+245                 \textcolor{keywordflow}{if} ((this.tableUsuario != null)) \{
+246                     this.tableUsuario.InitVars();
+247                 \}
+248             \}
+249             this.relationCamionServicios = this.Relations[\textcolor{stringliteral}{"CamionServicios"}];
+250             this.relationUsuarioServicios = this.Relations[\textcolor{stringliteral}{"UsuarioServicios"}];
+251         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Read\-Xml\-Serializable@{Read\-Xml\-Serializable}}
+\index{Read\-Xml\-Serializable@{Read\-Xml\-Serializable}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Read\-Xml\-Serializable}]{\setlength{\rightskip}{0pt plus 5cm}override void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Read\-Xml\-Serializable (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Xml.\-Xml\-Reader}]{reader}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a78fca1345f7968ae46da914408aab86a}
+
+
+Definición en la línea 184 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+184                                                                                        \{
+185             \textcolor{keywordflow}{if} ((this.DetermineSchemaSerializationMode(reader) == global::System.Data.
+      SchemaSerializationMode.IncludeSchema)) \{
+186                 this.Reset();
+187                 global::System.Data.DataSet ds = \textcolor{keyword}{new} global::System.Data.DataSet();
+188                 ds.ReadXml(reader);
+189                 \textcolor{keywordflow}{if} ((ds.Tables[\textcolor{stringliteral}{"Camion"}] != null)) \{
+190                     base.Tables.Add(\textcolor{keyword}{new} CamionDataTable(ds.Tables[\textcolor{stringliteral}{"Camion"}]));
+191                 \}
+192                 \textcolor{keywordflow}{if} ((ds.Tables[\textcolor{stringliteral}{"Servicios"}] != null)) \{
+193                     base.Tables.Add(\textcolor{keyword}{new} ServiciosDataTable(ds.Tables[\textcolor{stringliteral}{"Servicios"}]));
+194                 \}
+195                 \textcolor{keywordflow}{if} ((ds.Tables[\textcolor{stringliteral}{"Usuario"}] != null)) \{
+196                     base.Tables.Add(\textcolor{keyword}{new} UsuarioDataTable(ds.Tables[\textcolor{stringliteral}{"Usuario"}]));
+197                 \}
+198                 this.DataSetName = ds.DataSetName;
+199                 this.Prefix = ds.Prefix;
+200                 this.Namespace = ds.Namespace;
+201                 this.Locale = ds.Locale;
+202                 this.CaseSensitive = ds.CaseSensitive;
+203                 this.EnforceConstraints = ds.EnforceConstraints;
+204                 this.Merge(ds, \textcolor{keyword}{false}, global::System.Data.MissingSchemaAction.Add);
+205                 this.InitVars();
+206             \}
+207             \textcolor{keywordflow}{else} \{
+208                 this.ReadXml(reader);
+209                 this.InitVars();
+210             \}
+211         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Schema\-Changed@{Schema\-Changed}}
+\index{Schema\-Changed@{Schema\-Changed}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Schema\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Schema\-Changed (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{global\-::\-System.\-Component\-Model.\-Collection\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_ac0662351f0229d72f32496ac94e73031}
+
+
+Definición en la línea 297 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+297                                                                                                            
+      \{
+298             \textcolor{keywordflow}{if} ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) \{
+299                 this.InitVars();
+300             \}
+301         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Servicios\-Row\-Change\-Event\-Handler@{Servicios\-Row\-Change\-Event\-Handler}}
+\index{Servicios\-Row\-Change\-Event\-Handler@{Servicios\-Row\-Change\-Event\-Handler}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Servicios\-Row\-Change\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Row\-Change\-Event\-Handler (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{{\bf Servicios\-Row\-Change\-Event}}]{e}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a19015d2b1780420704f8013b9dac5ed1}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Should\-Serialize\-Camion@{Should\-Serialize\-Camion}}
+\index{Should\-Serialize\-Camion@{Should\-Serialize\-Camion}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Should\-Serialize\-Camion}]{\setlength{\rightskip}{0pt plus 5cm}bool Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Should\-Serialize\-Camion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_ab4f398861d630993930074dc91799480}
+
+
+Definición en la línea 279 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+279                                              \{
+280             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+281         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Should\-Serialize\-Relations@{Should\-Serialize\-Relations}}
+\index{Should\-Serialize\-Relations@{Should\-Serialize\-Relations}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Should\-Serialize\-Relations}]{\setlength{\rightskip}{0pt plus 5cm}override bool Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Should\-Serialize\-Relations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_ad0f5c145eb5ca8b3ffd2263300b205df}
+
+
+Definición en la línea 178 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+178                                                            \{
+179             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+180         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Should\-Serialize\-Servicios@{Should\-Serialize\-Servicios}}
+\index{Should\-Serialize\-Servicios@{Should\-Serialize\-Servicios}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Should\-Serialize\-Servicios}]{\setlength{\rightskip}{0pt plus 5cm}bool Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Should\-Serialize\-Servicios (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a849548b07908d504149991d0d48a1835}
+
+
+Definición en la línea 285 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+285                                                 \{
+286             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+287         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Should\-Serialize\-Tables@{Should\-Serialize\-Tables}}
+\index{Should\-Serialize\-Tables@{Should\-Serialize\-Tables}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Should\-Serialize\-Tables}]{\setlength{\rightskip}{0pt plus 5cm}override bool Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Should\-Serialize\-Tables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a33b7832faa5dd00e6448fb9a3ed2b59a}
+
+
+Definición en la línea 172 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+172                                                         \{
+173             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+174         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Should\-Serialize\-Usuario@{Should\-Serialize\-Usuario}}
+\index{Should\-Serialize\-Usuario@{Should\-Serialize\-Usuario}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Should\-Serialize\-Usuario}]{\setlength{\rightskip}{0pt plus 5cm}bool Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Should\-Serialize\-Usuario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a3263633dfe08875d34dad4a0c94cef0d}
+
+
+Definición en la línea 291 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+291                                               \{
+292             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+293         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Usuario\-Row\-Change\-Event\-Handler@{Usuario\-Row\-Change\-Event\-Handler}}
+\index{Usuario\-Row\-Change\-Event\-Handler@{Usuario\-Row\-Change\-Event\-Handler}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Usuario\-Row\-Change\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Row\-Change\-Event\-Handler (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{{\bf Usuario\-Row\-Change\-Event}}]{e}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_ac9813a58d73ccefd2f0296ce61bb83f7}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!\-\_\-schema\-Serialization\-Mode@{\-\_\-schema\-Serialization\-Mode}}
+\index{\-\_\-schema\-Serialization\-Mode@{\-\_\-schema\-Serialization\-Mode}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{\-\_\-schema\-Serialization\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Schema\-Serialization\-Mode Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-\_\-schema\-Serialization\-Mode = global\-::\-System.\-Data.\-Schema\-Serialization\-Mode.\-Include\-Schema\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a5a62193b8ec3def214a4d6120a6b24c7}
+
+
+Definición en la línea 37 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!relation\-Camion\-Servicios@{relation\-Camion\-Servicios}}
+\index{relation\-Camion\-Servicios@{relation\-Camion\-Servicios}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{relation\-Camion\-Servicios}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Relation Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-relation\-Camion\-Servicios\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_af34d7673b605699ce6b5ea1d3377b716}
+
+
+Definición en la línea 33 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!relation\-Usuario\-Servicios@{relation\-Usuario\-Servicios}}
+\index{relation\-Usuario\-Servicios@{relation\-Usuario\-Servicios}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{relation\-Usuario\-Servicios}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Relation Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-relation\-Usuario\-Servicios\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a650baaf5cbbcc13584c9cb9899016833}
+
+
+Definición en la línea 35 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!table\-Camion@{table\-Camion}}
+\index{table\-Camion@{table\-Camion}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{table\-Camion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Data\-Table} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-table\-Camion\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a36744dd9db2c4cc7f6d1c2f2d9a49b85}
+
+
+Definición en la línea 27 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!table\-Servicios@{table\-Servicios}}
+\index{table\-Servicios@{table\-Servicios}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{table\-Servicios}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Data\-Table} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-table\-Servicios\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_ae59c65700f5ec51a66e56b28d9af76c3}
+
+
+Definición en la línea 29 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!table\-Usuario@{table\-Usuario}}
+\index{table\-Usuario@{table\-Usuario}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{table\-Usuario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Data\-Table} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-table\-Usuario\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a28f5f5b38d07da88d3fd0cc292fffeed}
+
+
+Definición en la línea 31 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de propiedades}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Camion@{Camion}}
+\index{Camion@{Camion}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Camion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Data\-Table} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\hspace{0.3cm}{\ttfamily [get]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a1c188a91eee313fd88164e67c593d9a7}
+
+
+Definición en la línea 96 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Relations@{Relations}}
+\index{Relations@{Relations}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Relations}]{\setlength{\rightskip}{0pt plus 5cm}new global.\-System.\-Data.\-Data\-Relation\-Collection Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Relations\hspace{0.3cm}{\ttfamily [get]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a229baaa6d64e7aebdde8252ff7b34ad2}
+
+
+Definición en la línea 147 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Schema\-Serialization\-Mode@{Schema\-Serialization\-Mode}}
+\index{Schema\-Serialization\-Mode@{Schema\-Serialization\-Mode}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Schema\-Serialization\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Schema\-Serialization\-Mode Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Schema\-Serialization\-Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_ab9247eebccf51583aef7f03ff814f00d}
+
+
+Definición en la línea 126 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Servicios@{Servicios}}
+\index{Servicios@{Servicios}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Servicios}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Data\-Table} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Servicios\hspace{0.3cm}{\ttfamily [get]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a717bef885571ff0ddec806bafd4d2eb6}
+
+
+Definición en la línea 106 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Tables@{Tables}}
+\index{Tables@{Tables}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Tables}]{\setlength{\rightskip}{0pt plus 5cm}new global.\-System.\-Data.\-Data\-Table\-Collection Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Tables\hspace{0.3cm}{\ttfamily [get]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a6e60bee1128a67b84ad5700377274f05}
+
+
+Definición en la línea 138 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}!Usuario@{Usuario}}
+\index{Usuario@{Usuario}!SimBUS::BaseDeDatosDataSet@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set}}
+\subsubsection[{Usuario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Data\-Table} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Usuario\hspace{0.3cm}{\ttfamily [get]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_a4eae4be17189baff7b58f5c1b40f2e01}
+
+
+Definición en la línea 116 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Sim\-B\-U\-S/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

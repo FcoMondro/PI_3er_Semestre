@@ -1,0 +1,1088 @@
+\section{Referencia de la Clase Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table}
+\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table}\index{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table}}
+
+
+Represents the strongly named Data\-Table class. /summary$>$  
+
+
+Diagrama de herencias de Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Usuario\-Data\-Table} ()
+\item 
+void {\bf Add\-Usuario\-Row} ({\bf Usuario\-Row} row)
+\item 
+{\bf Usuario\-Row} {\bf Add\-Usuario\-Row} (string Id\-\_\-\-Tarjeta, string User\-Nombre, string User\-Ap\-Pa, string User\-Ap\-Ma, System.\-Date\-Time User\-Fecha\-Nac, string User\-Sexo, string User\-Tipo, string User\-Direccion\-Calle, string User\-Direccion\-Numero, string User\-Direccion\-Colonia, string User\-Direccion\-Municipio, string User\-Celular, string User\-Telefono, string User\-Tipo\-Sangre, string User\-Alergias, string User\-Accidente\-Nombre, string User\-Accidente\-Celular, string User\-Accidente\-Telefono, decimal User\-Saldo)
+\item 
+{\bf Usuario\-Row} {\bf Find\-By\-Id\-\_\-\-Usuario} (int Id\-\_\-\-Usuario)
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Table {\bf Clone} ()
+\item 
+{\bf Usuario\-Row} {\bf New\-Usuario\-Row} ()
+\item 
+void {\bf Remove\-Usuario\-Row} ({\bf Usuario\-Row} row)
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \\*
+global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type {\bf Get\-Typed\-Table\-Schema} (global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set xs)
+\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Usuario\-Data\-Table} (global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info info, global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context context)
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Table {\bf Create\-Instance} ()
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Row {\bf New\-Row\-From\-Builder} (global\-::\-System.\-Data.\-Data\-Row\-Builder builder)
+\item 
+override global\-::\-System.\-Type {\bf Get\-Row\-Type} ()
+\item 
+override void {\bf On\-Row\-Changed} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Changing} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Deleted} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Deleting} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\end{DoxyCompactItemize}
+\subsection*{Funciones del 'package'}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Usuario\-Data\-Table} (global\-::\-System.\-Data.\-Data\-Table table)
+\item 
+void {\bf Init\-Vars} ()
+\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Id\-\_\-\-Usuario\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Id\-\_\-\-Tarjeta\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Nombre\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Ap\-Pa\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Ap\-Ma\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Fecha\-Nac\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Sexo\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Tipo\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Direccion\-Calle\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Direccion\-Numero\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Direccion\-Colonia\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Direccion\-Municipio\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Celular\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Telefono\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Tipo\-Sangre\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Alergias\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Accidente\-Nombre\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Accidente\-Celular\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Accidente\-Telefono\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf User\-Saldo\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+int {\bf Count}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+{\bf Usuario\-Row} {\bf this[int index]}\hspace{0.3cm}{\ttfamily  [get]}
+\end{DoxyCompactItemize}
+\subsection*{Eventos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Usuario\-Row\-Change\-Event\-Handler} {\bf Usuario\-Row\-Changing}
+\item 
+{\bf Usuario\-Row\-Change\-Event\-Handler} {\bf Usuario\-Row\-Changed}
+\item 
+{\bf Usuario\-Row\-Change\-Event\-Handler} {\bf Usuario\-Row\-Deleting}
+\item 
+{\bf Usuario\-Row\-Change\-Event\-Handler} {\bf Usuario\-Row\-Deleted}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Init\-Class} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Id\-\_\-\-Usuario}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Id\-\_\-\-Tarjeta}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Nombre}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Ap\-Pa}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Ap\-Ma}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Fecha\-Nac}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Sexo}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Tipo}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Direccion\-Calle}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Direccion\-Numero}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Direccion\-Colonia}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Direccion\-Municipio}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Celular}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Telefono}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Tipo\-Sangre}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Alergias}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Accidente\-Nombre}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Accidente\-Celular}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Accidente\-Telefono}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-User\-Saldo}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Represents the strongly named Data\-Table class. /summary$>$ 
+
+Definición en la línea 966 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Usuario\-Data\-Table@{Usuario\-Data\-Table}}
+\index{Usuario\-Data\-Table@{Usuario\-Data\-Table}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Usuario\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Usuario\-Data\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a133a6e3ffb02b0bb73ff55bcda10b5a3}
+
+
+Definición en la línea 1010 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1010                                       \{
+1011                 this.TableName = \textcolor{stringliteral}{"Usuario"};
+1012                 this.BeginInit();
+1013                 this.InitClass();
+1014                 this.EndInit();
+1015             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Usuario\-Data\-Table@{Usuario\-Data\-Table}}
+\index{Usuario\-Data\-Table@{Usuario\-Data\-Table}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Usuario\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Usuario\-Data\-Table (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Table}]{table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a006691a08e50822a92b4d6332328c5f2}
+
+
+Definición en la línea 1019 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1019                                                                          \{
+1020                 this.TableName = table.TableName;
+1021                 \textcolor{keywordflow}{if} ((table.CaseSensitive != table.DataSet.CaseSensitive)) \{
+1022                     this.CaseSensitive = table.CaseSensitive;
+1023                 \}
+1024                 \textcolor{keywordflow}{if} ((table.Locale.ToString() != table.DataSet.Locale.ToString())) \{
+1025                     this.Locale = table.Locale;
+1026                 \}
+1027                 \textcolor{keywordflow}{if} ((table.Namespace != table.DataSet.Namespace)) \{
+1028                     this.Namespace = table.Namespace;
+1029                 \}
+1030                 this.Prefix = table.Prefix;
+1031                 this.MinimumCapacity = table.MinimumCapacity;
+1032             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Usuario\-Data\-Table@{Usuario\-Data\-Table}}
+\index{Usuario\-Data\-Table@{Usuario\-Data\-Table}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Usuario\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Usuario\-Data\-Table (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info}]{info, }
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_abce0879eb6116e8f67a29d438df6354f}
+
+
+Definición en la línea 1036 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1036                                                                                                            
+                                                          : 
+1037                     base(info, context) \{
+1038                 this.InitVars();
+1039             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Add\-Usuario\-Row@{Add\-Usuario\-Row}}
+\index{Add\-Usuario\-Row@{Add\-Usuario\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Add\-Usuario\-Row}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Add\-Usuario\-Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Usuario\-Row}}]{row}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_adb1ff2f10f62bdd2a3c8cbb792b8a27e}
+
+
+Definición en la línea 1232 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1232                                                       \{
+1233                 this.Rows.Add(row);
+1234             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Add\-Usuario\-Row@{Add\-Usuario\-Row}}
+\index{Add\-Usuario\-Row@{Add\-Usuario\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Add\-Usuario\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Add\-Usuario\-Row (
+\begin{DoxyParamCaption}
+\item[{string}]{Id\-\_\-\-Tarjeta, }
+\item[{string}]{User\-Nombre, }
+\item[{string}]{User\-Ap\-Pa, }
+\item[{string}]{User\-Ap\-Ma, }
+\item[{System.\-Date\-Time}]{User\-Fecha\-Nac, }
+\item[{string}]{User\-Sexo, }
+\item[{string}]{User\-Tipo, }
+\item[{string}]{User\-Direccion\-Calle, }
+\item[{string}]{User\-Direccion\-Numero, }
+\item[{string}]{User\-Direccion\-Colonia, }
+\item[{string}]{User\-Direccion\-Municipio, }
+\item[{string}]{User\-Celular, }
+\item[{string}]{User\-Telefono, }
+\item[{string}]{User\-Tipo\-Sangre, }
+\item[{string}]{User\-Alergias, }
+\item[{string}]{User\-Accidente\-Nombre, }
+\item[{string}]{User\-Accidente\-Celular, }
+\item[{string}]{User\-Accidente\-Telefono, }
+\item[{decimal}]{User\-Saldo}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a3dda0fc2672a5285bc28719b1280d6e9}
+
+
+Definición en la línea 1238 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1257                                            \{
+1258                 UsuarioRow rowUsuarioRow = ((UsuarioRow)(this.NewRow()));
+1259                 \textcolor{keywordtype}{object}[] columnValuesArray = \textcolor{keyword}{new} \textcolor{keywordtype}{object}[] \{
+1260                         null,
+1261                         Id\_Tarjeta,
+1262                         UserNombre,
+1263                         UserApPa,
+1264                         UserApMa,
+1265                         UserFechaNac,
+1266                         UserSexo,
+1267                         UserTipo,
+1268                         UserDireccionCalle,
+1269                         UserDireccionNumero,
+1270                         UserDireccionColonia,
+1271                         UserDireccionMunicipio,
+1272                         UserCelular,
+1273                         UserTelefono,
+1274                         UserTipoSangre,
+1275                         UserAlergias,
+1276                         UserAccidenteNombre,
+1277                         UserAccidenteCelular,
+1278                         UserAccidenteTelefono,
+1279                         UserSaldo\};
+1280                 rowUsuarioRow.ItemArray = columnValuesArray;
+1281                 this.Rows.Add(rowUsuarioRow);
+1282                 \textcolor{keywordflow}{return} rowUsuarioRow;
+1283             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Clone@{Clone}}
+\index{Clone@{Clone}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Table Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a7b73434b5e40b69d96593f989dcc60d8}
+
+
+Definición en la línea 1294 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1294                                                                 \{
+1295                 UsuarioDataTable cln = ((UsuarioDataTable)(base.Clone()));
+1296                 cln.InitVars();
+1297                 \textcolor{keywordflow}{return} cln;
+1298             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Create\-Instance@{Create\-Instance}}
+\index{Create\-Instance@{Create\-Instance}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Create\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Table Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Create\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a2125cbbd4bf01cbae0ddf3fdb405e855}
+
+
+Definición en la línea 1302 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1302                                                                             \{
+1303                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} UsuarioDataTable();
+1304             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Find\-By\-Id\-\_\-\-Usuario@{Find\-By\-Id\-\_\-\-Usuario}}
+\index{Find\-By\-Id\-\_\-\-Usuario@{Find\-By\-Id\-\_\-\-Usuario}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Find\-By\-Id\-\_\-\-Usuario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Find\-By\-Id\-\_\-\-Usuario (
+\begin{DoxyParamCaption}
+\item[{int}]{Id\-\_\-\-Usuario}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a5841ede4438e150248587a7e70842b2c}
+
+
+Definición en la línea 1287 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1287                                                                \{
+1288                 \textcolor{keywordflow}{return} ((UsuarioRow)(this.Rows.Find(\textcolor{keyword}{new} \textcolor{keywordtype}{object}[] \{
+1289                             Id\_Usuario\})));
+1290             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Get\-Row\-Type@{Get\-Row\-Type}}
+\index{Get\-Row\-Type@{Get\-Row\-Type}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Get\-Row\-Type}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Type Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Get\-Row\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a76c195237b4ec8c2df2bc57419829be3}
+
+
+Definición en la línea 1414 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1414                                                               \{
+1415                 \textcolor{keywordflow}{return} typeof(UsuarioRow);
+1416             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Get\-Typed\-Table\-Schema@{Get\-Typed\-Table\-Schema}}
+\index{Get\-Typed\-Table\-Schema@{Get\-Typed\-Table\-Schema}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Get\-Typed\-Table\-Schema}]{\setlength{\rightskip}{0pt plus 5cm}static global.\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Get\-Typed\-Table\-Schema (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set}]{xs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a8c52e3f295771ed9445f4325426776c7}
+
+
+Definición en la línea 1462 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1462                                                                                                            
+                               \{
+1463                 global::System.Xml.Schema.XmlSchemaComplexType type = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaComplexType();
+1464                 global::System.Xml.Schema.XmlSchemaSequence sequence = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaSequence();
+1465                 BaseDeDatosDataSet ds = \textcolor{keyword}{new} BaseDeDatosDataSet();
+1466                 global::System.Xml.Schema.XmlSchemaAny any1 = \textcolor{keyword}{new} global::System.Xml.Schema.XmlSchemaAny();
+1467                 any1.Namespace = \textcolor{stringliteral}{"http://www.w3.org/2001/XMLSchema"};
+1468                 any1.MinOccurs = \textcolor{keyword}{new} decimal(0);
+1469                 any1.MaxOccurs = decimal.MaxValue;
+1470                 any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+1471                 sequence.Items.Add(any1);
+1472                 global::System.Xml.Schema.XmlSchemaAny any2 = \textcolor{keyword}{new} global::System.Xml.Schema.XmlSchemaAny();
+1473                 any2.Namespace = \textcolor{stringliteral}{"urn:schemas-microsoft-com:xml-diffgram-v1"};
+1474                 any2.MinOccurs = \textcolor{keyword}{new} decimal(1);
+1475                 any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+1476                 sequence.Items.Add(any2);
+1477                 global::System.Xml.Schema.XmlSchemaAttribute attribute1 = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaAttribute();
+1478                 attribute1.Name = \textcolor{stringliteral}{"namespace"};
+1479                 attribute1.FixedValue = ds.Namespace;
+1480                 type.Attributes.Add(attribute1);
+1481                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaAttribute();
+1482                 attribute2.Name = \textcolor{stringliteral}{"tableTypeName"};
+1483                 attribute2.FixedValue = \textcolor{stringliteral}{"UsuarioDataTable"};
+1484                 type.Attributes.Add(attribute2);
+1485                 type.Particle = sequence;
+1486                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+1487                 \textcolor{keywordflow}{if} (xs.Contains(dsSchema.TargetNamespace)) \{
+1488                     global::System.IO.MemoryStream s1 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+1489                     global::System.IO.MemoryStream s2 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+1490                     \textcolor{keywordflow}{try} \{
+1491                         global::System.Xml.Schema.XmlSchema schema = null;
+1492                         dsSchema.Write(s1);
+1493                         \textcolor{keywordflow}{for} (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.
+      TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) \{
+1494                             schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+1495                             s2.SetLength(0);
+1496                             schema.Write(s2);
+1497                             \textcolor{keywordflow}{if} ((s1.Length == s2.Length)) \{
+1498                                 s1.Position = 0;
+1499                                 s2.Position = 0;
+1500                                 \textcolor{keywordflow}{for} (; ((s1.Position != s1.Length) 
+1501                                             && (s1.ReadByte() == s2.ReadByte())); ) \{
+1502                                     ;
+1503                                 \}
+1504                                 \textcolor{keywordflow}{if} ((s1.Position == s1.Length)) \{
+1505                                     \textcolor{keywordflow}{return} type;
+1506                                 \}
+1507                             \}
+1508                         \}
+1509                     \}
+1510                     \textcolor{keywordflow}{finally} \{
+1511                         \textcolor{keywordflow}{if} ((s1 != null)) \{
+1512                             s1.Close();
+1513                         \}
+1514                         \textcolor{keywordflow}{if} ((s2 != null)) \{
+1515                             s2.Close();
+1516                         \}
+1517                     \}
+1518                 \}
+1519                 xs.Add(dsSchema);
+1520                 \textcolor{keywordflow}{return} type;
+1521             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Init\-Class@{Init\-Class}}
+\index{Init\-Class@{Init\-Class}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Init\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Init\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a447262b7461ca2bd8b0042821dada5b1}
+
+
+Definición en la línea 1333 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1333                                      \{
+1334                 this.columnId\_Usuario = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"Id\_Usuario"}, typeof(\textcolor{keywordtype}{int}), null,
+       global::System.Data.MappingType.Element);
+1335                 base.Columns.Add(this.columnId\_Usuario);
+1336                 this.columnId\_Tarjeta = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"Id\_Tarjeta"}, typeof(\textcolor{keywordtype}{string}), 
+      null, global::System.Data.MappingType.Element);
+1337                 base.Columns.Add(this.columnId\_Tarjeta);
+1338                 this.columnUserNombre = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserNombre"}, typeof(\textcolor{keywordtype}{string}), 
+      null, global::System.Data.MappingType.Element);
+1339                 base.Columns.Add(this.columnUserNombre);
+1340                 this.columnUserApPa = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserApPa"}, typeof(\textcolor{keywordtype}{string}), null, 
+      global::System.Data.MappingType.Element);
+1341                 base.Columns.Add(this.columnUserApPa);
+1342                 this.columnUserApMa = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserApMa"}, typeof(\textcolor{keywordtype}{string}), null, 
+      global::System.Data.MappingType.Element);
+1343                 base.Columns.Add(this.columnUserApMa);
+1344                 this.columnUserFechaNac = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserFechaNac"}, typeof(
+      global::System.DateTime), null, global::System.Data.MappingType.Element);
+1345                 base.Columns.Add(this.columnUserFechaNac);
+1346                 this.columnUserSexo = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserSexo"}, typeof(\textcolor{keywordtype}{string}), null, 
+      global::System.Data.MappingType.Element);
+1347                 base.Columns.Add(this.columnUserSexo);
+1348                 this.columnUserTipo = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserTipo"}, typeof(\textcolor{keywordtype}{string}), null, 
+      global::System.Data.MappingType.Element);
+1349                 base.Columns.Add(this.columnUserTipo);
+1350                 this.columnUserDireccionCalle = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserDireccionCalle"}, 
+      typeof(\textcolor{keywordtype}{string}), null, global::System.Data.MappingType.Element);
+1351                 base.Columns.Add(this.columnUserDireccionCalle);
+1352                 this.columnUserDireccionNumero = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserDireccionNumero"}, 
+      typeof(\textcolor{keywordtype}{string}), null, global::System.Data.MappingType.Element);
+1353                 base.Columns.Add(this.columnUserDireccionNumero);
+1354                 this.columnUserDireccionColonia = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserDireccionColonia"}
+      , typeof(\textcolor{keywordtype}{string}), null, global::System.Data.MappingType.Element);
+1355                 base.Columns.Add(this.columnUserDireccionColonia);
+1356                 this.columnUserDireccionMunicipio = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"
+      UserDireccionMunicipio"}, typeof(\textcolor{keywordtype}{string}), null, global::System.Data.MappingType.Element);
+1357                 base.Columns.Add(this.columnUserDireccionMunicipio);
+1358                 this.columnUserCelular = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserCelular"}, typeof(\textcolor{keywordtype}{string}), 
+      null, global::System.Data.MappingType.Element);
+1359                 base.Columns.Add(this.columnUserCelular);
+1360                 this.columnUserTelefono = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserTelefono"}, typeof(\textcolor{keywordtype}{string})
+      , null, global::System.Data.MappingType.Element);
+1361                 base.Columns.Add(this.columnUserTelefono);
+1362                 this.columnUserTipoSangre = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserTipoSangre"}, typeof(\textcolor{keywordtype}{
+      string}), null, global::System.Data.MappingType.Element);
+1363                 base.Columns.Add(this.columnUserTipoSangre);
+1364                 this.columnUserAlergias = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserAlergias"}, typeof(\textcolor{keywordtype}{string})
+      , null, global::System.Data.MappingType.Element);
+1365                 base.Columns.Add(this.columnUserAlergias);
+1366                 this.columnUserAccidenteNombre = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserAccidenteNombre"}, 
+      typeof(\textcolor{keywordtype}{string}), null, global::System.Data.MappingType.Element);
+1367                 base.Columns.Add(this.columnUserAccidenteNombre);
+1368                 this.columnUserAccidenteCelular = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserAccidenteCelular"}
+      , typeof(\textcolor{keywordtype}{string}), null, global::System.Data.MappingType.Element);
+1369                 base.Columns.Add(this.columnUserAccidenteCelular);
+1370                 this.columnUserAccidenteTelefono = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"
+      UserAccidenteTelefono"}, typeof(\textcolor{keywordtype}{string}), null, global::System.Data.MappingType.Element);
+1371                 base.Columns.Add(this.columnUserAccidenteTelefono);
+1372                 this.columnUserSaldo = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"UserSaldo"}, typeof(decimal), 
+      null, global::System.Data.MappingType.Element);
+1373                 base.Columns.Add(this.columnUserSaldo);
+1374                 this.Constraints.Add(\textcolor{keyword}{new} global::System.Data.UniqueConstraint(\textcolor{stringliteral}{"Constraint1"}, \textcolor{keyword}{new} 
+      global::System.Data.DataColumn[] \{
+1375                                 this.columnId\_Usuario\}, \textcolor{keyword}{true}));
+1376                 this.columnId\_Usuario.AutoIncrement = \textcolor{keyword}{true};
+1377                 this.columnId\_Usuario.AutoIncrementSeed = -1;
+1378                 this.columnId\_Usuario.AutoIncrementStep = -1;
+1379                 this.columnId\_Usuario.AllowDBNull = \textcolor{keyword}{false};
+1380                 this.columnId\_Usuario.Unique = \textcolor{keyword}{true};
+1381                 this.columnId\_Tarjeta.MaxLength = 255;
+1382                 this.columnUserNombre.MaxLength = 255;
+1383                 this.columnUserApPa.MaxLength = 255;
+1384                 this.columnUserApMa.MaxLength = 255;
+1385                 this.columnUserSexo.MaxLength = 255;
+1386                 this.columnUserTipo.MaxLength = 255;
+1387                 this.columnUserDireccionCalle.MaxLength = 255;
+1388                 this.columnUserDireccionNumero.MaxLength = 255;
+1389                 this.columnUserDireccionColonia.MaxLength = 255;
+1390                 this.columnUserDireccionMunicipio.MaxLength = 255;
+1391                 this.columnUserCelular.MaxLength = 255;
+1392                 this.columnUserTelefono.MaxLength = 255;
+1393                 this.columnUserTipoSangre.MaxLength = 255;
+1394                 this.columnUserAlergias.MaxLength = 255;
+1395                 this.columnUserAccidenteNombre.MaxLength = 255;
+1396                 this.columnUserAccidenteCelular.MaxLength = 255;
+1397                 this.columnUserAccidenteTelefono.MaxLength = 255;
+1398             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Init\-Vars@{Init\-Vars}}
+\index{Init\-Vars@{Init\-Vars}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Init\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Init\-Vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_adca19c24ba4291de60bdcc30d2aa9884}
+
+
+Definición en la línea 1308 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1308                                      \{
+1309                 this.columnId\_Usuario = base.Columns[\textcolor{stringliteral}{"Id\_Usuario"}];
+1310                 this.columnId\_Tarjeta = base.Columns[\textcolor{stringliteral}{"Id\_Tarjeta"}];
+1311                 this.columnUserNombre = base.Columns[\textcolor{stringliteral}{"UserNombre"}];
+1312                 this.columnUserApPa = base.Columns[\textcolor{stringliteral}{"UserApPa"}];
+1313                 this.columnUserApMa = base.Columns[\textcolor{stringliteral}{"UserApMa"}];
+1314                 this.columnUserFechaNac = base.Columns[\textcolor{stringliteral}{"UserFechaNac"}];
+1315                 this.columnUserSexo = base.Columns[\textcolor{stringliteral}{"UserSexo"}];
+1316                 this.columnUserTipo = base.Columns[\textcolor{stringliteral}{"UserTipo"}];
+1317                 this.columnUserDireccionCalle = base.Columns[\textcolor{stringliteral}{"UserDireccionCalle"}];
+1318                 this.columnUserDireccionNumero = base.Columns[\textcolor{stringliteral}{"UserDireccionNumero"}];
+1319                 this.columnUserDireccionColonia = base.Columns[\textcolor{stringliteral}{"UserDireccionColonia"}];
+1320                 this.columnUserDireccionMunicipio = base.Columns[\textcolor{stringliteral}{"UserDireccionMunicipio"}];
+1321                 this.columnUserCelular = base.Columns[\textcolor{stringliteral}{"UserCelular"}];
+1322                 this.columnUserTelefono = base.Columns[\textcolor{stringliteral}{"UserTelefono"}];
+1323                 this.columnUserTipoSangre = base.Columns[\textcolor{stringliteral}{"UserTipoSangre"}];
+1324                 this.columnUserAlergias = base.Columns[\textcolor{stringliteral}{"UserAlergias"}];
+1325                 this.columnUserAccidenteNombre = base.Columns[\textcolor{stringliteral}{"UserAccidenteNombre"}];
+1326                 this.columnUserAccidenteCelular = base.Columns[\textcolor{stringliteral}{"UserAccidenteCelular"}];
+1327                 this.columnUserAccidenteTelefono = base.Columns[\textcolor{stringliteral}{"UserAccidenteTelefono"}];
+1328                 this.columnUserSaldo = base.Columns[\textcolor{stringliteral}{"UserSaldo"}];
+1329             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!New\-Row\-From\-Builder@{New\-Row\-From\-Builder}}
+\index{New\-Row\-From\-Builder@{New\-Row\-From\-Builder}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{New\-Row\-From\-Builder}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Row Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-New\-Row\-From\-Builder (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Builder}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a3fbc56dde00f756b1d463b20cdbdb270}
+
+
+Definición en la línea 1408 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1408                                                                                                            
+                \{
+1409                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} UsuarioRow(builder);
+1410             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!New\-Usuario\-Row@{New\-Usuario\-Row}}
+\index{New\-Usuario\-Row@{New\-Usuario\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{New\-Usuario\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-New\-Usuario\-Row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_aea75bea703322048489194bcf7ca3abc}
+
+
+Definición en la línea 1402 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1402                                               \{
+1403                 \textcolor{keywordflow}{return} ((UsuarioRow)(this.NewRow()));
+1404             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!On\-Row\-Changed@{On\-Row\-Changed}}
+\index{On\-Row\-Changed@{On\-Row\-Changed}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{On\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-On\-Row\-Changed (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a869cf2aef36f5debb2e8aa307f213b39}
+
+
+Definición en la línea 1420 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1420                                                                                              \{
+1421                 base.OnRowChanged(e);
+1422                 \textcolor{keywordflow}{if} ((this.UsuarioRowChanged != null)) \{
+1423                     this.UsuarioRowChanged(\textcolor{keyword}{this}, \textcolor{keyword}{new} UsuarioRowChangeEvent(((UsuarioRow)(e.Row)), e.Action)
+      );
+1424                 \}
+1425             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!On\-Row\-Changing@{On\-Row\-Changing}}
+\index{On\-Row\-Changing@{On\-Row\-Changing}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{On\-Row\-Changing}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-On\-Row\-Changing (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a0e0bd82c96da4e88497857e14b9acc73}
+
+
+Definición en la línea 1429 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1429                                                                                               \{
+1430                 base.OnRowChanging(e);
+1431                 \textcolor{keywordflow}{if} ((this.UsuarioRowChanging != null)) \{
+1432                     this.UsuarioRowChanging(\textcolor{keyword}{this}, \textcolor{keyword}{new} UsuarioRowChangeEvent(((UsuarioRow)(e.Row)), e.Action
+      ));
+1433                 \}
+1434             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!On\-Row\-Deleted@{On\-Row\-Deleted}}
+\index{On\-Row\-Deleted@{On\-Row\-Deleted}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{On\-Row\-Deleted}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-On\-Row\-Deleted (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a7792c76028f2a1a00ac210947082d5a1}
+
+
+Definición en la línea 1438 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1438                                                                                              \{
+1439                 base.OnRowDeleted(e);
+1440                 \textcolor{keywordflow}{if} ((this.UsuarioRowDeleted != null)) \{
+1441                     this.UsuarioRowDeleted(\textcolor{keyword}{this}, \textcolor{keyword}{new} UsuarioRowChangeEvent(((UsuarioRow)(e.Row)), e.Action)
+      );
+1442                 \}
+1443             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!On\-Row\-Deleting@{On\-Row\-Deleting}}
+\index{On\-Row\-Deleting@{On\-Row\-Deleting}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{On\-Row\-Deleting}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-On\-Row\-Deleting (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a74e62bb94f683048bacacfbf35060a60}
+
+
+Definición en la línea 1447 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1447                                                                                               \{
+1448                 base.OnRowDeleting(e);
+1449                 \textcolor{keywordflow}{if} ((this.UsuarioRowDeleting != null)) \{
+1450                     this.UsuarioRowDeleting(\textcolor{keyword}{this}, \textcolor{keyword}{new} UsuarioRowChangeEvent(((UsuarioRow)(e.Row)), e.Action
+      ));
+1451                 \}
+1452             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Remove\-Usuario\-Row@{Remove\-Usuario\-Row}}
+\index{Remove\-Usuario\-Row@{Remove\-Usuario\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Remove\-Usuario\-Row}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Remove\-Usuario\-Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Usuario\-Row}}]{row}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_ab8306e6d2f4607a16bea3ab51fa2e5f6}
+
+
+Definición en la línea 1456 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+1456                                                          \{
+1457                 this.Rows.Remove(row);
+1458             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-Id\-\_\-\-Tarjeta@{column\-Id\-\_\-\-Tarjeta}}
+\index{column\-Id\-\_\-\-Tarjeta@{column\-Id\-\_\-\-Tarjeta}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-Id\-\_\-\-Tarjeta}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-Id\-\_\-\-Tarjeta\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_abdb30b40c083ac7e0ef176c84803e8b0}
+
+
+Definición en la línea 970 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-Id\-\_\-\-Usuario@{column\-Id\-\_\-\-Usuario}}
+\index{column\-Id\-\_\-\-Usuario@{column\-Id\-\_\-\-Usuario}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-Id\-\_\-\-Usuario}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-Id\-\_\-\-Usuario\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_ad3aba2ee9b4a3b6fe1648d4353062d89}
+
+
+Definición en la línea 968 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Accidente\-Celular@{column\-User\-Accidente\-Celular}}
+\index{column\-User\-Accidente\-Celular@{column\-User\-Accidente\-Celular}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Accidente\-Celular}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Accidente\-Celular\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a016c5ef4905b758b05f13b21ff11cd23}
+
+
+Definición en la línea 1002 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Accidente\-Nombre@{column\-User\-Accidente\-Nombre}}
+\index{column\-User\-Accidente\-Nombre@{column\-User\-Accidente\-Nombre}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Accidente\-Nombre}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Accidente\-Nombre\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_aa025b5ef3671ae309feb2466530099b9}
+
+
+Definición en la línea 1000 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Accidente\-Telefono@{column\-User\-Accidente\-Telefono}}
+\index{column\-User\-Accidente\-Telefono@{column\-User\-Accidente\-Telefono}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Accidente\-Telefono}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Accidente\-Telefono\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_aa9aee5a13fd2ce4e900bd91eb4bd0f83}
+
+
+Definición en la línea 1004 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Alergias@{column\-User\-Alergias}}
+\index{column\-User\-Alergias@{column\-User\-Alergias}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Alergias}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Alergias\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a4ce234af1c8536a6593e6ede66da78f1}
+
+
+Definición en la línea 998 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Ap\-Ma@{column\-User\-Ap\-Ma}}
+\index{column\-User\-Ap\-Ma@{column\-User\-Ap\-Ma}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Ap\-Ma}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Ap\-Ma\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_acee75276f530524afeabd478ca4243a5}
+
+
+Definición en la línea 976 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Ap\-Pa@{column\-User\-Ap\-Pa}}
+\index{column\-User\-Ap\-Pa@{column\-User\-Ap\-Pa}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Ap\-Pa}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Ap\-Pa\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_ac6514624c5b1b30f7afdd443eaf30733}
+
+
+Definición en la línea 974 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Celular@{column\-User\-Celular}}
+\index{column\-User\-Celular@{column\-User\-Celular}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Celular}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Celular\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a8e8d98dba2fe0b2ae6dafd391203d725}
+
+
+Definición en la línea 992 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Direccion\-Calle@{column\-User\-Direccion\-Calle}}
+\index{column\-User\-Direccion\-Calle@{column\-User\-Direccion\-Calle}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Direccion\-Calle}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Direccion\-Calle\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a9966d8e6919fede4f3e4d150fe00235b}
+
+
+Definición en la línea 984 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Direccion\-Colonia@{column\-User\-Direccion\-Colonia}}
+\index{column\-User\-Direccion\-Colonia@{column\-User\-Direccion\-Colonia}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Direccion\-Colonia}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Direccion\-Colonia\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_ab2cf51e9718e8b6a55a068acd8ee0b43}
+
+
+Definición en la línea 988 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Direccion\-Municipio@{column\-User\-Direccion\-Municipio}}
+\index{column\-User\-Direccion\-Municipio@{column\-User\-Direccion\-Municipio}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Direccion\-Municipio}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Direccion\-Municipio\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a8572b2c26d76cea0415c69c9a7f123cf}
+
+
+Definición en la línea 990 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Direccion\-Numero@{column\-User\-Direccion\-Numero}}
+\index{column\-User\-Direccion\-Numero@{column\-User\-Direccion\-Numero}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Direccion\-Numero}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Direccion\-Numero\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a1d56d88dda304f6f1f83ce683235505e}
+
+
+Definición en la línea 986 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Fecha\-Nac@{column\-User\-Fecha\-Nac}}
+\index{column\-User\-Fecha\-Nac@{column\-User\-Fecha\-Nac}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Fecha\-Nac}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Fecha\-Nac\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a2370c2f69a262c7eaadfb7f41e1a8872}
+
+
+Definición en la línea 978 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Nombre@{column\-User\-Nombre}}
+\index{column\-User\-Nombre@{column\-User\-Nombre}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Nombre}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Nombre\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a92bfcb2b07e32c0f80a68d03ab264bc7}
+
+
+Definición en la línea 972 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Saldo@{column\-User\-Saldo}}
+\index{column\-User\-Saldo@{column\-User\-Saldo}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Saldo}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Saldo\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a9938a4fb0f1048a24ea89d4723e63958}
+
+
+Definición en la línea 1006 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Sexo@{column\-User\-Sexo}}
+\index{column\-User\-Sexo@{column\-User\-Sexo}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Sexo}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Sexo\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_ab3babd41fd5db08550e6487ff06166c4}
+
+
+Definición en la línea 980 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Telefono@{column\-User\-Telefono}}
+\index{column\-User\-Telefono@{column\-User\-Telefono}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Telefono}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Telefono\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_ab00b963f4df0eb9e641cedc18846c545}
+
+
+Definición en la línea 994 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Tipo@{column\-User\-Tipo}}
+\index{column\-User\-Tipo@{column\-User\-Tipo}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Tipo}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Tipo\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a10c425621c2b81e5fd53673b8b4c6f35}
+
+
+Definición en la línea 982 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!column\-User\-Tipo\-Sangre@{column\-User\-Tipo\-Sangre}}
+\index{column\-User\-Tipo\-Sangre@{column\-User\-Tipo\-Sangre}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{column\-User\-Tipo\-Sangre}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-column\-User\-Tipo\-Sangre\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a646b727636ea2315633e7db43d108065}
+
+
+Definición en la línea 996 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de propiedades}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Count@{Count}}
+\index{Count@{Count}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Count}]{\setlength{\rightskip}{0pt plus 5cm}int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Count\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a606c5cc714c62c441baaa42bcb19d4b2}
+
+
+Definición en la línea 1204 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Id\-\_\-\-Tarjeta\-Column@{Id\-\_\-\-Tarjeta\-Column}}
+\index{Id\-\_\-\-Tarjeta\-Column@{Id\-\_\-\-Tarjeta\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Id\-\_\-\-Tarjeta\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Id\-\_\-\-Tarjeta\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a3632ccbe40642739095abc92bc2f5ddf}
+
+
+Definición en la línea 1051 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Id\-\_\-\-Usuario\-Column@{Id\-\_\-\-Usuario\-Column}}
+\index{Id\-\_\-\-Usuario\-Column@{Id\-\_\-\-Usuario\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Id\-\_\-\-Usuario\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Id\-\_\-\-Usuario\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a82793071ae60b6fad21c30e9e534c4ab}
+
+
+Definición en la línea 1043 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!this[int index]@{this[int index]}}
+\index{this[int index]@{this[int index]}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{this[int index]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-this[int index]\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a83388cf0ceb61d63571aa24400e550e3}
+
+
+Definición en la línea 1212 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Accidente\-Celular\-Column@{User\-Accidente\-Celular\-Column}}
+\index{User\-Accidente\-Celular\-Column@{User\-Accidente\-Celular\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Accidente\-Celular\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Accidente\-Celular\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a84c86e0e24fcc8c38a2b7d31d0ee115f}
+
+
+Definición en la línea 1179 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Accidente\-Nombre\-Column@{User\-Accidente\-Nombre\-Column}}
+\index{User\-Accidente\-Nombre\-Column@{User\-Accidente\-Nombre\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Accidente\-Nombre\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Accidente\-Nombre\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_ac2e42d8ef093eceeb068b57267c7fad6}
+
+
+Definición en la línea 1171 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Accidente\-Telefono\-Column@{User\-Accidente\-Telefono\-Column}}
+\index{User\-Accidente\-Telefono\-Column@{User\-Accidente\-Telefono\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Accidente\-Telefono\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Accidente\-Telefono\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a8b0fb823ab433ddb4a2597e8d533ff3b}
+
+
+Definición en la línea 1187 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Alergias\-Column@{User\-Alergias\-Column}}
+\index{User\-Alergias\-Column@{User\-Alergias\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Alergias\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Alergias\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a729270748fae2a2558894a91b2857787}
+
+
+Definición en la línea 1163 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Ap\-Ma\-Column@{User\-Ap\-Ma\-Column}}
+\index{User\-Ap\-Ma\-Column@{User\-Ap\-Ma\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Ap\-Ma\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Ap\-Ma\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a750da3a8dfb26d8c0dbc4416a5ece7d5}
+
+
+Definición en la línea 1075 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Ap\-Pa\-Column@{User\-Ap\-Pa\-Column}}
+\index{User\-Ap\-Pa\-Column@{User\-Ap\-Pa\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Ap\-Pa\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Ap\-Pa\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a27b02809f6e7e7653ee3417bbf32e74c}
+
+
+Definición en la línea 1067 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Celular\-Column@{User\-Celular\-Column}}
+\index{User\-Celular\-Column@{User\-Celular\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Celular\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Celular\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a031e722a8b180c4b4bd51d0b4c074583}
+
+
+Definición en la línea 1139 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Direccion\-Calle\-Column@{User\-Direccion\-Calle\-Column}}
+\index{User\-Direccion\-Calle\-Column@{User\-Direccion\-Calle\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Direccion\-Calle\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Direccion\-Calle\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a1b0120f33156d37379188ce89a5157b7}
+
+
+Definición en la línea 1107 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Direccion\-Colonia\-Column@{User\-Direccion\-Colonia\-Column}}
+\index{User\-Direccion\-Colonia\-Column@{User\-Direccion\-Colonia\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Direccion\-Colonia\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Direccion\-Colonia\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a48f0ef48232ee0554690f071ce96e9cd}
+
+
+Definición en la línea 1123 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Direccion\-Municipio\-Column@{User\-Direccion\-Municipio\-Column}}
+\index{User\-Direccion\-Municipio\-Column@{User\-Direccion\-Municipio\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Direccion\-Municipio\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Direccion\-Municipio\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a16864bc7c9409a910972f71793127c66}
+
+
+Definición en la línea 1131 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Direccion\-Numero\-Column@{User\-Direccion\-Numero\-Column}}
+\index{User\-Direccion\-Numero\-Column@{User\-Direccion\-Numero\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Direccion\-Numero\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Direccion\-Numero\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a8f4c072f67556ad5bdad0c25421a069e}
+
+
+Definición en la línea 1115 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Fecha\-Nac\-Column@{User\-Fecha\-Nac\-Column}}
+\index{User\-Fecha\-Nac\-Column@{User\-Fecha\-Nac\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Fecha\-Nac\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Fecha\-Nac\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a255de26156a54d79e12a8d872a1bb28d}
+
+
+Definición en la línea 1083 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Nombre\-Column@{User\-Nombre\-Column}}
+\index{User\-Nombre\-Column@{User\-Nombre\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Nombre\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Nombre\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_aad8a978a819b60b13808ec0379203896}
+
+
+Definición en la línea 1059 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Saldo\-Column@{User\-Saldo\-Column}}
+\index{User\-Saldo\-Column@{User\-Saldo\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Saldo\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Saldo\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a32557a92a2ff886aafee225663774f08}
+
+
+Definición en la línea 1195 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Sexo\-Column@{User\-Sexo\-Column}}
+\index{User\-Sexo\-Column@{User\-Sexo\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Sexo\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Sexo\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a0e7aafd00b3dd697a8eeb48aef38c84b}
+
+
+Definición en la línea 1091 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Telefono\-Column@{User\-Telefono\-Column}}
+\index{User\-Telefono\-Column@{User\-Telefono\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Telefono\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Telefono\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_ac10a994f4c1e75e3d7d873917de67c05}
+
+
+Definición en la línea 1147 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Tipo\-Column@{User\-Tipo\-Column}}
+\index{User\-Tipo\-Column@{User\-Tipo\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Tipo\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Tipo\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a63ca97df111356b1981d8eb113a91df1}
+
+
+Definición en la línea 1099 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!User\-Tipo\-Sangre\-Column@{User\-Tipo\-Sangre\-Column}}
+\index{User\-Tipo\-Sangre\-Column@{User\-Tipo\-Sangre\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{User\-Tipo\-Sangre\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-User\-Tipo\-Sangre\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a611ec514cbd08c63e8d9bb3734d34cff}
+
+
+Definición en la línea 1155 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de los eventos}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Usuario\-Row\-Changed@{Usuario\-Row\-Changed}}
+\index{Usuario\-Row\-Changed@{Usuario\-Row\-Changed}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Usuario\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Usuario\-Row\-Changed}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a462d7bf2460f7532bdec6340dc07dbd7}
+
+
+Definición en la línea 1222 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Usuario\-Row\-Changing@{Usuario\-Row\-Changing}}
+\index{Usuario\-Row\-Changing@{Usuario\-Row\-Changing}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Usuario\-Row\-Changing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Usuario\-Row\-Changing}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_adb62dc4a64331868150dd4b91d08d8d5}
+
+
+Definición en la línea 1219 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Usuario\-Row\-Deleted@{Usuario\-Row\-Deleted}}
+\index{Usuario\-Row\-Deleted@{Usuario\-Row\-Deleted}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Usuario\-Row\-Deleted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Usuario\-Row\-Deleted}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_abf6ccbf37f9cc442c24209c7acf8fb9a}
+
+
+Definición en la línea 1228 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}!Usuario\-Row\-Deleting@{Usuario\-Row\-Deleting}}
+\index{Usuario\-Row\-Deleting@{Usuario\-Row\-Deleting}!Proyecto_Integrador::BaseDeDatosDataSet::UsuarioDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Usuario\-Data\-Table}}
+\subsubsection[{Usuario\-Row\-Deleting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Usuario\-Data\-Table.\-Usuario\-Row\-Deleting}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table_a6ebc2ca87c3a62ed14840db677273c8b}
+
+
+Definición en la línea 1225 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

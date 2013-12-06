@@ -1,0 +1,7 @@
+var namespace_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters =
+[
+    [ "CamionTableAdapter", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter.html", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter" ],
+    [ "ServiciosTableAdapter", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter" ],
+    [ "UsuarioTableAdapter", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter" ],
+    [ "TableAdapterManager", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager.html", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager" ]
+];

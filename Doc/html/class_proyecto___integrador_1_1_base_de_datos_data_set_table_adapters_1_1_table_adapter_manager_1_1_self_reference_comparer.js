@@ -1,0 +1,8 @@
+var class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer =
+[
+    [ "SelfReferenceComparer", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer.html#a241ee9ba43b4fc3e171aabfa43f8867c", null ],
+    [ "Compare", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer.html#ae94355397e5c0d144490160dd87ceb26", null ],
+    [ "GetRoot", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer.html#a4c254daee99e1a22d750d531c6a50b6f", null ],
+    [ "_childFirst", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer.html#a8332b2ea97c457b82cc83d09d5378f3a", null ],
+    [ "_relation", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer.html#ac16b47b1c7e04fdaa9748000570ac9c7", null ]
+];

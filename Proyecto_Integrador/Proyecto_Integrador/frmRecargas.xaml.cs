@@ -22,6 +22,9 @@ namespace Proyecto_Integrador
     /// </summary>
     public partial class frmRecargas : MetroWindow
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public frmRecargas()
         {
             InitializeComponent();
@@ -49,6 +52,9 @@ namespace Proyecto_Integrador
 
         //}
 
+        /// <summary>
+        /// Busca en la base de datos cuando es por nombre y se le da enter
+        /// </summary>
         private void TextBox_KeyUp_1(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
@@ -65,6 +71,9 @@ namespace Proyecto_Integrador
             }
         }
 
+        /// <summary>
+        /// Busca en la base de datos cuando es por ID y se le da enter
+        /// </summary>
         private void txtID_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
@@ -81,8 +90,9 @@ namespace Proyecto_Integrador
             }
         }
 
-
-
+        /// <summary>
+        /// Se hace la actualizacion del registro en la base de datos
+        /// </summary>
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             saldo += decimal.Parse(txtCantidad.Text);
@@ -94,6 +104,9 @@ namespace Proyecto_Integrador
             Conexion.Close();
         }
 
+        /// <summary>
+        /// Se agregan los campos necesarios para generar la recarga
+        /// </summary>
         private void dtgBusqueda_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             DataRowView DR = dtgBusqueda.SelectedItem as DataRowView;

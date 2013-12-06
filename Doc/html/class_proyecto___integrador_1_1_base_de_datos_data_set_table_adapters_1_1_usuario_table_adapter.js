@@ -1,0 +1,26 @@
+var class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter =
+[
+    [ "UsuarioTableAdapter", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#aea9be3d5cd2a8e5e63eaef2b6aa7ef84", null ],
+    [ "Delete", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a646e51c7a38d643e0d4424a83b23ca7d", null ],
+    [ "Fill", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#aa5c2962ef4449ca8eb0389c48dc1a34e", null ],
+    [ "GetData", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a97eb3279e0cdb1740bf9e406fdb58065", null ],
+    [ "InitAdapter", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#aea3453e132e0ac2a1d844159e57d3d0b", null ],
+    [ "InitCommandCollection", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a515f0687a63b2187b5af83e7904881de", null ],
+    [ "InitConnection", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a084192b6d302c4430dee74d5c6860a55", null ],
+    [ "Insert", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a34946ca62dc55d3d1e835c2e1be0ce4b", null ],
+    [ "Update", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a0d5a0d4ea575cbe2cdfeea918705823a", null ],
+    [ "Update", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#aa6355bcac81a6ab6fd07705beffbf427", null ],
+    [ "Update", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a7d1b5e6b5e46da986dbeb13a9cade065", null ],
+    [ "Update", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#aa044e712e06fb39cc8e10e5a1a649370", null ],
+    [ "Update", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a574f3c61ef71c61a11f4688d06191f47", null ],
+    [ "_adapter", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a0ee6448de6b366c53fa7ad54f4974978", null ],
+    [ "_clearBeforeFill", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a968696d383e2c457c220614aebc277c9", null ],
+    [ "_commandCollection", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a2bcdd2df069c4f5fae4f54522a7acc28", null ],
+    [ "_connection", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#afdff02372179136f416beb5fca0e5285", null ],
+    [ "_transaction", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a5ae0e8933d3077dc61e881d15547e401", null ],
+    [ "Adapter", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#af55fad867b05da6cacece3f1eae180b0", null ],
+    [ "ClearBeforeFill", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a4b01b892e7d3c548d45507bc71c66731", null ],
+    [ "CommandCollection", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#adb1f9739cc43a4c6d0d13b7e0a0dcc16", null ],
+    [ "Connection", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#a1c5a46394421fc9c788babbf914a50a9", null ],
+    [ "Transaction", "class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter.html#aee305d94dfc85df4fe14e9a62dc633f1", null ]
+];

@@ -1,0 +1,687 @@
+\section{Referencia de la Clase Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter}
+\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter}\index{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter}}
+
+
+Represents the connection and commands used to retrieve and save data. /summary$>$  
+
+
+Diagrama de herencias de Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Servicios\-Table\-Adapter} ()
+\item 
+virtual int {\bf Fill} ({\bf Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table} data\-Table)
+\item 
+virtual \\*
+{\bf Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table} {\bf Get\-Data} ()
+\item 
+virtual int {\bf Update} ({\bf Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table} data\-Table)
+\item 
+virtual int {\bf Update} ({\bf Base\-De\-Datos\-Data\-Set} data\-Set)
+\item 
+virtual int {\bf Update} (global\-::\-System.\-Data.\-Data\-Row data\-Row)
+\item 
+virtual int {\bf Update} (global\-::\-System.\-Data.\-Data\-Row[$\,$] data\-Rows)
+\item 
+virtual int {\bf Delete} (int Original\-\_\-\-Id, string Original\-\_\-\-Num\-Unidad, string Original\-\_\-\-Tipo\-Usuario, string Original\-\_\-\-Usuario, global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$ Original\-\_\-\-Fecha)
+\item 
+virtual int {\bf Insert} (string Num\-Unidad, string Tipo\-Usuario, string Usuario, global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$ Fecha)
+\item 
+virtual int {\bf Update} (string Num\-Unidad, string Tipo\-Usuario, string Usuario, global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$ Fecha, int Original\-\_\-\-Id, string Original\-\_\-\-Num\-Unidad, string Original\-\_\-\-Tipo\-Usuario, string Original\-\_\-\-Usuario, global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$ Original\-\_\-\-Fecha)
+\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter {\bf Adapter}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection {\bf Connection}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction {\bf Transaction}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command[$\,$] {\bf Command\-Collection}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+bool {\bf Clear\-Before\-Fill}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Init\-Adapter} ()
+\item 
+void {\bf Init\-Connection} ()
+\item 
+void {\bf Init\-Command\-Collection} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter {\bf \-\_\-adapter}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection {\bf \-\_\-connection}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction {\bf \-\_\-transaction}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command[$\,$] {\bf \-\_\-command\-Collection}
+\item 
+bool {\bf \-\_\-clear\-Before\-Fill}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Represents the connection and commands used to retrieve and save data. /summary$>$ 
+
+Definición en la línea 2745 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Servicios\-Table\-Adapter@{Servicios\-Table\-Adapter}}
+\index{Servicios\-Table\-Adapter@{Servicios\-Table\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Servicios\-Table\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Servicios\-Table\-Adapter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a9e6f5c93af23fb775560f5163caed203}
+
+
+Definición en la línea 2759 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2759                                        \{
+2760             this.ClearBeforeFill = \textcolor{keyword}{true};
+2761         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Delete@{Delete}}
+\index{Delete@{Delete}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Delete (
+\begin{DoxyParamCaption}
+\item[{int}]{Original\-\_\-\-Id, }
+\item[{string}]{Original\-\_\-\-Num\-Unidad, }
+\item[{string}]{Original\-\_\-\-Tipo\-Usuario, }
+\item[{string}]{Original\-\_\-\-Usuario, }
+\item[{global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$}]{Original\-\_\-\-Fecha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_aca2e40d81424be1fd647ec977d26278e}
+
+
+Definición en la línea 2978 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2978                                                                                                            
+                                                                                            \{
+2979             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original\_Id));
+2980             \textcolor{keywordflow}{if} ((Original\_NumUnidad == null)) \{
+2981                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+2982                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+2983             \}
+2984             \textcolor{keywordflow}{else} \{
+2985                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+2986                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original\_NumUnidad));
+2987             \}
+2988             \textcolor{keywordflow}{if} ((Original\_TipoUsuario == null)) \{
+2989                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+2990                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+2991             \}
+2992             \textcolor{keywordflow}{else} \{
+2993                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+2994                 this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original\_TipoUsuario));
+2995             \}
+2996             \textcolor{keywordflow}{if} ((Original\_Usuario == null)) \{
+2997                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+2998                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+2999             \}
+3000             \textcolor{keywordflow}{else} \{
+3001                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+3002                 this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original\_Usuario));
+3003             \}
+3004             \textcolor{keywordflow}{if} ((Original\_Fecha.HasValue == \textcolor{keyword}{true})) \{
+3005                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+3006                 this.Adapter.DeleteCommand.Parameters[8].Value = ((System.DateTime)(Original\_Fecha.Value));
+3007             \}
+3008             \textcolor{keywordflow}{else} \{
+3009                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+3010                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+3011             \}
+3012             global::System.Data.ConnectionState previousConnectionState = 
+      this.Adapter.DeleteCommand.Connection.State;
+3013             \textcolor{keywordflow}{if} (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+3014                         != global::System.Data.ConnectionState.Open)) \{
+3015                 this.Adapter.DeleteCommand.Connection.Open();
+3016             \}
+3017             \textcolor{keywordflow}{try} \{
+3018                 \textcolor{keywordtype}{int} returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+3019                 \textcolor{keywordflow}{return} returnValue;
+3020             \}
+3021             \textcolor{keywordflow}{finally} \{
+3022                 \textcolor{keywordflow}{if} ((previousConnectionState == global::System.Data.ConnectionState.Closed)) \{
+3023                     this.Adapter.DeleteCommand.Connection.Close();
+3024                 \}
+3025             \}
+3026         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Fill@{Fill}}
+\index{Fill@{Fill}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Fill}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Fill (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table}}]{data\-Table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_af8bc655dfb8ce50674aab1f3a6f09501}
+
+
+Definición en la línea 2925 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2925                                                                                  \{
+2926             this.Adapter.SelectCommand = this.CommandCollection[0];
+2927             \textcolor{keywordflow}{if} ((this.ClearBeforeFill == \textcolor{keyword}{true})) \{
+2928                 dataTable.Clear();
+2929             \}
+2930             \textcolor{keywordtype}{int} returnValue = this.Adapter.Fill(dataTable);
+2931             \textcolor{keywordflow}{return} returnValue;
+2932         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Get\-Data@{Get\-Data}}
+\index{Get\-Data@{Get\-Data}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_ab65d5ebc20be4b078b1296ef7a6d6844}
+
+
+Definición en la línea 2938 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2938                                                                        \{
+2939             this.Adapter.SelectCommand = this.CommandCollection[0];
+2940             BaseDeDatosDataSet.ServiciosDataTable dataTable = \textcolor{keyword}{new} BaseDeDatosDataSet.ServiciosDataTable();
+2941             this.Adapter.Fill(dataTable);
+2942             \textcolor{keywordflow}{return} dataTable;
+2943         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Init\-Adapter@{Init\-Adapter}}
+\index{Init\-Adapter@{Init\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Init\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Init\-Adapter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a26dd8ce9ea62a6baeccfe3e5f48fb71e}
+
+
+Definición en la línea 2852 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2852                                    \{
+2853             this.\_adapter = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbDataAdapter();
+2854             global::System.Data.Common.DataTableMapping tableMapping = \textcolor{keyword}{new} global::System
+      .Data.Common.DataTableMapping();
+2855             tableMapping.SourceTable = \textcolor{stringliteral}{"Table"};
+2856             tableMapping.DataSetTable = \textcolor{stringliteral}{"Servicios"};
+2857             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"Id"}, \textcolor{stringliteral}{"Id"});
+2858             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"NumUnidad"}, \textcolor{stringliteral}{"NumUnidad"});
+2859             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"TipoUsuario"}, \textcolor{stringliteral}{"TipoUsuario"});
+2860             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"Usuario"}, \textcolor{stringliteral}{"Usuario"});
+2861             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"Fecha"}, \textcolor{stringliteral}{"Fecha"});
+2862             this.\_adapter.TableMappings.Add(tableMapping);
+2863             this.\_adapter.DeleteCommand = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+2864             this.\_adapter.DeleteCommand.Connection = this.Connection;
+2865             this.\_adapter.DeleteCommand.CommandText = \textcolor{stringliteral}{@"DELETE FROM `Servicios` WHERE ((`Id` = ?) AND ((? =
+       1 AND `NumUnidad` IS NULL) OR (`NumUnidad` = ?)) AND ((? = 1 AND `TipoUsuario` IS NULL) OR (`TipoUsuario` =
+       ?)) AND ((? = 1 AND `Usuario` IS NULL) OR (`Usuario` = ?)) AND ((? = 1 AND `Fecha` IS NULL) OR (`Fecha` =
+       ?)))"};
+2866             this.\_adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+2867             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Id"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"Id"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2868             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_NumUnidad"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, (
+      (byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"NumUnidad"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2869             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_NumUnidad"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"NumUnidad"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2870             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_TipoUsuario"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"TipoUsuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2871             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_TipoUsuario"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"TipoUsuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2872             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_Usuario"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Usuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2873             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Usuario"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, 
+      ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Usuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2874             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_Fecha"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Fecha"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2875             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Fecha"}, global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"Fecha"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2876             this.\_adapter.InsertCommand = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+2877             this.\_adapter.InsertCommand.Connection = this.Connection;
+2878             this.\_adapter.InsertCommand.CommandText = \textcolor{stringliteral}{"INSERT INTO `Servicios` (`NumUnidad`, `TipoUsuario`,
+       `Usuario`, `Fecha`) VALUES ("} +
+2879                 \textcolor{stringliteral}{"?, ?, ?, ?)"};
+2880             this.\_adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+2881             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      NumUnidad"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)
+      (0)), ((byte)(0)), \textcolor{stringliteral}{"NumUnidad"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2882             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      TipoUsuario"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"TipoUsuario"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2883             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Usuario"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0
+      )), ((byte)(0)), \textcolor{stringliteral}{"Usuario"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2884             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"Fecha"}
+      , global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((
+      byte)(0)), \textcolor{stringliteral}{"Fecha"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2885             this.\_adapter.UpdateCommand = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+2886             this.\_adapter.UpdateCommand.Connection = this.Connection;
+2887             this.\_adapter.UpdateCommand.CommandText = \textcolor{stringliteral}{@"UPDATE `Servicios` SET `NumUnidad` = ?,
+       `TipoUsuario` = ?, `Usuario` = ?, `Fecha` = ? WHERE ((`Id` = ?) AND ((? = 1 AND `NumUnidad` IS NULL) OR (`NumUnidad` =
+       ?)) AND ((? = 1 AND `TipoUsuario` IS NULL) OR (`TipoUsuario` = ?)) AND ((? = 1 AND `Usuario` IS NULL) OR
+       (`Usuario` = ?)) AND ((? = 1 AND `Fecha` IS NULL) OR (`Fecha` = ?)))"};
+2888             this.\_adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+2889             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      NumUnidad"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)
+      (0)), ((byte)(0)), \textcolor{stringliteral}{"NumUnidad"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2890             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      TipoUsuario"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"TipoUsuario"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2891             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Usuario"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0
+      )), ((byte)(0)), \textcolor{stringliteral}{"Usuario"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2892             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"Fecha"}
+      , global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((
+      byte)(0)), \textcolor{stringliteral}{"Fecha"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2893             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Id"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"Id"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2894             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_NumUnidad"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, (
+      (byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"NumUnidad"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2895             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_NumUnidad"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"NumUnidad"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2896             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_TipoUsuario"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input,
+       ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"TipoUsuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2897             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_TipoUsuario"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System
+      .Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"TipoUsuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2898             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_Usuario"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Usuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2899             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Usuario"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, 
+      ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Usuario"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2900             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_Fecha"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((
+      byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"Fecha"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2901             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Fecha"}, global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"Fecha"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2902         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Init\-Command\-Collection@{Init\-Command\-Collection}}
+\index{Init\-Command\-Collection@{Init\-Command\-Collection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Init\-Command\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Init\-Command\-Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_aa9e3ee0672a215f70ee4366fc8f5cf8c}
+
+
+Definición en la línea 2913 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2913                                              \{
+2914             this.\_commandCollection = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand[1];
+2915             this.\_commandCollection[0] = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+2916             this.\_commandCollection[0].Connection = this.Connection;
+2917             this.\_commandCollection[0].CommandText = \textcolor{stringliteral}{"SELECT Id, NumUnidad, TipoUsuario, Usuario, Fecha
+       FROM Servicios"};
+2918             this.\_commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+2919         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Init\-Connection@{Init\-Connection}}
+\index{Init\-Connection@{Init\-Connection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Init\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Init\-Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a7053d255f92b9a57d861af0c71a3601f}
+
+
+Definición en la línea 2906 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2906                                       \{
+2907             this.\_connection = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbConnection();
+2908             this.\_connection.ConnectionString = global::Proyecto\_Integrador
+      .Properties.Settings.Default.BaseDeDatosConnectionString;
+2909         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Insert@{Insert}}
+\index{Insert@{Insert}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Insert (
+\begin{DoxyParamCaption}
+\item[{string}]{Num\-Unidad, }
+\item[{string}]{Tipo\-Usuario, }
+\item[{string}]{Usuario, }
+\item[{global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$}]{Fecha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_ad6d197c66d048fefb6eb7b4feb3b1f9d}
+
+
+Definición en la línea 3032 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3032                                                                                                            
+                                       \{
+3033             \textcolor{keywordflow}{if} ((NumUnidad == null)) \{
+3034                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+3035             \}
+3036             \textcolor{keywordflow}{else} \{
+3037                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(NumUnidad));
+3038             \}
+3039             \textcolor{keywordflow}{if} ((TipoUsuario == null)) \{
+3040                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+3041             \}
+3042             \textcolor{keywordflow}{else} \{
+3043                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(TipoUsuario));
+3044             \}
+3045             \textcolor{keywordflow}{if} ((Usuario == null)) \{
+3046                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+3047             \}
+3048             \textcolor{keywordflow}{else} \{
+3049                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Usuario));
+3050             \}
+3051             \textcolor{keywordflow}{if} ((Fecha.HasValue == \textcolor{keyword}{true})) \{
+3052                 this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(Fecha.Value));
+3053             \}
+3054             \textcolor{keywordflow}{else} \{
+3055                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+3056             \}
+3057             global::System.Data.ConnectionState previousConnectionState = 
+      this.Adapter.InsertCommand.Connection.State;
+3058             \textcolor{keywordflow}{if} (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+3059                         != global::System.Data.ConnectionState.Open)) \{
+3060                 this.Adapter.InsertCommand.Connection.Open();
+3061             \}
+3062             \textcolor{keywordflow}{try} \{
+3063                 \textcolor{keywordtype}{int} returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+3064                 \textcolor{keywordflow}{return} returnValue;
+3065             \}
+3066             \textcolor{keywordflow}{finally} \{
+3067                 \textcolor{keywordflow}{if} ((previousConnectionState == global::System.Data.ConnectionState.Closed)) \{
+3068                     this.Adapter.InsertCommand.Connection.Close();
+3069                 \}
+3070             \}
+3071         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table}}]{data\-Table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a5819fabf4f42ea04d4443071491b0af3}
+
+
+Definición en la línea 2948 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2948                                                                                    \{
+2949             \textcolor{keywordflow}{return} this.Adapter.Update(dataTable);
+2950         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set}}]{data\-Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a4e426a8a57c210cee7adc3997daa1c0d}
+
+
+Definición en la línea 2955 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2955                                                               \{
+2956             \textcolor{keywordflow}{return} this.Adapter.Update(dataSet, \textcolor{stringliteral}{"Servicios"});
+2957         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row}]{data\-Row}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a8598c7cb2107277cde4e904289eb9235}
+
+
+Definición en la línea 2962 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2962                                                                      \{
+2963             \textcolor{keywordflow}{return} this.Adapter.Update(\textcolor{keyword}{new} global::System.Data.DataRow[] \{
+2964                         dataRow\});
+2965         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row[$\,$]}]{data\-Rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a9928fc2d876568991454469c16d53915}
+
+
+Definición en la línea 2970 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2970                                                                         \{
+2971             \textcolor{keywordflow}{return} this.Adapter.Update(dataRows);
+2972         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{string}]{Num\-Unidad, }
+\item[{string}]{Tipo\-Usuario, }
+\item[{string}]{Usuario, }
+\item[{global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$}]{Fecha, }
+\item[{int}]{Original\-\_\-\-Id, }
+\item[{string}]{Original\-\_\-\-Num\-Unidad, }
+\item[{string}]{Original\-\_\-\-Tipo\-Usuario, }
+\item[{string}]{Original\-\_\-\-Usuario, }
+\item[{global\-::\-System.\-Nullable$<$ global\-::\-System.\-Date\-Time $>$}]{Original\-\_\-\-Fecha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_ac4fa2f898e82b0550d9006578743272a}
+
+
+Definición en la línea 3077 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+3077                                                                                                            
+                                                                                                                  
+                                                                                          \{
+3078             \textcolor{keywordflow}{if} ((NumUnidad == null)) \{
+3079                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+3080             \}
+3081             \textcolor{keywordflow}{else} \{
+3082                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(NumUnidad));
+3083             \}
+3084             \textcolor{keywordflow}{if} ((TipoUsuario == null)) \{
+3085                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+3086             \}
+3087             \textcolor{keywordflow}{else} \{
+3088                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(TipoUsuario));
+3089             \}
+3090             \textcolor{keywordflow}{if} ((Usuario == null)) \{
+3091                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+3092             \}
+3093             \textcolor{keywordflow}{else} \{
+3094                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Usuario));
+3095             \}
+3096             \textcolor{keywordflow}{if} ((Fecha.HasValue == \textcolor{keyword}{true})) \{
+3097                 this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(Fecha.Value));
+3098             \}
+3099             \textcolor{keywordflow}{else} \{
+3100                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+3101             \}
+3102             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original\_Id));
+3103             \textcolor{keywordflow}{if} ((Original\_NumUnidad == null)) \{
+3104                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
+3105                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+3106             \}
+3107             \textcolor{keywordflow}{else} \{
+3108                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
+3109                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original\_NumUnidad));
+3110             \}
+3111             \textcolor{keywordflow}{if} ((Original\_TipoUsuario == null)) \{
+3112                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+3113                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+3114             \}
+3115             \textcolor{keywordflow}{else} \{
+3116                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+3117                 this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original\_TipoUsuario));
+3118             \}
+3119             \textcolor{keywordflow}{if} ((Original\_Usuario == null)) \{
+3120                 this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+3121                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+3122             \}
+3123             \textcolor{keywordflow}{else} \{
+3124                 this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+3125                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original\_Usuario));
+3126             \}
+3127             \textcolor{keywordflow}{if} ((Original\_Fecha.HasValue == \textcolor{keyword}{true})) \{
+3128                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+3129                 this.Adapter.UpdateCommand.Parameters[12].Value = ((System.DateTime)(Original\_Fecha.Value))
+      ;
+3130             \}
+3131             \textcolor{keywordflow}{else} \{
+3132                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+3133                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+3134             \}
+3135             global::System.Data.ConnectionState previousConnectionState = 
+      this.Adapter.UpdateCommand.Connection.State;
+3136             \textcolor{keywordflow}{if} (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+3137                         != global::System.Data.ConnectionState.Open)) \{
+3138                 this.Adapter.UpdateCommand.Connection.Open();
+3139             \}
+3140             \textcolor{keywordflow}{try} \{
+3141                 \textcolor{keywordtype}{int} returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+3142                 \textcolor{keywordflow}{return} returnValue;
+3143             \}
+3144             \textcolor{keywordflow}{finally} \{
+3145                 \textcolor{keywordflow}{if} ((previousConnectionState == global::System.Data.ConnectionState.Closed)) \{
+3146                     this.Adapter.UpdateCommand.Connection.Close();
+3147                 \}
+3148             \}
+3149         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!\-\_\-adapter@{\-\_\-adapter}}
+\index{\-\_\-adapter@{\-\_\-adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{\-\_\-adapter}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-\_\-adapter\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_ad4558410b41c35d54e9ce5021af64e03}
+
+
+Definición en la línea 2747 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!\-\_\-clear\-Before\-Fill@{\-\_\-clear\-Before\-Fill}}
+\index{\-\_\-clear\-Before\-Fill@{\-\_\-clear\-Before\-Fill}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{\-\_\-clear\-Before\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}bool Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-\_\-clear\-Before\-Fill\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a7e185d747adb65d7d781f79296efae4f}
+
+
+Definición en la línea 2755 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!\-\_\-command\-Collection@{\-\_\-command\-Collection}}
+\index{\-\_\-command\-Collection@{\-\_\-command\-Collection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{\-\_\-command\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command [$\,$] Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-\_\-command\-Collection\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a436ab9f8c7c7e0c68eead6a2ef2dfe72}
+
+
+Definición en la línea 2753 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!\-\_\-connection@{\-\_\-connection}}
+\index{\-\_\-connection@{\-\_\-connection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-\_\-connection\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_ab8c9b3e581d7a41e08976f188d4748c2}
+
+
+Definición en la línea 2749 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!\-\_\-transaction@{\-\_\-transaction}}
+\index{\-\_\-transaction@{\-\_\-transaction}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{\-\_\-transaction}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-\_\-transaction\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a30a4c42efaaac9fe591fdf4c87b64723}
+
+
+Definición en la línea 2751 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de propiedades}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Adapter@{Adapter}}
+\index{Adapter@{Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Adapter}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Adapter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_af6782fab89e434d7133c24b99024040b}
+
+
+Definición en la línea 2765 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Clear\-Before\-Fill@{Clear\-Before\-Fill}}
+\index{Clear\-Before\-Fill@{Clear\-Before\-Fill}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Clear\-Before\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}bool Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Clear\-Before\-Fill\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a2ab491a26aa366549d0c6695bdebc359}
+
+
+Definición en la línea 2841 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Command\-Collection@{Command\-Collection}}
+\index{Command\-Collection@{Command\-Collection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Command\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command [$\,$] Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Command\-Collection\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_ac54d6ea7248c56752fa24d3fc5f3de26}
+
+
+Definición en la línea 2830 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Connection@{Connection}}
+\index{Connection@{Connection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Connection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Connection\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a65d0776e2b25943bfc979e31cedda754}
+
+
+Definición en la línea 2776 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::ServiciosTableAdapter@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Servicios\-Table\-Adapter}}
+\subsubsection[{Transaction}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Servicios\-Table\-Adapter.\-Transaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter_a12c45568e119b9d8fdae452a31cc03b5}
+
+
+Definición en la línea 2804 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

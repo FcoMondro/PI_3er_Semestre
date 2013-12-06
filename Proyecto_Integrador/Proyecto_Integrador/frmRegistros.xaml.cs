@@ -28,8 +28,12 @@ namespace Proyecto_Integrador
             count_Registro();
         }
 
+
         OleDbConnection Conexion = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='C:\Users\Mondro\Documents\GitHub\PI_3er_Semestre\Proyecto_Integrador\Proyecto_Integrador\BaseDeDatos.accdb'");
 
+        /// <summary>
+        /// Checa cual es el radiobutton seleccionado
+        /// </summary>
         private string Check_Sexo()
         {
             if (rdbMasculino.IsChecked == true)
@@ -40,6 +44,9 @@ namespace Proyecto_Integrador
                 return "";
         }
 
+        /// <summary>
+        /// Limpia todos los campos.
+        /// </summary>
         private void Servicio_de_Limpieza()
         {
             txtNombres.Clear();
@@ -62,6 +69,9 @@ namespace Proyecto_Integrador
             count_Registro();
         }
 
+        /// <summary>
+        /// Se verifica cuantos registros almacenados tiene almacenados la base de datos
+        /// </summary>
         private void count_Registro()
         {
             OleDbCommand count = new OleDbCommand("Select Count (*) from Usuario", Conexion);
@@ -73,6 +83,9 @@ namespace Proyecto_Integrador
             Conexion.Close();
         }
 
+        /// <summary>
+        /// Hace la conexion a la base de datos y realiza lo necesario para agregar el registro.
+        /// </summary>
         private void btnAgregar_Click(object sender, RoutedEventArgs e)
         {
             //OleDbConnection Conexion = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='|DataDirectory|\BaseDeDatos.accdb'");

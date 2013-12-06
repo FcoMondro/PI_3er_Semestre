@@ -1,0 +1,721 @@
+\section{Referencia de la Clase Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table}
+\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table}\index{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table}}
+
+
+Represents the strongly named Data\-Table class. /summary$>$  
+
+
+Diagrama de herencias de Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Servicios\-Data\-Table} ()
+\item 
+void {\bf Add\-Servicios\-Row} ({\bf Servicios\-Row} row)
+\item 
+{\bf Servicios\-Row} {\bf Add\-Servicios\-Row} ({\bf Camion\-Row} parent\-Camion\-Row\-By\-Camion\-Servicios, string Tipo\-Usuario, {\bf Usuario\-Row} parent\-Usuario\-Row\-By\-Usuario\-Servicios, System.\-Date\-Time Fecha)
+\item 
+{\bf Servicios\-Row} {\bf Find\-By\-Id} (int Id)
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Table {\bf Clone} ()
+\item 
+{\bf Servicios\-Row} {\bf New\-Servicios\-Row} ()
+\item 
+void {\bf Remove\-Servicios\-Row} ({\bf Servicios\-Row} row)
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \\*
+global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type {\bf Get\-Typed\-Table\-Schema} (global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set xs)
+\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Servicios\-Data\-Table} (global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info info, global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context context)
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Table {\bf Create\-Instance} ()
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Row {\bf New\-Row\-From\-Builder} (global\-::\-System.\-Data.\-Data\-Row\-Builder builder)
+\item 
+override global\-::\-System.\-Type {\bf Get\-Row\-Type} ()
+\item 
+override void {\bf On\-Row\-Changed} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Changing} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Deleted} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Deleting} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\end{DoxyCompactItemize}
+\subsection*{Funciones del 'package'}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Servicios\-Data\-Table} (global\-::\-System.\-Data.\-Data\-Table table)
+\item 
+void {\bf Init\-Vars} ()
+\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Id\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Num\-Unidad\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Tipo\-Usuario\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Usuario\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Fecha\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+int {\bf Count}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+{\bf Servicios\-Row} {\bf this[int index]}\hspace{0.3cm}{\ttfamily  [get]}
+\end{DoxyCompactItemize}
+\subsection*{Eventos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Servicios\-Row\-Change\-Event\-Handler} {\bf Servicios\-Row\-Changing}
+\item 
+{\bf Servicios\-Row\-Change\-Event\-Handler} {\bf Servicios\-Row\-Changed}
+\item 
+{\bf Servicios\-Row\-Change\-Event\-Handler} {\bf Servicios\-Row\-Deleting}
+\item 
+{\bf Servicios\-Row\-Change\-Event\-Handler} {\bf Servicios\-Row\-Deleted}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Init\-Class} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Id}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Num\-Unidad}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Tipo\-Usuario}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Usuario}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Fecha}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Represents the strongly named Data\-Table class. /summary$>$ 
+
+Definición en la línea 640 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Servicios\-Data\-Table@{Servicios\-Data\-Table}}
+\index{Servicios\-Data\-Table@{Servicios\-Data\-Table}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Servicios\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Servicios\-Data\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_acd59779ec369942f788f1ea2653ce7f9}
+
+
+Definición en la línea 654 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+654                                         \{
+655                 this.TableName = \textcolor{stringliteral}{"Servicios"};
+656                 this.BeginInit();
+657                 this.InitClass();
+658                 this.EndInit();
+659             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Servicios\-Data\-Table@{Servicios\-Data\-Table}}
+\index{Servicios\-Data\-Table@{Servicios\-Data\-Table}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Servicios\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Servicios\-Data\-Table (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Table}]{table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_ac57172cb91857d2671023d157e278ad9}
+
+
+Definición en la línea 663 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+663                                                                            \{
+664                 this.TableName = table.TableName;
+665                 \textcolor{keywordflow}{if} ((table.CaseSensitive != table.DataSet.CaseSensitive)) \{
+666                     this.CaseSensitive = table.CaseSensitive;
+667                 \}
+668                 \textcolor{keywordflow}{if} ((table.Locale.ToString() != table.DataSet.Locale.ToString())) \{
+669                     this.Locale = table.Locale;
+670                 \}
+671                 \textcolor{keywordflow}{if} ((table.Namespace != table.DataSet.Namespace)) \{
+672                     this.Namespace = table.Namespace;
+673                 \}
+674                 this.Prefix = table.Prefix;
+675                 this.MinimumCapacity = table.MinimumCapacity;
+676             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Servicios\-Data\-Table@{Servicios\-Data\-Table}}
+\index{Servicios\-Data\-Table@{Servicios\-Data\-Table}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Servicios\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Servicios\-Data\-Table (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info}]{info, }
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a94e9a251916a1dee82e56c411e9b79b6}
+
+
+Definición en la línea 680 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+680                                                                                                            
+                                                            : 
+681                     base(info, context) \{
+682                 this.InitVars();
+683             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Add\-Servicios\-Row@{Add\-Servicios\-Row}}
+\index{Add\-Servicios\-Row@{Add\-Servicios\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Add\-Servicios\-Row}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Add\-Servicios\-Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Servicios\-Row}}]{row}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a26bdfd331ba691d7634ed2d2a0e7a6b4}
+
+
+Definición en la línea 756 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+756                                                           \{
+757                 this.Rows.Add(row);
+758             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Add\-Servicios\-Row@{Add\-Servicios\-Row}}
+\index{Add\-Servicios\-Row@{Add\-Servicios\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Add\-Servicios\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Add\-Servicios\-Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Camion\-Row}}]{parent\-Camion\-Row\-By\-Camion\-Servicios, }
+\item[{string}]{Tipo\-Usuario, }
+\item[{{\bf Usuario\-Row}}]{parent\-Usuario\-Row\-By\-Usuario\-Servicios, }
+\item[{System.\-Date\-Time}]{Fecha}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a79321acc10d5c1a08822a12b67475b6d}
+
+
+Definición en la línea 762 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+762                                                                                                            
+                                                                                 \{
+763                 ServiciosRow rowServiciosRow = ((ServiciosRow)(this.NewRow()));
+764                 \textcolor{keywordtype}{object}[] columnValuesArray = \textcolor{keyword}{new} \textcolor{keywordtype}{object}[] \{
+765                         null,
+766                         null,
+767                         TipoUsuario,
+768                         null,
+769                         Fecha\};
+770                 \textcolor{keywordflow}{if} ((parentCamionRowByCamionServicios != null)) \{
+771                     columnValuesArray[1] = parentCamionRowByCamionServicios[1];
+772                 \}
+773                 \textcolor{keywordflow}{if} ((parentUsuarioRowByUsuarioServicios != null)) \{
+774                     columnValuesArray[3] = parentUsuarioRowByUsuarioServicios[1];
+775                 \}
+776                 rowServiciosRow.ItemArray = columnValuesArray;
+777                 this.Rows.Add(rowServiciosRow);
+778                 \textcolor{keywordflow}{return} rowServiciosRow;
+779             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Clone@{Clone}}
+\index{Clone@{Clone}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Table Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a1972b57b233f53a1871174acf5d123f1}
+
+
+Definición en la línea 790 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+790                                                                 \{
+791                 ServiciosDataTable cln = ((ServiciosDataTable)(base.Clone()));
+792                 cln.InitVars();
+793                 \textcolor{keywordflow}{return} cln;
+794             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Create\-Instance@{Create\-Instance}}
+\index{Create\-Instance@{Create\-Instance}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Create\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Table Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Create\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_aaf32460dd5fd92c6207cb29f1b84afb3}
+
+
+Definición en la línea 798 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+798                                                                             \{
+799                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} ServiciosDataTable();
+800             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Find\-By\-Id@{Find\-By\-Id}}
+\index{Find\-By\-Id@{Find\-By\-Id}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Find\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Find\-By\-Id (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a99a7a0c743bdef77c8dbd8b923b020e5}
+
+
+Definición en la línea 783 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+783                                                  \{
+784                 \textcolor{keywordflow}{return} ((ServiciosRow)(this.Rows.Find(\textcolor{keyword}{new} \textcolor{keywordtype}{object}[] \{
+785                             Id\})));
+786             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Get\-Row\-Type@{Get\-Row\-Type}}
+\index{Get\-Row\-Type@{Get\-Row\-Type}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Get\-Row\-Type}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Type Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Get\-Row\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a85e4cfb57dd49cc2256cb9c5bce187a0}
+
+
+Definición en la línea 851 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+851                                                               \{
+852                 \textcolor{keywordflow}{return} typeof(ServiciosRow);
+853             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Get\-Typed\-Table\-Schema@{Get\-Typed\-Table\-Schema}}
+\index{Get\-Typed\-Table\-Schema@{Get\-Typed\-Table\-Schema}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Get\-Typed\-Table\-Schema}]{\setlength{\rightskip}{0pt plus 5cm}static global.\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Get\-Typed\-Table\-Schema (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set}]{xs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_ad388e9c8c56d93a39fd1b6827fc2aef3}
+
+
+Definición en la línea 899 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+899                                                                                                            
+                               \{
+900                 global::System.Xml.Schema.XmlSchemaComplexType type = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaComplexType();
+901                 global::System.Xml.Schema.XmlSchemaSequence sequence = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaSequence();
+902                 BaseDeDatosDataSet ds = \textcolor{keyword}{new} BaseDeDatosDataSet();
+903                 global::System.Xml.Schema.XmlSchemaAny any1 = \textcolor{keyword}{new} global::System.Xml.Schema.XmlSchemaAny();
+904                 any1.Namespace = \textcolor{stringliteral}{"http://www.w3.org/2001/XMLSchema"};
+905                 any1.MinOccurs = \textcolor{keyword}{new} decimal(0);
+906                 any1.MaxOccurs = decimal.MaxValue;
+907                 any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+908                 sequence.Items.Add(any1);
+909                 global::System.Xml.Schema.XmlSchemaAny any2 = \textcolor{keyword}{new} global::System.Xml.Schema.XmlSchemaAny();
+910                 any2.Namespace = \textcolor{stringliteral}{"urn:schemas-microsoft-com:xml-diffgram-v1"};
+911                 any2.MinOccurs = \textcolor{keyword}{new} decimal(1);
+912                 any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+913                 sequence.Items.Add(any2);
+914                 global::System.Xml.Schema.XmlSchemaAttribute attribute1 = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaAttribute();
+915                 attribute1.Name = \textcolor{stringliteral}{"namespace"};
+916                 attribute1.FixedValue = ds.Namespace;
+917                 type.Attributes.Add(attribute1);
+918                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaAttribute();
+919                 attribute2.Name = \textcolor{stringliteral}{"tableTypeName"};
+920                 attribute2.FixedValue = \textcolor{stringliteral}{"ServiciosDataTable"};
+921                 type.Attributes.Add(attribute2);
+922                 type.Particle = sequence;
+923                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+924                 \textcolor{keywordflow}{if} (xs.Contains(dsSchema.TargetNamespace)) \{
+925                     global::System.IO.MemoryStream s1 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+926                     global::System.IO.MemoryStream s2 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+927                     \textcolor{keywordflow}{try} \{
+928                         global::System.Xml.Schema.XmlSchema schema = null;
+929                         dsSchema.Write(s1);
+930                         \textcolor{keywordflow}{for} (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.
+      TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) \{
+931                             schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+932                             s2.SetLength(0);
+933                             schema.Write(s2);
+934                             \textcolor{keywordflow}{if} ((s1.Length == s2.Length)) \{
+935                                 s1.Position = 0;
+936                                 s2.Position = 0;
+937                                 \textcolor{keywordflow}{for} (; ((s1.Position != s1.Length) 
+938                                             && (s1.ReadByte() == s2.ReadByte())); ) \{
+939                                     ;
+940                                 \}
+941                                 \textcolor{keywordflow}{if} ((s1.Position == s1.Length)) \{
+942                                     \textcolor{keywordflow}{return} type;
+943                                 \}
+944                             \}
+945                         \}
+946                     \}
+947                     \textcolor{keywordflow}{finally} \{
+948                         \textcolor{keywordflow}{if} ((s1 != null)) \{
+949                             s1.Close();
+950                         \}
+951                         \textcolor{keywordflow}{if} ((s2 != null)) \{
+952                             s2.Close();
+953                         \}
+954                     \}
+955                 \}
+956                 xs.Add(dsSchema);
+957                 \textcolor{keywordflow}{return} type;
+958             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Init\-Class@{Init\-Class}}
+\index{Init\-Class@{Init\-Class}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Init\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Init\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_aeffd54e9490890341797ae501f6a5c07}
+
+
+Definición en la línea 814 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+814                                      \{
+815                 this.columnId = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"Id"}, typeof(\textcolor{keywordtype}{int}), null, global::System
+      .Data.MappingType.Element);
+816                 base.Columns.Add(this.columnId);
+817                 this.columnNumUnidad = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"NumUnidad"}, typeof(\textcolor{keywordtype}{string}), null
+      , global::System.Data.MappingType.Element);
+818                 base.Columns.Add(this.columnNumUnidad);
+819                 this.columnTipoUsuario = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"TipoUsuario"}, typeof(\textcolor{keywordtype}{string}), 
+      null, global::System.Data.MappingType.Element);
+820                 base.Columns.Add(this.columnTipoUsuario);
+821                 this.columnUsuario = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"Usuario"}, typeof(\textcolor{keywordtype}{string}), null, 
+      global::System.Data.MappingType.Element);
+822                 base.Columns.Add(this.columnUsuario);
+823                 this.columnFecha = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"Fecha"}, typeof(global::System.
+      DateTime), null, global::System.Data.MappingType.Element);
+824                 base.Columns.Add(this.columnFecha);
+825                 this.Constraints.Add(\textcolor{keyword}{new} global::System.Data.UniqueConstraint(\textcolor{stringliteral}{"Constraint1"}, \textcolor{keyword}{new} 
+      global::System.Data.DataColumn[] \{
+826                                 this.columnId\}, \textcolor{keyword}{true}));
+827                 this.columnId.AutoIncrement = \textcolor{keyword}{true};
+828                 this.columnId.AutoIncrementSeed = -1;
+829                 this.columnId.AutoIncrementStep = -1;
+830                 this.columnId.AllowDBNull = \textcolor{keyword}{false};
+831                 this.columnId.Unique = \textcolor{keyword}{true};
+832                 this.columnNumUnidad.MaxLength = 255;
+833                 this.columnTipoUsuario.MaxLength = 255;
+834                 this.columnUsuario.MaxLength = 255;
+835             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Init\-Vars@{Init\-Vars}}
+\index{Init\-Vars@{Init\-Vars}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Init\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Init\-Vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_ac14e50702c8ff686d6b5f3cb355d8819}
+
+
+Definición en la línea 804 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+804                                      \{
+805                 this.columnId = base.Columns[\textcolor{stringliteral}{"Id"}];
+806                 this.columnNumUnidad = base.Columns[\textcolor{stringliteral}{"NumUnidad"}];
+807                 this.columnTipoUsuario = base.Columns[\textcolor{stringliteral}{"TipoUsuario"}];
+808                 this.columnUsuario = base.Columns[\textcolor{stringliteral}{"Usuario"}];
+809                 this.columnFecha = base.Columns[\textcolor{stringliteral}{"Fecha"}];
+810             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!New\-Row\-From\-Builder@{New\-Row\-From\-Builder}}
+\index{New\-Row\-From\-Builder@{New\-Row\-From\-Builder}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{New\-Row\-From\-Builder}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Row Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-New\-Row\-From\-Builder (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Builder}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a47337000680d5196a981ec6b523e3ffe}
+
+
+Definición en la línea 845 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+845                                                                                                            
+                \{
+846                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} ServiciosRow(builder);
+847             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!New\-Servicios\-Row@{New\-Servicios\-Row}}
+\index{New\-Servicios\-Row@{New\-Servicios\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{New\-Servicios\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-New\-Servicios\-Row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a832bf5a998f35a094a9cb5dab8ae6a17}
+
+
+Definición en la línea 839 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+839                                                   \{
+840                 \textcolor{keywordflow}{return} ((ServiciosRow)(this.NewRow()));
+841             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!On\-Row\-Changed@{On\-Row\-Changed}}
+\index{On\-Row\-Changed@{On\-Row\-Changed}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{On\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-On\-Row\-Changed (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a7a242daf1a75112c8829618604e3e828}
+
+
+Definición en la línea 857 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+857                                                                                              \{
+858                 base.OnRowChanged(e);
+859                 \textcolor{keywordflow}{if} ((this.ServiciosRowChanged != null)) \{
+860                     this.ServiciosRowChanged(\textcolor{keyword}{this}, \textcolor{keyword}{new} ServiciosRowChangeEvent(((ServiciosRow)(e.Row)), e.
+      Action));
+861                 \}
+862             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!On\-Row\-Changing@{On\-Row\-Changing}}
+\index{On\-Row\-Changing@{On\-Row\-Changing}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{On\-Row\-Changing}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-On\-Row\-Changing (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a509dbcb94d38faf7c32bab295527c66b}
+
+
+Definición en la línea 866 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+866                                                                                               \{
+867                 base.OnRowChanging(e);
+868                 \textcolor{keywordflow}{if} ((this.ServiciosRowChanging != null)) \{
+869                     this.ServiciosRowChanging(\textcolor{keyword}{this}, \textcolor{keyword}{new} ServiciosRowChangeEvent(((ServiciosRow)(e.Row)), e.
+      Action));
+870                 \}
+871             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!On\-Row\-Deleted@{On\-Row\-Deleted}}
+\index{On\-Row\-Deleted@{On\-Row\-Deleted}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{On\-Row\-Deleted}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-On\-Row\-Deleted (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a06da851273cf171c17d132b5d4cc3867}
+
+
+Definición en la línea 875 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+875                                                                                              \{
+876                 base.OnRowDeleted(e);
+877                 \textcolor{keywordflow}{if} ((this.ServiciosRowDeleted != null)) \{
+878                     this.ServiciosRowDeleted(\textcolor{keyword}{this}, \textcolor{keyword}{new} ServiciosRowChangeEvent(((ServiciosRow)(e.Row)), e.
+      Action));
+879                 \}
+880             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!On\-Row\-Deleting@{On\-Row\-Deleting}}
+\index{On\-Row\-Deleting@{On\-Row\-Deleting}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{On\-Row\-Deleting}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-On\-Row\-Deleting (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a16a9f5d3741378868d14aca3a5ff533c}
+
+
+Definición en la línea 884 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+884                                                                                               \{
+885                 base.OnRowDeleting(e);
+886                 \textcolor{keywordflow}{if} ((this.ServiciosRowDeleting != null)) \{
+887                     this.ServiciosRowDeleting(\textcolor{keyword}{this}, \textcolor{keyword}{new} ServiciosRowChangeEvent(((ServiciosRow)(e.Row)), e.
+      Action));
+888                 \}
+889             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Remove\-Servicios\-Row@{Remove\-Servicios\-Row}}
+\index{Remove\-Servicios\-Row@{Remove\-Servicios\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Remove\-Servicios\-Row}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Remove\-Servicios\-Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Servicios\-Row}}]{row}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a63cfd3c8fdc3d3ee2d0ab877feed55fa}
+
+
+Definición en la línea 893 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+893                                                              \{
+894                 this.Rows.Remove(row);
+895             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!column\-Fecha@{column\-Fecha}}
+\index{column\-Fecha@{column\-Fecha}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{column\-Fecha}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-column\-Fecha\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a559ff840032b204d34736423603c245a}
+
+
+Definición en la línea 650 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!column\-Id@{column\-Id}}
+\index{column\-Id@{column\-Id}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{column\-Id}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-column\-Id\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_ad0e2050e221749dbb671c0f33d1e82e8}
+
+
+Definición en la línea 642 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!column\-Num\-Unidad@{column\-Num\-Unidad}}
+\index{column\-Num\-Unidad@{column\-Num\-Unidad}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{column\-Num\-Unidad}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-column\-Num\-Unidad\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a894ac2ffa9a550e8c34530a7a63e4078}
+
+
+Definición en la línea 644 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!column\-Tipo\-Usuario@{column\-Tipo\-Usuario}}
+\index{column\-Tipo\-Usuario@{column\-Tipo\-Usuario}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{column\-Tipo\-Usuario}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-column\-Tipo\-Usuario\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_aca8f97f0693494eff14284e6bacc5a13}
+
+
+Definición en la línea 646 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!column\-Usuario@{column\-Usuario}}
+\index{column\-Usuario@{column\-Usuario}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{column\-Usuario}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-column\-Usuario\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_ac49e6d92fc9833dee8f8c313c8138a96}
+
+
+Definición en la línea 648 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de propiedades}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Count@{Count}}
+\index{Count@{Count}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Count}]{\setlength{\rightskip}{0pt plus 5cm}int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Count\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a3ea46ebc2b7fdbb982c209f7f74dac94}
+
+
+Definición en la línea 728 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Fecha\-Column@{Fecha\-Column}}
+\index{Fecha\-Column@{Fecha\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Fecha\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Fecha\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_aa0bfb378883616592355f486c9cf9ca4}
+
+
+Definición en la línea 719 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Id\-Column@{Id\-Column}}
+\index{Id\-Column@{Id\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Id\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Id\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a94293dcb6893cd158c14a61bcfc1b302}
+
+
+Definición en la línea 687 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Num\-Unidad\-Column@{Num\-Unidad\-Column}}
+\index{Num\-Unidad\-Column@{Num\-Unidad\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Num\-Unidad\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Num\-Unidad\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a99a845a6f35f08b715041bacfc13c237}
+
+
+Definición en la línea 695 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!this[int index]@{this[int index]}}
+\index{this[int index]@{this[int index]}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{this[int index]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-this[int index]\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a69dc0cb7e72c2ca7203361fe7a84554f}
+
+
+Definición en la línea 736 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Tipo\-Usuario\-Column@{Tipo\-Usuario\-Column}}
+\index{Tipo\-Usuario\-Column@{Tipo\-Usuario\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Tipo\-Usuario\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Tipo\-Usuario\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a959fbc8018017b88a8dec78a43154c54}
+
+
+Definición en la línea 703 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Usuario\-Column@{Usuario\-Column}}
+\index{Usuario\-Column@{Usuario\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Usuario\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Usuario\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a0377118e9a24100140fa3157efa8ad0a}
+
+
+Definición en la línea 711 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de los eventos}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Servicios\-Row\-Changed@{Servicios\-Row\-Changed}}
+\index{Servicios\-Row\-Changed@{Servicios\-Row\-Changed}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Servicios\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Servicios\-Row\-Changed}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_afd64f333c0ce59625ce7eb61f7523176}
+
+
+Definición en la línea 746 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Servicios\-Row\-Changing@{Servicios\-Row\-Changing}}
+\index{Servicios\-Row\-Changing@{Servicios\-Row\-Changing}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Servicios\-Row\-Changing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Servicios\-Row\-Changing}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a7e68dc55c9cb12844446305215acc7d3}
+
+
+Definición en la línea 743 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Servicios\-Row\-Deleted@{Servicios\-Row\-Deleted}}
+\index{Servicios\-Row\-Deleted@{Servicios\-Row\-Deleted}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Servicios\-Row\-Deleted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Servicios\-Row\-Deleted}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_a723869d753fe27767ed79c31de452def}
+
+
+Definición en la línea 752 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}!Servicios\-Row\-Deleting@{Servicios\-Row\-Deleting}}
+\index{Servicios\-Row\-Deleting@{Servicios\-Row\-Deleting}!Proyecto_Integrador::BaseDeDatosDataSet::ServiciosDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Servicios\-Data\-Table}}
+\subsubsection[{Servicios\-Row\-Deleting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Servicios\-Data\-Table.\-Servicios\-Row\-Deleting}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table_ac5157095819f1b30177f6f0dd2f813f5}
+
+
+Definición en la línea 749 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

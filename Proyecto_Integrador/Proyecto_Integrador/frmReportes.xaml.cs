@@ -30,7 +30,6 @@ namespace Proyecto_Integrador
             cmd = new OleDbCommand("Select * FROM Servicios", Conexion);
             da = new OleDbDataAdapter(cmd);
             tabla = new DataTable();
-            dtpFinal.IsEnabled = false;
 
         }
 
@@ -40,7 +39,10 @@ namespace Proyecto_Integrador
         DataTable tabla;
         List<String> numeroCamiones;
 
-        //Cobros
+        //Cobros ====================================================================================================
+        /// <summary>
+        /// Estructura donde se guardaran todos los datos de los cobros al momento de desplegarlos en las tablas
+        /// </summary>
         public struct Uni
         {
             public string unidad;
@@ -134,8 +136,17 @@ namespace Proyecto_Integrador
             }
         }
 
+        /// <summary>
+        /// Lista guardar todos los datos que se mostraran en el datagrid
+        /// </summary>
         BindingList<Uni> Unidad = new BindingList<Uni>();
 
+        /// <summary>
+        /// En este metodo se llena la estructura
+        /// </summary>
+        /// <param name="Uni">Uni el cual es la estructura</param>
+        /// <param name="fechaI">FechaI, la cual es la fecha inicial.</param>
+        /// <param name="fechaF">FechaF, la cual es la fecha final.</param>
         public void llenarStruct(ref Uni input, DateTime fechaI, DateTime fechaF)
         {
             input.TiposUsuarios = new List<string>();
@@ -152,23 +163,18 @@ namespace Proyecto_Integrador
             }
         }
 
+        /// <summary>
+        /// Es este metodo le enviamos los datos a la estructura
+        /// </summary>
         public void boton()
         {
             DateTime fechaInicial = DateTime.Now.Date;
             DateTime fechaFinal = DateTime.Now.Date;
             if (dtpInicial.SelectedDate.HasValue)
                 fechaInicial = dtpInicial.SelectedDate.Value;
-            else
-                MessageBox.Show("Seleccione una fecha inicial valida");
-            if (chkActual.IsChecked == true)
-            {
-                if (dtpFinal.SelectedDate.HasValue)
-                    fechaFinal = dtpFinal.SelectedDate.Value;
-                else
-                    MessageBox.Show("Seleccione una fecha dinal valida");
-            }
-            else
-                fechaFinal = DateTime.Now.Date;
+
+            if (dtpFinal.SelectedDate.HasValue)
+                fechaFinal = dtpFinal.SelectedDate.Value;
 
             foreach (string str in numeroCamiones)
             {
@@ -179,6 +185,9 @@ namespace Proyecto_Integrador
             }
         }
 
+        /// <summary>
+        /// Se cargan todos los datos en el datagrid
+        /// </summary>
         private void cmdCargar_Click(object sender, RoutedEventArgs e)
         {
 
@@ -188,6 +197,9 @@ namespace Proyecto_Integrador
 
         }
 
+        /// <summary>
+        /// Se ejecuta cuando se carga la ventana
+        /// </summary>
         private void MetroWindow_Loaded_1(object sender, RoutedEventArgs e)
         {
             Conexion.Open();
@@ -207,20 +219,21 @@ namespace Proyecto_Integrador
 
         }
 
-        private void chkActual_Checked(object sender, RoutedEventArgs e)
-        {
-            dtpFinal.IsEnabled = true;
-        }
+        //Frecuencias de uso Usuario ================================================================================
 
-        //Frecuencias de uso Usuario
-
+        /// <summary>
+        /// Boton en donde se ejecutaran todas las funciones necesarias
+        /// </summary>
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Usuario.Clear();
             botonFrec();
             dtgUsosUsuario.ItemsSource = Usuario;
         }
-        
+
+        /// <summary>
+        /// Estructura donde se guardan los datos
+        /// </summary>
         public struct FreUsuarios
         {
             public DataRow tabla;
@@ -236,6 +249,9 @@ namespace Proyecto_Integrador
         }
         BindingList<FreUsuarios> Usuario = new BindingList<FreUsuarios>();
 
+        /// <summary>
+        /// Se obtienen todos los datos a mostrar por el rango de fechas
+        /// </summary>
         public void botonFrec()
         {
             string tarjeta = txtNumTarjeta.Text;
@@ -256,18 +272,22 @@ namespace Proyecto_Integrador
             OleDbDataAdapter FrecenciaUsuario = new OleDbDataAdapter(cmdFUs);
             DataTable FrecUsuario = new DataTable();
             FrecenciaUsuario.Fill(FrecUsuario);
-            FreUsuarios tmp ;
+            FreUsuarios tmp;
             int i = 0;
-            foreach (DataRow r in FrecUsuario.Rows) {
+            foreach (DataRow r in FrecUsuario.Rows)
+            {
                 MessageBox.Show(Convert.ToString(i++));
                 tmp = new FreUsuarios();
                 tmp.tabla = r;
                 Usuario.Add(tmp);
-            }            
+            }
         }
 
         //Frecuencia de uso por Unidad ==============================================================================
 
+        /// <summary>
+        /// Boton en donde se ejecutaran todas las funciones necesarias
+        /// </summary>
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             UnidadFre.Clear();
@@ -275,6 +295,9 @@ namespace Proyecto_Integrador
             dtgUsosUnidad.ItemsSource = UnidadFre;
         }
 
+        /// <summary>
+        /// Estructura donde se guardan los datos
+        /// </summary>
         public struct FreUnidad
         {
             public DataRow tabla;
@@ -287,9 +310,11 @@ namespace Proyecto_Integrador
                 get { return (DateTime)tabla.ItemArray[4]; }
             }
         }
-
         BindingList<FreUnidad> UnidadFre = new BindingList<FreUnidad>();
 
+        /// <summary>
+        /// Se obtienen todos los datos a mostrar por el rango de fechas
+        /// </summary>
         public void botonFrecUnidad()
         {
             DateTime fechaInicial = DateTime.Now.Date;
@@ -315,6 +340,70 @@ namespace Proyecto_Integrador
                 tmp = new FreUnidad();
                 tmp.tabla = r;
                 UnidadFre.Add(tmp);
+            }
+        }
+
+        //Frecuencia de uso por tipo de usuario =====================================================================
+
+        /// <summary>
+        /// Boton en donde se ejecutaran todas las funciones necesarias
+        /// </summary>
+        private void cmdCargarFTu_Click(object sender, RoutedEventArgs e)
+        {
+            TipoUserFre.Clear();
+            botonFrecTipoUsuario();
+            dtgUsosTipoUsuario.ItemsSource = TipoUserFre;
+        }
+
+        /// <summary>
+        /// Estructura donde se guardan los datos
+        /// </summary>
+        public struct FreTipoUsuario
+        {
+            public DataRow tabla;
+            public string NumUNidad
+            {
+                get { return tabla.ItemArray[1].ToString(); }
+            }
+            public string Usuario
+            {
+                get { return tabla.ItemArray[3].ToString(); }
+            }
+            public DateTime Fecha
+            {
+                get { return (DateTime)tabla.ItemArray[4]; }
+            }
+        }
+        BindingList<FreTipoUsuario> TipoUserFre = new BindingList<FreTipoUsuario>();
+
+        /// <summary>
+        /// Se obtienen todos los datos a mostrar por el rango de fechas
+        /// </summary>
+        public void botonFrecTipoUsuario()
+        {
+            DateTime fechaInicial = DateTime.Now.Date;
+            DateTime fechaFinal = DateTime.Now.Date;
+            if (dtpInicialTu.SelectedDate.HasValue)
+                fechaInicial = dtpInicialTu.SelectedDate.Value;
+
+            if (dtpFinalTu.SelectedDate.HasValue)
+                fechaFinal = dtpFinalTu.SelectedDate.Value;
+
+            OleDbCommand cmdFTs = new OleDbCommand("Select * FROM Servicios WHERE TipoUsuario = @TipoUsuario AND Fecha BETWEEN @FechaI AND @FechaF ", Conexion);
+            cmdFTs.Parameters.AddWithValue("@TipoUsuario", cmbUsuarios.SelectedValue.ToString());
+            cmdFTs.Parameters.AddWithValue("@FechaI", fechaInicial);
+            cmdFTs.Parameters.AddWithValue("@FechaF", fechaFinal);
+            OleDbDataAdapter FrecenciaTipoU = new OleDbDataAdapter(cmdFTs);
+            DataTable FrecTipoUsuario = new DataTable();
+            FrecenciaTipoU.Fill(FrecTipoUsuario);
+            FreTipoUsuario tmp;
+            int i = 0;
+            foreach (DataRow r in FrecTipoUsuario.Rows)
+            {
+                MessageBox.Show(Convert.ToString(i++));
+                tmp = new FreTipoUsuario();
+                tmp.tabla = r;
+                TipoUserFre.Add(tmp);
             }
         }
 

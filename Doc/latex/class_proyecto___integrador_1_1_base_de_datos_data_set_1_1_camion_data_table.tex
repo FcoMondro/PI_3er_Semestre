@@ -1,0 +1,636 @@
+\section{Referencia de la Clase Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table}
+\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table}\index{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table}}
+
+
+Represents the strongly named Data\-Table class. /summary$>$  
+
+
+Diagrama de herencias de Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Data\-Table} ()
+\item 
+void {\bf Add\-Camion\-Row} ({\bf Camion\-Row} row)
+\item 
+{\bf Camion\-Row} {\bf Add\-Camion\-Row} (string Num\-Camion)
+\item 
+{\bf Camion\-Row} {\bf Find\-By\-Id} (int Id)
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Table {\bf Clone} ()
+\item 
+{\bf Camion\-Row} {\bf New\-Camion\-Row} ()
+\item 
+void {\bf Remove\-Camion\-Row} ({\bf Camion\-Row} row)
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \\*
+global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type {\bf Get\-Typed\-Table\-Schema} (global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set xs)
+\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Data\-Table} (global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info info, global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context context)
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Table {\bf Create\-Instance} ()
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Row {\bf New\-Row\-From\-Builder} (global\-::\-System.\-Data.\-Data\-Row\-Builder builder)
+\item 
+override global\-::\-System.\-Type {\bf Get\-Row\-Type} ()
+\item 
+override void {\bf On\-Row\-Changed} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Changing} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Deleted} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Deleting} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\end{DoxyCompactItemize}
+\subsection*{Funciones del 'package'}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Data\-Table} (global\-::\-System.\-Data.\-Data\-Table table)
+\item 
+void {\bf Init\-Vars} ()
+\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Id\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Num\-Camion\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+int {\bf Count}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+{\bf Camion\-Row} {\bf this[int index]}\hspace{0.3cm}{\ttfamily  [get]}
+\end{DoxyCompactItemize}
+\subsection*{Eventos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Row\-Change\-Event\-Handler} {\bf Camion\-Row\-Changing}
+\item 
+{\bf Camion\-Row\-Change\-Event\-Handler} {\bf Camion\-Row\-Changed}
+\item 
+{\bf Camion\-Row\-Change\-Event\-Handler} {\bf Camion\-Row\-Deleting}
+\item 
+{\bf Camion\-Row\-Change\-Event\-Handler} {\bf Camion\-Row\-Deleted}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Init\-Class} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Id}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Num\-Camion}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Represents the strongly named Data\-Table class. /summary$>$ 
+
+Definición en la línea 364 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Data\-Table@{Camion\-Data\-Table}}
+\index{Camion\-Data\-Table@{Camion\-Data\-Table}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Data\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_abeb0d3eef30ae4874fb1477c222ccc9f}
+
+
+Definición en la línea 372 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+372                                      \{
+373                 this.TableName = \textcolor{stringliteral}{"Camion"};
+374                 this.BeginInit();
+375                 this.InitClass();
+376                 this.EndInit();
+377             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Data\-Table@{Camion\-Data\-Table}}
+\index{Camion\-Data\-Table@{Camion\-Data\-Table}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Data\-Table (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Table}]{table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a96d01dfa1e9dcc62f3fd925752b5c221}
+
+
+Definición en la línea 381 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+381                                                                         \{
+382                 this.TableName = table.TableName;
+383                 \textcolor{keywordflow}{if} ((table.CaseSensitive != table.DataSet.CaseSensitive)) \{
+384                     this.CaseSensitive = table.CaseSensitive;
+385                 \}
+386                 \textcolor{keywordflow}{if} ((table.Locale.ToString() != table.DataSet.Locale.ToString())) \{
+387                     this.Locale = table.Locale;
+388                 \}
+389                 \textcolor{keywordflow}{if} ((table.Namespace != table.DataSet.Namespace)) \{
+390                     this.Namespace = table.Namespace;
+391                 \}
+392                 this.Prefix = table.Prefix;
+393                 this.MinimumCapacity = table.MinimumCapacity;
+394             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Data\-Table@{Camion\-Data\-Table}}
+\index{Camion\-Data\-Table@{Camion\-Data\-Table}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Data\-Table (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info}]{info, }
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_adb916b6dffe9b6d4c098852d598d6baf}
+
+
+Definición en la línea 398 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+398                                                                                                            
+                                                         : 
+399                     base(info, context) \{
+400                 this.InitVars();
+401             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Add\-Camion\-Row@{Add\-Camion\-Row}}
+\index{Add\-Camion\-Row@{Add\-Camion\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Add\-Camion\-Row}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Add\-Camion\-Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Camion\-Row}}]{row}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_ae67b5969deb835082f69e4b02ca018c7}
+
+
+Definición en la línea 450 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+450                                                     \{
+451                 this.Rows.Add(row);
+452             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Add\-Camion\-Row@{Add\-Camion\-Row}}
+\index{Add\-Camion\-Row@{Add\-Camion\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Add\-Camion\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Add\-Camion\-Row (
+\begin{DoxyParamCaption}
+\item[{string}]{Num\-Camion}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a3827b9f6fbb65bc1f7e96578e3285606}
+
+
+Definición en la línea 456 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+456                                                             \{
+457                 CamionRow rowCamionRow = ((CamionRow)(this.NewRow()));
+458                 \textcolor{keywordtype}{object}[] columnValuesArray = \textcolor{keyword}{new} \textcolor{keywordtype}{object}[] \{
+459                         null,
+460                         NumCamion\};
+461                 rowCamionRow.ItemArray = columnValuesArray;
+462                 this.Rows.Add(rowCamionRow);
+463                 \textcolor{keywordflow}{return} rowCamionRow;
+464             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Clone@{Clone}}
+\index{Clone@{Clone}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Table Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a90461f42f0baef0652f3786c47939783}
+
+
+Definición en la línea 475 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+475                                                                 \{
+476                 CamionDataTable cln = ((CamionDataTable)(base.Clone()));
+477                 cln.InitVars();
+478                 \textcolor{keywordflow}{return} cln;
+479             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Create\-Instance@{Create\-Instance}}
+\index{Create\-Instance@{Create\-Instance}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Create\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Table Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Create\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_af79910ba0380c436e6d1d66dbdc81fd6}
+
+
+Definición en la línea 483 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+483                                                                             \{
+484                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} CamionDataTable();
+485             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Find\-By\-Id@{Find\-By\-Id}}
+\index{Find\-By\-Id@{Find\-By\-Id}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Find\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Find\-By\-Id (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_af56f89d2799c21dfab3a3f048473ea80}
+
+
+Definición en la línea 468 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+468                                               \{
+469                 \textcolor{keywordflow}{return} ((CamionRow)(this.Rows.Find(\textcolor{keyword}{new} \textcolor{keywordtype}{object}[] \{
+470                             Id\})));
+471             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Get\-Row\-Type@{Get\-Row\-Type}}
+\index{Get\-Row\-Type@{Get\-Row\-Type}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Get\-Row\-Type}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Type Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Get\-Row\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a12e728bc2af2b8ef8fd6d1c2f2696d45}
+
+
+Definición en la línea 525 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+525                                                               \{
+526                 \textcolor{keywordflow}{return} typeof(CamionRow);
+527             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Get\-Typed\-Table\-Schema@{Get\-Typed\-Table\-Schema}}
+\index{Get\-Typed\-Table\-Schema@{Get\-Typed\-Table\-Schema}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Get\-Typed\-Table\-Schema}]{\setlength{\rightskip}{0pt plus 5cm}static global.\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Get\-Typed\-Table\-Schema (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set}]{xs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_adb094754ad2422ce38a1a0040f14c884}
+
+
+Definición en la línea 573 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+573                                                                                                            
+                               \{
+574                 global::System.Xml.Schema.XmlSchemaComplexType type = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaComplexType();
+575                 global::System.Xml.Schema.XmlSchemaSequence sequence = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaSequence();
+576                 BaseDeDatosDataSet ds = \textcolor{keyword}{new} BaseDeDatosDataSet();
+577                 global::System.Xml.Schema.XmlSchemaAny any1 = \textcolor{keyword}{new} global::System.Xml.Schema.XmlSchemaAny();
+578                 any1.Namespace = \textcolor{stringliteral}{"http://www.w3.org/2001/XMLSchema"};
+579                 any1.MinOccurs = \textcolor{keyword}{new} decimal(0);
+580                 any1.MaxOccurs = decimal.MaxValue;
+581                 any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+582                 sequence.Items.Add(any1);
+583                 global::System.Xml.Schema.XmlSchemaAny any2 = \textcolor{keyword}{new} global::System.Xml.Schema.XmlSchemaAny();
+584                 any2.Namespace = \textcolor{stringliteral}{"urn:schemas-microsoft-com:xml-diffgram-v1"};
+585                 any2.MinOccurs = \textcolor{keyword}{new} decimal(1);
+586                 any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+587                 sequence.Items.Add(any2);
+588                 global::System.Xml.Schema.XmlSchemaAttribute attribute1 = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaAttribute();
+589                 attribute1.Name = \textcolor{stringliteral}{"namespace"};
+590                 attribute1.FixedValue = ds.Namespace;
+591                 type.Attributes.Add(attribute1);
+592                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaAttribute();
+593                 attribute2.Name = \textcolor{stringliteral}{"tableTypeName"};
+594                 attribute2.FixedValue = \textcolor{stringliteral}{"CamionDataTable"};
+595                 type.Attributes.Add(attribute2);
+596                 type.Particle = sequence;
+597                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+598                 \textcolor{keywordflow}{if} (xs.Contains(dsSchema.TargetNamespace)) \{
+599                     global::System.IO.MemoryStream s1 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+600                     global::System.IO.MemoryStream s2 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+601                     \textcolor{keywordflow}{try} \{
+602                         global::System.Xml.Schema.XmlSchema schema = null;
+603                         dsSchema.Write(s1);
+604                         \textcolor{keywordflow}{for} (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.
+      TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) \{
+605                             schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+606                             s2.SetLength(0);
+607                             schema.Write(s2);
+608                             \textcolor{keywordflow}{if} ((s1.Length == s2.Length)) \{
+609                                 s1.Position = 0;
+610                                 s2.Position = 0;
+611                                 \textcolor{keywordflow}{for} (; ((s1.Position != s1.Length) 
+612                                             && (s1.ReadByte() == s2.ReadByte())); ) \{
+613                                     ;
+614                                 \}
+615                                 \textcolor{keywordflow}{if} ((s1.Position == s1.Length)) \{
+616                                     \textcolor{keywordflow}{return} type;
+617                                 \}
+618                             \}
+619                         \}
+620                     \}
+621                     \textcolor{keywordflow}{finally} \{
+622                         \textcolor{keywordflow}{if} ((s1 != null)) \{
+623                             s1.Close();
+624                         \}
+625                         \textcolor{keywordflow}{if} ((s2 != null)) \{
+626                             s2.Close();
+627                         \}
+628                     \}
+629                 \}
+630                 xs.Add(dsSchema);
+631                 \textcolor{keywordflow}{return} type;
+632             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Init\-Class@{Init\-Class}}
+\index{Init\-Class@{Init\-Class}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Init\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Init\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a96eafbb97924821473a1caa45fa100a8}
+
+
+Definición en la línea 496 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+496                                      \{
+497                 this.columnId = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"Id"}, typeof(\textcolor{keywordtype}{int}), null, global::System
+      .Data.MappingType.Element);
+498                 base.Columns.Add(this.columnId);
+499                 this.columnNumCamion = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"NumCamion"}, typeof(\textcolor{keywordtype}{string}), null
+      , global::System.Data.MappingType.Element);
+500                 base.Columns.Add(this.columnNumCamion);
+501                 this.Constraints.Add(\textcolor{keyword}{new} global::System.Data.UniqueConstraint(\textcolor{stringliteral}{"Constraint1"}, \textcolor{keyword}{new} 
+      global::System.Data.DataColumn[] \{
+502                                 this.columnId\}, \textcolor{keyword}{true}));
+503                 this.columnId.AutoIncrement = \textcolor{keyword}{true};
+504                 this.columnId.AutoIncrementSeed = -1;
+505                 this.columnId.AutoIncrementStep = -1;
+506                 this.columnId.AllowDBNull = \textcolor{keyword}{false};
+507                 this.columnId.Unique = \textcolor{keyword}{true};
+508                 this.columnNumCamion.MaxLength = 255;
+509             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Init\-Vars@{Init\-Vars}}
+\index{Init\-Vars@{Init\-Vars}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Init\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Init\-Vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a45c9b9534076cc9196e251886aaeef56}
+
+
+Definición en la línea 489 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+489                                      \{
+490                 this.columnId = base.Columns[\textcolor{stringliteral}{"Id"}];
+491                 this.columnNumCamion = base.Columns[\textcolor{stringliteral}{"NumCamion"}];
+492             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!New\-Camion\-Row@{New\-Camion\-Row}}
+\index{New\-Camion\-Row@{New\-Camion\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{New\-Camion\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-New\-Camion\-Row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a75ad1aff7761a1e58935572a86b33c95}
+
+
+Definición en la línea 513 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+513                                             \{
+514                 \textcolor{keywordflow}{return} ((CamionRow)(this.NewRow()));
+515             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!New\-Row\-From\-Builder@{New\-Row\-From\-Builder}}
+\index{New\-Row\-From\-Builder@{New\-Row\-From\-Builder}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{New\-Row\-From\-Builder}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Row Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-New\-Row\-From\-Builder (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Builder}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_aff7b5f93b981a381e8617ed286e72077}
+
+
+Definición en la línea 519 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+519                                                                                                            
+                \{
+520                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} CamionRow(builder);
+521             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!On\-Row\-Changed@{On\-Row\-Changed}}
+\index{On\-Row\-Changed@{On\-Row\-Changed}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{On\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-On\-Row\-Changed (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a44811a7b1aea22d2e873bfd35a3da291}
+
+
+Definición en la línea 531 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+531                                                                                              \{
+532                 base.OnRowChanged(e);
+533                 \textcolor{keywordflow}{if} ((this.CamionRowChanged != null)) \{
+534                     this.CamionRowChanged(\textcolor{keyword}{this}, \textcolor{keyword}{new} CamionRowChangeEvent(((CamionRow)(e.Row)), e.Action));
+535                 \}
+536             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!On\-Row\-Changing@{On\-Row\-Changing}}
+\index{On\-Row\-Changing@{On\-Row\-Changing}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{On\-Row\-Changing}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-On\-Row\-Changing (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a4f82334deb2a6cb81a312a4db2a8c186}
+
+
+Definición en la línea 540 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+540                                                                                               \{
+541                 base.OnRowChanging(e);
+542                 \textcolor{keywordflow}{if} ((this.CamionRowChanging != null)) \{
+543                     this.CamionRowChanging(\textcolor{keyword}{this}, \textcolor{keyword}{new} CamionRowChangeEvent(((CamionRow)(e.Row)), e.Action));
+544                 \}
+545             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!On\-Row\-Deleted@{On\-Row\-Deleted}}
+\index{On\-Row\-Deleted@{On\-Row\-Deleted}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{On\-Row\-Deleted}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-On\-Row\-Deleted (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_aad137fabd05864a260dea0cc9d6762be}
+
+
+Definición en la línea 549 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+549                                                                                              \{
+550                 base.OnRowDeleted(e);
+551                 \textcolor{keywordflow}{if} ((this.CamionRowDeleted != null)) \{
+552                     this.CamionRowDeleted(\textcolor{keyword}{this}, \textcolor{keyword}{new} CamionRowChangeEvent(((CamionRow)(e.Row)), e.Action));
+553                 \}
+554             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!On\-Row\-Deleting@{On\-Row\-Deleting}}
+\index{On\-Row\-Deleting@{On\-Row\-Deleting}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{On\-Row\-Deleting}]{\setlength{\rightskip}{0pt plus 5cm}override void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-On\-Row\-Deleting (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_adc2ac0cb9300b4d59fd19776398ab062}
+
+
+Definición en la línea 558 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+558                                                                                               \{
+559                 base.OnRowDeleting(e);
+560                 \textcolor{keywordflow}{if} ((this.CamionRowDeleting != null)) \{
+561                     this.CamionRowDeleting(\textcolor{keyword}{this}, \textcolor{keyword}{new} CamionRowChangeEvent(((CamionRow)(e.Row)), e.Action));
+562                 \}
+563             \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Remove\-Camion\-Row@{Remove\-Camion\-Row}}
+\index{Remove\-Camion\-Row@{Remove\-Camion\-Row}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Remove\-Camion\-Row}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Remove\-Camion\-Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Camion\-Row}}]{row}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_aaf3a5f722aa1ab5bac0170d8595e6880}
+
+
+Definición en la línea 567 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+567                                                        \{
+568                 this.Rows.Remove(row);
+569             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!column\-Id@{column\-Id}}
+\index{column\-Id@{column\-Id}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{column\-Id}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-column\-Id\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a3463baa9896e19f81387b7525b9a40a0}
+
+
+Definición en la línea 366 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!column\-Num\-Camion@{column\-Num\-Camion}}
+\index{column\-Num\-Camion@{column\-Num\-Camion}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{column\-Num\-Camion}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-column\-Num\-Camion\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a933613e63f748810ba0cd170a3ef1291}
+
+
+Definición en la línea 368 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de propiedades}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Count@{Count}}
+\index{Count@{Count}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Count}]{\setlength{\rightskip}{0pt plus 5cm}int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Count\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a53791db6648059164afbd83e8c19c97c}
+
+
+Definición en la línea 422 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Id\-Column@{Id\-Column}}
+\index{Id\-Column@{Id\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Id\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Id\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a2030608fe7b6c6296107c491010c136c}
+
+
+Definición en la línea 405 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Num\-Camion\-Column@{Num\-Camion\-Column}}
+\index{Num\-Camion\-Column@{Num\-Camion\-Column}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Num\-Camion\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Num\-Camion\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_ac4a3515ba047ecd8a624aa4bbbb94420}
+
+
+Definición en la línea 413 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!this[int index]@{this[int index]}}
+\index{this[int index]@{this[int index]}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{this[int index]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-this[int index]\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a93d237d0099d41ba60fdaf1e592d162b}
+
+
+Definición en la línea 430 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de los eventos}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Row\-Changed@{Camion\-Row\-Changed}}
+\index{Camion\-Row\-Changed@{Camion\-Row\-Changed}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Row\-Changed}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_acc1a00e2a9cc7f65d8f077b0b6c16e83}
+
+
+Definición en la línea 440 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Row\-Changing@{Camion\-Row\-Changing}}
+\index{Camion\-Row\-Changing@{Camion\-Row\-Changing}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Row\-Changing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Row\-Changing}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_ae7c0cf56d036bfafaf1d994f7418cfdc}
+
+
+Definición en la línea 437 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Row\-Deleted@{Camion\-Row\-Deleted}}
+\index{Camion\-Row\-Deleted@{Camion\-Row\-Deleted}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Row\-Deleted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Row\-Deleted}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_a9cfd187ba2a2da92094530e70858b7f2}
+
+
+Definición en la línea 446 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Row\-Deleting@{Camion\-Row\-Deleting}}
+\index{Camion\-Row\-Deleting@{Camion\-Row\-Deleting}!Proyecto_Integrador::BaseDeDatosDataSet::CamionDataTable@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Row\-Deleting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row\-Change\-Event\-Handler} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Row\-Deleting}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table_af32609c5e07c43debc5af4a9405b3399}
+
+
+Definición en la línea 443 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

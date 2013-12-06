@@ -1,0 +1,524 @@
+\section{Referencia de la Clase Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter}
+\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter}\index{Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter@{Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter}}
+
+
+Represents the connection and commands used to retrieve and save data. /summary$>$  
+
+
+Diagrama de herencias de Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Table\-Adapter} ()
+\item 
+virtual int {\bf Fill} ({\bf Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table} data\-Table)
+\item 
+virtual \\*
+{\bf Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table} {\bf Get\-Data} ()
+\item 
+virtual int {\bf Update} ({\bf Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table} data\-Table)
+\item 
+virtual int {\bf Update} ({\bf Base\-De\-Datos\-Data\-Set} data\-Set)
+\item 
+virtual int {\bf Update} (global\-::\-System.\-Data.\-Data\-Row data\-Row)
+\item 
+virtual int {\bf Update} (global\-::\-System.\-Data.\-Data\-Row[$\,$] data\-Rows)
+\item 
+virtual int {\bf Delete} (int Original\-\_\-\-Id, string Original\-\_\-\-Num\-Camion)
+\item 
+virtual int {\bf Insert} (string Num\-Camion)
+\item 
+virtual int {\bf Update} (string Num\-Camion, int Original\-\_\-\-Id, string Original\-\_\-\-Num\-Camion)
+\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter {\bf Adapter}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection {\bf Connection}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction {\bf Transaction}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command[$\,$] {\bf Command\-Collection}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+bool {\bf Clear\-Before\-Fill}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Init\-Adapter} ()
+\item 
+void {\bf Init\-Connection} ()
+\item 
+void {\bf Init\-Command\-Collection} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter {\bf \-\_\-adapter}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection {\bf \-\_\-connection}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction {\bf \-\_\-transaction}
+\item 
+global\-::\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command[$\,$] {\bf \-\_\-command\-Collection}
+\item 
+bool {\bf \-\_\-clear\-Before\-Fill}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Represents the connection and commands used to retrieve and save data. /summary$>$ 
+
+Definición en la línea 2433 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Camion\-Table\-Adapter@{Camion\-Table\-Adapter}}
+\index{Camion\-Table\-Adapter@{Camion\-Table\-Adapter}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Camion\-Table\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Camion\-Table\-Adapter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a99ee242d206b823919e2fa1936765a9b}
+
+
+Definición en la línea 2447 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2447                                     \{
+2448             this.ClearBeforeFill = \textcolor{keyword}{true};
+2449         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Delete@{Delete}}
+\index{Delete@{Delete}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Delete (
+\begin{DoxyParamCaption}
+\item[{int}]{Original\-\_\-\-Id, }
+\item[{string}]{Original\-\_\-\-Num\-Camion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_ae9750fb4ce400007de9132bb9536ab6d}
+
+
+Definición en la línea 2646 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2646                                                                               \{
+2647             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original\_Id));
+2648             \textcolor{keywordflow}{if} ((Original\_NumCamion == null)) \{
+2649                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+2650                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+2651             \}
+2652             \textcolor{keywordflow}{else} \{
+2653                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+2654                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original\_NumCamion));
+2655             \}
+2656             global::System.Data.ConnectionState previousConnectionState = 
+      this.Adapter.DeleteCommand.Connection.State;
+2657             \textcolor{keywordflow}{if} (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+2658                         != global::System.Data.ConnectionState.Open)) \{
+2659                 this.Adapter.DeleteCommand.Connection.Open();
+2660             \}
+2661             \textcolor{keywordflow}{try} \{
+2662                 \textcolor{keywordtype}{int} returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+2663                 \textcolor{keywordflow}{return} returnValue;
+2664             \}
+2665             \textcolor{keywordflow}{finally} \{
+2666                 \textcolor{keywordflow}{if} ((previousConnectionState == global::System.Data.ConnectionState.Closed)) \{
+2667                     this.Adapter.DeleteCommand.Connection.Close();
+2668                 \}
+2669             \}
+2670         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Fill@{Fill}}
+\index{Fill@{Fill}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Fill}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Fill (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table}}]{data\-Table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a550a51a2043ba8fa18fefa0e57c9faa4}
+
+
+Definición en la línea 2593 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2593                                                                               \{
+2594             this.Adapter.SelectCommand = this.CommandCollection[0];
+2595             \textcolor{keywordflow}{if} ((this.ClearBeforeFill == \textcolor{keyword}{true})) \{
+2596                 dataTable.Clear();
+2597             \}
+2598             \textcolor{keywordtype}{int} returnValue = this.Adapter.Fill(dataTable);
+2599             \textcolor{keywordflow}{return} returnValue;
+2600         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Get\-Data@{Get\-Data}}
+\index{Get\-Data@{Get\-Data}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a374da207ec23ef3fda77cb4a65774728}
+
+
+Definición en la línea 2606 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2606                                                                     \{
+2607             this.Adapter.SelectCommand = this.CommandCollection[0];
+2608             BaseDeDatosDataSet.CamionDataTable dataTable = \textcolor{keyword}{new} BaseDeDatosDataSet.CamionDataTable();
+2609             this.Adapter.Fill(dataTable);
+2610             \textcolor{keywordflow}{return} dataTable;
+2611         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Init\-Adapter@{Init\-Adapter}}
+\index{Init\-Adapter@{Init\-Adapter}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Init\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Init\-Adapter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_aa1509311318ba1578faf44cd4e216e8f}
+
+
+Definición en la línea 2540 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2540                                    \{
+2541             this.\_adapter = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbDataAdapter();
+2542             global::System.Data.Common.DataTableMapping tableMapping = \textcolor{keyword}{new} global::System
+      .Data.Common.DataTableMapping();
+2543             tableMapping.SourceTable = \textcolor{stringliteral}{"Table"};
+2544             tableMapping.DataSetTable = \textcolor{stringliteral}{"Camion"};
+2545             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"Id"}, \textcolor{stringliteral}{"Id"});
+2546             tableMapping.ColumnMappings.Add(\textcolor{stringliteral}{"NumCamion"}, \textcolor{stringliteral}{"NumCamion"});
+2547             this.\_adapter.TableMappings.Add(tableMapping);
+2548             this.\_adapter.DeleteCommand = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+2549             this.\_adapter.DeleteCommand.Connection = this.Connection;
+2550             this.\_adapter.DeleteCommand.CommandText = \textcolor{stringliteral}{"DELETE FROM `Camion` WHERE ((`Id` = ?) AND ((? = 1
+       AND `NumCamion` IS NULL) OR (`"} +
+2551                 \textcolor{stringliteral}{"NumCamion` = ?)))"};
+2552             this.\_adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+2553             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Id"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"Id"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2554             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_NumCamion"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, (
+      (byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"NumCamion"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2555             this.\_adapter.DeleteCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_NumCamion"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"NumCamion"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2556             this.\_adapter.InsertCommand = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+2557             this.\_adapter.InsertCommand.Connection = this.Connection;
+2558             this.\_adapter.InsertCommand.CommandText = \textcolor{stringliteral}{"INSERT INTO `Camion` (`NumCamion`) VALUES (?)"};
+2559             this.\_adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+2560             this.\_adapter.InsertCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      NumCamion"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)
+      (0)), ((byte)(0)), \textcolor{stringliteral}{"NumCamion"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2561             this.\_adapter.UpdateCommand = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+2562             this.\_adapter.UpdateCommand.Connection = this.Connection;
+2563             this.\_adapter.UpdateCommand.CommandText = \textcolor{stringliteral}{"UPDATE `Camion` SET `NumCamion` = ? WHERE ((`Id` =
+       ?) AND ((? = 1 AND `NumCamion`"} +
+2564                 \textcolor{stringliteral}{" IS NULL) OR (`NumCamion` = ?)))"};
+2565             this.\_adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+2566             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      NumCamion"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)
+      (0)), ((byte)(0)), \textcolor{stringliteral}{"NumCamion"}, global::System.Data.DataRowVersion.Current, \textcolor{keyword}{false}, null));
+2567             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_Id"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte
+      )(0)), ((byte)(0)), \textcolor{stringliteral}{"Id"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2568             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      IsNull\_NumCamion"}, global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, (
+      (byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"NumCamion"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{true}, null));
+2569             this.\_adapter.UpdateCommand.Parameters.Add(\textcolor{keyword}{new} global::System.Data.OleDb.OleDbParameter(\textcolor{stringliteral}{"
+      Original\_NumCamion"}, global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input
+      , ((byte)(0)), ((byte)(0)), \textcolor{stringliteral}{"NumCamion"}, global::System.Data.DataRowVersion.Original, \textcolor{keyword}{false}, null));
+2570         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Init\-Command\-Collection@{Init\-Command\-Collection}}
+\index{Init\-Command\-Collection@{Init\-Command\-Collection}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Init\-Command\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Init\-Command\-Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a3ebface11b2e94aaebdd01c04cdeaa55}
+
+
+Definición en la línea 2581 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2581                                              \{
+2582             this.\_commandCollection = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand[1];
+2583             this.\_commandCollection[0] = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbCommand();
+2584             this.\_commandCollection[0].Connection = this.Connection;
+2585             this.\_commandCollection[0].CommandText = \textcolor{stringliteral}{"SELECT Id, NumCamion FROM Camion"};
+2586             this.\_commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+2587         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Init\-Connection@{Init\-Connection}}
+\index{Init\-Connection@{Init\-Connection}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Init\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Init\-Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a4e22a6796d3643d5b2c28b52c34361ba}
+
+
+Definición en la línea 2574 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2574                                       \{
+2575             this.\_connection = \textcolor{keyword}{new} global::System.Data.OleDb.OleDbConnection();
+2576             this.\_connection.ConnectionString = global::SimBUS
+      .Properties.Settings.Default.BaseDeDatosConnectionString;
+2577         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Insert@{Insert}}
+\index{Insert@{Insert}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Insert (
+\begin{DoxyParamCaption}
+\item[{string}]{Num\-Camion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a1b5dc970072420fd9490d8a3594d3d06}
+
+
+Definición en la línea 2676 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2676                                                     \{
+2677             \textcolor{keywordflow}{if} ((NumCamion == null)) \{
+2678                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+2679             \}
+2680             \textcolor{keywordflow}{else} \{
+2681                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(NumCamion));
+2682             \}
+2683             global::System.Data.ConnectionState previousConnectionState = 
+      this.Adapter.InsertCommand.Connection.State;
+2684             \textcolor{keywordflow}{if} (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+2685                         != global::System.Data.ConnectionState.Open)) \{
+2686                 this.Adapter.InsertCommand.Connection.Open();
+2687             \}
+2688             \textcolor{keywordflow}{try} \{
+2689                 \textcolor{keywordtype}{int} returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+2690                 \textcolor{keywordflow}{return} returnValue;
+2691             \}
+2692             \textcolor{keywordflow}{finally} \{
+2693                 \textcolor{keywordflow}{if} ((previousConnectionState == global::System.Data.ConnectionState.Closed)) \{
+2694                     this.Adapter.InsertCommand.Connection.Close();
+2695                 \}
+2696             \}
+2697         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table}}]{data\-Table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a12b8a3526c185cf56ec065f1b4872156}
+
+
+Definición en la línea 2616 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2616                                                                                 \{
+2617             \textcolor{keywordflow}{return} this.Adapter.Update(dataTable);
+2618         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set}}]{data\-Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_adb49a8cba7d8c645ff1e002afc74de47}
+
+
+Definición en la línea 2623 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2623                                                               \{
+2624             \textcolor{keywordflow}{return} this.Adapter.Update(dataSet, \textcolor{stringliteral}{"Camion"});
+2625         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row}]{data\-Row}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a32ae11277249dee99c645ad31cba67e0}
+
+
+Definición en la línea 2630 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2630                                                                      \{
+2631             \textcolor{keywordflow}{return} this.Adapter.Update(\textcolor{keyword}{new} global::System.Data.DataRow[] \{
+2632                         dataRow\});
+2633         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row[$\,$]}]{data\-Rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_ae1638a7d2b3b729832f2d3e19f2e4259}
+
+
+Definición en la línea 2638 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2638                                                                         \{
+2639             \textcolor{keywordflow}{return} this.Adapter.Update(dataRows);
+2640         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Update@{Update}}
+\index{Update@{Update}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Update (
+\begin{DoxyParamCaption}
+\item[{string}]{Num\-Camion, }
+\item[{int}]{Original\-\_\-\-Id, }
+\item[{string}]{Original\-\_\-\-Num\-Camion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a0f35c8390891bb939c36941b1f4f638d}
+
+
+Definición en la línea 2703 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+2703                                                                                                 \{
+2704             \textcolor{keywordflow}{if} ((NumCamion == null)) \{
+2705                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+2706             \}
+2707             \textcolor{keywordflow}{else} \{
+2708                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(NumCamion));
+2709             \}
+2710             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Original\_Id));
+2711             \textcolor{keywordflow}{if} ((Original\_NumCamion == null)) \{
+2712                 this.Adapter.UpdateCommand.Parameters[2].Value = ((object)(1));
+2713                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+2714             \}
+2715             \textcolor{keywordflow}{else} \{
+2716                 this.Adapter.UpdateCommand.Parameters[2].Value = ((object)(0));
+2717                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original\_NumCamion));
+2718             \}
+2719             global::System.Data.ConnectionState previousConnectionState = 
+      this.Adapter.UpdateCommand.Connection.State;
+2720             \textcolor{keywordflow}{if} (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+2721                         != global::System.Data.ConnectionState.Open)) \{
+2722                 this.Adapter.UpdateCommand.Connection.Open();
+2723             \}
+2724             \textcolor{keywordflow}{try} \{
+2725                 \textcolor{keywordtype}{int} returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+2726                 \textcolor{keywordflow}{return} returnValue;
+2727             \}
+2728             \textcolor{keywordflow}{finally} \{
+2729                 \textcolor{keywordflow}{if} ((previousConnectionState == global::System.Data.ConnectionState.Closed)) \{
+2730                     this.Adapter.UpdateCommand.Connection.Close();
+2731                 \}
+2732             \}
+2733         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!\-\_\-adapter@{\-\_\-adapter}}
+\index{\-\_\-adapter@{\-\_\-adapter}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{\-\_\-adapter}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-\_\-adapter\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_afedb9f7ca2bda23232a37e6ae02b1d77}
+
+
+Definición en la línea 2435 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!\-\_\-clear\-Before\-Fill@{\-\_\-clear\-Before\-Fill}}
+\index{\-\_\-clear\-Before\-Fill@{\-\_\-clear\-Before\-Fill}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{\-\_\-clear\-Before\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}bool Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-\_\-clear\-Before\-Fill\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_ae480103af78609e5d39e387f2c66d8a9}
+
+
+Definición en la línea 2443 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!\-\_\-command\-Collection@{\-\_\-command\-Collection}}
+\index{\-\_\-command\-Collection@{\-\_\-command\-Collection}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{\-\_\-command\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command [$\,$] Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-\_\-command\-Collection\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_ad6454189262e1a64e236b6f6cb78a918}
+
+
+Definición en la línea 2441 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!\-\_\-connection@{\-\_\-connection}}
+\index{\-\_\-connection@{\-\_\-connection}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-\_\-connection\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a583ee8cde2f522e22ce12dfea84ef4aa}
+
+
+Definición en la línea 2437 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!\-\_\-transaction@{\-\_\-transaction}}
+\index{\-\_\-transaction@{\-\_\-transaction}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{\-\_\-transaction}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-\_\-transaction\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a3ca33fdad5dcdcea09fcea5a1b84da0f}
+
+
+Definición en la línea 2439 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de propiedades}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Adapter@{Adapter}}
+\index{Adapter@{Adapter}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Adapter}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Data\-Adapter Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Adapter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [package]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_ab3d240a5ae27e1fed3069daffa60d199}
+
+
+Definición en la línea 2453 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Clear\-Before\-Fill@{Clear\-Before\-Fill}}
+\index{Clear\-Before\-Fill@{Clear\-Before\-Fill}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Clear\-Before\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}bool Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Clear\-Before\-Fill\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_acf7f85c23d60de7c35fe45023349270b}
+
+
+Definición en la línea 2529 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Command\-Collection@{Command\-Collection}}
+\index{Command\-Collection@{Command\-Collection}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Command\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Command [$\,$] Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Command\-Collection\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_abb233cd226359e627efcbb331ded4667}
+
+
+Definición en la línea 2518 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Connection@{Connection}}
+\index{Connection@{Connection}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Connection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Connection Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Connection\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [package]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_a2390645e3838267661425f7def2deb73}
+
+
+Definición en la línea 2464 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!SimBUS::BaseDeDatosDataSetTableAdapters::CamionTableAdapter@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Camion\-Table\-Adapter}}
+\subsubsection[{Transaction}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Ole\-Db.\-Ole\-Db\-Transaction Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Camion\-Table\-Adapter.\-Transaction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [package]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter_ac9a79fad4e941e11eb327c0d43f43aa0}
+
+
+Definición en la línea 2492 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Sim\-B\-U\-S/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

@@ -1,0 +1,196 @@
+\section{Referencia de la Clase Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Self\-Reference\-Comparer}
+\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer}\index{Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Self\-Reference\-Comparer@{Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Self\-Reference\-Comparer}}
+
+
+Used to sort self-\/referenced table's rows /summary$>$  
+
+
+Diagrama de herencias de Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Self\-Reference\-Comparer\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.033210cm]{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf Compare} (global\-::\-System.\-Data.\-Data\-Row row1, global\-::\-System.\-Data.\-Data\-Row row2)
+\end{DoxyCompactItemize}
+\subsection*{Funciones del 'package'}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Self\-Reference\-Comparer} (global\-::\-System.\-Data.\-Data\-Relation relation, bool child\-First)
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Row {\bf Get\-Root} (global\-::\-System.\-Data.\-Data\-Row row, out int distance)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Relation {\bf \-\_\-relation}
+\item 
+int {\bf \-\_\-child\-First}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Used to sort self-\/referenced table's rows /summary$>$ 
+
+Definición en la línea 4657 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}!Self\-Reference\-Comparer@{Self\-Reference\-Comparer}}
+\index{Self\-Reference\-Comparer@{Self\-Reference\-Comparer}!SimBUS::BaseDeDatosDataSetTableAdapters::TableAdapterManager::SelfReferenceComparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}}
+\subsubsection[{Self\-Reference\-Comparer}]{\setlength{\rightskip}{0pt plus 5cm}Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Self\-Reference\-Comparer.\-Self\-Reference\-Comparer (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Relation}]{relation, }
+\item[{bool}]{child\-First}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer_ac11ede875b15c1333ee903b0db804ed3}
+
+
+Definición en la línea 4665 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4665                                                                                                      \{
+4666                 this.\_relation = relation;
+4667                 \textcolor{keywordflow}{if} (childFirst) \{
+4668                     this.\_childFirst = -1;
+4669                 \}
+4670                 \textcolor{keywordflow}{else} \{
+4671                     this.\_childFirst = 1;
+4672                 \}
+4673             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}!Compare@{Compare}}
+\index{Compare@{Compare}!SimBUS::BaseDeDatosDataSetTableAdapters::TableAdapterManager::SelfReferenceComparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}}
+\subsubsection[{Compare}]{\setlength{\rightskip}{0pt plus 5cm}int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Self\-Reference\-Comparer.\-Compare (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row}]{row1, }
+\item[{global\-::\-System.\-Data.\-Data\-Row}]{row2}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer_aa5cd0c194b048e3c54665cc4d9177b10}
+
+
+Definición en la línea 4716 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4716                                                                                                \{
+4717                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{object}.ReferenceEquals(row1, row2)) \{
+4718                     \textcolor{keywordflow}{return} 0;
+4719                 \}
+4720                 \textcolor{keywordflow}{if} ((row1 == null)) \{
+4721                     \textcolor{keywordflow}{return} -1;
+4722                 \}
+4723                 \textcolor{keywordflow}{if} ((row2 == null)) \{
+4724                     \textcolor{keywordflow}{return} 1;
+4725                 \}
+4726 
+4727                 \textcolor{keywordtype}{int} distance1 = 0;
+4728                 global::System.Data.DataRow root1 = this.GetRoot(row1, out distance1);
+4729 
+4730                 \textcolor{keywordtype}{int} distance2 = 0;
+4731                 global::System.Data.DataRow root2 = this.GetRoot(row2, out distance2);
+4732 
+4733                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{object}.ReferenceEquals(root1, root2)) \{
+4734                     \textcolor{keywordflow}{return} (this._childFirst * distance1.CompareTo(distance2));
+4735                 \}
+4736                 \textcolor{keywordflow}{else} \{
+4737                     global::System.Diagnostics.Debug.Assert(((root1.Table != null) 
+4738                                     && (root2.Table != null)));
+4739                     \textcolor{keywordflow}{if} ((root1.Table.Rows.IndexOf(root1) < root2.Table.Rows.IndexOf(root2))) \{
+4740                         \textcolor{keywordflow}{return} -1;
+4741                     \}
+4742                     \textcolor{keywordflow}{else} \{
+4743                         \textcolor{keywordflow}{return} 1;
+4744                     \}
+4745                 \}
+4746             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}!Get\-Root@{Get\-Root}}
+\index{Get\-Root@{Get\-Root}!SimBUS::BaseDeDatosDataSetTableAdapters::TableAdapterManager::SelfReferenceComparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}}
+\subsubsection[{Get\-Root}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Row Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Self\-Reference\-Comparer.\-Get\-Root (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row}]{row, }
+\item[{out int}]{distance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer_a0a93ed793e860a787620c40a51ebab73}
+
+
+Definición en la línea 4677 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4677                                                                                                        \{
+4678                 global::System.Diagnostics.Debug.Assert((row != null));
+4679                 global::System.Data.DataRow root = row;
+4680                 distance = 0;
+4681 
+4682                 global::System.Collections.Generic.IDictionary<global::System.Data.DataRow, global::System
+      .Data.DataRow> traversedRows = \textcolor{keyword}{new} global::System.Collections.Generic.Dictionary<global::System.Data.DataRow,
+       global::System.Data.DataRow>();
+4683                 traversedRows[row] = row;
+4684 
+4685                 global::System.Data.DataRow parent = row.GetParentRow(this.\_relation, global::System
+      .Data.DataRowVersion.Default);
+4686                 \textcolor{keywordflow}{for} (
+4687                 ; ((parent != null) 
+4688                             && (traversedRows.ContainsKey(parent) == \textcolor{keyword}{false})); 
+4689                 ) \{
+4690                     distance = (distance + 1);
+4691                     root = parent;
+4692                     traversedRows[parent] = parent;
+4693                     parent = parent.GetParentRow(this.\_relation, global::System.Data.DataRowVersion.Default
+      );
+4694                 \}
+4695 
+4696                 \textcolor{keywordflow}{if} ((distance == 0)) \{
+4697                     traversedRows.Clear();
+4698                     traversedRows[row] = row;
+4699                     parent = row.GetParentRow(this.\_relation, global::System.Data.DataRowVersion.Original);
+4700                     \textcolor{keywordflow}{for} (
+4701                     ; ((parent != null) 
+4702                                 && (traversedRows.ContainsKey(parent) == \textcolor{keyword}{false})); 
+4703                     ) \{
+4704                         distance = (distance + 1);
+4705                         root = parent;
+4706                         traversedRows[parent] = parent;
+4707                         parent = parent.GetParentRow(this.\_relation, global::System
+      .Data.DataRowVersion.Original);
+4708                     \}
+4709                 \}
+4710 
+4711                 \textcolor{keywordflow}{return} root;
+4712             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}!\-\_\-child\-First@{\-\_\-child\-First}}
+\index{\-\_\-child\-First@{\-\_\-child\-First}!SimBUS::BaseDeDatosDataSetTableAdapters::TableAdapterManager::SelfReferenceComparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}}
+\subsubsection[{\-\_\-child\-First}]{\setlength{\rightskip}{0pt plus 5cm}int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Self\-Reference\-Comparer.\-\_\-child\-First\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer_a08893f223fb8ff191aecf87cd85312c3}
+
+
+Definición en la línea 4661 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}!\-\_\-relation@{\-\_\-relation}}
+\index{\-\_\-relation@{\-\_\-relation}!SimBUS::BaseDeDatosDataSetTableAdapters::TableAdapterManager::SelfReferenceComparer@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager\-::\-Self\-Reference\-Comparer}}
+\subsubsection[{\-\_\-relation}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Relation Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Self\-Reference\-Comparer.\-\_\-relation\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer_a330d946c3a3ae0530e98fe67c2435b09}
+
+
+Definición en la línea 4659 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Sim\-B\-U\-S/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

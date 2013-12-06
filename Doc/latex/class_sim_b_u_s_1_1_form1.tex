@@ -1,0 +1,320 @@
+\section{Referencia de la Clase Sim\-B\-U\-S.\-Form1}
+\label{class_sim_b_u_s_1_1_form1}\index{Sim\-B\-U\-S.\-Form1@{Sim\-B\-U\-S.\-Form1}}
+Diagrama de herencias de Sim\-B\-U\-S.\-Form1\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sim_b_u_s_1_1_form1}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Form1} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+override void {\bf Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Limpiar los recursos que se estén utilizando. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf button1\-\_\-\-Click} (object sender, Event\-Args e)
+\item 
+void {\bf Form1\-\_\-\-Load} (object sender, Event\-Args e)
+\item 
+void {\bf Initialize\-Component} ()
+\begin{DoxyCompactList}\small\item\em Método necesario para admitir el Diseñador. No se puede modificar el contenido del método con el editor de código. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Ole\-Db\-Connection {\bf Conexion} = new Ole\-Db\-Connection(@\char`\"{}Provider=Microsoft.\-A\-C\-E.\-O\-L\-E\-D\-B.\-12.\-0;Data Source='C\-:\textbackslash{}\-Users\textbackslash{}\-Mondro\textbackslash{}\-Documents\textbackslash{}\-Git\-Hub\textbackslash{}\-P\-I\-\_\-3er\-\_\-\-Semestre\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Base\-De\-Datos.\-accdb'\char`\"{})
+\item 
+System.\-Component\-Model.\-I\-Container {\bf components} = null
+\begin{DoxyCompactList}\small\item\em Variable del diseñador requerida. \end{DoxyCompactList}\item 
+System.\-Windows.\-Forms.\-Text\-Box {\bf txt\-Tarjeta}
+\item 
+System.\-Windows.\-Forms.\-Label {\bf label1}
+\item 
+System.\-Windows.\-Forms.\-Label {\bf label2}
+\item 
+System.\-Windows.\-Forms.\-Combo\-Box {\bf cmb\-Unidad}
+\item 
+System.\-Windows.\-Forms.\-Button {\bf cmd\-Agregar}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 15 del archivo Form1.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!Form1@{Form1}}
+\index{Form1@{Form1}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{Form1}]{\setlength{\rightskip}{0pt plus 5cm}Sim\-B\-U\-S.\-Form1.\-Form1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_form1_a5d36a22ecae01e8c081d0601f3f2a87d}
+
+
+Definición en la línea 17 del archivo Form1.\-cs.
+
+
+\begin{DoxyCode}
+18         \{
+19             InitializeComponent();
+20         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!button1\-\_\-\-Click@{button1\-\_\-\-Click}}
+\index{button1\-\_\-\-Click@{button1\-\_\-\-Click}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{button1\-\_\-\-Click}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Form1.\-button1\-\_\-\-Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_a9deb842f0d5b8b2860e0677a7428fa49}
+
+
+Definición en la línea 23 del archivo Form1.\-cs.
+
+
+\begin{DoxyCode}
+24         \{
+25             OleDbCommand cmdUsuario = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"Select Id\_Tarjeta, UserTipo, UserSaldo FROM Usuario
+       WHERE Id\_Tarjeta=@Tarjeta"}, Conexion); \textcolor{comment}{//Se crea el comando);}
+26             cmdUsuario.Parameters.AddWithValue(\textcolor{stringliteral}{"@Tarjeta"},txtTarjeta.Text);
+27             OleDbDataAdapter usuario = \textcolor{keyword}{new} OleDbDataAdapter(cmdUsuario); 
+28             
+29             DataTable tabla = \textcolor{keyword}{new} DataTable();
+30             usuario.Fill(tabla);
+31 
+32             \textcolor{keywordtype}{string} tipeUser = tabla.Rows[0].ItemArray[1].ToString();
+33 
+34             OleDbCommand servicio = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"INSERT INTO Servicios(NumUnidad, TipoUsuario,
+       Usuario, Fecha) VALUES (@NumUnidad,@TipoUsuario,@Usuario,@Fecha)"}, Conexion);
+35             servicio.Parameters.AddWithValue(\textcolor{stringliteral}{"@NumUnidad"}, cmbUnidad.SelectedItem.ToString());
+36             servicio.Parameters.AddWithValue(\textcolor{stringliteral}{"@TipoUsuario"}, tipeUser);
+37             servicio.Parameters.AddWithValue(\textcolor{stringliteral}{"@Usuario"}, txtTarjeta.Text);
+38             servicio.Parameters.AddWithValue(\textcolor{stringliteral}{"@Fecha"}, DateTime.Now.ToString());
+39  
+40             Conexion.Open();
+41             servicio.ExecuteNonQuery();
+42             Conexion.Close();
+43 
+44 
+45 
+46         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}override void Sim\-B\-U\-S.\-Form1.\-Dispose (
+\begin{DoxyParamCaption}
+\item[{bool}]{disposing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_form1_ad576730186fb9b1e30e3b438cc51c486}
+
+
+Limpiar los recursos que se estén utilizando. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em disposing} & true si los recursos administrados se deben eliminar; false en caso contrario.\\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 14 del archivo Form1.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+15         \{
+16             \textcolor{keywordflow}{if} (disposing && (components != null))
+17             \{
+18                 components.Dispose();
+19             \}
+20             base.Dispose(disposing);
+21         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!Form1\-\_\-\-Load@{Form1\-\_\-\-Load}}
+\index{Form1\-\_\-\-Load@{Form1\-\_\-\-Load}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{Form1\-\_\-\-Load}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Form1.\-Form1\-\_\-\-Load (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_a2f35e93a349620a56f1c931ec9145992}
+
+
+Definición en la línea 48 del archivo Form1.\-cs.
+
+
+\begin{DoxyCode}
+49         \{
+50             OleDbCommand cmdCamion = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"SELECT NumCamion FROM Camion"}, 
+      Conexion);
+51             OleDbDataAdapter da = \textcolor{keyword}{new} OleDbDataAdapter(cmdCamion);
+52             Conexion.Open();
+53             DataTable dt = \textcolor{keyword}{new} DataTable();
+54             da.Fill(dt);
+55             List<String> numeroCamiones = (from DataRow var in dt.Rows select var.ItemArray[0].ToString())
+      .ToList();
+56             cmbUnidad.DataSource = numeroCamiones;
+57             Conexion.Close();
+58         \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!Initialize\-Component@{Initialize\-Component}}
+\index{Initialize\-Component@{Initialize\-Component}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{Initialize\-Component}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Form1.\-Initialize\-Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_af9546f1c8138cec8cd7b3a1b01cc9670}
+
+
+Método necesario para admitir el Diseñador. No se puede modificar el contenido del método con el editor de código. 
+
+
+
+Definición en la línea 29 del archivo Form1.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+30         \{
+31             this.txtTarjeta = \textcolor{keyword}{new} System.Windows.Forms.TextBox();
+32             this.label1 = \textcolor{keyword}{new} System.Windows.Forms.Label();
+33             this.label2 = \textcolor{keyword}{new} System.Windows.Forms.Label();
+34             this.cmbUnidad = \textcolor{keyword}{new} System.Windows.Forms.ComboBox();
+35             this.cmdAgregar = \textcolor{keyword}{new} System.Windows.Forms.Button();
+36             this.SuspendLayout();
+37             \textcolor{comment}{// }
+38             \textcolor{comment}{// txtTarjeta}
+39             \textcolor{comment}{// }
+40             this.txtTarjeta.Location = \textcolor{keyword}{new} System.Drawing.Point(37, 29);
+41             this.txtTarjeta.Name = \textcolor{stringliteral}{"txtTarjeta"};
+42             this.txtTarjeta.Size = \textcolor{keyword}{new} System.Drawing.Size(100, 20);
+43             this.txtTarjeta.TabIndex = 0;
+44             \textcolor{comment}{// }
+45             \textcolor{comment}{// label1}
+46             \textcolor{comment}{// }
+47             this.label1.AutoSize = \textcolor{keyword}{true};
+48             this.label1.Location = \textcolor{keyword}{new} System.Drawing.Point(34, 13);
+49             this.label1.Name = \textcolor{stringliteral}{"label1"};
+50             this.label1.Size = \textcolor{keyword}{new} System.Drawing.Size(67, 13);
+51             this.label1.TabIndex = 1;
+52             this.label1.Text = \textcolor{stringliteral}{"Id de Tarjeta"};
+53             \textcolor{comment}{// }
+54             \textcolor{comment}{// label2}
+55             \textcolor{comment}{// }
+56             this.label2.AutoSize = \textcolor{keyword}{true};
+57             this.label2.Location = \textcolor{keyword}{new} System.Drawing.Point(162, 13);
+58             this.label2.Name = \textcolor{stringliteral}{"label2"};
+59             this.label2.Size = \textcolor{keyword}{new} System.Drawing.Size(96, 13);
+60             this.label2.TabIndex = 2;
+61             this.label2.Text = \textcolor{stringliteral}{"Numero de Unidad"};
+62             \textcolor{comment}{// }
+63             \textcolor{comment}{// cmbUnidad}
+64             \textcolor{comment}{// }
+65             this.cmbUnidad.FormattingEnabled = \textcolor{keyword}{true};
+66             this.cmbUnidad.Location = \textcolor{keyword}{new} System.Drawing.Point(165, 29);
+67             this.cmbUnidad.Name = \textcolor{stringliteral}{"cmbUnidad"};
+68             this.cmbUnidad.Size = \textcolor{keyword}{new} System.Drawing.Size(121, 21);
+69             this.cmbUnidad.TabIndex = 3;
+70             \textcolor{comment}{// }
+71             \textcolor{comment}{// cmdAgregar}
+72             \textcolor{comment}{// }
+73             this.cmdAgregar.AutoSize = \textcolor{keyword}{true};
+74             this.cmdAgregar.Location = \textcolor{keyword}{new} System.Drawing.Point(60, 56);
+75             this.cmdAgregar.Name = \textcolor{stringliteral}{"cmdAgregar"};
+76             this.cmdAgregar.Size = \textcolor{keyword}{new} System.Drawing.Size(175, 58);
+77             this.cmdAgregar.TabIndex = 4;
+78             this.cmdAgregar.Text = \textcolor{stringliteral}{"Agregar Servicio"};
+79             this.cmdAgregar.UseVisualStyleBackColor = \textcolor{keyword}{true};
+80             this.cmdAgregar.Click += \textcolor{keyword}{new} System.EventHandler(this.button1\_Click);
+81             \textcolor{comment}{// }
+82             \textcolor{comment}{// Form1}
+83             \textcolor{comment}{// }
+84             this.AutoScaleDimensions = \textcolor{keyword}{new} System.Drawing.SizeF(6F, 13F);
+85             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+86             this.ClientSize = \textcolor{keyword}{new} System.Drawing.Size(340, 146);
+87             this.Controls.Add(this.cmdAgregar);
+88             this.Controls.Add(this.cmbUnidad);
+89             this.Controls.Add(this.label2);
+90             this.Controls.Add(this.label1);
+91             this.Controls.Add(this.txtTarjeta);
+92             this.Name = \textcolor{stringliteral}{"Form1"};
+93             this.Text = \textcolor{stringliteral}{"Form1"};
+94             this.Load += \textcolor{keyword}{new} System.EventHandler(this.Form1\_Load);
+95             this.ResumeLayout(\textcolor{keyword}{false});
+96             this.PerformLayout();
+97 
+98         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!cmb\-Unidad@{cmb\-Unidad}}
+\index{cmb\-Unidad@{cmb\-Unidad}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{cmb\-Unidad}]{\setlength{\rightskip}{0pt plus 5cm}System.\-Windows.\-Forms.\-Combo\-Box Sim\-B\-U\-S.\-Form1.\-cmb\-Unidad\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_acabcf3299572cfc83d600e6ac476a5eb}
+
+
+Definición en la línea 105 del archivo Form1.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!cmd\-Agregar@{cmd\-Agregar}}
+\index{cmd\-Agregar@{cmd\-Agregar}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{cmd\-Agregar}]{\setlength{\rightskip}{0pt plus 5cm}System.\-Windows.\-Forms.\-Button Sim\-B\-U\-S.\-Form1.\-cmd\-Agregar\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_abdbb52215827c126334c3a600b61fdc3}
+
+
+Definición en la línea 106 del archivo Form1.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!components@{components}}
+\index{components@{components}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{components}]{\setlength{\rightskip}{0pt plus 5cm}System.\-Component\-Model.\-I\-Container Sim\-B\-U\-S.\-Form1.\-components = null\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_af68a98b30fbbd7cb29f48f5b2c442670}
+
+
+Variable del diseñador requerida. 
+
+
+
+Definición en la línea 8 del archivo Form1.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!Conexion@{Conexion}}
+\index{Conexion@{Conexion}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{Conexion}]{\setlength{\rightskip}{0pt plus 5cm}Ole\-Db\-Connection Sim\-B\-U\-S.\-Form1.\-Conexion = new Ole\-Db\-Connection(@\char`\"{}Provider=Microsoft.\-A\-C\-E.\-O\-L\-E\-D\-B.\-12.\-0;Data Source='C\-:\textbackslash{}\-Users\textbackslash{}\-Mondro\textbackslash{}\-Documents\textbackslash{}\-Git\-Hub\textbackslash{}\-P\-I\-\_\-3er\-\_\-\-Semestre\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Base\-De\-Datos.\-accdb'\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_a4e3d828311480904623d457d8de78b34}
+
+
+Definición en la línea 21 del archivo Form1.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!label1@{label1}}
+\index{label1@{label1}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{label1}]{\setlength{\rightskip}{0pt plus 5cm}System.\-Windows.\-Forms.\-Label Sim\-B\-U\-S.\-Form1.\-label1\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_adac0751fdf7e3390d196ecea128625c3}
+
+
+Definición en la línea 103 del archivo Form1.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!label2@{label2}}
+\index{label2@{label2}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{label2}]{\setlength{\rightskip}{0pt plus 5cm}System.\-Windows.\-Forms.\-Label Sim\-B\-U\-S.\-Form1.\-label2\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_a115ebabe78edea2089bfc342de0efac1}
+
+
+Definición en la línea 104 del archivo Form1.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Form1@{Sim\-B\-U\-S\-::\-Form1}!txt\-Tarjeta@{txt\-Tarjeta}}
+\index{txt\-Tarjeta@{txt\-Tarjeta}!SimBUS::Form1@{Sim\-B\-U\-S\-::\-Form1}}
+\subsubsection[{txt\-Tarjeta}]{\setlength{\rightskip}{0pt plus 5cm}System.\-Windows.\-Forms.\-Text\-Box Sim\-B\-U\-S.\-Form1.\-txt\-Tarjeta\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_form1_aa57f8afdf42ccf599ed26284ab1aa7db}
+
+
+Definición en la línea 102 del archivo Form1.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Sim\-B\-U\-S/{\bf Form1.\-cs}\item 
+Proyecto\-\_\-\-Integrador/\-Sim\-B\-U\-S/{\bf Form1.\-Designer.\-cs}\end{DoxyCompactItemize}

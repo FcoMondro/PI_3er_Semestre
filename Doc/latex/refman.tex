@@ -1,0 +1,225 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[spanish]{babel}
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.2cm}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Generado el Jueves, 5 de Diciembre de 2013 16\-:02\-:02 para Pago\-Bus por Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Generado el Jueves, 5 de Diciembre de 2013 16\-:02\-:02 para Pago\-Bus por Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\pagenumbering{roman}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Pago\-Bus }\\
+\vspace*{1cm}
+{\large Generado por Doxygen 1.8.5}\\
+\vspace*{0.5cm}
+{\small Jueves, 5 de Diciembre de 2013 16:02:02}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+
+%--- Begin generated contents ---
+\chapter{Indice de namespaces}
+\input{namespaces}
+\chapter{Indice jerárquico}
+\input{hierarchy}
+\chapter{Índice de clases}
+\input{annotated}
+\chapter{Indice de archivos}
+\input{files}
+\chapter{Documentación de namespaces}
+\input{namespace_proyecto___integrador}
+\input{namespace_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters}
+\input{namespace_proyecto___integrador_1_1_properties}
+\input{namespace_sim_b_u_s}
+\input{namespace_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters}
+\input{namespace_sim_b_u_s_1_1_properties}
+\chapter{Documentación de las clases}
+\input{class_proyecto___integrador_1_1_app}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_data_table}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_row}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_row}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_camion_row_change_event}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_row_change_event}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_camion_table_adapter}
+\input{class_sim_b_u_s_1_1_form1}
+\input{struct_proyecto___integrador_1_1frm_reportes_1_1_fre_tipo_usuario}
+\input{struct_proyecto___integrador_1_1frm_reportes_1_1_fre_unidad}
+\input{struct_proyecto___integrador_1_1frm_reportes_1_1_fre_usuarios}
+\input{class_proyecto___integrador_1_1frm_recargas}
+\input{class_proyecto___integrador_1_1frm_registros}
+\input{class_proyecto___integrador_1_1frm_reportes}
+\input{class_proyecto___integrador_1_1_main_window}
+\input{class_sim_b_u_s_1_1_program}
+\input{class_sim_b_u_s_1_1_properties_1_1_resources}
+\input{class_proyecto___integrador_1_1_properties_1_1_resources}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_1_1_self_reference_comparer}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_servicios_data_table}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_data_table}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_servicios_row}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_row}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_servicios_row_change_event}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_servicios_row_change_event}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter}
+\input{class_sim_b_u_s_1_1_properties_1_1_settings}
+\input{class_proyecto___integrador_1_1_properties_1_1_settings}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager}
+\input{struct_proyecto___integrador_1_1frm_reportes_1_1_uni}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_usuario_data_table}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_data_table}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_row}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_usuario_row}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_1_1_usuario_row_change_event}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_usuario_row_change_event}
+\input{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter}
+\input{class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_usuario_table_adapter}
+\chapter{Documentación de archivos}
+\input{_app_8xaml_8cs}
+\input{_proyecto___integrador_2_base_de_datos_data_set_8_designer_8cs}
+\input{_sim_b_u_s_2_base_de_datos_data_set_8_designer_8cs}
+\input{frm_recargas_8xaml_8cs}
+\input{frm_registros_8xaml_8cs}
+\input{frm_reportes_8xaml_8cs}
+\input{_main_window_8xaml_8cs}
+\input{_app_8g_8cs}
+\input{_app_8g_8i_8cs}
+\input{frm_principal_8g_8i_8cs}
+\input{frm_recargas_8g_8cs}
+\input{frm_recargas_8g_8i_8cs}
+\input{frm_registros_8g_8cs}
+\input{frm_registros_8g_8i_8cs}
+\input{frm_reportes_8g_8cs}
+\input{frm_reportes_8g_8i_8cs}
+\input{_main_window_8g_8cs}
+\input{_main_window_8g_8i_8cs}
+\input{mainwindow_8xaml_8g_8i_8cs}
+\input{_proyecto___integrador___content_8g_8cs}
+\input{_proyecto___integrador___content_8g_8i_8cs}
+\input{_proyecto___integrador_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_sim_b_u_s_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_proyecto___integrador_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_sim_b_u_s_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_proyecto___integrador_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_sim_b_u_s_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_proyecto___integrador_2_properties_2_assembly_info_8cs}
+\input{_sim_b_u_s_2_properties_2_assembly_info_8cs}
+\input{_proyecto___integrador_2_properties_2_resources_8_designer_8cs}
+\input{_sim_b_u_s_2_properties_2_resources_8_designer_8cs}
+\input{_proyecto___integrador_2_properties_2_settings_8_designer_8cs}
+\input{_sim_b_u_s_2_properties_2_settings_8_designer_8cs}
+\input{_form1_8cs}
+\input{_form1_8_designer_8cs}
+\input{_program_8cs}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\addcontentsline{toc}{part}{Índice}
+\printindex
+
+\end{document}

@@ -1,0 +1,1109 @@
+\section{Referencia de la Clase Proyecto\-\_\-\-Integrador.\-frm\-Reportes}
+\label{class_proyecto___integrador_1_1frm_reportes}\index{Proyecto\-\_\-\-Integrador.\-frm\-Reportes@{Proyecto\-\_\-\-Integrador.\-frm\-Reportes}}
+
+
+Lógica de interacción para frm\-Reportes.\-xaml  
+
+
+Diagrama de herencias de Proyecto\-\_\-\-Integrador.\-frm\-Reportes\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.076923cm]{class_proyecto___integrador_1_1frm_reportes}
+\end{center}
+\end{figure}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf Fre\-Tipo\-Usuario}
+\begin{DoxyCompactList}\small\item\em Estructura donde se guardan los datos \end{DoxyCompactList}\item 
+struct {\bf Fre\-Unidad}
+\begin{DoxyCompactList}\small\item\em Estructura donde se guardan los datos \end{DoxyCompactList}\item 
+struct {\bf Fre\-Usuarios}
+\begin{DoxyCompactList}\small\item\em Estructura donde se guardan los datos \end{DoxyCompactList}\item 
+struct {\bf Uni}
+\begin{DoxyCompactList}\small\item\em Estructura donde se guardaran todos los datos de los cobros al momento de desplegarlos en las tablas \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf frm\-Reportes} ()
+\item 
+void {\bf llenar\-Struct} (ref {\bf Uni} input, Date\-Time fecha\-I, Date\-Time fecha\-F)
+\begin{DoxyCompactList}\small\item\em En este metodo se llena la estructura \end{DoxyCompactList}\item 
+void {\bf boton} ()
+\begin{DoxyCompactList}\small\item\em Es este metodo le enviamos los datos a la estructura \end{DoxyCompactList}\item 
+void {\bf boton\-Frec} ()
+\begin{DoxyCompactList}\small\item\em Se obtienen todos los datos a mostrar por el rango de fechas \end{DoxyCompactList}\item 
+void {\bf boton\-Frec\-Unidad} ()
+\begin{DoxyCompactList}\small\item\em Se obtienen todos los datos a mostrar por el rango de fechas \end{DoxyCompactList}\item 
+void {\bf boton\-Frec\-Tipo\-Usuario} ()
+\begin{DoxyCompactList}\small\item\em Se obtienen todos los datos a mostrar por el rango de fechas \end{DoxyCompactList}\item 
+void {\bf Initialize\-Component} ()
+\begin{DoxyCompactList}\small\item\em Initialize\-Component \end{DoxyCompactList}\item 
+void {\bf Initialize\-Component} ()
+\begin{DoxyCompactList}\small\item\em Initialize\-Component \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos del 'package'}
+\begin{DoxyCompactItemize}
+\item 
+System.\-Windows.\-Controls.\-Tab\-Control {\bf tabc\-Pestañas}
+\item 
+System.\-Windows.\-Controls.\-Button {\bf cmd\-Cargar}
+\item 
+System.\-Windows.\-Controls.\-Data\-Grid {\bf dtg\-Cobros}
+\item 
+System.\-Windows.\-Controls.\-Date\-Picker {\bf dtp\-Inicial}
+\item 
+System.\-Windows.\-Controls.\-Date\-Picker {\bf dtp\-Final}
+\item 
+System.\-Windows.\-Controls.\-Tab\-Control {\bf tabc\-Frecuencias}
+\item 
+System.\-Windows.\-Controls.\-Text\-Box {\bf txt\-Num\-Tarjeta}
+\item 
+System.\-Windows.\-Controls.\-Button {\bf cmd\-Cargar\-Fu}
+\item 
+System.\-Windows.\-Controls.\-Data\-Grid {\bf dtg\-Usos\-Usuario}
+\item 
+System.\-Windows.\-Controls.\-Date\-Picker {\bf dtp\-Inicial\-F\-Us}
+\item 
+System.\-Windows.\-Controls.\-Date\-Picker {\bf dtp\-Final\-Us}
+\item 
+System.\-Windows.\-Controls.\-Button {\bf cmd\-Cargar\-Fun}
+\item 
+System.\-Windows.\-Controls.\-Date\-Picker {\bf dtp\-Inicial\-F\-Un}
+\item 
+System.\-Windows.\-Controls.\-Date\-Picker {\bf dtp\-Final\-F\-Un}
+\item 
+System.\-Windows.\-Controls.\-Data\-Grid {\bf dtg\-Usos\-Unidad}
+\item 
+System.\-Windows.\-Controls.\-Combo\-Box {\bf cmb\-Unidades}
+\item 
+System.\-Windows.\-Controls.\-Date\-Picker {\bf dtp\-Inicial\-Tu}
+\item 
+System.\-Windows.\-Controls.\-Date\-Picker {\bf dtp\-Final\-Tu}
+\item 
+System.\-Windows.\-Controls.\-Data\-Grid {\bf dtg\-Usos\-Tipo\-Usuario}
+\item 
+System.\-Windows.\-Controls.\-Combo\-Box {\bf cmb\-Usuarios}
+\item 
+System.\-Windows.\-Controls.\-Combo\-Box\-Item {\bf General}
+\item 
+System.\-Windows.\-Controls.\-Combo\-Box\-Item {\bf Estudiante}
+\item 
+System.\-Windows.\-Controls.\-Combo\-Box\-Item {\bf Tercera\-Edad}
+\item 
+System.\-Windows.\-Controls.\-Combo\-Box\-Item {\bf Cap\-\_\-\-Dif}
+\item 
+System.\-Windows.\-Controls.\-Button {\bf cmd\-Cargar\-F\-Tu}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf cmd\-Cargar\-\_\-\-Click} (object sender, Routed\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Se cargan todos los datos en el datagrid \end{DoxyCompactList}\item 
+void {\bf Metro\-Window\-\_\-\-Loaded\-\_\-1} (object sender, Routed\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Se ejecuta cuando se carga la ventana \end{DoxyCompactList}\item 
+void {\bf Button\-\_\-\-Click\-\_\-1} (object sender, Routed\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Boton en donde se ejecutaran todas las funciones necesarias \end{DoxyCompactList}\item 
+void {\bf Button\-\_\-\-Click\-\_\-2} (object sender, Routed\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Boton en donde se ejecutaran todas las funciones necesarias \end{DoxyCompactList}\item 
+void {\bf cmd\-Cargar\-F\-Tu\-\_\-\-Click} (object sender, Routed\-Event\-Args e)
+\begin{DoxyCompactList}\small\item\em Boton en donde se ejecutaran todas las funciones necesarias \end{DoxyCompactList}\item 
+void \\*
+System.\-Windows.\-Markup.\-I\-Component\-Connector. {\bf Connect} (int connection\-Id, object target)
+\item 
+void \\*
+System.\-Windows.\-Markup.\-I\-Component\-Connector. {\bf Connect} (int connection\-Id, object target)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Ole\-Db\-Connection {\bf Conexion} Provider=Microsoft.\-A\-C\-E.\-O\-L\-E\-D\-B.\-12.\-0;Data Source='C\-:\textbackslash{}\-Users\textbackslash{}\-Mondro\textbackslash{}\-Documents\textbackslash{}\-Git\-Hub\textbackslash{}\-P\-I\-\_\-3er\-\_\-\-Semestre\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Base\-De\-Datos.\-accdb'\char`\"{}
+\item 
+Ole\-Db\-Command {\bf cmd}
+\item 
+Ole\-Db\-Data\-Adapter {\bf da}
+\item 
+Data\-Table {\bf tabla}
+\item 
+List$<$ String $>$ {\bf numero\-Camiones}
+\item 
+Binding\-List$<$ {\bf Uni} $>$ {\bf Unidad} = new Binding\-List$<${\bf Uni}$>$()
+\begin{DoxyCompactList}\small\item\em Lista guardar todos los datos que se mostraran en el datagrid \end{DoxyCompactList}\item 
+Binding\-List$<$ {\bf Fre\-Usuarios} $>$ {\bf Usuario} = new Binding\-List$<${\bf Fre\-Usuarios}$>$()
+\item 
+Binding\-List$<$ {\bf Fre\-Unidad} $>$ {\bf Unidad\-Fre} = new Binding\-List$<${\bf Fre\-Unidad}$>$()
+\item 
+Binding\-List$<$ {\bf Fre\-Tipo\-Usuario} $>$ {\bf Tipo\-User\-Fre} = new Binding\-List$<${\bf Fre\-Tipo\-Usuario}$>$()
+\item 
+bool {\bf \-\_\-content\-Loaded}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Lógica de interacción para frm\-Reportes.\-xaml 
+
+\doxyref{frm\-Reportes}{p.}{class_proyecto___integrador_1_1frm_reportes} 
+
+Definición en la línea 24 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!frm\-Reportes@{frm\-Reportes}}
+\index{frm\-Reportes@{frm\-Reportes}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{frm\-Reportes}]{\setlength{\rightskip}{0pt plus 5cm}Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-frm\-Reportes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_reportes_a32f543f94d55b19a5e0bf6c5de0ca2ba}
+
+
+Definición en la línea 26 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+27         \{
+28             InitializeComponent();
+29             Conexion = \textcolor{keyword}{new} OleDbConnection(\textcolor{stringliteral}{@"Provider=Microsoft.ACE.OLEDB.12.0;Data
+       Source='C:\(\backslash\)Users\(\backslash\)Mondro\(\backslash\)Documents\(\backslash\)GitHub\(\backslash\)PI\_3er\_Semestre\(\backslash\)Proyecto\_Integrador\(\backslash\)Proyecto\_Integrador\(\backslash\)BaseDeDatos.accdb'"});
+30             cmd = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"Select * FROM Servicios"}, Conexion);
+31             da = \textcolor{keyword}{new} OleDbDataAdapter(cmd);
+32             tabla = \textcolor{keyword}{new} DataTable();
+33 
+34         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!boton@{boton}}
+\index{boton@{boton}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{boton}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-boton (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_reportes_ad68a63776b145746dc65c9bc7dd945c9}
+
+
+Es este metodo le enviamos los datos a la estructura 
+
+
+
+Definición en la línea 169 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+170         \{
+171             DateTime fechaInicial = DateTime.Now.Date;
+172             DateTime fechaFinal = DateTime.Now.Date;
+173             \textcolor{keywordflow}{if} (dtpInicial.SelectedDate.HasValue)
+174                 fechaInicial = dtpInicial.SelectedDate.Value;
+175 
+176             \textcolor{keywordflow}{if} (dtpFinal.SelectedDate.HasValue)
+177                 fechaFinal = dtpFinal.SelectedDate.Value;
+178 
+179             \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} str \textcolor{keywordflow}{in} numeroCamiones)
+180             \{
+181                 Uni var = \textcolor{keyword}{new} Uni();
+182                 var.unidad = str;
+183                 llenarStruct(ref var, fechaInicial, fechaFinal);
+184                 Unidad.Add(var);
+185             \}
+186         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!boton\-Frec@{boton\-Frec}}
+\index{boton\-Frec@{boton\-Frec}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{boton\-Frec}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-boton\-Frec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_reportes_aa6392f2387b3c535f2c060e64c9f078e}
+
+
+Se obtienen todos los datos a mostrar por el rango de fechas 
+
+
+
+Definición en la línea 255 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+256         \{
+257             \textcolor{keywordtype}{string} tarjeta = txtNumTarjeta.Text;
+258             DateTime fechaInicial = DateTime.Now.Date;
+259             DateTime fechaFinal = DateTime.Now.Date;
+260             \textcolor{keywordflow}{if} (dtpInicialFUs.SelectedDate.HasValue)
+261                 fechaInicial = dtpInicialFUs.SelectedDate.Value;
+262 
+263 
+264             \textcolor{keywordflow}{if} (dtpFinalUs.SelectedDate.HasValue)
+265                 fechaFinal = dtpFinalUs.SelectedDate.Value;
+266 
+267 
+268             OleDbCommand cmdFUs = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"Select * FROM Servicios WHERE Usuario = @Usuario AND
+       Fecha BETWEEN @FechaI AND @FechaF "}, Conexion);
+269             cmdFUs.Parameters.AddWithValue(\textcolor{stringliteral}{"@Usuario"}, txtNumTarjeta.Text);
+270             cmdFUs.Parameters.AddWithValue(\textcolor{stringliteral}{"@FechaI"}, fechaInicial);
+271             cmdFUs.Parameters.AddWithValue(\textcolor{stringliteral}{"@FechaF"}, fechaFinal);
+272             OleDbDataAdapter FrecenciaUsuario = \textcolor{keyword}{new} OleDbDataAdapter(cmdFUs);
+273             DataTable FrecUsuario = \textcolor{keyword}{new} DataTable();
+274             FrecenciaUsuario.Fill(FrecUsuario);
+275             FreUsuarios tmp;
+276             \textcolor{keywordtype}{int} i = 0;
+277             \textcolor{keywordflow}{foreach} (DataRow r \textcolor{keywordflow}{in} FrecUsuario.Rows)
+278             \{
+279                 MessageBox.Show(Convert.ToString(i++));
+280                 tmp = \textcolor{keyword}{new} FreUsuarios();
+281                 tmp.tabla = r;
+282                 Usuario.Add(tmp);
+283             \}
+284         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!boton\-Frec\-Tipo\-Usuario@{boton\-Frec\-Tipo\-Usuario}}
+\index{boton\-Frec\-Tipo\-Usuario@{boton\-Frec\-Tipo\-Usuario}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{boton\-Frec\-Tipo\-Usuario}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-boton\-Frec\-Tipo\-Usuario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_reportes_a299d746c0e7dde4323fcaf8999db66aa}
+
+
+Se obtienen todos los datos a mostrar por el rango de fechas 
+
+
+
+Definición en la línea 382 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+383         \{
+384             DateTime fechaInicial = DateTime.Now.Date;
+385             DateTime fechaFinal = DateTime.Now.Date;
+386             \textcolor{keywordflow}{if} (dtpInicialTu.SelectedDate.HasValue)
+387                 fechaInicial = dtpInicialTu.SelectedDate.Value;
+388 
+389             \textcolor{keywordflow}{if} (dtpFinalTu.SelectedDate.HasValue)
+390                 fechaFinal = dtpFinalTu.SelectedDate.Value;
+391 
+392             OleDbCommand cmdFTs = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"Select * FROM Servicios WHERE TipoUsuario =
+       @TipoUsuario AND Fecha BETWEEN @FechaI AND @FechaF "}, Conexion);
+393             cmdFTs.Parameters.AddWithValue(\textcolor{stringliteral}{"@TipoUsuario"}, cmbUsuarios.SelectedValue.ToString());
+394             cmdFTs.Parameters.AddWithValue(\textcolor{stringliteral}{"@FechaI"}, fechaInicial);
+395             cmdFTs.Parameters.AddWithValue(\textcolor{stringliteral}{"@FechaF"}, fechaFinal);
+396             OleDbDataAdapter FrecenciaTipoU = \textcolor{keyword}{new} OleDbDataAdapter(cmdFTs);
+397             DataTable FrecTipoUsuario = \textcolor{keyword}{new} DataTable();
+398             FrecenciaTipoU.Fill(FrecTipoUsuario);
+399             FreTipoUsuario tmp;
+400             \textcolor{keywordtype}{int} i = 0;
+401             \textcolor{keywordflow}{foreach} (DataRow r \textcolor{keywordflow}{in} FrecTipoUsuario.Rows)
+402             \{
+403                 MessageBox.Show(Convert.ToString(i++));
+404                 tmp = \textcolor{keyword}{new} FreTipoUsuario();
+405                 tmp.tabla = r;
+406                 TipoUserFre.Add(tmp);
+407             \}
+408         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!boton\-Frec\-Unidad@{boton\-Frec\-Unidad}}
+\index{boton\-Frec\-Unidad@{boton\-Frec\-Unidad}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{boton\-Frec\-Unidad}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-boton\-Frec\-Unidad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_reportes_adf8d8d129e73b8cbc1e0ef7244e22dab}
+
+
+Se obtienen todos los datos a mostrar por el rango de fechas 
+
+
+
+Definición en la línea 318 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+319         \{
+320             DateTime fechaInicial = DateTime.Now.Date;
+321             DateTime fechaFinal = DateTime.Now.Date;
+322             \textcolor{keywordflow}{if} (dtpInicialFUn.SelectedDate.HasValue)
+323                 fechaInicial = dtpInicialFUn.SelectedDate.Value;
+324 
+325             \textcolor{keywordflow}{if} (dtpFinalFUn.SelectedDate.HasValue)
+326                 fechaFinal = dtpFinalFUn.SelectedDate.Value;
+327 
+328             OleDbCommand cmdFUs = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"Select * FROM Servicios WHERE NumUnidad = @NumUnidad
+       AND Fecha BETWEEN @FechaI AND @FechaF "}, Conexion);
+329             cmdFUs.Parameters.AddWithValue(\textcolor{stringliteral}{"@NumUnidad"}, cmbUnidades.SelectedValue.ToString());
+330             cmdFUs.Parameters.AddWithValue(\textcolor{stringliteral}{"@FechaI"}, fechaInicial);
+331             cmdFUs.Parameters.AddWithValue(\textcolor{stringliteral}{"@FechaF"}, fechaFinal);
+332             OleDbDataAdapter FrecenciaUnidad = \textcolor{keyword}{new} OleDbDataAdapter(cmdFUs);
+333             DataTable FrecUnidad = \textcolor{keyword}{new} DataTable();
+334             FrecenciaUnidad.Fill(FrecUnidad);
+335             FreUnidad tmp;
+336             \textcolor{keywordtype}{int} i = 0;
+337             \textcolor{keywordflow}{foreach} (DataRow r \textcolor{keywordflow}{in} FrecUnidad.Rows)
+338             \{
+339                 MessageBox.Show(Convert.ToString(i++));
+340                 tmp = \textcolor{keyword}{new} FreUnidad();
+341                 tmp.tabla = r;
+342                 UnidadFre.Add(tmp);
+343             \}
+344         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Button\-\_\-\-Click\-\_\-1@{Button\-\_\-\-Click\-\_\-1}}
+\index{Button\-\_\-\-Click\-\_\-1@{Button\-\_\-\-Click\-\_\-1}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Button\-\_\-\-Click\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Button\-\_\-\-Click\-\_\-1 (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_a3dd4e9ed309d31f7840029e967885933}
+
+
+Boton en donde se ejecutaran todas las funciones necesarias 
+
+
+
+Definición en la línea 227 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+228         \{
+229             Usuario.Clear();
+230             botonFrec();
+231             dtgUsosUsuario.ItemsSource = Usuario;
+232         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Button\-\_\-\-Click\-\_\-2@{Button\-\_\-\-Click\-\_\-2}}
+\index{Button\-\_\-\-Click\-\_\-2@{Button\-\_\-\-Click\-\_\-2}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Button\-\_\-\-Click\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Button\-\_\-\-Click\-\_\-2 (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_aba3d700e1a94424f7bc56769200b7962}
+
+
+Boton en donde se ejecutaran todas las funciones necesarias 
+
+
+
+Definición en la línea 291 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+292         \{
+293             UnidadFre.Clear();
+294             botonFrecUnidad();
+295             dtgUsosUnidad.ItemsSource = UnidadFre;
+296         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!cmd\-Cargar\-\_\-\-Click@{cmd\-Cargar\-\_\-\-Click}}
+\index{cmd\-Cargar\-\_\-\-Click@{cmd\-Cargar\-\_\-\-Click}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{cmd\-Cargar\-\_\-\-Click}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-cmd\-Cargar\-\_\-\-Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_af954fed5c7e656fcfe0584b365ce89a1}
+
+
+Se cargan todos los datos en el datagrid 
+
+
+
+Definición en la línea 191 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+192         \{
+193 
+194             Unidad.Clear();
+195             boton();
+196             dtgCobros.ItemsSource = Unidad;
+197 
+198         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!cmd\-Cargar\-F\-Tu\-\_\-\-Click@{cmd\-Cargar\-F\-Tu\-\_\-\-Click}}
+\index{cmd\-Cargar\-F\-Tu\-\_\-\-Click@{cmd\-Cargar\-F\-Tu\-\_\-\-Click}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{cmd\-Cargar\-F\-Tu\-\_\-\-Click}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-cmd\-Cargar\-F\-Tu\-\_\-\-Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_a06c982a9cb9101142fba219fa537907d}
+
+
+Boton en donde se ejecutaran todas las funciones necesarias 
+
+
+
+Definición en la línea 351 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+352         \{
+353             TipoUserFre.Clear();
+354             botonFrecTipoUsuario();
+355             dtgUsosTipoUsuario.ItemsSource = TipoUserFre;
+356         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Connect@{Connect}}
+\index{Connect@{Connect}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void System.\-Windows.\-Markup.\-I\-Component\-Connector. Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Connect (
+\begin{DoxyParamCaption}
+\item[{int}]{connection\-Id, }
+\item[{object}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_a4aa3f38a008a6a48ccd6120a0abee9ad}
+
+
+Definición en la línea 270 del archivo frm\-Reportes.\-g.\-cs.
+
+
+\begin{DoxyCode}
+270                                                                                                 \{
+271             \textcolor{keywordflow}{switch} (connectionId)
+272             \{
+273             \textcolor{keywordflow}{case} 1:
+274             
+275 \textcolor{preprocessor}{            #line 5 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+276 \textcolor{preprocessor}{}            ((Proyecto_Integrador.frmReportes)(target)).Loaded += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(\textcolor{keyword}{
+      this}.MetroWindow\_Loaded\_1);
+277             
+278 \textcolor{preprocessor}{            #line default}
+279 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+280 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+281             \textcolor{keywordflow}{case} 2:
+282             this.tabcPestañas = ((System.Windows.Controls.TabControl)(target));
+283             \textcolor{keywordflow}{return};
+284             \textcolor{keywordflow}{case} 3:
+285             this.cmdCargar = ((System.Windows.Controls.Button)(target));
+286             
+287 \textcolor{preprocessor}{            #line 31 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+288 \textcolor{preprocessor}{}            this.cmdCargar.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.cmdCargar\_Click);
+289             
+290 \textcolor{preprocessor}{            #line default}
+291 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+292 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+293             \textcolor{keywordflow}{case} 4:
+294             this.dtgCobros = ((System.Windows.Controls.DataGrid)(target));
+295             \textcolor{keywordflow}{return};
+296             \textcolor{keywordflow}{case} 5:
+297             this.dtpInicial = ((System.Windows.Controls.DatePicker)(target));
+298             \textcolor{keywordflow}{return};
+299             \textcolor{keywordflow}{case} 6:
+300             this.dtpFinal = ((System.Windows.Controls.DatePicker)(target));
+301             \textcolor{keywordflow}{return};
+302             \textcolor{keywordflow}{case} 7:
+303             this.tabcFrecuencias = ((System.Windows.Controls.TabControl)(target));
+304             \textcolor{keywordflow}{return};
+305             \textcolor{keywordflow}{case} 8:
+306             this.txtNumTarjeta = ((System.Windows.Controls.TextBox)(target));
+307             \textcolor{keywordflow}{return};
+308             \textcolor{keywordflow}{case} 9:
+309             this.cmdCargarFu = ((System.Windows.Controls.Button)(target));
+310             
+311 \textcolor{preprocessor}{            #line 45 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+312 \textcolor{preprocessor}{}            this.cmdCargarFu.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.Button\_Click\_1);
+313             
+314 \textcolor{preprocessor}{            #line default}
+315 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+316 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+317             \textcolor{keywordflow}{case} 10:
+318             this.dtgUsosUsuario = ((System.Windows.Controls.DataGrid)(target));
+319             \textcolor{keywordflow}{return};
+320             \textcolor{keywordflow}{case} 11:
+321             this.dtpInicialFUs = ((System.Windows.Controls.DatePicker)(target));
+322             \textcolor{keywordflow}{return};
+323             \textcolor{keywordflow}{case} 12:
+324             this.dtpFinalUs = ((System.Windows.Controls.DatePicker)(target));
+325             \textcolor{keywordflow}{return};
+326             \textcolor{keywordflow}{case} 13:
+327             this.cmdCargarFun = ((System.Windows.Controls.Button)(target));
+328             
+329 \textcolor{preprocessor}{            #line 54 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+330 \textcolor{preprocessor}{}            this.cmdCargarFun.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.Button\_Click\_2);
+331             
+332 \textcolor{preprocessor}{            #line default}
+333 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+334 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+335             \textcolor{keywordflow}{case} 14:
+336             this.dtpInicialFUn = ((System.Windows.Controls.DatePicker)(target));
+337             \textcolor{keywordflow}{return};
+338             \textcolor{keywordflow}{case} 15:
+339             this.dtpFinalFUn = ((System.Windows.Controls.DatePicker)(target));
+340             \textcolor{keywordflow}{return};
+341             \textcolor{keywordflow}{case} 16:
+342             this.dtgUsosUnidad = ((System.Windows.Controls.DataGrid)(target));
+343             \textcolor{keywordflow}{return};
+344             \textcolor{keywordflow}{case} 17:
+345             this.cmbUnidades = ((System.Windows.Controls.ComboBox)(target));
+346             \textcolor{keywordflow}{return};
+347             \textcolor{keywordflow}{case} 18:
+348             this.dtpInicialTu = ((System.Windows.Controls.DatePicker)(target));
+349             \textcolor{keywordflow}{return};
+350             \textcolor{keywordflow}{case} 19:
+351             this.dtpFinalTu = ((System.Windows.Controls.DatePicker)(target));
+352             \textcolor{keywordflow}{return};
+353             \textcolor{keywordflow}{case} 20:
+354             this.dtgUsosTipoUsuario = ((System.Windows.Controls.DataGrid)(target));
+355             \textcolor{keywordflow}{return};
+356             \textcolor{keywordflow}{case} 21:
+357             this.cmbUsuarios = ((System.Windows.Controls.ComboBox)(target));
+358             \textcolor{keywordflow}{return};
+359             \textcolor{keywordflow}{case} 22:
+360             this.General = ((System.Windows.Controls.ComboBoxItem)(target));
+361             \textcolor{keywordflow}{return};
+362             \textcolor{keywordflow}{case} 23:
+363             this.Estudiante = ((System.Windows.Controls.ComboBoxItem)(target));
+364             \textcolor{keywordflow}{return};
+365             \textcolor{keywordflow}{case} 24:
+366             this.TerceraEdad = ((System.Windows.Controls.ComboBoxItem)(target));
+367             \textcolor{keywordflow}{return};
+368             \textcolor{keywordflow}{case} 25:
+369             this.Cap\_Dif = ((System.Windows.Controls.ComboBoxItem)(target));
+370             \textcolor{keywordflow}{return};
+371             \textcolor{keywordflow}{case} 26:
+372             this.cmdCargarFTu = ((System.Windows.Controls.Button)(target));
+373             
+374 \textcolor{preprocessor}{            #line 76 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+375 \textcolor{preprocessor}{}            this.cmdCargarFTu.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.cmdCargarFTu\_Click);
+376             
+377 \textcolor{preprocessor}{            #line default}
+378 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+379 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+380             \}
+381             this.\_contentLoaded = \textcolor{keyword}{true};
+382         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Connect@{Connect}}
+\index{Connect@{Connect}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void System.\-Windows.\-Markup.\-I\-Component\-Connector. Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Connect (
+\begin{DoxyParamCaption}
+\item[{int}]{connection\-Id, }
+\item[{object}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_a4aa3f38a008a6a48ccd6120a0abee9ad}
+
+
+Definición en la línea 270 del archivo frm\-Reportes.\-g.\-i.\-cs.
+
+
+\begin{DoxyCode}
+270                                                                                                 \{
+271             \textcolor{keywordflow}{switch} (connectionId)
+272             \{
+273             \textcolor{keywordflow}{case} 1:
+274             
+275 \textcolor{preprocessor}{            #line 5 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+276 \textcolor{preprocessor}{}            ((Proyecto_Integrador.frmReportes)(target)).Loaded += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(\textcolor{keyword}{
+      this}.MetroWindow\_Loaded\_1);
+277             
+278 \textcolor{preprocessor}{            #line default}
+279 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+280 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+281             \textcolor{keywordflow}{case} 2:
+282             this.tabcPestañas = ((System.Windows.Controls.TabControl)(target));
+283             \textcolor{keywordflow}{return};
+284             \textcolor{keywordflow}{case} 3:
+285             this.cmdCargar = ((System.Windows.Controls.Button)(target));
+286             
+287 \textcolor{preprocessor}{            #line 31 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+288 \textcolor{preprocessor}{}            this.cmdCargar.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.cmdCargar\_Click);
+289             
+290 \textcolor{preprocessor}{            #line default}
+291 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+292 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+293             \textcolor{keywordflow}{case} 4:
+294             this.dtgCobros = ((System.Windows.Controls.DataGrid)(target));
+295             \textcolor{keywordflow}{return};
+296             \textcolor{keywordflow}{case} 5:
+297             this.dtpInicial = ((System.Windows.Controls.DatePicker)(target));
+298             \textcolor{keywordflow}{return};
+299             \textcolor{keywordflow}{case} 6:
+300             this.dtpFinal = ((System.Windows.Controls.DatePicker)(target));
+301             \textcolor{keywordflow}{return};
+302             \textcolor{keywordflow}{case} 7:
+303             this.tabcFrecuencias = ((System.Windows.Controls.TabControl)(target));
+304             \textcolor{keywordflow}{return};
+305             \textcolor{keywordflow}{case} 8:
+306             this.txtNumTarjeta = ((System.Windows.Controls.TextBox)(target));
+307             \textcolor{keywordflow}{return};
+308             \textcolor{keywordflow}{case} 9:
+309             this.cmdCargarFu = ((System.Windows.Controls.Button)(target));
+310             
+311 \textcolor{preprocessor}{            #line 45 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+312 \textcolor{preprocessor}{}            this.cmdCargarFu.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.Button\_Click\_1);
+313             
+314 \textcolor{preprocessor}{            #line default}
+315 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+316 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+317             \textcolor{keywordflow}{case} 10:
+318             this.dtgUsosUsuario = ((System.Windows.Controls.DataGrid)(target));
+319             \textcolor{keywordflow}{return};
+320             \textcolor{keywordflow}{case} 11:
+321             this.dtpInicialFUs = ((System.Windows.Controls.DatePicker)(target));
+322             \textcolor{keywordflow}{return};
+323             \textcolor{keywordflow}{case} 12:
+324             this.dtpFinalUs = ((System.Windows.Controls.DatePicker)(target));
+325             \textcolor{keywordflow}{return};
+326             \textcolor{keywordflow}{case} 13:
+327             this.cmdCargarFun = ((System.Windows.Controls.Button)(target));
+328             
+329 \textcolor{preprocessor}{            #line 54 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+330 \textcolor{preprocessor}{}            this.cmdCargarFun.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.Button\_Click\_2);
+331             
+332 \textcolor{preprocessor}{            #line default}
+333 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+334 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+335             \textcolor{keywordflow}{case} 14:
+336             this.dtpInicialFUn = ((System.Windows.Controls.DatePicker)(target));
+337             \textcolor{keywordflow}{return};
+338             \textcolor{keywordflow}{case} 15:
+339             this.dtpFinalFUn = ((System.Windows.Controls.DatePicker)(target));
+340             \textcolor{keywordflow}{return};
+341             \textcolor{keywordflow}{case} 16:
+342             this.dtgUsosUnidad = ((System.Windows.Controls.DataGrid)(target));
+343             \textcolor{keywordflow}{return};
+344             \textcolor{keywordflow}{case} 17:
+345             this.cmbUnidades = ((System.Windows.Controls.ComboBox)(target));
+346             \textcolor{keywordflow}{return};
+347             \textcolor{keywordflow}{case} 18:
+348             this.dtpInicialTu = ((System.Windows.Controls.DatePicker)(target));
+349             \textcolor{keywordflow}{return};
+350             \textcolor{keywordflow}{case} 19:
+351             this.dtpFinalTu = ((System.Windows.Controls.DatePicker)(target));
+352             \textcolor{keywordflow}{return};
+353             \textcolor{keywordflow}{case} 20:
+354             this.dtgUsosTipoUsuario = ((System.Windows.Controls.DataGrid)(target));
+355             \textcolor{keywordflow}{return};
+356             \textcolor{keywordflow}{case} 21:
+357             this.cmbUsuarios = ((System.Windows.Controls.ComboBox)(target));
+358             \textcolor{keywordflow}{return};
+359             \textcolor{keywordflow}{case} 22:
+360             this.General = ((System.Windows.Controls.ComboBoxItem)(target));
+361             \textcolor{keywordflow}{return};
+362             \textcolor{keywordflow}{case} 23:
+363             this.Estudiante = ((System.Windows.Controls.ComboBoxItem)(target));
+364             \textcolor{keywordflow}{return};
+365             \textcolor{keywordflow}{case} 24:
+366             this.TerceraEdad = ((System.Windows.Controls.ComboBoxItem)(target));
+367             \textcolor{keywordflow}{return};
+368             \textcolor{keywordflow}{case} 25:
+369             this.Cap\_Dif = ((System.Windows.Controls.ComboBoxItem)(target));
+370             \textcolor{keywordflow}{return};
+371             \textcolor{keywordflow}{case} 26:
+372             this.cmdCargarFTu = ((System.Windows.Controls.Button)(target));
+373             
+374 \textcolor{preprocessor}{            #line 76 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+375 \textcolor{preprocessor}{}            this.cmdCargarFTu.Click += \textcolor{keyword}{new} System.Windows.RoutedEventHandler(this.cmdCargarFTu\_Click);
+376             
+377 \textcolor{preprocessor}{            #line default}
+378 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+379 \textcolor{preprocessor}{}            \textcolor{keywordflow}{return};
+380             \}
+381             this.\_contentLoaded = \textcolor{keyword}{true};
+382         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Initialize\-Component@{Initialize\-Component}}
+\index{Initialize\-Component@{Initialize\-Component}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Initialize\-Component}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Initialize\-Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_reportes_ac393b8ae9bf5c473e21b4178565b657c}
+
+
+Initialize\-Component 
+
+
+
+Definición en la línea 250 del archivo frm\-Reportes.\-g.\-i.\-cs.
+
+
+\begin{DoxyCode}
+250                                           \{
+251             \textcolor{keywordflow}{if} (_contentLoaded) \{
+252                 \textcolor{keywordflow}{return};
+253             \}
+254             _contentLoaded = \textcolor{keyword}{true};
+255             System.Uri resourceLocater = \textcolor{keyword}{new} System.Uri(\textcolor{stringliteral}{"/Proyecto\_Integrador;component/frmreportes.xaml"}, 
+      System.UriKind.Relative);
+256             
+257 \textcolor{preprocessor}{            #line 1 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+258 \textcolor{preprocessor}{}            System.Windows.Application.LoadComponent(\textcolor{keyword}{this}, resourceLocater);
+259             
+260 \textcolor{preprocessor}{            #line default}
+261 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+262 \textcolor{preprocessor}{}        \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Initialize\-Component@{Initialize\-Component}}
+\index{Initialize\-Component@{Initialize\-Component}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Initialize\-Component}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Initialize\-Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_reportes_ac393b8ae9bf5c473e21b4178565b657c}
+
+
+Initialize\-Component 
+
+
+
+Definición en la línea 250 del archivo frm\-Reportes.\-g.\-cs.
+
+
+\begin{DoxyCode}
+250                                           \{
+251             \textcolor{keywordflow}{if} (_contentLoaded) \{
+252                 \textcolor{keywordflow}{return};
+253             \}
+254             _contentLoaded = \textcolor{keyword}{true};
+255             System.Uri resourceLocater = \textcolor{keyword}{new} System.Uri(\textcolor{stringliteral}{"/Proyecto\_Integrador;component/frmreportes.xaml"}, 
+      System.UriKind.Relative);
+256             
+257 \textcolor{preprocessor}{            #line 1 "..\(\backslash\)..\(\backslash\)frmReportes.xaml"}
+258 \textcolor{preprocessor}{}            System.Windows.Application.LoadComponent(\textcolor{keyword}{this}, resourceLocater);
+259             
+260 \textcolor{preprocessor}{            #line default}
+261 \textcolor{preprocessor}{}\textcolor{preprocessor}{            #line hidden}
+262 \textcolor{preprocessor}{}        \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!llenar\-Struct@{llenar\-Struct}}
+\index{llenar\-Struct@{llenar\-Struct}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{llenar\-Struct}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-llenar\-Struct (
+\begin{DoxyParamCaption}
+\item[{ref {\bf Uni}}]{input, }
+\item[{Date\-Time}]{fecha\-I, }
+\item[{Date\-Time}]{fecha\-F}
+\end{DoxyParamCaption}
+)}\label{class_proyecto___integrador_1_1frm_reportes_a3622e530bea3aedd8594f8f74b9172fd}
+
+
+En este metodo se llena la estructura 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em \doxyref{Uni}{p.}{struct_proyecto___integrador_1_1frm_reportes_1_1_uni}} & \doxyref{Uni}{p.}{struct_proyecto___integrador_1_1frm_reportes_1_1_uni} el cual es la estructura\\
+\hline
+{\em fecha\-I} & Fecha\-I, la cual es la fecha inicial.\\
+\hline
+{\em fecha\-F} & Fecha\-F, la cual es la fecha final.\\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 150 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+151         \{
+152             input.TiposUsuarios = \textcolor{keyword}{new} List<string>();
+153             OleDbCommand cmd1 = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"Select TipoUsuario FROM Servicios WHERE NumUnidad =
+       @NumUnidad AND Fecha BETWEEN @FechaI AND @FechaF"}, Conexion);
+154             cmd1.Parameters.AddWithValue(\textcolor{stringliteral}{"@NumUnidad"}, input.unidad);
+155             cmd1.Parameters.AddWithValue(\textcolor{stringliteral}{"@FechaI"}, fechaI);
+156             cmd1.Parameters.AddWithValue(\textcolor{stringliteral}{"@FechaF"}, fechaF);
+157             OleDbDataAdapter da1 = \textcolor{keyword}{new} OleDbDataAdapter(cmd1);
+158             DataTable tabla1 = \textcolor{keyword}{new} DataTable();
+159             da1.Fill(tabla1);
+160             \textcolor{keywordflow}{foreach} (DataRow str \textcolor{keywordflow}{in} tabla1.Rows)
+161             \{
+162                 input.TiposUsuarios.Add(str.ItemArray[0].ToString());
+163             \}
+164         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Metro\-Window\-\_\-\-Loaded\-\_\-1@{Metro\-Window\-\_\-\-Loaded\-\_\-1}}
+\index{Metro\-Window\-\_\-\-Loaded\-\_\-1@{Metro\-Window\-\_\-\-Loaded\-\_\-1}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Metro\-Window\-\_\-\-Loaded\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Metro\-Window\-\_\-\-Loaded\-\_\-1 (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_a7433bf97532f67893ef01f6df43c64c3}
+
+
+Se ejecuta cuando se carga la ventana 
+
+
+
+Definición en la línea 203 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+\begin{DoxyCode}
+204         \{
+205             Conexion.Open();
+206             da.Fill(tabla);
+207             Conexion.Close();
+208 
+209             OleDbCommand cmdCamion = \textcolor{keyword}{new} OleDbCommand(\textcolor{stringliteral}{"SELECT NumCamion FROM Camion"}, 
+      Conexion);
+210             OleDbDataAdapter daC = \textcolor{keyword}{new} OleDbDataAdapter(cmdCamion);
+211             Conexion.Open();
+212             DataTable dt = \textcolor{keyword}{new} DataTable();
+213             daC.Fill(dt);
+214             numeroCamiones = (from DataRow var in dt.Rows select var.ItemArray[0].ToString()).ToList();
+215             Conexion.Close();
+216 
+217             cmbUnidades.ItemsSource = numeroCamiones;
+218 
+219 
+220         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!\-\_\-content\-Loaded@{\-\_\-content\-Loaded}}
+\index{\-\_\-content\-Loaded@{\-\_\-content\-Loaded}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{\-\_\-content\-Loaded}]{\setlength{\rightskip}{0pt plus 5cm}bool Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-\_\-content\-Loaded\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_a51ea220998e1299ab0c783e106924ce5}
+
+
+Definición en la línea 243 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Cap\-\_\-\-Dif@{Cap\-\_\-\-Dif}}
+\index{Cap\-\_\-\-Dif@{Cap\-\_\-\-Dif}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Cap\-\_\-\-Dif}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Combo\-Box\-Item Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Cap\-\_\-\-Dif\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a9d4ef379b121a2842b3295979dee99ca}
+
+
+Definición en la línea 230 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!cmb\-Unidades@{cmb\-Unidades}}
+\index{cmb\-Unidades@{cmb\-Unidades}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{cmb\-Unidades}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Combo\-Box Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-cmb\-Unidades\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a56beefd4093ee2df0a1e9ae67c13d8e0}
+
+
+Definición en la línea 166 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!cmb\-Usuarios@{cmb\-Usuarios}}
+\index{cmb\-Usuarios@{cmb\-Usuarios}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{cmb\-Usuarios}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Combo\-Box Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-cmb\-Usuarios\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a650d2eda373ad14c5b04ebbaa29065fe}
+
+
+Definición en la línea 198 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!cmd@{cmd}}
+\index{cmd@{cmd}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{cmd}]{\setlength{\rightskip}{0pt plus 5cm}Ole\-Db\-Command Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-cmd\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_acae1087a86c5ad21e28e0a5682f1b1c4}
+
+
+Definición en la línea 37 del archivo frm\-Reportes.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!cmd\-Cargar@{cmd\-Cargar}}
+\index{cmd\-Cargar@{cmd\-Cargar}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{cmd\-Cargar}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Button Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-cmd\-Cargar\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_adc94ade37c317b1615767dfbf6e0504e}
+
+
+Definición en la línea 54 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!cmd\-Cargar\-F\-Tu@{cmd\-Cargar\-F\-Tu}}
+\index{cmd\-Cargar\-F\-Tu@{cmd\-Cargar\-F\-Tu}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{cmd\-Cargar\-F\-Tu}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Button Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-cmd\-Cargar\-F\-Tu\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a32f2ed38f103fc8d5ff4530dd31cd614}
+
+
+Definición en la línea 238 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!cmd\-Cargar\-Fu@{cmd\-Cargar\-Fu}}
+\index{cmd\-Cargar\-Fu@{cmd\-Cargar\-Fu}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{cmd\-Cargar\-Fu}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Button Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-cmd\-Cargar\-Fu\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a7143beedb2969f7d4ad9bed74f1e8bdc}
+
+
+Definición en la línea 102 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!cmd\-Cargar\-Fun@{cmd\-Cargar\-Fun}}
+\index{cmd\-Cargar\-Fun@{cmd\-Cargar\-Fun}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{cmd\-Cargar\-Fun}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Button Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-cmd\-Cargar\-Fun\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_af450e818ebc570c1f1c8678a6bcf1be1}
+
+
+Definición en la línea 134 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Conexion@{Conexion}}
+\index{Conexion@{Conexion}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Conexion}]{\setlength{\rightskip}{0pt plus 5cm}Ole\-Db\-Connection Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Conexion Provider=Microsoft.\-A\-C\-E.\-O\-L\-E\-D\-B.\-12.\-0;Data Source='C\-:\textbackslash{}\-Users\textbackslash{}\-Mondro\textbackslash{}\-Documents\textbackslash{}\-Git\-Hub\textbackslash{}\-P\-I\-\_\-3er\-\_\-\-Semestre\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Proyecto\-\_\-\-Integrador\textbackslash{}\-Base\-De\-Datos.\-accdb'\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_a07f3050304f713f032d2f79e8dc7aee9}
+
+
+Definición en la línea 36 del archivo frm\-Reportes.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!da@{da}}
+\index{da@{da}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{da}]{\setlength{\rightskip}{0pt plus 5cm}Ole\-Db\-Data\-Adapter Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-da\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_aa52f46c18a8dc66a291214e495b9223d}
+
+
+Definición en la línea 38 del archivo frm\-Reportes.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtg\-Cobros@{dtg\-Cobros}}
+\index{dtg\-Cobros@{dtg\-Cobros}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtg\-Cobros}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Data\-Grid Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtg\-Cobros\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a252c4d132805f3ae105476b5303a514b}
+
+
+Definición en la línea 62 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtg\-Usos\-Tipo\-Usuario@{dtg\-Usos\-Tipo\-Usuario}}
+\index{dtg\-Usos\-Tipo\-Usuario@{dtg\-Usos\-Tipo\-Usuario}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtg\-Usos\-Tipo\-Usuario}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Data\-Grid Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtg\-Usos\-Tipo\-Usuario\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_aee3bd9445d029fba38c47b86d8a2aa5d}
+
+
+Definición en la línea 190 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtg\-Usos\-Unidad@{dtg\-Usos\-Unidad}}
+\index{dtg\-Usos\-Unidad@{dtg\-Usos\-Unidad}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtg\-Usos\-Unidad}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Data\-Grid Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtg\-Usos\-Unidad\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a6778996327c9d8913524e771bdacfe2a}
+
+
+Definición en la línea 158 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtg\-Usos\-Usuario@{dtg\-Usos\-Usuario}}
+\index{dtg\-Usos\-Usuario@{dtg\-Usos\-Usuario}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtg\-Usos\-Usuario}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Data\-Grid Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtg\-Usos\-Usuario\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a6c8d916638a7ff730193ed7a737daef5}
+
+
+Definición en la línea 110 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtp\-Final@{dtp\-Final}}
+\index{dtp\-Final@{dtp\-Final}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtp\-Final}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Date\-Picker Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtp\-Final\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_ac5cb933cd20a14cc5f4c39780c5af44e}
+
+
+Definición en la línea 78 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtp\-Final\-F\-Un@{dtp\-Final\-F\-Un}}
+\index{dtp\-Final\-F\-Un@{dtp\-Final\-F\-Un}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtp\-Final\-F\-Un}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Date\-Picker Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtp\-Final\-F\-Un\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a86bfec1dee1b3a46b2d14cb22bdbda6a}
+
+
+Definición en la línea 150 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtp\-Final\-Tu@{dtp\-Final\-Tu}}
+\index{dtp\-Final\-Tu@{dtp\-Final\-Tu}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtp\-Final\-Tu}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Date\-Picker Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtp\-Final\-Tu\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a7427e6446e85eb5012e7ce3626fd47bf}
+
+
+Definición en la línea 182 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtp\-Final\-Us@{dtp\-Final\-Us}}
+\index{dtp\-Final\-Us@{dtp\-Final\-Us}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtp\-Final\-Us}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Date\-Picker Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtp\-Final\-Us\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a2a3e01d9214cb81da2363233974538b6}
+
+
+Definición en la línea 126 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtp\-Inicial@{dtp\-Inicial}}
+\index{dtp\-Inicial@{dtp\-Inicial}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtp\-Inicial}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Date\-Picker Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtp\-Inicial\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a95d23eed0e93066860e10351b6d074c4}
+
+
+Definición en la línea 70 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtp\-Inicial\-F\-Un@{dtp\-Inicial\-F\-Un}}
+\index{dtp\-Inicial\-F\-Un@{dtp\-Inicial\-F\-Un}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtp\-Inicial\-F\-Un}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Date\-Picker Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtp\-Inicial\-F\-Un\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a9b5e0ba63c03658c6a1f2203326f5c94}
+
+
+Definición en la línea 142 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtp\-Inicial\-F\-Us@{dtp\-Inicial\-F\-Us}}
+\index{dtp\-Inicial\-F\-Us@{dtp\-Inicial\-F\-Us}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtp\-Inicial\-F\-Us}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Date\-Picker Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtp\-Inicial\-F\-Us\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_ac811e1f9011cd7fa4be4728784c38e39}
+
+
+Definición en la línea 118 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!dtp\-Inicial\-Tu@{dtp\-Inicial\-Tu}}
+\index{dtp\-Inicial\-Tu@{dtp\-Inicial\-Tu}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{dtp\-Inicial\-Tu}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Date\-Picker Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-dtp\-Inicial\-Tu\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a5b32d3a568691c6b68063e9d7042f135}
+
+
+Definición en la línea 174 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Estudiante@{Estudiante}}
+\index{Estudiante@{Estudiante}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Estudiante}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Combo\-Box\-Item Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Estudiante\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a9d5685a27296ac7130bb8145318371c8}
+
+
+Definición en la línea 214 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!General@{General}}
+\index{General@{General}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{General}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Combo\-Box\-Item Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-General\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a4aba00d4a0fb310b8b217a81323750c8}
+
+
+Definición en la línea 206 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!numero\-Camiones@{numero\-Camiones}}
+\index{numero\-Camiones@{numero\-Camiones}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{numero\-Camiones}]{\setlength{\rightskip}{0pt plus 5cm}List$<$String$>$ Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-numero\-Camiones\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_ac7ea9ccb3b2e470b4fb3260410c9e4ac}
+
+
+Definición en la línea 40 del archivo frm\-Reportes.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!tabc\-Frecuencias@{tabc\-Frecuencias}}
+\index{tabc\-Frecuencias@{tabc\-Frecuencias}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{tabc\-Frecuencias}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Tab\-Control Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-tabc\-Frecuencias\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a3da4edfd318309a2403ab01686b80a13}
+
+
+Definición en la línea 86 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!tabc\-Pestañas@{tabc\-Pestañas}}
+\index{tabc\-Pestañas@{tabc\-Pestañas}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{tabc\-Pestañas}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Tab\-Control Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-tabc\-Pestañas\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a139ef504d901cca9b286108dc4629ac9}
+
+
+Definición en la línea 46 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!tabla@{tabla}}
+\index{tabla@{tabla}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{tabla}]{\setlength{\rightskip}{0pt plus 5cm}Data\-Table Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-tabla\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_a72deb5657310258bb23434e57e010994}
+
+
+Definición en la línea 39 del archivo frm\-Reportes.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Tercera\-Edad@{Tercera\-Edad}}
+\index{Tercera\-Edad@{Tercera\-Edad}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Tercera\-Edad}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Combo\-Box\-Item Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Tercera\-Edad\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_ac5996bf8e61268e134d41f3ea7845656}
+
+
+Definición en la línea 222 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Tipo\-User\-Fre@{Tipo\-User\-Fre}}
+\index{Tipo\-User\-Fre@{Tipo\-User\-Fre}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Tipo\-User\-Fre}]{\setlength{\rightskip}{0pt plus 5cm}Binding\-List$<${\bf Fre\-Tipo\-Usuario}$>$ Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Tipo\-User\-Fre = new Binding\-List$<${\bf Fre\-Tipo\-Usuario}$>$()\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_ad77ddaf8e3c99fe2835004fa982f86f3}
+
+
+Definición en la línea 377 del archivo frm\-Reportes.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!txt\-Num\-Tarjeta@{txt\-Num\-Tarjeta}}
+\index{txt\-Num\-Tarjeta@{txt\-Num\-Tarjeta}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{txt\-Num\-Tarjeta}]{\setlength{\rightskip}{0pt plus 5cm}System Windows Controls Text\-Box Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-txt\-Num\-Tarjeta\hspace{0.3cm}{\ttfamily [package]}}\label{class_proyecto___integrador_1_1frm_reportes_a22711ce17ebb18966e429ea55ec12b2f}
+
+
+Definición en la línea 94 del archivo frm\-Reportes.\-g.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Unidad@{Unidad}}
+\index{Unidad@{Unidad}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Unidad}]{\setlength{\rightskip}{0pt plus 5cm}Binding\-List$<${\bf Uni}$>$ Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Unidad = new Binding\-List$<${\bf Uni}$>$()\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_ac3e9c8806d68cb1f858e4ed2b29371a4}
+
+
+Lista guardar todos los datos que se mostraran en el datagrid 
+
+
+
+Definición en la línea 142 del archivo frm\-Reportes.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Unidad\-Fre@{Unidad\-Fre}}
+\index{Unidad\-Fre@{Unidad\-Fre}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Unidad\-Fre}]{\setlength{\rightskip}{0pt plus 5cm}Binding\-List$<${\bf Fre\-Unidad}$>$ Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Unidad\-Fre = new Binding\-List$<${\bf Fre\-Unidad}$>$()\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_a3ff3370d9c2a3c6fd590571cd8ae97ad}
+
+
+Definición en la línea 313 del archivo frm\-Reportes.\-xaml.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::frm\-Reportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}!Usuario@{Usuario}}
+\index{Usuario@{Usuario}!Proyecto_Integrador::frmReportes@{Proyecto\-\_\-\-Integrador\-::frm\-Reportes}}
+\subsubsection[{Usuario}]{\setlength{\rightskip}{0pt plus 5cm}Binding\-List$<${\bf Fre\-Usuarios}$>$ Proyecto\-\_\-\-Integrador.\-frm\-Reportes.\-Usuario = new Binding\-List$<${\bf Fre\-Usuarios}$>$()\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1frm_reportes_aab46666f1f1205b4b5ef07de7142bdb4}
+
+
+Definición en la línea 250 del archivo frm\-Reportes.\-xaml.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/{\bf frm\-Reportes.\-xaml.\-cs}\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/obj/\-Debug/{\bf frm\-Reportes.\-g.\-cs}\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/obj/\-Debug/{\bf frm\-Reportes.\-g.\-i.\-cs}\end{DoxyCompactItemize}

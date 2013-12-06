@@ -1,0 +1,636 @@
+\section{Referencia de la Clase Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table}
+\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table}\index{Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table@{Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table}}
+
+
+Represents the strongly named Data\-Table class. /summary$>$  
+
+
+Diagrama de herencias de Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Data\-Table} ()
+\item 
+void {\bf Add\-Camion\-Row} ({\bf Camion\-Row} row)
+\item 
+{\bf Camion\-Row} {\bf Add\-Camion\-Row} (string Num\-Camion)
+\item 
+{\bf Camion\-Row} {\bf Find\-By\-Id} (int Id)
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Table {\bf Clone} ()
+\item 
+{\bf Camion\-Row} {\bf New\-Camion\-Row} ()
+\item 
+void {\bf Remove\-Camion\-Row} ({\bf Camion\-Row} row)
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \\*
+global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type {\bf Get\-Typed\-Table\-Schema} (global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set xs)
+\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Data\-Table} (global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info info, global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context context)
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Table {\bf Create\-Instance} ()
+\item 
+override \\*
+global\-::\-System.\-Data.\-Data\-Row {\bf New\-Row\-From\-Builder} (global\-::\-System.\-Data.\-Data\-Row\-Builder builder)
+\item 
+override global\-::\-System.\-Type {\bf Get\-Row\-Type} ()
+\item 
+override void {\bf On\-Row\-Changed} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Changing} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Deleted} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\item 
+override void {\bf On\-Row\-Deleting} (global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args e)
+\end{DoxyCompactItemize}
+\subsection*{Funciones del 'package'}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Data\-Table} (global\-::\-System.\-Data.\-Data\-Table table)
+\item 
+void {\bf Init\-Vars} ()
+\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Id\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf Num\-Camion\-Column}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+int {\bf Count}\hspace{0.3cm}{\ttfamily  [get]}
+\item 
+{\bf Camion\-Row} {\bf this[int index]}\hspace{0.3cm}{\ttfamily  [get]}
+\end{DoxyCompactItemize}
+\subsection*{Eventos}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camion\-Row\-Change\-Event\-Handler} {\bf Camion\-Row\-Changing}
+\item 
+{\bf Camion\-Row\-Change\-Event\-Handler} {\bf Camion\-Row\-Changed}
+\item 
+{\bf Camion\-Row\-Change\-Event\-Handler} {\bf Camion\-Row\-Deleting}
+\item 
+{\bf Camion\-Row\-Change\-Event\-Handler} {\bf Camion\-Row\-Deleted}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf Init\-Class} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Id}
+\item 
+global\-::\-System.\-Data.\-Data\-Column {\bf column\-Num\-Camion}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Represents the strongly named Data\-Table class. /summary$>$ 
+
+Definición en la línea 364 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Data\-Table@{Camion\-Data\-Table}}
+\index{Camion\-Data\-Table@{Camion\-Data\-Table}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Data\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_ae871f1d2abb73456a7f29916b6f93167}
+
+
+Definición en la línea 372 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+372                                      \{
+373                 this.TableName = \textcolor{stringliteral}{"Camion"};
+374                 this.BeginInit();
+375                 this.InitClass();
+376                 this.EndInit();
+377             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Data\-Table@{Camion\-Data\-Table}}
+\index{Camion\-Data\-Table@{Camion\-Data\-Table}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Data\-Table (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Table}]{table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a000bea66c098f9414b8e424d9a74a2b9}
+
+
+Definición en la línea 381 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+381                                                                         \{
+382                 this.TableName = table.TableName;
+383                 \textcolor{keywordflow}{if} ((table.CaseSensitive != table.DataSet.CaseSensitive)) \{
+384                     this.CaseSensitive = table.CaseSensitive;
+385                 \}
+386                 \textcolor{keywordflow}{if} ((table.Locale.ToString() != table.DataSet.Locale.ToString())) \{
+387                     this.Locale = table.Locale;
+388                 \}
+389                 \textcolor{keywordflow}{if} ((table.Namespace != table.DataSet.Namespace)) \{
+390                     this.Namespace = table.Namespace;
+391                 \}
+392                 this.Prefix = table.Prefix;
+393                 this.MinimumCapacity = table.MinimumCapacity;
+394             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Data\-Table@{Camion\-Data\-Table}}
+\index{Camion\-Data\-Table@{Camion\-Data\-Table}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Data\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Data\-Table (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Serialization\-Info}]{info, }
+\item[{global\-::\-System.\-Runtime.\-Serialization.\-Streaming\-Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a64303d11d7528af178ecb1ef0c3adcbc}
+
+
+Definición en la línea 398 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+398                                                                                                            
+                                                         : 
+399                     base(info, context) \{
+400                 this.InitVars();
+401             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Add\-Camion\-Row@{Add\-Camion\-Row}}
+\index{Add\-Camion\-Row@{Add\-Camion\-Row}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Add\-Camion\-Row}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Add\-Camion\-Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Camion\-Row}}]{row}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a882eab279808e3afeb6521583f1a81c3}
+
+
+Definición en la línea 450 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+450                                                     \{
+451                 this.Rows.Add(row);
+452             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Add\-Camion\-Row@{Add\-Camion\-Row}}
+\index{Add\-Camion\-Row@{Add\-Camion\-Row}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Add\-Camion\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Add\-Camion\-Row (
+\begin{DoxyParamCaption}
+\item[{string}]{Num\-Camion}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_ae3bf00f5d53f16a72b047972f1ab4b25}
+
+
+Definición en la línea 456 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+456                                                             \{
+457                 CamionRow rowCamionRow = ((CamionRow)(this.NewRow()));
+458                 \textcolor{keywordtype}{object}[] columnValuesArray = \textcolor{keyword}{new} \textcolor{keywordtype}{object}[] \{
+459                         null,
+460                         NumCamion\};
+461                 rowCamionRow.ItemArray = columnValuesArray;
+462                 this.Rows.Add(rowCamionRow);
+463                 \textcolor{keywordflow}{return} rowCamionRow;
+464             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Clone@{Clone}}
+\index{Clone@{Clone}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Table Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_aa52c0c50beb5df367d785f3a63e40f80}
+
+
+Definición en la línea 475 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+475                                                                 \{
+476                 CamionDataTable cln = ((CamionDataTable)(base.Clone()));
+477                 cln.InitVars();
+478                 \textcolor{keywordflow}{return} cln;
+479             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Create\-Instance@{Create\-Instance}}
+\index{Create\-Instance@{Create\-Instance}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Create\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Table Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Create\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a682b9e9d99d902661e7bb717c9a4c805}
+
+
+Definición en la línea 483 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+483                                                                             \{
+484                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} CamionDataTable();
+485             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Find\-By\-Id@{Find\-By\-Id}}
+\index{Find\-By\-Id@{Find\-By\-Id}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Find\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Find\-By\-Id (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a255a5064beee90a20e4f10e26c01951a}
+
+
+Definición en la línea 468 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+468                                               \{
+469                 \textcolor{keywordflow}{return} ((CamionRow)(this.Rows.Find(\textcolor{keyword}{new} \textcolor{keywordtype}{object}[] \{
+470                             Id\})));
+471             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Get\-Row\-Type@{Get\-Row\-Type}}
+\index{Get\-Row\-Type@{Get\-Row\-Type}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Get\-Row\-Type}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Type Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Get\-Row\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a8cfe0734aec60bbeff68f1610746c3db}
+
+
+Definición en la línea 525 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+525                                                               \{
+526                 \textcolor{keywordflow}{return} typeof(CamionRow);
+527             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Get\-Typed\-Table\-Schema@{Get\-Typed\-Table\-Schema}}
+\index{Get\-Typed\-Table\-Schema@{Get\-Typed\-Table\-Schema}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Get\-Typed\-Table\-Schema}]{\setlength{\rightskip}{0pt plus 5cm}static global.\-System.\-Xml.\-Schema.\-Xml\-Schema\-Complex\-Type Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Get\-Typed\-Table\-Schema (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Xml.\-Schema.\-Xml\-Schema\-Set}]{xs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a75693beb729ab07dfa3b4748f70d3b9e}
+
+
+Definición en la línea 573 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+573                                                                                                            
+                               \{
+574                 global::System.Xml.Schema.XmlSchemaComplexType type = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaComplexType();
+575                 global::System.Xml.Schema.XmlSchemaSequence sequence = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaSequence();
+576                 BaseDeDatosDataSet ds = \textcolor{keyword}{new} BaseDeDatosDataSet();
+577                 global::System.Xml.Schema.XmlSchemaAny any1 = \textcolor{keyword}{new} global::System.Xml.Schema.XmlSchemaAny();
+578                 any1.Namespace = \textcolor{stringliteral}{"http://www.w3.org/2001/XMLSchema"};
+579                 any1.MinOccurs = \textcolor{keyword}{new} decimal(0);
+580                 any1.MaxOccurs = decimal.MaxValue;
+581                 any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+582                 sequence.Items.Add(any1);
+583                 global::System.Xml.Schema.XmlSchemaAny any2 = \textcolor{keyword}{new} global::System.Xml.Schema.XmlSchemaAny();
+584                 any2.Namespace = \textcolor{stringliteral}{"urn:schemas-microsoft-com:xml-diffgram-v1"};
+585                 any2.MinOccurs = \textcolor{keyword}{new} decimal(1);
+586                 any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+587                 sequence.Items.Add(any2);
+588                 global::System.Xml.Schema.XmlSchemaAttribute attribute1 = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaAttribute();
+589                 attribute1.Name = \textcolor{stringliteral}{"namespace"};
+590                 attribute1.FixedValue = ds.Namespace;
+591                 type.Attributes.Add(attribute1);
+592                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = \textcolor{keyword}{new} global::System
+      .Xml.Schema.XmlSchemaAttribute();
+593                 attribute2.Name = \textcolor{stringliteral}{"tableTypeName"};
+594                 attribute2.FixedValue = \textcolor{stringliteral}{"CamionDataTable"};
+595                 type.Attributes.Add(attribute2);
+596                 type.Particle = sequence;
+597                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+598                 \textcolor{keywordflow}{if} (xs.Contains(dsSchema.TargetNamespace)) \{
+599                     global::System.IO.MemoryStream s1 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+600                     global::System.IO.MemoryStream s2 = \textcolor{keyword}{new} global::System.IO.MemoryStream();
+601                     \textcolor{keywordflow}{try} \{
+602                         global::System.Xml.Schema.XmlSchema schema = null;
+603                         dsSchema.Write(s1);
+604                         \textcolor{keywordflow}{for} (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.
+      TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) \{
+605                             schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+606                             s2.SetLength(0);
+607                             schema.Write(s2);
+608                             \textcolor{keywordflow}{if} ((s1.Length == s2.Length)) \{
+609                                 s1.Position = 0;
+610                                 s2.Position = 0;
+611                                 \textcolor{keywordflow}{for} (; ((s1.Position != s1.Length) 
+612                                             && (s1.ReadByte() == s2.ReadByte())); ) \{
+613                                     ;
+614                                 \}
+615                                 \textcolor{keywordflow}{if} ((s1.Position == s1.Length)) \{
+616                                     \textcolor{keywordflow}{return} type;
+617                                 \}
+618                             \}
+619                         \}
+620                     \}
+621                     \textcolor{keywordflow}{finally} \{
+622                         \textcolor{keywordflow}{if} ((s1 != null)) \{
+623                             s1.Close();
+624                         \}
+625                         \textcolor{keywordflow}{if} ((s2 != null)) \{
+626                             s2.Close();
+627                         \}
+628                     \}
+629                 \}
+630                 xs.Add(dsSchema);
+631                 \textcolor{keywordflow}{return} type;
+632             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Init\-Class@{Init\-Class}}
+\index{Init\-Class@{Init\-Class}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Init\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Init\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a95b341c31cdca2fc03c75b61d839f2e8}
+
+
+Definición en la línea 496 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+496                                      \{
+497                 this.columnId = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"Id"}, typeof(\textcolor{keywordtype}{int}), null, global::System
+      .Data.MappingType.Element);
+498                 base.Columns.Add(this.columnId);
+499                 this.columnNumCamion = \textcolor{keyword}{new} global::System.Data.DataColumn(\textcolor{stringliteral}{"NumCamion"}, typeof(\textcolor{keywordtype}{string}), null
+      , global::System.Data.MappingType.Element);
+500                 base.Columns.Add(this.columnNumCamion);
+501                 this.Constraints.Add(\textcolor{keyword}{new} global::System.Data.UniqueConstraint(\textcolor{stringliteral}{"Constraint1"}, \textcolor{keyword}{new} 
+      global::System.Data.DataColumn[] \{
+502                                 this.columnId\}, \textcolor{keyword}{true}));
+503                 this.columnId.AutoIncrement = \textcolor{keyword}{true};
+504                 this.columnId.AutoIncrementSeed = -1;
+505                 this.columnId.AutoIncrementStep = -1;
+506                 this.columnId.AllowDBNull = \textcolor{keyword}{false};
+507                 this.columnId.Unique = \textcolor{keyword}{true};
+508                 this.columnNumCamion.MaxLength = 255;
+509             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Init\-Vars@{Init\-Vars}}
+\index{Init\-Vars@{Init\-Vars}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Init\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Init\-Vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [package]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_abec1becd946ee6628f9086ac056e3327}
+
+
+Definición en la línea 489 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+489                                      \{
+490                 this.columnId = base.Columns[\textcolor{stringliteral}{"Id"}];
+491                 this.columnNumCamion = base.Columns[\textcolor{stringliteral}{"NumCamion"}];
+492             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!New\-Camion\-Row@{New\-Camion\-Row}}
+\index{New\-Camion\-Row@{New\-Camion\-Row}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{New\-Camion\-Row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-New\-Camion\-Row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a42ed868db1ff1894fbbeee47b7382a49}
+
+
+Definición en la línea 513 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+513                                             \{
+514                 \textcolor{keywordflow}{return} ((CamionRow)(this.NewRow()));
+515             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!New\-Row\-From\-Builder@{New\-Row\-From\-Builder}}
+\index{New\-Row\-From\-Builder@{New\-Row\-From\-Builder}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{New\-Row\-From\-Builder}]{\setlength{\rightskip}{0pt plus 5cm}override global.\-System.\-Data.\-Data\-Row Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-New\-Row\-From\-Builder (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Builder}]{builder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_ad9905e9270fd182e3e14310f978533ff}
+
+
+Definición en la línea 519 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+519                                                                                                            
+                \{
+520                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} CamionRow(builder);
+521             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!On\-Row\-Changed@{On\-Row\-Changed}}
+\index{On\-Row\-Changed@{On\-Row\-Changed}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{On\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}override void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-On\-Row\-Changed (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a1df32e3b4e6aeaae9a63ad3cb9ecd514}
+
+
+Definición en la línea 531 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+531                                                                                              \{
+532                 base.OnRowChanged(e);
+533                 \textcolor{keywordflow}{if} ((this.CamionRowChanged != null)) \{
+534                     this.CamionRowChanged(\textcolor{keyword}{this}, \textcolor{keyword}{new} CamionRowChangeEvent(((CamionRow)(e.Row)), e.Action));
+535                 \}
+536             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!On\-Row\-Changing@{On\-Row\-Changing}}
+\index{On\-Row\-Changing@{On\-Row\-Changing}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{On\-Row\-Changing}]{\setlength{\rightskip}{0pt plus 5cm}override void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-On\-Row\-Changing (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a033593714d5b3edf3f1708690a3cfe3c}
+
+
+Definición en la línea 540 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+540                                                                                               \{
+541                 base.OnRowChanging(e);
+542                 \textcolor{keywordflow}{if} ((this.CamionRowChanging != null)) \{
+543                     this.CamionRowChanging(\textcolor{keyword}{this}, \textcolor{keyword}{new} CamionRowChangeEvent(((CamionRow)(e.Row)), e.Action));
+544                 \}
+545             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!On\-Row\-Deleted@{On\-Row\-Deleted}}
+\index{On\-Row\-Deleted@{On\-Row\-Deleted}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{On\-Row\-Deleted}]{\setlength{\rightskip}{0pt plus 5cm}override void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-On\-Row\-Deleted (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_abc210095ead28af2fcbc38faf12a28a0}
+
+
+Definición en la línea 549 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+549                                                                                              \{
+550                 base.OnRowDeleted(e);
+551                 \textcolor{keywordflow}{if} ((this.CamionRowDeleted != null)) \{
+552                     this.CamionRowDeleted(\textcolor{keyword}{this}, \textcolor{keyword}{new} CamionRowChangeEvent(((CamionRow)(e.Row)), e.Action));
+553                 \}
+554             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!On\-Row\-Deleting@{On\-Row\-Deleting}}
+\index{On\-Row\-Deleting@{On\-Row\-Deleting}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{On\-Row\-Deleting}]{\setlength{\rightskip}{0pt plus 5cm}override void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-On\-Row\-Deleting (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row\-Change\-Event\-Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_aab72716f0056ee58bb12ebe3b72e5020}
+
+
+Definición en la línea 558 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+558                                                                                               \{
+559                 base.OnRowDeleting(e);
+560                 \textcolor{keywordflow}{if} ((this.CamionRowDeleting != null)) \{
+561                     this.CamionRowDeleting(\textcolor{keyword}{this}, \textcolor{keyword}{new} CamionRowChangeEvent(((CamionRow)(e.Row)), e.Action));
+562                 \}
+563             \}
+\end{DoxyCode}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Remove\-Camion\-Row@{Remove\-Camion\-Row}}
+\index{Remove\-Camion\-Row@{Remove\-Camion\-Row}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Remove\-Camion\-Row}]{\setlength{\rightskip}{0pt plus 5cm}void Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Remove\-Camion\-Row (
+\begin{DoxyParamCaption}
+\item[{{\bf Camion\-Row}}]{row}
+\end{DoxyParamCaption}
+)}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_abf5403065003f945f2fd90831365c863}
+
+
+Definición en la línea 567 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+567                                                        \{
+568                 this.Rows.Remove(row);
+569             \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!column\-Id@{column\-Id}}
+\index{column\-Id@{column\-Id}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{column\-Id}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-column\-Id\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a3871b7c12aec1c6efae897d6c6bcba5e}
+
+
+Definición en la línea 366 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!column\-Num\-Camion@{column\-Num\-Camion}}
+\index{column\-Num\-Camion@{column\-Num\-Camion}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{column\-Num\-Camion}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-column\-Num\-Camion\hspace{0.3cm}{\ttfamily [private]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a042e46a3fdb5255654648a5630c8130d}
+
+
+Definición en la línea 368 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de propiedades}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Count@{Count}}
+\index{Count@{Count}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Count}]{\setlength{\rightskip}{0pt plus 5cm}int Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Count\hspace{0.3cm}{\ttfamily [get]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a5d6e38073e485b92729765df12098dcc}
+
+
+Definición en la línea 422 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Id\-Column@{Id\-Column}}
+\index{Id\-Column@{Id\-Column}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Id\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Id\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a4e2d09e8e0b8f6cbb2d72418d98cfe28}
+
+
+Definición en la línea 405 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Num\-Camion\-Column@{Num\-Camion\-Column}}
+\index{Num\-Camion\-Column@{Num\-Camion\-Column}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Num\-Camion\-Column}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Column Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Num\-Camion\-Column\hspace{0.3cm}{\ttfamily [get]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a5d4179d5639d6168bd05a6b874b569ec}
+
+
+Definición en la línea 413 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!this[int index]@{this[int index]}}
+\index{this[int index]@{this[int index]}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{this[int index]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-this[int index]\hspace{0.3cm}{\ttfamily [get]}}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_ab85691c86fb7551ffafabf410b5c9f9b}
+
+
+Definición en la línea 430 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de los eventos}
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Row\-Changed@{Camion\-Row\-Changed}}
+\index{Camion\-Row\-Changed@{Camion\-Row\-Changed}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Row\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row\-Change\-Event\-Handler} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Row\-Changed}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_accc27cdf74659fb43e48092949152196}
+
+
+Definición en la línea 440 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Row\-Changing@{Camion\-Row\-Changing}}
+\index{Camion\-Row\-Changing@{Camion\-Row\-Changing}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Row\-Changing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row\-Change\-Event\-Handler} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Row\-Changing}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a1e9cf30337892bbb0fd3a6ec41dd0077}
+
+
+Definición en la línea 437 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Row\-Deleted@{Camion\-Row\-Deleted}}
+\index{Camion\-Row\-Deleted@{Camion\-Row\-Deleted}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Row\-Deleted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row\-Change\-Event\-Handler} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Row\-Deleted}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_abaf64c95735d6bf03b1b8a9d032d10fc}
+
+
+Definición en la línea 446 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}!Camion\-Row\-Deleting@{Camion\-Row\-Deleting}}
+\index{Camion\-Row\-Deleting@{Camion\-Row\-Deleting}!SimBUS::BaseDeDatosDataSet::CamionDataTable@{Sim\-B\-U\-S\-::\-Base\-De\-Datos\-Data\-Set\-::\-Camion\-Data\-Table}}
+\subsubsection[{Camion\-Row\-Deleting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Row\-Change\-Event\-Handler} Sim\-B\-U\-S.\-Base\-De\-Datos\-Data\-Set.\-Camion\-Data\-Table.\-Camion\-Row\-Deleting}\label{class_sim_b_u_s_1_1_base_de_datos_data_set_1_1_camion_data_table_a004ce6ad633c24ac7bcacaf513eff907}
+
+
+Definición en la línea 443 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Sim\-B\-U\-S/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

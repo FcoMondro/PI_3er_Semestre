@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['insertupdatedelete',['InsertUpdateDelete',['../class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager.html#ae5b0bd8f1a373be3eaea9441596b852ca27b77cb15d3da7ded0250d0001bc6755',1,'Proyecto_Integrador.BaseDeDatosDataSetTableAdapters.TableAdapterManager.InsertUpdateDelete()'],['../class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager.html#a6b70f216bee3e45a7c4f64c3a4d2bc9ba27b77cb15d3da7ded0250d0001bc6755',1,'SimBUS.BaseDeDatosDataSetTableAdapters.TableAdapterManager.InsertUpdateDelete()']]]
+];

@@ -1,0 +1,26 @@
+var class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter =
+[
+    [ "ServiciosTableAdapter", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a21dab8b9616c4026283d4245c01512cf", null ],
+    [ "Delete", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#ae1941896128d1474f29a91237414cfdd", null ],
+    [ "Fill", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a0f4b44f2aadebbba36ffa7e1ecddf47d", null ],
+    [ "GetData", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a8a36b8e55b6b3ddf49ea304d1be9210e", null ],
+    [ "InitAdapter", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a1216c0999eba083a5a78129b84d9e19e", null ],
+    [ "InitCommandCollection", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a1de0d142664e8995428a9e4dfac8ba41", null ],
+    [ "InitConnection", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a8224462f7b2d115746a3b29986cfdd64", null ],
+    [ "Insert", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#ac773406e233a1f958851cfb4ed5d68e5", null ],
+    [ "Update", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a227cfd8dd37eff11db3f33b546d40976", null ],
+    [ "Update", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#abaf0180a006ffeb147157432983134a3", null ],
+    [ "Update", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a9688fa0ccb015f73a9222027c56c7565", null ],
+    [ "Update", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#ae8e6d3f00f95f9a5922e6b6162c8a019", null ],
+    [ "Update", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a6707bfd0d7cba2b5a68bcc36e5473739", null ],
+    [ "_adapter", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a65ed3a988a2fd8b3f0e9fd40709e5b9a", null ],
+    [ "_clearBeforeFill", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a889c2cb5151677906cfabe3db4ef0593", null ],
+    [ "_commandCollection", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a6d43b347d62848bb7e5916d45337e95d", null ],
+    [ "_connection", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a90636f1f4cdb86708e0da740393efa19", null ],
+    [ "_transaction", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a7ee4e77fa6b8f5d19f8acb66698e4b13", null ],
+    [ "Adapter", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a6743c4bbcbe05f76a2a8f4cb5078ea7e", null ],
+    [ "ClearBeforeFill", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a2dd0c69ba13cf78efd329f5a467f18f4", null ],
+    [ "CommandCollection", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#abbf52d5b4d02558da958f452046f4a3c", null ],
+    [ "Connection", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#aae368ed7276faee10bb7a798dc9a5d3e", null ],
+    [ "Transaction", "class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_servicios_table_adapter.html#a472e5e35d4f63b70ec29561cd0922fdd", null ]
+];

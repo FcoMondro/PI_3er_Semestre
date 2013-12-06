@@ -1,0 +1,676 @@
+\section{Referencia de la Clase Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager}
+\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager}\index{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager}}
+
+
+\doxyref{Table\-Adapter\-Manager}{p.}{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager} is used to coordinate Table\-Adapters in the dataset to enable Hierarchical Update scenarios /summary$>$  
+
+
+Diagrama de herencias de Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager}
+\end{center}
+\end{figure}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Self\-Reference\-Comparer}
+\begin{DoxyCompactList}\small\item\em Used to sort self-\/referenced table's rows /summary$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bf Update\-Order\-Option} \{ {\bf Update\-Order\-Option.\-Insert\-Update\-Delete} = 0, 
+{\bf Update\-Order\-Option.\-Update\-Insert\-Delete} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Update Order Option /summary$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual int {\bf Update\-All} ({\bf Base\-De\-Datos\-Data\-Set} data\-Set)
+\begin{DoxyCompactList}\small\item\em Update all changes to the dataset. /summary$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bf Sort\-Self\-Reference\-Rows} (global\-::\-System.\-Data.\-Data\-Row[$\,$] rows, global\-::\-System.\-Data.\-Data\-Relation relation, bool child\-First)
+\item 
+virtual bool {\bf Match\-Table\-Adapter\-Connection} (global\-::\-System.\-Data.\-I\-Db\-Connection input\-Connection)
+\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Update\-Order\-Option} {\bf Update\-Order}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+{\bf Camion\-Table\-Adapter} {\bf Camion\-Table\-Adapter}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+{\bf Servicios\-Table\-Adapter} {\bf Servicios\-Table\-Adapter}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+{\bf Usuario\-Table\-Adapter} {\bf Usuario\-Table\-Adapter}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+bool {\bf Backup\-Data\-Set\-Before\-Update}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+global\-::\-System.\-Data.\-I\-Db\-Connection {\bf Connection}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+int {\bf Table\-Adapter\-Instance\-Count}\hspace{0.3cm}{\ttfamily  [get]}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf Update\-Updated\-Rows} ({\bf Base\-De\-Datos\-Data\-Set} data\-Set, global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$ all\-Changed\-Rows, global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$ all\-Added\-Rows)
+\begin{DoxyCompactList}\small\item\em Update rows in top-\/down order. /summary$>$ \end{DoxyCompactList}\item 
+int {\bf Update\-Inserted\-Rows} ({\bf Base\-De\-Datos\-Data\-Set} data\-Set, global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$ all\-Added\-Rows)
+\begin{DoxyCompactList}\small\item\em Insert rows in top-\/down order. /summary$>$ \end{DoxyCompactList}\item 
+int {\bf Update\-Deleted\-Rows} ({\bf Base\-De\-Datos\-Data\-Set} data\-Set, global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$ all\-Changed\-Rows)
+\begin{DoxyCompactList}\small\item\em Delete rows in bottom-\/up order. /summary$>$ \end{DoxyCompactList}\item 
+global\-::\-System.\-Data.\-Data\-Row[$\,$] {\bf Get\-Real\-Updated\-Rows} (global\-::\-System.\-Data.\-Data\-Row[$\,$] updated\-Rows, global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$ all\-Added\-Rows)
+\begin{DoxyCompactList}\small\item\em Remove inserted rows that become updated rows after calling Table\-Adapter.\-Update(inserted rows) first /summary$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Update\-Order\-Option} {\bf \-\_\-update\-Order}
+\item 
+{\bf Camion\-Table\-Adapter} {\bf \-\_\-camion\-Table\-Adapter}
+\item 
+{\bf Servicios\-Table\-Adapter} {\bf \-\_\-servicios\-Table\-Adapter}
+\item 
+{\bf Usuario\-Table\-Adapter} {\bf \-\_\-usuario\-Table\-Adapter}
+\item 
+bool {\bf \-\_\-backup\-Data\-Set\-Before\-Update}
+\item 
+global\-::\-System.\-Data.\-I\-Db\-Connection {\bf \-\_\-connection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\doxyref{Table\-Adapter\-Manager}{p.}{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager} is used to coordinate Table\-Adapters in the dataset to enable Hierarchical Update scenarios /summary$>$ 
+
+Definición en la línea 4199 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de las enumeraciones miembro de la clase}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Update\-Order\-Option@{Update\-Order\-Option}}
+\index{Update\-Order\-Option@{Update\-Order\-Option}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Update\-Order\-Option}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Update\-Order\-Option}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_ae5b0bd8f1a373be3eaea9441596b852c}
+
+
+Update Order Option /summary$>$ 
+
+\begin{Desc}
+\item[Valores de enumeraciones]\par
+\begin{description}
+\index{Insert\-Update\-Delete@{Insert\-Update\-Delete}!Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Insert\-Update\-Delete@{Insert\-Update\-Delete}}\item[{\em 
+Insert\-Update\-Delete\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_ae5b0bd8f1a373be3eaea9441596b852ca27b77cb15d3da7ded0250d0001bc6755}
+}]\index{Update\-Insert\-Delete@{Update\-Insert\-Delete}!Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Update\-Insert\-Delete@{Update\-Insert\-Delete}}\item[{\em 
+Update\-Insert\-Delete\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_ae5b0bd8f1a373be3eaea9441596b852ca894fcc001e51f673d3fb5f3096473dd8}
+}]\end{description}
+\end{Desc}
+
+
+Definición en la línea 4646 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4646                                       \{
+4647             
+4648             InsertUpdateDelete = 0,
+4649             
+4650             UpdateInsertDelete = 1,
+4651         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Get\-Real\-Updated\-Rows@{Get\-Real\-Updated\-Rows}}
+\index{Get\-Real\-Updated\-Rows@{Get\-Real\-Updated\-Rows}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Get\-Real\-Updated\-Rows}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-Data\-Row [$\,$] Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Get\-Real\-Updated\-Rows (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row[$\,$]}]{updated\-Rows, }
+\item[{global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$}]{all\-Added\-Rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_a0f0faa471e99c19bb6af3bbe61452a04}
+
+
+Remove inserted rows that become updated rows after calling Table\-Adapter.\-Update(inserted rows) first /summary$>$ 
+
+
+
+Definición en la línea 4433 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4433                                                                                                            
+                                                                                  \{
+4434             \textcolor{keywordflow}{if} (((updatedRows == null) 
+4435                         || (updatedRows.Length < 1))) \{
+4436                 \textcolor{keywordflow}{return} updatedRows;
+4437             \}
+4438             \textcolor{keywordflow}{if} (((allAddedRows == null) 
+4439                         || (allAddedRows.Count < 1))) \{
+4440                 \textcolor{keywordflow}{return} updatedRows;
+4441             \}
+4442             global::System.Collections.Generic.List<global::System.Data.DataRow> realUpdatedRows = \textcolor{keyword}{new} 
+      global::System.Collections.Generic.List<global::System.Data.DataRow>();
+4443             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; (i < updatedRows.Length); i = (i + 1)) \{
+4444                 global::System.Data.DataRow row = updatedRows[i];
+4445                 \textcolor{keywordflow}{if} ((allAddedRows.Contains(row) == \textcolor{keyword}{false})) \{
+4446                     realUpdatedRows.Add(row);
+4447                 \}
+4448             \}
+4449             \textcolor{keywordflow}{return} realUpdatedRows.ToArray();
+4450         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Match\-Table\-Adapter\-Connection@{Match\-Table\-Adapter\-Connection}}
+\index{Match\-Table\-Adapter\-Connection@{Match\-Table\-Adapter\-Connection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Match\-Table\-Adapter\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Match\-Table\-Adapter\-Connection (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-I\-Db\-Connection}]{input\-Connection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_a89f57d215b8d1db2d29f28e15527e7c1}
+
+
+Definición en la línea 4628 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4628                                                                                                            
+       \{
+4629             \textcolor{keywordflow}{if} ((this._connection != null)) \{
+4630                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+4631             \}
+4632             \textcolor{keywordflow}{if} (((this.Connection == null) 
+4633                         || (inputConnection == null))) \{
+4634                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+4635             \}
+4636             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.Equals(this.Connection.ConnectionString, inputConnection.ConnectionString, 
+      global::System.StringComparison.Ordinal)) \{
+4637                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+4638             \}
+4639             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+4640         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Sort\-Self\-Reference\-Rows@{Sort\-Self\-Reference\-Rows}}
+\index{Sort\-Self\-Reference\-Rows@{Sort\-Self\-Reference\-Rows}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Sort\-Self\-Reference\-Rows}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Sort\-Self\-Reference\-Rows (
+\begin{DoxyParamCaption}
+\item[{global\-::\-System.\-Data.\-Data\-Row[$\,$]}]{rows, }
+\item[{global\-::\-System.\-Data.\-Data\-Relation}]{relation, }
+\item[{bool}]{child\-First}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_abec4cb8fb9e34b28eeaa2875cc0a3bb3}
+
+
+Definición en la línea 4622 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4622                                                                                                            
+                                            \{
+4623             global::System.Array.Sort<global::System.Data.DataRow>(rows, \textcolor{keyword}{new} SelfReferenceComparer(relation
+      , childFirst));
+4624         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Update\-All@{Update\-All}}
+\index{Update\-All@{Update\-All}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Update\-All}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Update\-All (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set}}]{data\-Set}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_ab1cdb9aa0c89ce3d7cbb94e977badde8}
+
+
+Update all changes to the dataset. /summary$>$ 
+
+
+
+Definición en la línea 4457 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4457                                                                  \{
+4458             \textcolor{keywordflow}{if} ((dataSet == null)) \{
+4459                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} global::System.ArgumentNullException(\textcolor{stringliteral}{"dataSet"});
+4460             \}
+4461             \textcolor{keywordflow}{if} ((dataSet.HasChanges() == \textcolor{keyword}{false})) \{
+4462                 \textcolor{keywordflow}{return} 0;
+4463             \}
+4464             \textcolor{keywordflow}{if} (((this._camionTableAdapter != null) 
+4465                         && (this.MatchTableAdapterConnection(this.\_camionTableAdapter.Connection) == \textcolor{keyword}{false})
+      )) \{
+4466                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} global::System.ArgumentException(\textcolor{stringliteral}{"All TableAdapters managed by a
+       TableAdapterManager must use the same connection s"} +
+4467                         \textcolor{stringliteral}{"tring."});
+4468             \}
+4469             \textcolor{keywordflow}{if} (((this._serviciosTableAdapter != null) 
+4470                         && (this.MatchTableAdapterConnection(this.\_serviciosTableAdapter.Connection) == \textcolor{keyword}{
+      false}))) \{
+4471                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} global::System.ArgumentException(\textcolor{stringliteral}{"All TableAdapters managed by a
+       TableAdapterManager must use the same connection s"} +
+4472                         \textcolor{stringliteral}{"tring."});
+4473             \}
+4474             \textcolor{keywordflow}{if} (((this._usuarioTableAdapter != null) 
+4475                         && (this.MatchTableAdapterConnection(this.\_usuarioTableAdapter.Connection) == \textcolor{keyword}{false}
+      ))) \{
+4476                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} global::System.ArgumentException(\textcolor{stringliteral}{"All TableAdapters managed by a
+       TableAdapterManager must use the same connection s"} +
+4477                         \textcolor{stringliteral}{"tring."});
+4478             \}
+4479             global::System.Data.IDbConnection workConnection = this.Connection;
+4480             \textcolor{keywordflow}{if} ((workConnection == null)) \{
+4481                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} global::System.ApplicationException(\textcolor{stringliteral}{"TableAdapterManager contains no connection
+       information. Set each TableAdapterMana"} +
+4482                         \textcolor{stringliteral}{"ger TableAdapter property to a valid TableAdapter instance."});
+4483             \}
+4484             \textcolor{keywordtype}{bool} workConnOpened = \textcolor{keyword}{false};
+4485             \textcolor{keywordflow}{if} (((workConnection.State & global::System.Data.ConnectionState.Broken) 
+4486                         == global::System.Data.ConnectionState.Broken)) \{
+4487                 workConnection.Close();
+4488             \}
+4489             \textcolor{keywordflow}{if} ((workConnection.State == global::System.Data.ConnectionState.Closed)) \{
+4490                 workConnection.Open();
+4491                 workConnOpened = \textcolor{keyword}{true};
+4492             \}
+4493             global::System.Data.IDbTransaction workTransaction = workConnection.BeginTransaction();
+4494             \textcolor{keywordflow}{if} ((workTransaction == null)) \{
+4495                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} global::System.ApplicationException(\textcolor{stringliteral}{"The transaction cannot begin. The current
+       data connection does not support transa"} +
+4496                         \textcolor{stringliteral}{"ctions or the current state is not allowing the transaction to begin."});
+4497             \}
+4498             global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows = \textcolor{keyword}{new} 
+      global::System.Collections.Generic.List<global::System.Data.DataRow>();
+4499             global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows = \textcolor{keyword}{new} 
+      global::System.Collections.Generic.List<global::System.Data.DataRow>();
+4500             global::System.Collections.Generic.List<global::System.Data.Common.DataAdapter> 
+      adaptersWithAcceptChangesDuringUpdate = \textcolor{keyword}{new} global::System.Collections.Generic.List<global::System.Data.Common.DataAdapter>
+      ();
+4501             global::System.Collections.Generic.Dictionary<object, global::System.Data.IDbConnection> 
+      revertConnections = \textcolor{keyword}{new} global::System.Collections.Generic.Dictionary<object, global::System.Data.IDbConnection>()
+      ;
+4502             \textcolor{keywordtype}{int} result = 0;
+4503             global::System.Data.DataSet backupDataSet = null;
+4504             \textcolor{keywordflow}{if} (this.BackupDataSetBeforeUpdate) \{
+4505                 backupDataSet = \textcolor{keyword}{new} global::System.Data.DataSet();
+4506                 backupDataSet.Merge(dataSet);
+4507             \}
+4508             \textcolor{keywordflow}{try} \{
+4509                 \textcolor{comment}{// ---- Prepare for update -----------}
+4510                 \textcolor{comment}{//}
+4511                 \textcolor{keywordflow}{if} ((this._camionTableAdapter != null)) \{
+4512                     revertConnections.Add(this.\_camionTableAdapter, this.\_camionTableAdapter.Connection);
+4513                     this.\_camionTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(
+      workConnection));
+4514                     this.\_camionTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(
+      workTransaction));
+4515                     \textcolor{keywordflow}{if} (this._camionTableAdapter.Adapter.AcceptChangesDuringUpdate) \{
+4516                         this.\_camionTableAdapter.Adapter.AcceptChangesDuringUpdate = \textcolor{keyword}{false};
+4517                         adaptersWithAcceptChangesDuringUpdate.Add(this.\_camionTableAdapter.Adapter);
+4518                     \}
+4519                 \}
+4520                 \textcolor{keywordflow}{if} ((this._serviciosTableAdapter != null)) \{
+4521                     revertConnections.Add(this.\_serviciosTableAdapter, 
+      this.\_serviciosTableAdapter.Connection);
+4522                     this.\_serviciosTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(
+      workConnection));
+4523                     this.\_serviciosTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)
+      (workTransaction));
+4524                     \textcolor{keywordflow}{if} (this._serviciosTableAdapter.Adapter.AcceptChangesDuringUpdate) \{
+4525                         this.\_serviciosTableAdapter.Adapter.AcceptChangesDuringUpdate = \textcolor{keyword}{false};
+4526                         adaptersWithAcceptChangesDuringUpdate.Add(this.\_serviciosTableAdapter.Adapter);
+4527                     \}
+4528                 \}
+4529                 \textcolor{keywordflow}{if} ((this._usuarioTableAdapter != null)) \{
+4530                     revertConnections.Add(this.\_usuarioTableAdapter, this.\_usuarioTableAdapter.Connection);
+4531                     this.\_usuarioTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(
+      workConnection));
+4532                     this.\_usuarioTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(
+      workTransaction));
+4533                     \textcolor{keywordflow}{if} (this._usuarioTableAdapter.Adapter.AcceptChangesDuringUpdate) \{
+4534                         this.\_usuarioTableAdapter.Adapter.AcceptChangesDuringUpdate = \textcolor{keyword}{false};
+4535                         adaptersWithAcceptChangesDuringUpdate.Add(this.\_usuarioTableAdapter.Adapter);
+4536                     \}
+4537                 \}
+4538                 \textcolor{comment}{// }
+4539                 \textcolor{comment}{//---- Perform updates -----------}
+4540                 \textcolor{comment}{//}
+4541                 \textcolor{keywordflow}{if} ((this.UpdateOrder == UpdateOrderOption.UpdateInsertDelete)) \{
+4542                     result = (result + this.UpdateUpdatedRows(dataSet, allChangedRows, allAddedRows));
+4543                     result = (result + this.UpdateInsertedRows(dataSet, allAddedRows));
+4544                 \}
+4545                 \textcolor{keywordflow}{else} \{
+4546                     result = (result + this.UpdateInsertedRows(dataSet, allAddedRows));
+4547                     result = (result + this.UpdateUpdatedRows(dataSet, allChangedRows, allAddedRows));
+4548                 \}
+4549                 result = (result + this.UpdateDeletedRows(dataSet, allChangedRows));
+4550                 \textcolor{comment}{// }
+4551                 \textcolor{comment}{//---- Commit updates -----------}
+4552                 \textcolor{comment}{//}
+4553                 workTransaction.Commit();
+4554                 \textcolor{keywordflow}{if} ((0 < allAddedRows.Count)) \{
+4555                     global::System.Data.DataRow[] rows = \textcolor{keyword}{new} System.Data.DataRow[allAddedRows.Count];
+4556                     allAddedRows.CopyTo(rows);
+4557                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; (i < rows.Length); i = (i + 1)) \{
+4558                         global::System.Data.DataRow row = rows[i];
+4559                         row.AcceptChanges();
+4560                     \}
+4561                 \}
+4562                 \textcolor{keywordflow}{if} ((0 < allChangedRows.Count)) \{
+4563                     global::System.Data.DataRow[] rows = \textcolor{keyword}{new} System.Data.DataRow[allChangedRows.Count];
+4564                     allChangedRows.CopyTo(rows);
+4565                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; (i < rows.Length); i = (i + 1)) \{
+4566                         global::System.Data.DataRow row = rows[i];
+4567                         row.AcceptChanges();
+4568                     \}
+4569                 \}
+4570             \}
+4571             \textcolor{keywordflow}{catch} (global::System.Exception ex) \{
+4572                 workTransaction.Rollback();
+4573                 \textcolor{comment}{// ---- Restore the dataset -----------}
+4574                 \textcolor{keywordflow}{if} (this.BackupDataSetBeforeUpdate) \{
+4575                     global::System.Diagnostics.Debug.Assert((backupDataSet != null));
+4576                     dataSet.Clear();
+4577                     dataSet.Merge(backupDataSet);
+4578                 \}
+4579                 \textcolor{keywordflow}{else} \{
+4580                     \textcolor{keywordflow}{if} ((0 < allAddedRows.Count)) \{
+4581                         global::System.Data.DataRow[] rows = \textcolor{keyword}{new} System.Data.DataRow[allAddedRows.Count];
+4582                         allAddedRows.CopyTo(rows);
+4583                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; (i < rows.Length); i = (i + 1)) \{
+4584                             global::System.Data.DataRow row = rows[i];
+4585                             row.AcceptChanges();
+4586                             row.SetAdded();
+4587                         \}
+4588                     \}
+4589                 \}
+4590                 \textcolor{keywordflow}{throw} ex;
+4591             \}
+4592             \textcolor{keywordflow}{finally} \{
+4593                 \textcolor{keywordflow}{if} (workConnOpened) \{
+4594                     workConnection.Close();
+4595                 \}
+4596                 \textcolor{keywordflow}{if} ((this._camionTableAdapter != null)) \{
+4597                     this.\_camionTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(
+      revertConnections[this._camionTableAdapter]));
+4598                     this.\_camionTableAdapter.Transaction = null;
+4599                 \}
+4600                 \textcolor{keywordflow}{if} ((this._serviciosTableAdapter != null)) \{
+4601                     this.\_serviciosTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(
+      revertConnections[this._serviciosTableAdapter]));
+4602                     this.\_serviciosTableAdapter.Transaction = null;
+4603                 \}
+4604                 \textcolor{keywordflow}{if} ((this._usuarioTableAdapter != null)) \{
+4605                     this.\_usuarioTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(
+      revertConnections[this._usuarioTableAdapter]));
+4606                     this.\_usuarioTableAdapter.Transaction = null;
+4607                 \}
+4608                 \textcolor{keywordflow}{if} ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) \{
+4609                     global::System.Data.Common.DataAdapter[] adapters = \textcolor{keyword}{new} System.Data.Common.DataAdapter[
+      adaptersWithAcceptChangesDuringUpdate.Count];
+4610                     adaptersWithAcceptChangesDuringUpdate.CopyTo(adapters);
+4611                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; (i < adapters.Length); i = (i + 1)) \{
+4612                         global::System.Data.Common.DataAdapter adapter = adapters[i];
+4613                         adapter.AcceptChangesDuringUpdate = \textcolor{keyword}{true};
+4614                     \}
+4615                 \}
+4616             \}
+4617             \textcolor{keywordflow}{return} result;
+4618         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Update\-Deleted\-Rows@{Update\-Deleted\-Rows}}
+\index{Update\-Deleted\-Rows@{Update\-Deleted\-Rows}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Update\-Deleted\-Rows}]{\setlength{\rightskip}{0pt plus 5cm}int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Update\-Deleted\-Rows (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set}}]{data\-Set, }
+\item[{global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$}]{all\-Changed\-Rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_a932b81cc8f49d165f46ea937cd65414f}
+
+
+Delete rows in bottom-\/up order. /summary$>$ 
+
+
+
+Definición en la línea 4399 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4399                                                                                                            
+                                              \{
+4400             \textcolor{keywordtype}{int} result = 0;
+4401             \textcolor{keywordflow}{if} ((this._serviciosTableAdapter != null)) \{
+4402                 global::System.Data.DataRow[] deletedRows = dataSet.Servicios.Select(null, null, 
+      global::System.Data.DataViewRowState.Deleted);
+4403                 \textcolor{keywordflow}{if} (((deletedRows != null) 
+4404                             && (0 < deletedRows.Length))) \{
+4405                     result = (result + this.\_serviciosTableAdapter.Update(deletedRows));
+4406                     allChangedRows.AddRange(deletedRows);
+4407                 \}
+4408             \}
+4409             \textcolor{keywordflow}{if} ((this._usuarioTableAdapter != null)) \{
+4410                 global::System.Data.DataRow[] deletedRows = dataSet.Usuario.Select(null, null, 
+      global::System.Data.DataViewRowState.Deleted);
+4411                 \textcolor{keywordflow}{if} (((deletedRows != null) 
+4412                             && (0 < deletedRows.Length))) \{
+4413                     result = (result + this.\_usuarioTableAdapter.Update(deletedRows));
+4414                     allChangedRows.AddRange(deletedRows);
+4415                 \}
+4416             \}
+4417             \textcolor{keywordflow}{if} ((this._camionTableAdapter != null)) \{
+4418                 global::System.Data.DataRow[] deletedRows = dataSet.Camion.Select(null, null, 
+      global::System.Data.DataViewRowState.Deleted);
+4419                 \textcolor{keywordflow}{if} (((deletedRows != null) 
+4420                             && (0 < deletedRows.Length))) \{
+4421                     result = (result + this.\_camionTableAdapter.Update(deletedRows));
+4422                     allChangedRows.AddRange(deletedRows);
+4423                 \}
+4424             \}
+4425             \textcolor{keywordflow}{return} result;
+4426         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Update\-Inserted\-Rows@{Update\-Inserted\-Rows}}
+\index{Update\-Inserted\-Rows@{Update\-Inserted\-Rows}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Update\-Inserted\-Rows}]{\setlength{\rightskip}{0pt plus 5cm}int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Update\-Inserted\-Rows (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set}}]{data\-Set, }
+\item[{global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$}]{all\-Added\-Rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_ad2d20698f390068450835478a27da580}
+
+
+Insert rows in top-\/down order. /summary$>$ 
+
+
+
+Definición en la línea 4365 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4365                                                                                                            
+                                             \{
+4366             \textcolor{keywordtype}{int} result = 0;
+4367             \textcolor{keywordflow}{if} ((this._camionTableAdapter != null)) \{
+4368                 global::System.Data.DataRow[] addedRows = dataSet.Camion.Select(null, null, global::System
+      .Data.DataViewRowState.Added);
+4369                 \textcolor{keywordflow}{if} (((addedRows != null) 
+4370                             && (0 < addedRows.Length))) \{
+4371                     result = (result + this.\_camionTableAdapter.Update(addedRows));
+4372                     allAddedRows.AddRange(addedRows);
+4373                 \}
+4374             \}
+4375             \textcolor{keywordflow}{if} ((this._usuarioTableAdapter != null)) \{
+4376                 global::System.Data.DataRow[] addedRows = dataSet.Usuario.Select(null, null, global::System
+      .Data.DataViewRowState.Added);
+4377                 \textcolor{keywordflow}{if} (((addedRows != null) 
+4378                             && (0 < addedRows.Length))) \{
+4379                     result = (result + this.\_usuarioTableAdapter.Update(addedRows));
+4380                     allAddedRows.AddRange(addedRows);
+4381                 \}
+4382             \}
+4383             \textcolor{keywordflow}{if} ((this._serviciosTableAdapter != null)) \{
+4384                 global::System.Data.DataRow[] addedRows = dataSet.Servicios.Select(null, null, 
+      global::System.Data.DataViewRowState.Added);
+4385                 \textcolor{keywordflow}{if} (((addedRows != null) 
+4386                             && (0 < addedRows.Length))) \{
+4387                     result = (result + this.\_serviciosTableAdapter.Update(addedRows));
+4388                     allAddedRows.AddRange(addedRows);
+4389                 \}
+4390             \}
+4391             \textcolor{keywordflow}{return} result;
+4392         \}
+\end{DoxyCode}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Update\-Updated\-Rows@{Update\-Updated\-Rows}}
+\index{Update\-Updated\-Rows@{Update\-Updated\-Rows}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Update\-Updated\-Rows}]{\setlength{\rightskip}{0pt plus 5cm}int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Update\-Updated\-Rows (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-De\-Datos\-Data\-Set}}]{data\-Set, }
+\item[{global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$}]{all\-Changed\-Rows, }
+\item[{global\-::\-System.\-Collections.\-Generic.\-List$<$ global\-::\-System.\-Data.\-Data\-Row $>$}]{all\-Added\-Rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_ab2fe62927c41b32da0ff1bb4bc721ec5}
+
+
+Update rows in top-\/down order. /summary$>$ 
+
+
+
+Definición en la línea 4328 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+\begin{DoxyCode}
+4328                                                                                                            
+                                                                                                                  
+                 \{
+4329             \textcolor{keywordtype}{int} result = 0;
+4330             \textcolor{keywordflow}{if} ((this._camionTableAdapter != null)) \{
+4331                 global::System.Data.DataRow[] updatedRows = dataSet.Camion.Select(null, null, 
+      global::System.Data.DataViewRowState.ModifiedCurrent);
+4332                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+4333                 \textcolor{keywordflow}{if} (((updatedRows != null) 
+4334                             && (0 < updatedRows.Length))) \{
+4335                     result = (result + this.\_camionTableAdapter.Update(updatedRows));
+4336                     allChangedRows.AddRange(updatedRows);
+4337                 \}
+4338             \}
+4339             \textcolor{keywordflow}{if} ((this._usuarioTableAdapter != null)) \{
+4340                 global::System.Data.DataRow[] updatedRows = dataSet.Usuario.Select(null, null, 
+      global::System.Data.DataViewRowState.ModifiedCurrent);
+4341                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+4342                 \textcolor{keywordflow}{if} (((updatedRows != null) 
+4343                             && (0 < updatedRows.Length))) \{
+4344                     result = (result + this.\_usuarioTableAdapter.Update(updatedRows));
+4345                     allChangedRows.AddRange(updatedRows);
+4346                 \}
+4347             \}
+4348             \textcolor{keywordflow}{if} ((this._serviciosTableAdapter != null)) \{
+4349                 global::System.Data.DataRow[] updatedRows = dataSet.Servicios.Select(null, null, 
+      global::System.Data.DataViewRowState.ModifiedCurrent);
+4350                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+4351                 \textcolor{keywordflow}{if} (((updatedRows != null) 
+4352                             && (0 < updatedRows.Length))) \{
+4353                     result = (result + this.\_serviciosTableAdapter.Update(updatedRows));
+4354                     allChangedRows.AddRange(updatedRows);
+4355                 \}
+4356             \}
+4357             \textcolor{keywordflow}{return} result;
+4358         \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!\-\_\-backup\-Data\-Set\-Before\-Update@{\-\_\-backup\-Data\-Set\-Before\-Update}}
+\index{\-\_\-backup\-Data\-Set\-Before\-Update@{\-\_\-backup\-Data\-Set\-Before\-Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{\-\_\-backup\-Data\-Set\-Before\-Update}]{\setlength{\rightskip}{0pt plus 5cm}bool Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-\_\-backup\-Data\-Set\-Before\-Update\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_ac133cd73bf6d15b45385ed7e053ae250}
+
+
+Definición en la línea 4209 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!\-\_\-camion\-Table\-Adapter@{\-\_\-camion\-Table\-Adapter}}
+\index{\-\_\-camion\-Table\-Adapter@{\-\_\-camion\-Table\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{\-\_\-camion\-Table\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Table\-Adapter} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-\_\-camion\-Table\-Adapter\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_acc82248920a9a78a817c776aab04ab58}
+
+
+Definición en la línea 4203 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!\-\_\-connection@{\-\_\-connection}}
+\index{\-\_\-connection@{\-\_\-connection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-I\-Db\-Connection Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-\_\-connection\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_a079426fee5ffa057d6d153d4834b540a}
+
+
+Definición en la línea 4211 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!\-\_\-servicios\-Table\-Adapter@{\-\_\-servicios\-Table\-Adapter}}
+\index{\-\_\-servicios\-Table\-Adapter@{\-\_\-servicios\-Table\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{\-\_\-servicios\-Table\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Table\-Adapter} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-\_\-servicios\-Table\-Adapter\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_a0f1a37aff49d203107514b46921525ea}
+
+
+Definición en la línea 4205 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!\-\_\-update\-Order@{\-\_\-update\-Order}}
+\index{\-\_\-update\-Order@{\-\_\-update\-Order}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{\-\_\-update\-Order}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Update\-Order\-Option} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-\_\-update\-Order\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_aae68f888a2e15e60fb9df07411ba84cd}
+
+
+Definición en la línea 4201 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!\-\_\-usuario\-Table\-Adapter@{\-\_\-usuario\-Table\-Adapter}}
+\index{\-\_\-usuario\-Table\-Adapter@{\-\_\-usuario\-Table\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{\-\_\-usuario\-Table\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Table\-Adapter} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-\_\-usuario\-Table\-Adapter\hspace{0.3cm}{\ttfamily [private]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_ab6f6c9bd96703ccde8e288934577a34d}
+
+
+Definición en la línea 4207 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+\subsection{Documentación de propiedades}
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Backup\-Data\-Set\-Before\-Update@{Backup\-Data\-Set\-Before\-Update}}
+\index{Backup\-Data\-Set\-Before\-Update@{Backup\-Data\-Set\-Before\-Update}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Backup\-Data\-Set\-Before\-Update}]{\setlength{\rightskip}{0pt plus 5cm}bool Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Backup\-Data\-Set\-Before\-Update\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_a255f9590cbabb3cfac3447fabc5de6ac}
+
+
+Definición en la línea 4268 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Camion\-Table\-Adapter@{Camion\-Table\-Adapter}}
+\index{Camion\-Table\-Adapter@{Camion\-Table\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Camion\-Table\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camion\-Table\-Adapter} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Camion\-Table\-Adapter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_a2fb52fc62fa325b93aea0cf0c15da069}
+
+
+Definición en la línea 4229 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Connection@{Connection}}
+\index{Connection@{Connection}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Connection}]{\setlength{\rightskip}{0pt plus 5cm}global.\-System.\-Data.\-I\-Db\-Connection Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Connection\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_a8d846d1d0d11e8d9d9ab73be5cdef728}
+
+
+Definición en la línea 4280 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Servicios\-Table\-Adapter@{Servicios\-Table\-Adapter}}
+\index{Servicios\-Table\-Adapter@{Servicios\-Table\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Servicios\-Table\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Servicios\-Table\-Adapter} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Servicios\-Table\-Adapter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_a3263e1692238f4b92e9452aca618ad88}
+
+
+Definición en la línea 4243 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Table\-Adapter\-Instance\-Count@{Table\-Adapter\-Instance\-Count}}
+\index{Table\-Adapter\-Instance\-Count@{Table\-Adapter\-Instance\-Count}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Table\-Adapter\-Instance\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Table\-Adapter\-Instance\-Count\hspace{0.3cm}{\ttfamily [get]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_af3b8de0f754a94ea9cc825184c4aaa6b}
+
+
+Definición en la línea 4307 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Update\-Order@{Update\-Order}}
+\index{Update\-Order@{Update\-Order}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Update\-Order}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Update\-Order\-Option} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Update\-Order\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_aaee99c7bd0faf688210a29dd49718c5d}
+
+
+Definición en la línea 4215 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+\index{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}!Usuario\-Table\-Adapter@{Usuario\-Table\-Adapter}}
+\index{Usuario\-Table\-Adapter@{Usuario\-Table\-Adapter}!Proyecto_Integrador::BaseDeDatosDataSetTableAdapters::TableAdapterManager@{Proyecto\-\_\-\-Integrador\-::\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters\-::\-Table\-Adapter\-Manager}}
+\subsubsection[{Usuario\-Table\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario\-Table\-Adapter} Proyecto\-\_\-\-Integrador.\-Base\-De\-Datos\-Data\-Set\-Table\-Adapters.\-Table\-Adapter\-Manager.\-Usuario\-Table\-Adapter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager_ae7d5222efdf6db057e7cb5e1994d9689}
+
+
+Definición en la línea 4257 del archivo Base\-De\-Datos\-Data\-Set.\-Designer.\-cs.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+Proyecto\-\_\-\-Integrador/\-Proyecto\-\_\-\-Integrador/{\bf Base\-De\-Datos\-Data\-Set.\-Designer.\-cs}\end{DoxyCompactItemize}

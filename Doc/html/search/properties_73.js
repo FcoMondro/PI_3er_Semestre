@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['schemaserializationmode',['SchemaSerializationMode',['../class_proyecto___integrador_1_1_base_de_datos_data_set.html#a06b45a5f1672adbece31411f3e0ee97f',1,'Proyecto_Integrador.BaseDeDatosDataSet.SchemaSerializationMode()'],['../class_sim_b_u_s_1_1_base_de_datos_data_set.html#ab9247eebccf51583aef7f03ff814f00d',1,'SimBUS.BaseDeDatosDataSet.SchemaSerializationMode()']]],
+  ['servicios',['Servicios',['../class_proyecto___integrador_1_1_base_de_datos_data_set.html#a30d104861c757ec8a34cd18c4202b146',1,'Proyecto_Integrador.BaseDeDatosDataSet.Servicios()'],['../class_sim_b_u_s_1_1_base_de_datos_data_set.html#a717bef885571ff0ddec806bafd4d2eb6',1,'SimBUS.BaseDeDatosDataSet.Servicios()']]],
+  ['serviciostableadapter',['ServiciosTableAdapter',['../class_proyecto___integrador_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager.html#a3263e1692238f4b92e9452aca618ad88',1,'Proyecto_Integrador.BaseDeDatosDataSetTableAdapters.TableAdapterManager.ServiciosTableAdapter()'],['../class_sim_b_u_s_1_1_base_de_datos_data_set_table_adapters_1_1_table_adapter_manager.html#adfdb1784c4557fa9f68641357c13ace9',1,'SimBUS.BaseDeDatosDataSetTableAdapters.TableAdapterManager.ServiciosTableAdapter()']]]
+];

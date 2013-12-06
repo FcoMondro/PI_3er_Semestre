@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 
+
 namespace Proyecto_Integrador
 {
     /// <summary>
@@ -26,18 +27,27 @@ namespace Proyecto_Integrador
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Maneja el evento Click del control btnAltas
+        /// </summary>
         private void btnAltas_Click(object sender, RoutedEventArgs e)
         {
             frmRegistros regi = new frmRegistros();
             regi.ShowDialog();
         }
 
+        /// <summary>
+        /// Maneja el evento Click del control btnRecargas
+        /// </summary>
         private void btnRecargas_Click(object sender, RoutedEventArgs e)
         {
             frmRecargas reca = new frmRecargas();
             reca.ShowDialog();
         }
 
+        /// <summary>
+        /// Maneja el evento Click del control btnReportes
+        /// </summary>
         private void btnReportes_Click(object sender, RoutedEventArgs e)
         {
             frmReportes repo = new frmReportes();
