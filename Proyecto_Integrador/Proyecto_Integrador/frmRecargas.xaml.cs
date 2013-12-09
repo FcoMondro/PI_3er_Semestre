@@ -106,6 +106,18 @@ namespace Proyecto_Integrador
                 Conexion.Open();
                 actualizar.ExecuteNonQuery();
                 Conexion.Close();
+                if (MessageBox.Show("Desea abonar a otro usuario?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+                {
+                    MessageBox.Show("Gracias, usted regresara al menu.");
+                    this.Close();
+                }
+                else
+                {
+                    txtNombre.Clear();
+                    txtID.Clear();
+                    txtCantidad.Clear();
+                    dtgBusqueda.Items.Clear();
+                }
             }
         }
 

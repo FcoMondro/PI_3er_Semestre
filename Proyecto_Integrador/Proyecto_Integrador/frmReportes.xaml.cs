@@ -190,11 +190,14 @@ namespace Proyecto_Integrador
         /// </summary>
         private void cmdCargar_Click(object sender, RoutedEventArgs e)
         {
-
-            Unidad.Clear();
-            boton();
-            dtgCobros.ItemsSource = Unidad;
-
+            if (dtpInicial.SelectedDate > dtpFinal.SelectedDate)
+                MessageBox.Show("La fecha esta incorrecta, por favor seleccione un rango de fechas correcto.");
+            else
+            {
+                Unidad.Clear();
+                boton();
+                dtgCobros.ItemsSource = Unidad;
+            }
         }
 
         /// <summary>
@@ -226,9 +229,14 @@ namespace Proyecto_Integrador
         /// </summary>
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Usuario.Clear();
-            botonFrec();
-            dtgUsosUsuario.ItemsSource = Usuario;
+            if (dtpInicialFUs.SelectedDate > dtpFinalUs.SelectedDate)
+                MessageBox.Show("La fecha esta incorrecta, por favor seleccione un rango de fechas correcto.");
+            else
+            {
+                Usuario.Clear();
+                botonFrec();
+                dtgUsosUsuario.ItemsSource = Usuario;
+            }
         }
 
         /// <summary>
@@ -290,9 +298,14 @@ namespace Proyecto_Integrador
         /// </summary>
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            UnidadFre.Clear();
-            botonFrecUnidad();
-            dtgUsosUnidad.ItemsSource = UnidadFre;
+            if (dtpInicialFUn.SelectedDate > dtpFinalFUn.SelectedDate)
+                MessageBox.Show("La fecha esta incorrecta, por favor seleccione un rango de fechas correcto.");
+            else
+            {
+                UnidadFre.Clear();
+                botonFrecUnidad();
+                dtgUsosUnidad.ItemsSource = UnidadFre;
+            }
         }
 
         /// <summary>
@@ -350,9 +363,14 @@ namespace Proyecto_Integrador
         /// </summary>
         private void cmdCargarFTu_Click(object sender, RoutedEventArgs e)
         {
-            TipoUserFre.Clear();
-            botonFrecTipoUsuario();
-            dtgUsosTipoUsuario.ItemsSource = TipoUserFre;
+            if (dtpInicialTu.SelectedDate > dtpFinalTu.SelectedDate)
+                MessageBox.Show("La fecha esta incorrecta, por favor seleccione un rango de fechas correcto.");
+            else
+            {
+                TipoUserFre.Clear();
+                botonFrecTipoUsuario();
+                dtgUsosTipoUsuario.ItemsSource = TipoUserFre;
+            }
         }
 
         /// <summary>

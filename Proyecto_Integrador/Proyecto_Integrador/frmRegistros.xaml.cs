@@ -171,7 +171,27 @@ namespace Proyecto_Integrador
                 //txtApellidoP.Text = Lector["UserApPa"].ToString();
                 //txtApellidoM.Text = Lector["UserApMa"].ToString();
                 Conexion.Close();
-                Servicio_de_Limpieza();
+                if (MessageBox.Show("Desea agregar un nuevo registro?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+                {
+                    MessageBox.Show("Gracias, usted regresara al menu.");
+                    this.Close();
+                }
+                else
+                {
+                    Servicio_de_Limpieza();
+                }
+
+                //DialogResult dr;
+                //dr = MessageBox.Show("Sure", "Some Title", MessageBoxButtons.YesNo);
+                //if (dialogResult == DialogResult.Yes)
+                //{
+                //    Servicio_de_Limpieza();
+                //}
+                //else if (dialogResult == DialogResult.No)
+                //{
+                //    MessageBox.Show("Gracias.");
+                //}
+                
             }
             //MessageBox.Show("Se cerro la conexion");
         }
