@@ -390,13 +390,14 @@ namespace Proyecto_Integrador
                 fechaFinal = dtpFinalTu.SelectedDate.Value;
 
             OleDbCommand cmdFTs = new OleDbCommand("Select * FROM Servicios WHERE TipoUsuario = @TipoUsuario AND Fecha BETWEEN @FechaI AND @FechaF ", Conexion);
-            cmdFTs.Parameters.AddWithValue("@TipoUsuario", cmbUsuarios.SelectedValue.ToString());
+            cmdFTs.Parameters.AddWithValue("@TipoUsuario", cmbUsuarios.Text);
             cmdFTs.Parameters.AddWithValue("@FechaI", fechaInicial);
             cmdFTs.Parameters.AddWithValue("@FechaF", fechaFinal);
             OleDbDataAdapter FrecenciaTipoU = new OleDbDataAdapter(cmdFTs);
             DataTable FrecTipoUsuario = new DataTable();
             FrecenciaTipoU.Fill(FrecTipoUsuario);
             FreTipoUsuario tmp;
+
             int i = 0;
             foreach (DataRow r in FrecTipoUsuario.Rows)
             {
@@ -406,6 +407,5 @@ namespace Proyecto_Integrador
                 TipoUserFre.Add(tmp);
             }
         }
-
     }
 }

@@ -99,9 +99,14 @@ namespace Proyecto_Integrador
             OleDbCommand actualizar = new OleDbCommand("UPDATE Usuario SET UserSaldo = @UserSaldo WHERE Id_Tarjeta = @Id_Tarjeta ", Conexion);
             actualizar.Parameters.AddWithValue("@UserSaldo", saldo);
             actualizar.Parameters.AddWithValue("@Id_Tarjeta", txtID.Text);
-            Conexion.Open();
-            actualizar.ExecuteNonQuery();
-            Conexion.Close();
+            if (txtCantidad.Text == "")
+                MessageBox.Show("Ingrese una cantidad a abonar");
+            else
+            {
+                Conexion.Open();
+                actualizar.ExecuteNonQuery();
+                Conexion.Close();
+            }
         }
 
         /// <summary>

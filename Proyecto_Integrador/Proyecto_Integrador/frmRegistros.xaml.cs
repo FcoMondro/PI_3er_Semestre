@@ -57,7 +57,7 @@ namespace Proyecto_Integrador
             txtCalle.Clear();
             txtNumero.Clear();
             txtColonia.Clear();
-            txtMunicipio.Clear();
+            cmbMunicipio.SelectedIndex = -1;
             txtCelular.Clear();
             txtCasa.Clear();
             cmbSangre.SelectedIndex = -1;
@@ -91,7 +91,7 @@ namespace Proyecto_Integrador
             //OleDbConnection Conexion = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='|DataDirectory|\BaseDeDatos.accdb'");
             
             //MessageBox.Show("Conexion abierta");
-            OleDbCommand Instruccion = new OleDbCommand("Insert INTO Usuario (Id_Tarjeta,UserNombre,UserApPa,UserApMa,UserFechaNac,UserSexo,UserTipo,UserDireccionCalle,UserDireccionNumero,UserDireccionColonia,UserDireccionMunicipio,UserCelular,UserTelefono,UserTipoSangre,UserAlergias,UserAccidenteNombre,UserAccidenteCelular,UserAccidenteTelefono) VALUES (@Id_Tarjeta,@userNombre,@UserApPa,@UserApMa,@UserFechaNac,@UserSexo,@UserTipo,@UserDireccionCalle,@UserDireccionNumero,@UserDireccionColonia,@UserDireccionMunicipio,@UserCelular,@UserTelefono,@UserTipoSangre,@UserAlergia,@UserAccidenteNombre,@UserAccidenteCelular,@UserAccidenteTelefono)", Conexion);
+            OleDbCommand Instruccion = new OleDbCommand("Insert INTO Usuario (Id_Tarjeta,UserNombre,UserApPa,UserApMa,UserFechaNac,UserSexo,UserTipo,UserDireccionCalle,UserDireccionNumero,UserDireccionColonia,UserDireccionMunicipio,UserCelular,UserTelefono,UserTipoSangre,UserAlergias,UserAccidenteNombre,UserAccidenteCelular,UserAccidenteTelefono,UserSaldo) VALUES (@Id_Tarjeta,@userNombre,@UserApPa,@UserApMa,@UserFechaNac,@UserSexo,@UserTipo,@UserDireccionCalle,@UserDireccionNumero,@UserDireccionColonia,@UserDireccionMunicipio,@UserCelular,@UserTelefono,@UserTipoSangre,@UserAlergia,@UserAccidenteNombre,@UserAccidenteCelular,@UserAccidenteTelefono,@UserSaldo)", Conexion);
             //MessageBox.Show("Se crearon las instrucciones");
 
             Instruccion.Parameters.AddWithValue("@Id_Tarjeta", txtID.Text);
@@ -104,41 +104,135 @@ namespace Proyecto_Integrador
             Instruccion.Parameters.AddWithValue("@UserDireccionCalle", txtCalle.Text);
             Instruccion.Parameters.AddWithValue("@UserDireccionNumero", Int32.Parse(txtNumero.Text));
             Instruccion.Parameters.AddWithValue("@UserDireccionColonia", txtColonia.Text);
-            Instruccion.Parameters.AddWithValue("@UserDireccionMunicipio", txtMunicipio.Text);
+            Instruccion.Parameters.AddWithValue("@UserDireccionMunicipio", cmbMunicipio.Text);
             Instruccion.Parameters.AddWithValue("@UserCelular", Int64.Parse(txtCelular.Text));
-            Instruccion.Parameters.AddWithValue("@UserTelefono", Int32.Parse(txtCasa.Text));
+            Instruccion.Parameters.AddWithValue("@UserTelefono", Int64.Parse(txtCasa.Text));
             Instruccion.Parameters.AddWithValue("@UserTipoSangre", cmbSangre.Text);
             Instruccion.Parameters.AddWithValue("@UserAlergia", txtAlergias.Text);
             Instruccion.Parameters.AddWithValue("@UserAccidenteNombre", txtNombreAccidente.Text);
-            Instruccion.Parameters.AddWithValue("@UserAccidenteCelular", Int32.Parse(txtMovilAccidente.Text));
-            Instruccion.Parameters.AddWithValue("@UserAccidenteCasa", Int32.Parse(txtCasaAccidente.Text));
+            Instruccion.Parameters.AddWithValue("@UserAccidenteCelular", Int64.Parse(txtMovilAccidente.Text));
+            Instruccion.Parameters.AddWithValue("@UserAccidenteCasa", Int64.Parse(txtCasaAccidente.Text));
+            Instruccion.Parameters.AddWithValue("@UserSaldo", 0);
+
 
             //Instruccion.Parameters.AddWithValue("@Id_Usuario", 1);
-            
-            
-            Conexion.Open();
 
-            //MessageBox.Show("Se abre la conexion");
-            Instruccion.ExecuteNonQuery();
-            //MessageBox.Show(prueba.ToString());
-            //OleDbDataReader AgregarAccidente;
-            //AgreingarUsuario.Read();
 
-            //AgregarUsuario = Instruccion.ExecuteNonQuery();
-            //AgregarAccidente = Instruccion2.ExecuteNonQuery();
-            //Lector = Instruccion.ExecuteReader();
+            if (txtNombres.Text == "")
+                MessageBox.Show("Por favor, complete el campo Nombre");
+            else if (txtApellidoP.Text == "")
+                MessageBox.Show("Por favor, complete el campo Apellido Paterno");
+            else if (txtApellidoM.Text == "")
+                MessageBox.Show("Por favor, complete el campo Apellido materno");
+            else if (Check_Sexo() == "")
+                MessageBox.Show("Por favor, seleccione el Sexo");
+            else if (cmbUsuarios.SelectedIndex == -1)
+                MessageBox.Show("Por favor, seleccione un usuario");
+            else if (txtCalle.Text == "")
+                MessageBox.Show("Por favor, complete el campo Calle");
+            else if (txtNumero.Text == "")
+                MessageBox.Show("Por favor, complete el campo Numero");
+            else if (txtColonia.Text == "")
+                MessageBox.Show("Por favor, complete el campo Colonia");
+            else if (cmbMunicipio.SelectedIndex == -1)
+                MessageBox.Show("Por favor, selecciona un municipio");
+            else if (txtCelular.Text == "")
+                MessageBox.Show("Por favor, complete el campo Celular");
+            else if (txtCasa.Text == "")
+                MessageBox.Show("Por favor, complete el campo Casa");
+            else if (cmbSangre.SelectedIndex == -1)
+                MessageBox.Show("Por favor, seleccione un tipo de sangre");
+            else if (txtAlergias.Text == "")
+                MessageBox.Show("Por favor, complete el campo Alergias");
+            else if (txtNombreAccidente.Text == "")
+                MessageBox.Show("Por favor, complete el campo Nombre completo en la seccion de Contacto en caso de Accidente");
+            else if (txtMovilAccidente.Text == "")
+                MessageBox.Show("Por favor, complete el campo Movil en la seccion de Contacto en caso de Accidente");
+            else if (txtCasaAccidente.Text == "")
+                MessageBox.Show("Por favor, complete el campo Casa en la seccion de Contacto en caso de Accidente");
+            else
+            {
+                Conexion.Open();
+                //MessageBox.Show("Se abre la conexion");
+                Instruccion.ExecuteNonQuery();
+                //MessageBox.Show(prueba.ToString());
+                //OleDbDataReader AgregarAccidente;
+                //AgreingarUsuario.Read();
 
-            //AgregarUsuario.Close();
-            //AgregarAccidente.Close();
-            //Lector.Read();
-            //txtID.Text = Lector["Id_Usuario"].ToString();
-            //txtNombres.Text = Lector["UserNombre"].ToString();
-            //txtApellidoP.Text = Lector["UserApPa"].ToString();
-            //txtApellidoM.Text = Lector["UserApMa"].ToString();
+                //AgregarUsuario = Instruccion.ExecuteNonQuery();
+                //AgregarAccidente = Instruccion2.ExecuteNonQuery();
+                //Lector = Instruccion.ExecuteReader();
 
-            Conexion.Close();
+                //AgregarUsuario.Close();
+                //AgregarAccidente.Close();
+                //Lector.Read();
+                //txtID.Text = Lector["Id_Usuario"].ToString();
+                //txtNombres.Text = Lector["UserNombre"].ToString();
+                //txtApellidoP.Text = Lector["UserApPa"].ToString();
+                //txtApellidoM.Text = Lector["UserApMa"].ToString();
+                Conexion.Close();
+                Servicio_de_Limpieza();
+            }
             //MessageBox.Show("Se cerro la conexion");
-            Servicio_de_Limpieza();
         }
+
+        private void txtNumero_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.D0:
+                case Key.D1:
+                case Key.D2:
+                case Key.D3:
+                case Key.D4:
+                case Key.D5:
+                case Key.D6:
+                case Key.D7:
+                case Key.D8:
+                case Key.D9:
+                case Key.NumLock:
+                case Key.NumPad0:
+                case Key.NumPad1:
+                case Key.NumPad2:
+                case Key.NumPad3:
+                case Key.NumPad4:
+                case Key.NumPad5:
+                case Key.NumPad6:
+                case Key.NumPad7:
+                case Key.NumPad8:
+                case Key.NumPad9:
+                case Key.Back:
+                    break;
+                default:
+                    e.Handled = true;
+                    break;
+            }
+        }
+
+        private void txtCelular_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            txtNumero_PreviewKeyDown(sender, e);
+        }
+
+        private void txtNumero_KeyUp(object sender, KeyEventArgs e)
+        {
+            //nada
+        }
+
+        private void txtCasa_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            txtNumero_PreviewKeyDown(sender, e);
+        }
+
+        private void txtMovilAccidente_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            txtNumero_PreviewKeyDown(sender, e);
+        }
+
+        private void txtCasaAccidente_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            txtNumero_PreviewKeyDown(sender, e);
+        }
+
     }
 }

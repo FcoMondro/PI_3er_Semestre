@@ -40,16 +40,31 @@
         </ComboBox>
         <Label x:Name="lblDireccion" Content="Direccion:" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCalle" HorizontalAlignment="Left" Height="23" Margin="88,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" Controls:TextboxHelper.Watermark="Calle"/>
-        <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Height="23" Margin="352,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Controls:TextboxHelper.Watermark="#"/>
+        <TextBox x:Name="txtNumero" HorizontalAlignment="Left" Height="23" Margin="352,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Controls:TextboxHelper.Watermark="#" MaxLength="5" PreviewKeyDown="txtNumero_PreviewKeyDown" KeyUp="txtNumero_KeyUp"/>
         <TextBox x:Name="txtColonia" HorizontalAlignment="Left" Height="23" Margin="421,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Controls:TextboxHelper.Watermark="Colonia"/>
-        <TextBox x:Name="txtMunicipio" HorizontalAlignment="Left" Height="23" Margin="593,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Controls:TextboxHelper.Watermark="Municipio"/>
+        <ComboBox x:Name="cmbMunicipio" HorizontalAlignment="Left" Margin="593,90,0,0" VerticalAlignment="Top" Width="157" Height="26">
+            <ComboBoxItem>Armería</ComboBoxItem>
+            <ComboBoxItem>Colima</ComboBoxItem>
+            <ComboBoxItem>Comala</ComboBoxItem>
+            <ComboBoxItem>Coquimatlán</ComboBoxItem>
+            <ComboBoxItem>Cuauhtémoc</ComboBoxItem>
+            <ComboBoxItem>Ixtlahuacán</ComboBoxItem>
+            <ComboBoxItem>Manzanillo</ComboBoxItem>
+            <ComboBoxItem>Minatitlán</ComboBoxItem>
+            <ComboBoxItem>Tecomán</ComboBoxItem>
+            <ComboBoxItem>Villa de Álvarez</ComboBoxItem>
+        </ComboBox>
         <Label x:Name="lblTelefono" Content="Telefono:" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCelular" HorizontalAlignment="Left" Height="23" Margin="88,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Controls:TextboxHelper.Watermark="Celular"/>
-        <TextBox x:Name="txtCasa" HorizontalAlignment="Left" Height="23" Margin="239,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Controls:TextboxHelper.Watermark="Casa"/>
+        <TextBox x:Name="txtCelular" HorizontalAlignment="Left" Height="23" Margin="88,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Controls:TextboxHelper.Watermark="Celular" MaxLength="10" PreviewKeyDown="txtCelular_PreviewKeyDown"/>
+        <TextBox x:Name="txtCasa" HorizontalAlignment="Left" Height="23" Margin="239,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Controls:TextboxHelper.Watermark="Casa" MaxLength="10" PreviewKeyDown="txtCasa_PreviewKeyDown"/>
         <Label x:Name="lblSangre" Content="Tipo de Sangre:" HorizontalAlignment="Left" Margin="388,130,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="cmbSangre" HorizontalAlignment="Left" Margin="506,130,0,0" VerticalAlignment="Top" Width="120" Text="No esta abierto">
             <ComboBoxItem Name="Oplus">O+</ComboBoxItem>
             <ComboBoxItem Name="Ominus">O-</ComboBoxItem>
+            <ComboBoxItem Name="Aplus">A+</ComboBoxItem>
+            <ComboBoxItem Name="Aminus">A-</ComboBoxItem>
+            <ComboBoxItem Name="Bplus">B+</ComboBoxItem>
+            <ComboBoxItem Name="Bminus">B-</ComboBoxItem>
             <ComboBoxItem Name="ABplus">AB+</ComboBoxItem>
             <ComboBoxItem Name="ABminus">AB-</ComboBoxItem>
         </ComboBox>
@@ -60,10 +75,9 @@
         <Label x:Name="lblAccidente" Content="Contacto en caso de Accidente" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" FontWeight="ExtraBold"/>
         <Label x:Name="lblNombreAccidente" Content="Nombre:" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNombreAccidente" HorizontalAlignment="Left" Height="23" Margin="88,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="441" Controls:TextboxHelper.Watermark="Nombre completo"/>
-        <TextBox x:Name="txtMovilAccidente" HorizontalAlignment="Left" Height="23" Margin="88,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Controls:TextboxHelper.Watermark="Celular"/>
-        <TextBox x:Name="txtCasaAccidente" HorizontalAlignment="Left" Height="23" Margin="225,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Controls:TextboxHelper.Watermark="Casa"/>
+        <TextBox x:Name="txtMovilAccidente" HorizontalAlignment="Left" Height="23" Margin="88,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Controls:TextboxHelper.Watermark="Celular" MaxLength="10" PreviewKeyDown="txtMovilAccidente_PreviewKeyDown"/>
+        <TextBox x:Name="txtCasaAccidente" HorizontalAlignment="Left" Height="23" Margin="225,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Controls:TextboxHelper.Watermark="Casa" MaxLength="10" PreviewKeyDown="txtCasaAccidente_PreviewKeyDown"/>
         <Label x:Name="lblTelefonoAccidente" Content="Telefono:" HorizontalAlignment="Left" Margin="10,330,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="600,242,0,0" VerticalAlignment="Top" Width="150" Height="125" Click="btnAgregar_Click"/>
-
     </Grid>
 </Controls:MetroWindow>
